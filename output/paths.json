@@ -1,26 +1,5 @@
 [
  {
-  "id": "p_std_c",
-  "name": "路径C · 中国信用扩张",
-  "title": "路径C · 中国信用扩张",
-  "nodeIds": [
-   "tsf",
-   "creditimpulse",
-   "cnpminew",
-   "inddemand",
-   "copper"
-  ],
-  "edgeIds": [
-   "e_tsf_impulse",
-   "e_impulse_pminew",
-   "e_neworder_dem",
-   "e_dem_copper"
-  ],
-  "status": "INACTIVE",
-  "consistency": 0.25,
-  "note": "实时评估: 1/4 条边动量一致 (tsf→creditimpulse×, creditimpulse→cnpminew×, cnpminew→inddemand×, inddemand→copper✓)。"
- },
- {
   "id": "p_std_f",
   "name": "路径F · 全球再通胀",
   "title": "路径F · 全球再通胀",
@@ -61,8 +40,8 @@
    "e_real_dxy"
   ],
   "status": "INACTIVE",
-  "consistency": 0.2,
-  "note": "实时评估: 1/5 条边动量一致 (uscpi→cutsexp×, cutsexp→us2y×, us2y→us10y×, us10y→us10yreal×, us10yreal→dxy✓)。"
+  "consistency": 0.0,
+  "note": "实时评估: 0/5 条边动量一致 (uscpi→cutsexp×, cutsexp→us2y×, us2y→us10y×, us10y→us10yreal×, us10yreal→dxy×)。"
  },
  {
   "id": "p_std_b",
@@ -88,6 +67,27 @@
   "status": "INACTIVE",
   "consistency": 0.0,
   "note": "实时评估: 0/6 条边动量一致 (usdeficit→netissue×, netissue→auctiontail×, auctiontail→termprem×, termprem→us10y×, us10y→us10yreal×, us10yreal→ndx×)。"
+ },
+ {
+  "id": "p_std_c",
+  "name": "路径C · 中国信用扩张",
+  "title": "路径C · 中国信用扩张",
+  "nodeIds": [
+   "tsf",
+   "creditimpulse",
+   "cnpminew",
+   "inddemand",
+   "copper"
+  ],
+  "edgeIds": [
+   "e_tsf_impulse",
+   "e_impulse_pminew",
+   "e_neworder_dem",
+   "e_dem_copper"
+  ],
+  "status": "INACTIVE",
+  "consistency": 0.0,
+  "note": "实时评估: 0/4 条边动量一致 (tsf→creditimpulse×, creditimpulse→cnpminew×, cnpminew→inddemand×, inddemand→copper×)。"
  },
  {
   "id": "p_std_d",
