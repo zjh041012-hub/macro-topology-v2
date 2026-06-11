@@ -357,7 +357,74 @@ def edge_status(e: dict, z: dict) -> str:
     return "DIVERGENCE"
 
 
-def detect_divergences(z: dict, series: dict) -> list[dict]:
+
+# 标准传导路径 A-H: 每次运行用真实动量评估激活状态
+STANDARD_PATHS = [
+    ("p_std_a", "路径A · 美国政策转鹰", ["uscpi", "cutsexp", "us2y", "us10y", "us10yreal", "dxy"],
+     ["e_cpi_cuts", "e_cuts_2y", "e_2y_10y", "e_10y_real", "e_real_dxy"],
+     [("us10yreal", 1), ("dxy", 1), ("cutsexp", -1)], "反向: 政策转鸽交易"),
+    ("p_std_b", "路径B · 财政供给与期限溢价", ["usdeficit", "netissue", "auctiontail", "termprem", "us10y", "us10yreal", "ndx"],
+     ["e_deficit_netissue", "e_netissue_tail", "e_tail_tp", "e_tp_10y", "e_10y_real", "e_real_ndx"],
+     [("termprem", 1), ("netissue", 1)], "反向: 供给压力缓解"),
+    ("p_std_c", "路径C · 中国信用扩张", ["tsf", "creditimpulse", "cnpminew", "inddemand", "copper"],
+     ["e_tsf_impulse", "e_impulse_pminew", "e_neworder_dem", "e_dem_copper"],
+     [("creditimpulse", 1), ("copper", 1)], "反向: 信用收缩"),
+    ("p_std_d", "路径D · 全球流动性改善", ["fedbs", "reserves", "usfci", "hyspread", "spx"],
+     ["e_fedbs_reserves", "e_reserves_fci", "e_fci_hy2", "e_spx_hy"],
+     [("reserves", 1), ("hyspread", -1)], "反向: 流动性收紧"),
+    ("p_std_e", "路径E · 流动性冲击", ["liqcrisis", "dxy", "hyspread", "spx"],
+     ["e_liqc_dxy", "e_dxy_hyspread", "e_spx_hy"],
+     [("dxy", 1), ("hyspread", 1), ("spx", -1)], "反向: 风险偏好修复"),
+    ("p_std_f", "路径F · 全球再通胀", ["ismneworder", "oil", "us10ybe", "us10y", "bankidx"],
+     ["e_ismno_oil", "e_oil_be", "e_be_10y", "e_10y_bank"],
+     [("us10ybe", 1), ("oil", 1)], "反向: 通缩交易"),
+    ("p_std_g", "路径G · 中国地产下行", ["propsales", "reinvest", "ironore", "cnppi"],
+     ["e_propsales_reinvest", "e_reinvest_ironore", "e_ironore_cnppi"],
+     [("propsales", -1), ("ironore", -1)], "反向: 地产企稳"),
+    ("p_std_h", "路径H · 风险衰退", ["nfp", "gdpnow", "hyspread", "spx"],
+     ["e_nfp_gdpnow", "e_gdpnow_hy", "e_spx_hy"],
+     [("hyspread", 1), ("spx", -1)], "反向: 软着陆交易"),
+]
+
+
+def evaluate_standard_paths(z: dict, edge_map: dict, nmap: dict) -> list[dict]:
+    """按链上各边的动量一致性评估标准路径: 一致边占比≥60%且平均强度≥1.0 → ACTIVE;
+    ≥35% → PARTIAL; 否则 INACTIVE。conditional 关系的边不参与打分。"""
+    out = []
+    for pid, name, node_ids, edge_ids, anchors, rev_label in STANDARD_PATHS:
+        scored = consistent = 0
+        zsum = 0.0
+        detail = []
+        for eid in edge_ids:
+            e = edge_map.get(eid)
+            if not e or e.get("relation") == "conditional":
+                continue
+            sgn = 1 if e["relation"] == "positive" else -1
+            za, zb = z.get(e["source"], 0.0), z.get(e["target"], 0.0)
+            scored += 1
+            ok = abs(za) >= 0.8 and abs(zb) >= 0.8 and (za * zb * sgn) > 0
+            consistent += ok
+            zsum += min(abs(za), abs(zb))
+            detail.append(f"{e['source']}→{e['target']}{'✓' if ok else '×'}")
+        ratio = consistent / scored if scored else 0.0
+        avgz = zsum / scored if scored else 0.0
+        status = "ACTIVE" if (ratio >= 0.6 and avgz >= 1.0) else ("PARTIAL" if ratio >= 0.35 else "INACTIVE")
+        # 方向锚定: 链条激活但锚定节点动量与命名叙事相反 → 标注反向运行
+        dirscore = sum(z.get(n, 0.0) * sg for n, sg in anchors) / max(len(anchors), 1)
+        disp = name
+        if status != "INACTIVE" and dirscore <= -0.4:
+            disp = f"{name} ({rev_label})"
+        elif status != "INACTIVE" and abs(dirscore) < 0.4:
+            disp = f"{name} (方向不明)"
+        out.append(dict(
+            id=pid, name=disp, title=disp,
+            nodeIds=[n for n in node_ids if n in nmap], edgeIds=edge_ids,
+            status=status, consistency=round(ratio, 2),
+            note=f"实时评估: {consistent}/{scored} 条边动量一致 ({', '.join(detail)})。"))
+    return out
+
+
+def detect_divergences(z: dict, series: dict, edge_map: dict | None = None, nmap: dict | None = None) -> list[dict]:
     """两类背离:
     1. 对抗型: 两端都有强动量 (|z|≥div_z) 且方向违背预期关系;
     2. 未响应型: 领先端动量极强 (|z|≥1.5) 而跟随端几乎不动 (|z|≤0.4) ——
@@ -370,6 +437,10 @@ def detect_divergences(z: dict, series: dict) -> list[dict]:
             mode = "对抗型"
             strength = "HIGH" if min(abs(za), abs(zb)) > 1.8 else ("MEDIUM" if min(abs(za), abs(zb)) > 1.3 else "LOW")
             observed = f"{a} 20D动量z={za:+.1f}, {b} 20D动量z={zb:+.1f}, 方向与预期关系相反。"
+        elif max(abs(za), abs(zb)) >= 1.5 and min(abs(za), abs(zb)) >= 0.5 and (za * zb * sign) < 0:
+            mode = "对抗型·弱端确认"
+            strength = "MEDIUM" if min(abs(za), abs(zb)) >= 0.8 else "LOW"
+            observed = f"{a} z={za:+.1f} 与 {b} z={zb:+.1f} 方向违背预期关系 (一端强趋势, 另一端初步反向)。"
         elif abs(za) >= TH["nonresp_leader_z"] and abs(zb) <= TH["nonresp_follower_z"]:
             mode = "未响应型"
             strength = "HIGH" if abs(za) > 2.2 else "MEDIUM"
@@ -396,6 +467,28 @@ def detect_divergences(z: dict, series: dict) -> list[dict]:
             alternativeExplanations=alts,
             invalidationRisk="HIGH" if strength == "HIGH" and persistent else ("MEDIUM" if strength != "LOW" else "LOW"),
         ))
+    # ---- 全边扫描: 观察清单之外, 任何强边两端强动量且方向违背 → 自动背离 ----
+    if edge_map and nmap:
+        seen_pairs = {frozenset((d["relatedNodeIds"][0], d["relatedNodeIds"][1])) for d in out}
+        cands = []
+        for e in edge_map.values():
+            if e.get("relation") == "conditional" or e.get("strength", 0) < 0.6:
+                continue
+            sgn = 1 if e["relation"] == "positive" else -1
+            za, zb = z.get(e["source"], 0.0), z.get(e["target"], 0.0)
+            if abs(za) >= 1.2 and abs(zb) >= 1.2 and (za * zb * sgn) < 0 and frozenset((e["source"], e["target"])) not in seen_pairs:
+                cands.append((min(abs(za), abs(zb)), e, za, zb))
+        for k, (mz, e, za, zb) in enumerate(sorted(cands, reverse=True)[:5]):
+            na, nb = nmap.get(e["source"], {}).get("name", e["source"]), nmap.get(e["target"], {}).get("name", e["target"])
+            out.append(dict(
+                id=f"d_auto_{k+1}", title=f"{na} 与 {nb} 走势背离(边扫描)",
+                relatedNodeIds=[e["source"], e["target"]], relatedEdgeIds=[e["id"]],
+                expectedRelation=f"预期{'同向' if e['relation']=='positive' else '反向'}: {e.get('mechanism','')}",
+                observedRelation=f"{na} z={za:+.1f}, {nb} z={zb:+.1f}, 与预期关系相反。",
+                window="20D", strength="HIGH" if mz > 1.8 else "MEDIUM",
+                persistence="TRANSIENT",
+                alternativePaths=[], invalidationRisk="MEDIUM"))
+
     return out
 
 
@@ -573,13 +666,14 @@ def main():
     for e in edges:
         st = edge_status(e, z)
         edges_out.append({**e, "status": st})
-    divs = detect_divergences(z, series)
+    edge_map = {e["id"]: e for e in edges_out}
+    nmap = {n["id"]: n for n in nodes_out}
+    divs = detect_divergences(z, series, edge_map, nmap)
     # 把背离涉及的边和节点同步标记
     div_pairs = {frozenset(d["relatedNodeIds"]) for d in divs}
     for e in edges_out:
         if frozenset((e["source"], e["target"])) in div_pairs and e["status"] != "INVALIDATED":
             e["status"] = "DIVERGENCE"
-    nmap = {n["id"]: n for n in nodes_out}
     for d in divs:
         d["relatedEdgeIds"] = [e["id"] for e in edges_out
                                if frozenset((e["source"], e["target"])) == frozenset(d["relatedNodeIds"])]
@@ -616,6 +710,11 @@ def main():
                 note="由规则引擎根据20日动量一致性自动识别的激活传导链。"))
         if len(paths) == 3:
             break
+    std_paths = evaluate_standard_paths(z, edge_map, nmap)
+    # 排序: ACTIVE标准路径 > 自动链 > PARTIAL > INACTIVE(仍输出, 前端按节点等级过滤展示)
+    rank = {"ACTIVE": 0, "PARTIAL": 2, "INACTIVE": 3}
+    paths = sorted(std_paths, key=lambda p: rank[p["status"]] * 10 - p["consistency"]) + paths
+    paths = [p for p in paths if p.get("status") != "INACTIVE" or True]  # 全量输出, 展示端过滤
 
     # ---- Market State ----
     movers = sorted((n for n in nodes_out if n["priority"] in ("P0", "P1") and "history" in n),
@@ -648,7 +747,7 @@ def main():
         data_status=data_status,
         topMover=dict(nodeId=top["id"],
                       text=f"{top['name']} {_fmt_change(top)}/5D · {top['percentile']}分位"),
-        dominantPathId=paths[0]["id"] if paths else "",
+        dominantPathId=next((p["id"] for p in paths if p.get("status") == "ACTIVE"), paths[0]["id"] if paths else ""),
         divergenceCount=len(divs), highRiskCount=high_risk, regime=regime,
         regimeNote=f"自动识别: {len(divs)}条背离, {high_risk}个高风险节点。"
                    + ("背离集中指向供给/久期因素而非政策预期, 建议人工复核主导逻辑。" if len(divs) >= 3 else ""),
