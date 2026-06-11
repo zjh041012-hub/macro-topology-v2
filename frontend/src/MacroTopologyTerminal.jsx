@@ -1039,7 +1039,7 @@ function Topo2D({ nodes, edges, adjacency, pathEdgeIds, paths, hoverId, selected
       const tt = t / 1000;
 
       /* 选中/背离 → 自动居中 (与3D聚焦语义同步) */
-      const centerId = p.selectedId || (p.divergence ? p.divergence.relatedNodeIds[0] : null);
+      const centerId = p.selectedId || (p.divergence ? p.divergence.relatedNodeIds[0] : null) || (p.focusPathId ? ((paths.find((x) => x.id === p.focusPathId) || {}).nodeIds || [])[0] : null);
       if (centerId !== st.lastCenter) {
         st.lastCenter = centerId;
         const cp = centerId ? P(centerId) : null;
@@ -1411,10 +1411,8 @@ export default function MacroTopologyTerminal({ live = null }) {
     let dragging = false, downPos = null, lastPos = null, moved = 0;
     let hoverLocal = null;
     let lastRay = { x: -1e4, y: -1e4 };
-    /* 旋转暂停集中管理: 进入容器/悬浮/选中/背离聚焦/拖拽/缩放/2D视图 任一成立即暂停 */
-    const rot = { inside: false, dragging: false, zoomUntil: 0 };
-    const onEnterGraph = () => { rot.inside = true; };
-    const onLeaveGraph = () => { rot.inside = false; };
+    /* 旋转暂停集中管理: 仅当指针精准悬浮节点/选中/背离聚焦/路径聚焦/拖拽/缩放时暂停 (空白区域不暂停) */
+    const rot = { dragging: false, zoomUntil: 0 };
 
     const onPointerDown = (ev) => {
       downPos = { x: ev.clientX, y: ev.clientY };
@@ -1467,8 +1465,6 @@ export default function MacroTopologyTerminal({ live = null }) {
     window.addEventListener("pointerup", onPointerUp);
     renderer.domElement.addEventListener("wheel", onWheel, { passive: false });
     renderer.domElement.addEventListener("pointerleave", onLeave);
-    mount.addEventListener("pointerenter", onEnterGraph);
-    mount.addEventListener("pointerleave", onLeaveGraph);
 
     const onResize = () => {
       const w = mount.clientWidth, h = mount.clientHeight;
@@ -1576,7 +1572,7 @@ export default function MacroTopologyTerminal({ live = null }) {
 
       /* 相机 / 旋转: 单一门控 shouldPause → canAutoRotate, 离开后延迟1秒恢复 */
       camera.position.z += (sc.targetZ - camera.position.z) * 0.07;
-      const shouldPause = rot.inside || rot.dragging || Date.now() < rot.zoomUntil ||
+      const shouldPause = rot.dragging || Date.now() < rot.zoomUntil ||
         !!ui.hoverId || !!ui.selectedId || !!ui.focusDivId || !!ui.focusPathId;
       if (shouldPause) sc.lastPauseT = t;
       if (sc.focusQuat) {
@@ -1708,8 +1704,6 @@ export default function MacroTopologyTerminal({ live = null }) {
       window.removeEventListener("pointerup", onPointerUp);
       renderer.domElement.removeEventListener("wheel", onWheel);
       renderer.domElement.removeEventListener("pointerleave", onLeave);
-      mount.removeEventListener("pointerenter", onEnterGraph);
-      mount.removeEventListener("pointerleave", onLeaveGraph);
       if (overlayEl) labelPool.forEach((d) => overlayEl.removeChild(d));
       mount.removeChild(renderer.domElement);
       renderer.dispose();
@@ -1742,6 +1736,28 @@ export default function MacroTopologyTerminal({ live = null }) {
   const highRiskCount = nodes.filter((n) => n.status === "EXTREME" || n.status === "INVALIDATED").length;
   const divNodeCount = nodes.filter((n) => n.status === "DIVERGENCE").length;
   const dominantPath = PATHS.find((p) => p.id === STATE.dominantPathId);
+
+  /* 路径告警等级 = 沿线节点的最高异常状态; 自动识别的激活链(无status)默认纳入 */
+  const PATH_LV = { EXTREME: 4, DIVERGENCE: 3, INVALIDATED: 3, ELEVATED: 2 };
+  const alertPaths = useMemo(() => {
+    const levelOf = (p) => {
+      let best = "ACTIVE", bestV = 1;
+      (p.nodeIds || []).forEach((id) => {
+        const st = nodeById[id]?.status;
+        if (st && (PATH_LV[st] || 0) > bestV) { best = st; bestV = PATH_LV[st]; }
+      });
+      return best;
+    };
+    return PATHS.map((p) => ({ ...p, level: levelOf(p) }))
+      .filter((p) => !p.status || p.status === "ACTIVE" || ["ELEVATED", "EXTREME", "DIVERGENCE"].includes(p.level))
+      .sort((a, b) => (PATH_LV[b.level] || 1) - (PATH_LV[a.level] || 1));
+  }, [PATHS, nodeById]);
+
+  const togglePath = useCallback((p) => {
+    if (focusPathId === p.id) { setFocusPathId(null); return; }
+    setSelectedId(null); setFocusDivId(null); setFocusPathId(p.id);
+    if (p.nodeIds?.[0]) focusOnNode(p.nodeIds[0]); // 3D: 相机聚焦链条首节点; 2D: 由centerId同步居中
+  }, [focusPathId, focusOnNode]);
 
   const winSlice = { "1D": 12, "5D": 20, "20D": 40, "60D": 60 }[timeWindow];
   const chartData = selectedNode ? selectedNode.history.slice(60 - winSlice) : null;
@@ -1856,11 +1872,22 @@ export default function MacroTopologyTerminal({ live = null }) {
               onClick={() => selectNode(STATE.topMover.nodeId)}>{STATE.topMover.text}</button>
           </div>
           <div>
-            <div style={{ color: TXT_DIM }}>主导激活路径</div>
-            <button className="text-left hover:underline" style={{ color: "#ffd9a0" }}
-              onClick={() => { setSelectedId(null); setFocusDivId(null); setFocusPathId(PATHS[0]?.id ?? null); focusOnNode("us10y"); }}>
-              {dominantPath?.label}
-            </button>
+            <div style={{ color: TXT_DIM }}>激活 / 异常路径 ({alertPaths.length}) — 点击在当前视图中聚焦</div>
+            <div className="mt-1 space-y-1 max-h-44 overflow-auto pr-1">
+              {alertPaths.map((p) => {
+                const lvCol = p.level === "EXTREME" ? STATUS.EXTREME.color : p.level === "DIVERGENCE" ? STATUS.DIVERGENCE.color : p.level === "ELEVATED" ? STATUS.ELEVATED.color : "#9fb6d8";
+                const on = focusPathId === p.id;
+                return (
+                  <button key={p.id} onClick={() => togglePath(p)}
+                    className="block w-full text-left text-xs leading-snug rounded px-1.5 py-1 border hover:opacity-90"
+                    style={{ color: on ? "#ffe9c2" : "#ffd9a0", borderColor: on ? lvCol : "transparent", background: on ? "rgba(232,197,88,0.07)" : "transparent" }}>
+                    <span className="px-1 py-px rounded mr-1.5 align-middle" style={{ fontFamily: MONO, fontSize: 9, color: "#0a0e16", background: lvCol }}>{p.level}</span>
+                    {p.label || p.title || p.name}
+                  </button>
+                );
+              })}
+              {alertPaths.length === 0 && <div className="text-xs" style={{ color: TXT_DIM }}>当前无激活/异常路径</div>}
+            </div>
           </div>
           <div className="flex gap-4 pt-1" style={{ fontFamily: MONO }}>
             <div><span style={{ color: STATUS.DIVERGENCE.color }}>{DIVERGENCES.length}</span><span style={{ color: TXT_DIM }}> 背离</span></div>
