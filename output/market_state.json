@@ -12,6 +12,7 @@
    "shibor3m",
    "tsf",
    "usclaims",
+   "usdcnh",
    "usepu",
    "usoilinv"
   ],
@@ -64,27 +65,27 @@
    "cta",
    "gammaproxy"
   ],
-  "liveCount": 125,
+  "liveCount": 124,
   "totalCount": 178,
   "sourceErrors": {
+   "yahoo": "usdcnh → ValueError: Neither `start` nor `end` can be NaT",
    "fred": "usclaims → ValueError: empty series after transform (insufficient history?)",
    "akshare:macro_china_shrzgm": "tsf → ValueError: macro_china_shrzgm returned no usable rows",
    "akshare:fund_etf_hist_em": "chipetf → ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
    "csv_url": "geopolitics → ValueError: empty series after transform (insufficient history?)",
    "akshare:bond_china_yield": "cn1y → ValueError: bond_china_yield returned no usable rows",
    "akshare:macro_china_shibor_all": "shibor3m → StopIteration: ",
-   "yahoo": "hstech → ValueError: Neither `start` nor `end` can be NaT",
    "akshare:article_epu_index": "usepu → ValueError: cannot reindex on an axis with duplicate labels"
   }
  },
  "topMover": {
   "nodeId": "gold",
-  "text": "黄金 -8.0%/5D · 80分位"
+  "text": "黄金 -8.4%/5D · 80分位"
  },
- "dominantPathId": "p_auto_1",
+ "dominantPathId": "p_std_c",
  "divergenceCount": 0,
  "highRiskCount": 12,
  "regime": "EXTREME",
  "regimeNote": "自动识别: 0条背离, 12个高风险节点。",
- "updatedAt": "2026-06-11T16:35:39+00:00"
+ "updatedAt": "2026-06-11T17:38:38+00:00"
 }

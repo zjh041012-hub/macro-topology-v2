@@ -1,5 +1,173 @@
 [
  {
+  "id": "p_std_c",
+  "name": "路径C · 中国信用扩张",
+  "title": "路径C · 中国信用扩张",
+  "nodeIds": [
+   "tsf",
+   "creditimpulse",
+   "cnpminew",
+   "inddemand",
+   "copper"
+  ],
+  "edgeIds": [
+   "e_tsf_impulse",
+   "e_impulse_pminew",
+   "e_neworder_dem",
+   "e_dem_copper"
+  ],
+  "status": "INACTIVE",
+  "consistency": 0.25,
+  "note": "实时评估: 1/4 条边动量一致 (tsf→creditimpulse×, creditimpulse→cnpminew×, cnpminew→inddemand×, inddemand→copper✓)。"
+ },
+ {
+  "id": "p_std_f",
+  "name": "路径F · 全球再通胀",
+  "title": "路径F · 全球再通胀",
+  "nodeIds": [
+   "ismneworder",
+   "oil",
+   "us10ybe",
+   "us10y",
+   "bankidx"
+  ],
+  "edgeIds": [
+   "e_ismno_oil",
+   "e_oil_be",
+   "e_be_10y",
+   "e_10y_bank"
+  ],
+  "status": "INACTIVE",
+  "consistency": 0.25,
+  "note": "实时评估: 1/4 条边动量一致 (ismneworder→oil×, oil→us10ybe✓, us10ybe→us10y×, us10y→bankidx×)。"
+ },
+ {
+  "id": "p_std_a",
+  "name": "路径A · 美国政策转鹰",
+  "title": "路径A · 美国政策转鹰",
+  "nodeIds": [
+   "uscpi",
+   "cutsexp",
+   "us2y",
+   "us10y",
+   "us10yreal",
+   "dxy"
+  ],
+  "edgeIds": [
+   "e_cpi_cuts",
+   "e_cuts_2y",
+   "e_2y_10y",
+   "e_10y_real",
+   "e_real_dxy"
+  ],
+  "status": "INACTIVE",
+  "consistency": 0.2,
+  "note": "实时评估: 1/5 条边动量一致 (uscpi→cutsexp×, cutsexp→us2y×, us2y→us10y×, us10y→us10yreal×, us10yreal→dxy✓)。"
+ },
+ {
+  "id": "p_std_b",
+  "name": "路径B · 财政供给与期限溢价",
+  "title": "路径B · 财政供给与期限溢价",
+  "nodeIds": [
+   "usdeficit",
+   "netissue",
+   "auctiontail",
+   "termprem",
+   "us10y",
+   "us10yreal",
+   "ndx"
+  ],
+  "edgeIds": [
+   "e_deficit_netissue",
+   "e_netissue_tail",
+   "e_tail_tp",
+   "e_tp_10y",
+   "e_10y_real",
+   "e_real_ndx"
+  ],
+  "status": "INACTIVE",
+  "consistency": 0.0,
+  "note": "实时评估: 0/6 条边动量一致 (usdeficit→netissue×, netissue→auctiontail×, auctiontail→termprem×, termprem→us10y×, us10y→us10yreal×, us10yreal→ndx×)。"
+ },
+ {
+  "id": "p_std_d",
+  "name": "路径D · 全球流动性改善",
+  "title": "路径D · 全球流动性改善",
+  "nodeIds": [
+   "fedbs",
+   "reserves",
+   "usfci",
+   "hyspread",
+   "spx"
+  ],
+  "edgeIds": [
+   "e_fedbs_reserves",
+   "e_reserves_fci",
+   "e_fci_hy2",
+   "e_spx_hy"
+  ],
+  "status": "INACTIVE",
+  "consistency": 0.0,
+  "note": "实时评估: 0/4 条边动量一致 (fedbs→reserves×, reserves→usfci×, usfci→hyspread×, spx→hyspread×)。"
+ },
+ {
+  "id": "p_std_e",
+  "name": "路径E · 流动性冲击",
+  "title": "路径E · 流动性冲击",
+  "nodeIds": [
+   "liqcrisis",
+   "dxy",
+   "hyspread",
+   "spx"
+  ],
+  "edgeIds": [
+   "e_liqc_dxy",
+   "e_dxy_hyspread",
+   "e_spx_hy"
+  ],
+  "status": "INACTIVE",
+  "consistency": 0.0,
+  "note": "实时评估: 0/3 条边动量一致 (liqcrisis→dxy×, dxy→hyspread×, spx→hyspread×)。"
+ },
+ {
+  "id": "p_std_g",
+  "name": "路径G · 中国地产下行",
+  "title": "路径G · 中国地产下行",
+  "nodeIds": [
+   "propsales",
+   "reinvest",
+   "ironore",
+   "cnppi"
+  ],
+  "edgeIds": [
+   "e_propsales_reinvest",
+   "e_reinvest_ironore",
+   "e_ironore_cnppi"
+  ],
+  "status": "INACTIVE",
+  "consistency": 0.0,
+  "note": "实时评估: 0/3 条边动量一致 (propsales→reinvest×, reinvest→ironore×, ironore→cnppi×)。"
+ },
+ {
+  "id": "p_std_h",
+  "name": "路径H · 风险衰退",
+  "title": "路径H · 风险衰退",
+  "nodeIds": [
+   "nfp",
+   "gdpnow",
+   "hyspread",
+   "spx"
+  ],
+  "edgeIds": [
+   "e_nfp_gdpnow",
+   "e_gdpnow_hy",
+   "e_spx_hy"
+  ],
+  "status": "INACTIVE",
+  "consistency": 0.0,
+  "note": "实时评估: 0/3 条边动量一致 (nfp→gdpnow×, gdpnow→hyspread×, spx→hyspread×)。"
+ },
+ {
   "id": "p_auto_1",
   "title": "美国国债季度净发行量 → 美债财政供给压力 → 财政信用担忧指数 → 黄金 → 黄金矿业股",
   "nodeIds": [

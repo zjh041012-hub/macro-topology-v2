@@ -4164,11 +4164,11 @@
   ]
  },
  {
-  "value": 100.26,
-  "change1d": 0.31,
-  "change5d": 0.86,
-  "change20d": 1.4,
-  "change60d": 1.04,
+  "value": 100.31,
+  "change1d": 0.36,
+  "change5d": 0.91,
+  "change20d": 1.45,
+  "change60d": 1.09,
   "percentile": 39,
   "id": "dxy",
   "name": "美元指数",
@@ -4419,7 +4419,7 @@
    },
    {
     "date": "06-11",
-    "value": 100.264
+    "value": 100.313
    }
   ]
  },
@@ -4684,11 +4684,11 @@
  },
  {
   "value": 1.15,
-  "change1d": -0.2,
-  "change5d": -0.83,
-  "change20d": -1.73,
-  "change60d": 0.42,
-  "percentile": 68,
+  "change1d": 0.02,
+  "change5d": -0.61,
+  "change20d": -1.52,
+  "change60d": 0.64,
+  "percentile": 69,
   "id": "eurusd",
   "name": "欧元兑美元",
   "category": "fx",
@@ -4937,17 +4937,17 @@
    },
    {
     "date": "06-11",
-    "value": 1.151
+    "value": 1.154
    }
   ]
  },
  {
-  "value": 160.53,
-  "change1d": 0.09,
-  "change5d": 0.37,
-  "change20d": 1.7,
-  "change60d": 0.46,
-  "percentile": 99,
+  "value": 160.29,
+  "change1d": -0.06,
+  "change5d": 0.22,
+  "change20d": 1.55,
+  "change60d": 0.31,
+  "percentile": 98,
   "id": "usdjpy",
   "name": "美元兑日元",
   "category": "fx",
@@ -5196,7 +5196,7 @@
    },
    {
     "date": "06-11",
-    "value": 160.532
+    "value": 160.292
    }
   ]
  },
@@ -5214,22 +5214,16 @@
   "unit": "",
   "description": "离岸价差稳定,无明显贬值预期。",
   "status": "EXTREME",
-  "stale": false,
-  "quality": "live",
-  "history": [
-   {
-    "date": "06-11",
-    "value": 6.78
-   }
-  ]
+  "stale": true,
+  "quality": "stale"
  },
  {
-  "value": 1.33,
-  "change1d": -0.31,
-  "change5d": -0.71,
-  "change20d": -1.44,
-  "change60d": 0.5,
-  "percentile": 69,
+  "value": 1.34,
+  "change1d": -0.02,
+  "change5d": -0.43,
+  "change20d": -1.16,
+  "change60d": 0.78,
+  "percentile": 72,
   "id": "gbpusd",
   "name": "英镑兑美元",
   "category": "fx",
@@ -5478,17 +5472,17 @@
    },
    {
     "date": "06-11",
-    "value": 1.333
+    "value": 1.337
    }
   ]
  },
  {
   "value": 0.7,
-  "change1d": -0.4,
-  "change5d": -1.96,
-  "change20d": -3.58,
-  "change60d": -0.49,
-  "percentile": 89,
+  "change1d": -0.14,
+  "change5d": -1.69,
+  "change20d": -3.33,
+  "change60d": -0.23,
+  "percentile": 90,
   "id": "audusd",
   "name": "澳元兑美元",
   "category": "fx",
@@ -5737,7 +5731,7 @@
    },
    {
     "date": "06-11",
-    "value": 0.699
+    "value": 0.701
    }
   ]
  },
@@ -7296,11 +7290,11 @@
   ]
  },
  {
-  "value": 687.3,
-  "change1d": 0.28,
-  "change5d": -3.13,
-  "change20d": -7.52,
-  "change60d": -5.54,
+  "value": 675.58,
+  "change1d": -1.43,
+  "change5d": -4.79,
+  "change20d": -9.1,
+  "change60d": -7.15,
   "percentile": 91,
   "id": "crb",
   "name": "CRB商品指数",
@@ -7550,7 +7544,7 @@
    },
    {
     "date": "06-11",
-    "value": 687.304
+    "value": 675.575
    }
   ]
  },
@@ -9661,12 +9655,12 @@
   "quality": "stale"
  },
  {
-  "value": -0.73,
+  "value": -0.8,
   "change1d": 0.0,
-  "change5d": -0.22,
-  "change20d": -0.73,
-  "change60d": -0.88,
-  "percentile": 35,
+  "change5d": -0.24,
+  "change20d": -0.8,
+  "change60d": -0.96,
+  "percentile": 34,
   "id": "inddemand",
   "name": "工业品需求(合成指标)",
   "category": "growth",
@@ -11007,12 +11001,12 @@
   "quality": "manual"
  },
  {
-  "value": -0.77,
+  "value": -0.7,
   "change1d": 0.0,
-  "change5d": -0.23,
-  "change20d": -0.77,
-  "change60d": -0.92,
-  "percentile": 34,
+  "change5d": -0.21,
+  "change20d": -0.7,
+  "change60d": -0.84,
+  "percentile": 36,
   "id": "riskappetite",
   "name": "全球风险偏好指数",
   "category": "liquidity",
@@ -12078,11 +12072,11 @@
   ]
  },
  {
-  "value": 4116.0,
-  "change1d": 0.2,
-  "change5d": -8.03,
-  "change20d": -12.0,
-  "change60d": -10.52,
+  "value": 4102.0,
+  "change1d": -0.16,
+  "change5d": -8.36,
+  "change20d": -12.32,
+  "change60d": -10.84,
   "percentile": 80,
   "id": "gold",
   "name": "黄金",
@@ -12333,17 +12327,17 @@
    },
    {
     "date": "06-11",
-    "value": 4116.5
+    "value": 4101.8
    }
   ]
  },
  {
-  "value": 91.16,
-  "change1d": 1.26,
-  "change5d": -2.02,
-  "change20d": -9.89,
-  "change60d": -5.18,
-  "percentile": 92,
+  "value": 90.12,
+  "change1d": 0.1,
+  "change5d": -3.14,
+  "change20d": -10.92,
+  "change60d": -6.26,
+  "percentile": 91,
   "id": "oil",
   "name": "原油(WTI)",
   "category": "asset",
@@ -12592,16 +12586,16 @@
    },
    {
     "date": "06-11",
-    "value": 91.16
+    "value": 90.12
    }
   ]
  },
  {
-  "value": 6.3,
-  "change1d": 0.76,
-  "change5d": -3.29,
-  "change20d": -4.13,
-  "change60d": 15.89,
+  "value": 6.27,
+  "change1d": 0.3,
+  "change5d": -3.74,
+  "change20d": -4.57,
+  "change60d": 15.36,
   "percentile": 98,
   "id": "copper",
   "name": "铜(LME)",
@@ -12851,7 +12845,7 @@
    },
    {
     "date": "06-11",
-    "value": 6.297
+    "value": 6.267
    }
   ]
  },
@@ -13115,12 +13109,12 @@
   ]
  },
  {
-  "value": 28815.0,
-  "change1d": 1.08,
-  "change5d": -5.24,
-  "change20d": -2.59,
-  "change60d": 18.31,
-  "percentile": 97,
+  "value": 29143.0,
+  "change1d": 2.23,
+  "change5d": -4.16,
+  "change20d": -1.48,
+  "change60d": 19.66,
+  "percentile": 98,
   "id": "ndx",
   "name": "纳斯达克100",
   "category": "asset",
@@ -13370,16 +13364,16 @@
    },
    {
     "date": "06-11",
-    "value": 28814.988
+    "value": 29143.266
    }
   ]
  },
  {
-  "value": 7291.0,
-  "change1d": 0.33,
-  "change5d": -3.87,
-  "change20d": -2.8,
-  "change60d": 10.36,
+  "value": 7349.0,
+  "change1d": 1.13,
+  "change5d": -3.1,
+  "change20d": -2.03,
+  "change60d": 11.24,
   "percentile": 97,
   "id": "spx",
   "name": "标普500",
@@ -13629,7 +13623,7 @@
    },
    {
     "date": "06-11",
-    "value": 7291.04
+    "value": 7349.08
    }
   ]
  },
@@ -15464,12 +15458,12 @@
   ]
  },
  {
-  "value": 65.69,
-  "change1d": 1.59,
-  "change5d": -4.93,
-  "change20d": -2.51,
-  "change60d": 14.01,
-  "percentile": 97,
+  "value": 66.7,
+  "change1d": 3.15,
+  "change5d": -3.47,
+  "change20d": -1.01,
+  "change60d": 15.76,
+  "percentile": 98,
   "id": "em",
   "name": "新兴市场股指(MSCI EM)",
   "category": "asset",
@@ -15718,17 +15712,17 @@
    },
    {
     "date": "06-11",
-    "value": 65.69
+    "value": 66.7
    }
   ]
  },
  {
-  "value": 74.96,
-  "change1d": 1.56,
-  "change5d": -13.24,
-  "change20d": -20.21,
-  "change60d": -9.58,
-  "percentile": 78,
+  "value": 77.29,
+  "change1d": 4.71,
+  "change5d": -10.54,
+  "change20d": -17.73,
+  "change60d": -6.77,
+  "percentile": 80,
   "id": "goldminers",
   "name": "黄金矿业股",
   "category": "asset",
@@ -15977,7 +15971,7 @@
    },
    {
     "date": "06-11",
-    "value": 74.96
+    "value": 77.29
    }
   ]
  },
@@ -16242,12 +16236,12 @@
   ]
  },
  {
-  "value": -1.4,
+  "value": -1.43,
   "change1d": 0.0,
-  "change5d": -0.42,
-  "change20d": -1.4,
-  "change60d": -1.68,
-  "percentile": 22,
+  "change5d": -0.43,
+  "change20d": -1.43,
+  "change60d": -1.72,
+  "percentile": 21,
   "id": "fiscalworry",
   "name": "财政信用担忧指数",
   "category": "risk",
@@ -17866,12 +17860,12 @@
   "quality": "manual"
  },
  {
-  "value": 2.56,
-  "change1d": 0.0,
-  "change5d": -1.14,
-  "change20d": 0.39,
-  "change60d": 0.04,
-  "percentile": 44,
+  "value": 2.54,
+  "change1d": -0.82,
+  "change5d": -1.95,
+  "change20d": -0.43,
+  "change60d": -0.78,
+  "percentile": 24,
   "id": "bidcover",
   "name": "美国国债投标倍数",
   "category": "risk",
@@ -18120,7 +18114,7 @@
    },
    {
     "date": "06-11",
-    "value": 2.559
+    "value": 2.538
    }
   ]
  },
@@ -25060,12 +25054,12 @@
   ]
  },
  {
-  "value": 108.15,
-  "change1d": -0.01,
-  "change5d": 22.4,
-  "change20d": 13.89,
-  "change60d": -9.94,
-  "percentile": 83,
+  "value": 108.87,
+  "change1d": 0.71,
+  "change5d": 23.12,
+  "change20d": 14.61,
+  "change60d": -9.22,
+  "percentile": 84,
   "id": "vvix",
   "name": "VVIX",
   "category": "credit",
@@ -25314,7 +25308,7 @@
    },
    {
     "date": "06-11",
-    "value": 108.15
+    "value": 108.87
    }
   ]
  },
@@ -25370,12 +25364,12 @@
   "quality": "derived"
  },
  {
-  "value": 93.81,
-  "change1d": 0.76,
-  "change5d": -1.28,
-  "change20d": -11.27,
-  "change60d": -13.66,
-  "percentile": 91,
+  "value": 92.87,
+  "change1d": -0.25,
+  "change5d": -2.27,
+  "change20d": -12.15,
+  "change60d": -14.52,
+  "percentile": 90,
   "id": "brent",
   "name": "Brent原油",
   "category": "asset",
@@ -25624,16 +25618,16 @@
    },
    {
     "date": "06-11",
-    "value": 93.81
+    "value": 92.87
    }
   ]
  },
  {
   "value": 3.09,
-  "change1d": -2.89,
-  "change5d": -7.28,
-  "change20d": 6.88,
-  "change60d": -2.31,
+  "change1d": -3.05,
+  "change5d": -7.43,
+  "change20d": 6.7,
+  "change60d": -2.46,
   "percentile": 59,
   "id": "natgas",
   "name": "美国天然气",
@@ -25883,16 +25877,16 @@
    },
    {
     "date": "06-11",
-    "value": 3.093
+    "value": 3.088
    }
   ]
  },
  {
-  "value": 64.31,
-  "change1d": -0.46,
-  "change5d": -12.84,
-  "change20d": -24.27,
-  "change60d": -9.3,
+  "value": 64.12,
+  "change1d": -0.74,
+  "change5d": -13.09,
+  "change20d": -24.49,
+  "change60d": -9.57,
   "percentile": 83,
   "id": "silver",
   "name": "白银",
@@ -26142,7 +26136,7 @@
    },
    {
     "date": "06-11",
-    "value": 64.305
+    "value": 64.12
    }
   ]
  },
@@ -27336,12 +27330,12 @@
   "quality": "manual"
  },
  {
-  "value": -1.98,
+  "value": -1.88,
   "change1d": 0.0,
-  "change5d": -0.59,
-  "change20d": -1.98,
-  "change60d": -2.38,
-  "percentile": 10,
+  "change5d": -0.56,
+  "change20d": -1.88,
+  "change60d": -2.26,
+  "percentile": 12,
   "id": "cta",
   "name": "CTA趋势仓位代理",
   "category": "liquidity",
@@ -27646,12 +27640,12 @@
   "quality": "manual"
  },
  {
-  "value": 2876.0,
-  "change1d": 1.43,
-  "change5d": -2.02,
-  "change20d": 0.45,
-  "change60d": 15.29,
-  "percentile": 99,
+  "value": 2860.0,
+  "change1d": 0.86,
+  "change5d": -2.58,
+  "change20d": -0.12,
+  "change60d": 14.63,
+  "percentile": 98,
   "id": "rut",
   "name": "罗素2000",
   "category": "asset",
@@ -27900,16 +27894,16 @@
    },
    {
     "date": "06-11",
-    "value": 2876.03
+    "value": 2859.737
    }
   ]
  },
  {
-  "value": 12689.0,
-  "change1d": 3.95,
-  "change5d": -6.82,
-  "change20d": 5.09,
-  "change60d": 61.36,
+  "value": 12813.0,
+  "change1d": 4.97,
+  "change5d": -5.91,
+  "change20d": 6.12,
+  "change60d": 62.95,
   "percentile": 99,
   "id": "sox",
   "name": "美国半导体指数(SOX)",
@@ -28159,17 +28153,17 @@
    },
    {
     "date": "06-11",
-    "value": 12688.559
+    "value": 12813.098
    }
   ]
  },
  {
-  "value": 85.18,
-  "change1d": 0.35,
-  "change5d": -0.37,
-  "change20d": 0.7,
-  "change60d": -1.5,
-  "percentile": 50,
+  "value": 85.6,
+  "change1d": 0.85,
+  "change5d": 0.12,
+  "change20d": 1.2,
+  "change60d": -1.02,
+  "percentile": 56,
   "id": "tlt",
   "name": "美国长期国债指数(TLT)",
   "category": "asset",
@@ -28418,16 +28412,16 @@
    },
    {
     "date": "06-11",
-    "value": 85.18
+    "value": 85.6
    }
   ]
  },
  {
-  "value": 44.26,
-  "change1d": 0.59,
-  "change5d": 0.73,
-  "change20d": -1.43,
-  "change60d": -4.23,
+  "value": 44.28,
+  "change1d": 0.63,
+  "change5d": 0.76,
+  "change20d": -1.39,
+  "change60d": -4.2,
   "percentile": 87,
   "id": "utilities",
   "name": "美国公用事业指数",
@@ -28677,16 +28671,16 @@
    },
    {
     "date": "06-11",
-    "value": 44.26
+    "value": 44.275
    }
   ]
  },
  {
-  "value": 97.36,
-  "change1d": -0.33,
-  "change5d": 1.31,
-  "change20d": 2.14,
-  "change60d": 7.44,
+  "value": 97.73,
+  "change1d": 0.05,
+  "change5d": 1.7,
+  "change20d": 2.53,
+  "change60d": 7.84,
   "percentile": 100,
   "id": "reits",
   "name": "美国房地产REITs",
@@ -28936,7 +28930,7 @@
    },
    {
     "date": "06-11",
-    "value": 97.36
+    "value": 97.73
    }
   ]
  },
@@ -29578,12 +29572,12 @@
   "quality": "derived"
  },
  {
-  "value": 0.54,
+  "value": 0.55,
   "change1d": 0.0,
-  "change5d": 0.16,
-  "change20d": 0.54,
-  "change60d": 0.65,
-  "percentile": 60,
+  "change5d": 0.17,
+  "change20d": 0.55,
+  "change60d": 0.66,
+  "percentile": 61,
   "id": "liqcrisis",
   "name": "全球流动性危机状态",
   "category": "risk",
@@ -29596,12 +29590,12 @@
   "invalidation": "若FRA-OIS、交叉货币基差与HY利差同步异动,该状态节点升级并覆盖其他路径。"
  },
  {
-  "value": -1.21,
+  "value": -1.28,
   "change1d": 0.0,
-  "change5d": -0.36,
-  "change20d": -1.21,
-  "change60d": -1.45,
-  "percentile": 25,
+  "change5d": -0.38,
+  "change20d": -1.28,
+  "change60d": -1.54,
+  "percentile": 24,
   "id": "reflation",
   "name": "再通胀状态",
   "category": "risk",
@@ -29647,12 +29641,12 @@
   "quality": "derived"
  },
  {
-  "value": 1.09,
+  "value": 0.98,
   "change1d": 0.0,
-  "change5d": 0.33,
-  "change20d": 1.09,
-  "change60d": 1.31,
-  "percentile": 71,
+  "change5d": 0.29,
+  "change20d": 0.98,
+  "change60d": 1.18,
+  "percentile": 69,
   "id": "riskoff",
   "name": "Risk-off状态",
   "category": "risk",
