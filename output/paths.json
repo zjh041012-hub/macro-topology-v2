@@ -1,13 +1,17 @@
 [
  {
   "id": "p_auto_1",
-  "title": "财政信用担忧指数 → 黄金 → 黄金矿业股",
+  "title": "美国国债季度净发行量 → 美债财政供给压力 → 财政信用担忧指数 → 黄金 → 黄金矿业股",
   "nodeIds": [
+   "netissue",
+   "fiscalsupply",
    "fiscalworry",
    "gold",
    "goldminers"
   ],
   "edgeIds": [
+   "e_netissue_supply",
+   "e_supply_worry",
    "e_worry_gold",
    "e_gold_miners"
   ],
@@ -15,15 +19,25 @@
  },
  {
   "id": "p_auto_2",
-  "title": "铜(LME) → 南华商品指数 → CRB商品指数",
+  "title": "原油(WTI) → Brent原油",
   "nodeIds": [
-   "copper",
-   "comidx",
-   "crb"
+   "oil",
+   "brent"
   ],
   "edgeIds": [
-   "e_copper_com",
-   "e_com_crb"
+   "e_oil_brent"
+  ],
+  "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
+ },
+ {
+  "id": "p_auto_3",
+  "title": "黄金 → 白银",
+  "nodeIds": [
+   "gold",
+   "silver"
+  ],
+  "edgeIds": [
+   "e_gold_silver"
   ],
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  }

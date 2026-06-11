@@ -69,7 +69,7 @@
   "relation": "positive",
   "mechanism": "供给压力强化财政可持续性担忧",
   "strength": 0.6,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_worry_gold",
@@ -753,6 +753,1320 @@
   "relation": "positive",
   "mechanism": "货币市场利率传导",
   "strength": 0.3,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_3m_2y",
+  "source": "us3m",
+  "target": "us2y",
+  "relation": "positive",
+  "mechanism": "短端政策锚向2Y传导",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_2y_5y",
+  "source": "us2y",
+  "target": "us5y",
+  "relation": "positive",
+  "mechanism": "曲线中段联动",
+  "strength": 0.6,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_5y_10y",
+  "source": "us5y",
+  "target": "us10y",
+  "relation": "positive",
+  "mechanism": "中长端联动",
+  "strength": 0.6,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_10y_20y",
+  "source": "us10y",
+  "target": "us20y",
+  "relation": "positive",
+  "mechanism": "长端联动, 20Y流动性最差弹性最大",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_20y_30y",
+  "source": "us20y",
+  "target": "us30y",
+  "relation": "positive",
+  "mechanism": "超长端联动",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_5y_5yreal",
+  "source": "us5y",
+  "target": "us5yreal",
+  "relation": "positive",
+  "mechanism": "名义分解到中段实际利率",
+  "strength": 0.4,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_5yreal_10yreal",
+  "source": "us5yreal",
+  "target": "us10yreal",
+  "relation": "positive",
+  "mechanism": "实际利率曲线联动",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_cpi_cuts",
+  "source": "uscpi",
+  "target": "cutsexp",
+  "relation": "negative",
+  "mechanism": "通胀超预期压缩降息空间",
+  "strength": 0.7,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_core_cuts",
+  "source": "uscorecpi",
+  "target": "cutsexp",
+  "relation": "negative",
+  "mechanism": "核心通胀决定政策路径",
+  "strength": 0.6,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_nfp_cuts",
+  "source": "nfp",
+  "target": "cutsexp",
+  "relation": "negative",
+  "mechanism": "就业强劲推迟降息",
+  "strength": 0.6,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_cuts_2y",
+  "source": "cutsexp",
+  "target": "us2y",
+  "relation": "negative",
+  "mechanism": "降息预期回吐推升短端",
+  "strength": 0.8,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_cuts_fedpath",
+  "source": "cutsexp",
+  "target": "fedpath",
+  "relation": "negative",
+  "mechanism": "降息次数与政策路径互为镜像",
+  "strength": 0.7,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_ahe_cpi",
+  "source": "ahe",
+  "target": "uscpi",
+  "relation": "positive",
+  "mechanism": "薪资-物价螺旋通道",
+  "strength": 0.4,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_real_dxy",
+  "source": "us10yreal",
+  "target": "dxy",
+  "relation": "positive",
+  "mechanism": "实际利差吸引资本流入(当前被财政担忧压制)",
+  "strength": 0.6,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_fisc_deficit",
+  "source": "fiscalimpulse",
+  "target": "usdeficit",
+  "relation": "positive",
+  "mechanism": "财政扩张扩大赤字",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_deficit_netissue",
+  "source": "usdeficit",
+  "target": "netissue",
+  "relation": "positive",
+  "mechanism": "赤字必须由净发行融资",
+  "strength": 0.9,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_netissue_supply",
+  "source": "netissue",
+  "target": "fiscalsupply",
+  "relation": "positive",
+  "mechanism": "净发行构成供给压力",
+  "strength": 0.9,
+  "status": "ACTIVE"
+ },
+ {
+  "id": "e_netissue_tail",
+  "source": "netissue",
+  "target": "auctiontail",
+  "relation": "positive",
+  "mechanism": "供给放量加大拍卖消化难度",
+  "strength": 0.7,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_netissue_bidcover",
+  "source": "netissue",
+  "target": "bidcover",
+  "relation": "negative",
+  "mechanism": "供给放量稀释投标倍数",
+  "strength": 0.7,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_netissue_dealer",
+  "source": "netissue",
+  "target": "dealerinv",
+  "relation": "positive",
+  "mechanism": "发行剩余由一级交易商吸收",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_dealer_tail",
+  "source": "dealerinv",
+  "target": "auctiontail",
+  "relation": "positive",
+  "mechanism": "库存饱和削弱做市承接",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_tail_tp",
+  "source": "auctiontail",
+  "target": "termprem",
+  "relation": "positive",
+  "mechanism": "需求疲弱直接定价为期限溢价",
+  "strength": 0.8,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_bidcover_tp",
+  "source": "bidcover",
+  "target": "termprem",
+  "relation": "negative",
+  "mechanism": "投标倍数下降推升期限溢价",
+  "strength": 0.7,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_deficit_worry",
+  "source": "usdeficit",
+  "target": "fiscalworry",
+  "relation": "positive",
+  "mechanism": "赤字失控引发财政信用担忧",
+  "strength": 0.7,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_netissue_tga",
+  "source": "netissue",
+  "target": "tga",
+  "relation": "positive",
+  "mechanism": "发行回笼资金进入TGA",
+  "strength": 0.4,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_tga_reserves",
+  "source": "tga",
+  "target": "reserves",
+  "relation": "negative",
+  "mechanism": "TGA上升抽走银行准备金",
+  "strength": 0.7,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_rrp_reserves",
+  "source": "rrp",
+  "target": "reserves",
+  "relation": "negative",
+  "mechanism": "RRP与准备金的跷跷板",
+  "strength": 0.6,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_fedbs_reserves",
+  "source": "fedbs",
+  "target": "reserves",
+  "relation": "positive",
+  "mechanism": "央行资产端决定准备金总量",
+  "strength": 0.6,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_reserves_fci",
+  "source": "reserves",
+  "target": "usfci",
+  "relation": "negative",
+  "mechanism": "准备金充裕压低融资条件",
+  "strength": 0.6,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_mmf_rrp",
+  "source": "mmf",
+  "target": "rrp",
+  "relation": "positive",
+  "mechanism": "货基配置短端工具",
+  "strength": 0.4,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_sloos_loans",
+  "source": "sloos",
+  "target": "bankloans",
+  "relation": "negative",
+  "mechanism": "信贷标准决定信用投放",
+  "strength": 0.6,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_loans_gdpnow",
+  "source": "bankloans",
+  "target": "gdpnow",
+  "relation": "positive",
+  "mechanism": "信用扩张支撑增长",
+  "strength": 0.4,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_ismno_uspmi",
+  "source": "ismneworder",
+  "target": "uspmi",
+  "relation": "positive",
+  "mechanism": "新订单领先整体PMI",
+  "strength": 0.7,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_ismno_oil",
+  "source": "ismneworder",
+  "target": "oil",
+  "relation": "positive",
+  "mechanism": "制造业需求驱动能源消费",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_ismserv_gdp",
+  "source": "ismserv",
+  "target": "gdpnow",
+  "relation": "positive",
+  "mechanism": "服务业主导GDP",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_retail_gdp",
+  "source": "usretail",
+  "target": "gdpnow",
+  "relation": "positive",
+  "mechanism": "消费贡献增长跟踪",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_conf_retail",
+  "source": "usconf",
+  "target": "usretail",
+  "relation": "positive",
+  "mechanism": "信心领先消费",
+  "strength": 0.4,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_10y_starts",
+  "source": "us10y",
+  "target": "housingstarts",
+  "relation": "negative",
+  "mechanism": "按揭利率压制地产开工",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_starts_gdp",
+  "source": "housingstarts",
+  "target": "gdpnow",
+  "relation": "positive",
+  "mechanism": "地产链拖累增长",
+  "strength": 0.4,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_jolts_ahe",
+  "source": "jolts",
+  "target": "ahe",
+  "relation": "positive",
+  "mechanism": "职位空缺决定薪资议价",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_nfp_gdpnow",
+  "source": "nfp",
+  "target": "gdpnow",
+  "relation": "positive",
+  "mechanism": "就业-收入-消费链条",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_gdpnow_hy",
+  "source": "gdpnow",
+  "target": "hyspread",
+  "relation": "negative",
+  "mechanism": "增长预期决定违约定价",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_tsf_impulse",
+  "source": "tsf",
+  "target": "creditimpulse",
+  "relation": "positive",
+  "mechanism": "社融增量构成信用脉冲",
+  "strength": 0.9,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_corploan_impulse",
+  "source": "corploan",
+  "target": "creditimpulse",
+  "relation": "positive",
+  "mechanism": "企业中长贷是脉冲质量核心",
+  "strength": 0.8,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_hhlt_impulse",
+  "source": "hhloanlt",
+  "target": "creditimpulse",
+  "relation": "positive",
+  "mechanism": "居民信贷构成脉冲分项",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_impulse_pminew",
+  "source": "creditimpulse",
+  "target": "cnpminew",
+  "relation": "positive",
+  "mechanism": "信用领先需求约2-3个季度",
+  "strength": 0.7,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_impulse_cnppi",
+  "source": "creditimpulse",
+  "target": "cnppi",
+  "relation": "positive",
+  "mechanism": "信用扩张传导至工业品价格",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_impulse_csi",
+  "source": "creditimpulse",
+  "target": "csi300",
+  "relation": "positive",
+  "mechanism": "信用脉冲领先A股盈利周期",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_lgsb_infra",
+  "source": "lgsb",
+  "target": "infrainvest",
+  "relation": "positive",
+  "mechanism": "专项债资金落地基建",
+  "strength": 0.6,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_cngovbond_tsf",
+  "source": "cngovbond",
+  "target": "tsf",
+  "relation": "positive",
+  "mechanism": "政府债是社融主要支撑",
+  "strength": 0.6,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_pbocbs_tsf",
+  "source": "pbocbs",
+  "target": "tsf",
+  "relation": "positive",
+  "mechanism": "央行扩表配合财政",
+  "strength": 0.4,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_cxpmi_cnpmi",
+  "source": "cxpmi",
+  "target": "cnpmi",
+  "relation": "positive",
+  "mechanism": "财新与官方口径互证",
+  "strength": 0.4,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_pminewexp_export",
+  "source": "pminewexport",
+  "target": "exports",
+  "relation": "positive",
+  "mechanism": "新出口订单领先出口",
+  "strength": 0.6,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_propregime_propsales",
+  "source": "cnpropregime",
+  "target": "propsales",
+  "relation": "positive",
+  "mechanism": "政策放松传导至销售",
+  "strength": 0.6,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_propsales_reinvest",
+  "source": "propsales",
+  "target": "reinvest",
+  "relation": "positive",
+  "mechanism": "销售回款决定开发投资",
+  "strength": 0.8,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_reinvest_newstarts",
+  "source": "reinvest",
+  "target": "newstarts",
+  "relation": "positive",
+  "mechanism": "投资收缩压制新开工",
+  "strength": 0.6,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_newstarts_ironore",
+  "source": "newstarts",
+  "target": "ironore",
+  "relation": "positive",
+  "mechanism": "新开工决定钢材-矿石需求",
+  "strength": 0.6,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_reinvest_ironore",
+  "source": "reinvest",
+  "target": "ironore",
+  "relation": "positive",
+  "mechanism": "地产投资是矿价核心需求",
+  "strength": 0.7,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_ironore_cnppi",
+  "source": "ironore",
+  "target": "cnppi",
+  "relation": "positive",
+  "mechanism": "黑色系传导至PPI",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_ironore_rebar",
+  "source": "ironore",
+  "target": "rebar",
+  "relation": "positive",
+  "mechanism": "成本-成材联动",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_reinvest_propcredit",
+  "source": "reinvest",
+  "target": "cnpropcredit",
+  "relation": "negative",
+  "mechanism": "基本面恶化推升地产债利差",
+  "strength": 0.7,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_propsales_propcredit",
+  "source": "propsales",
+  "target": "cnpropcredit",
+  "relation": "negative",
+  "mechanism": "销售决定房企现金流与信用",
+  "strength": 0.6,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_propsales_hhlt",
+  "source": "propsales",
+  "target": "hhloanlt",
+  "relation": "positive",
+  "mechanism": "销售与按揭互为镜像",
+  "strength": 0.6,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_landsales_infra",
+  "source": "landsales",
+  "target": "infrainvest",
+  "relation": "positive",
+  "mechanism": "土地财政约束地方基建",
+  "strength": 0.4,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_propcredit_chengtou",
+  "source": "cnpropcredit",
+  "target": "cnchengtou",
+  "relation": "positive",
+  "mechanism": "地产风险向城投情绪传染",
+  "strength": 0.4,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_chengtou_aaa",
+  "source": "cnchengtou",
+  "target": "cnaaa",
+  "relation": "positive",
+  "mechanism": "信用利差体系联动",
+  "strength": 0.4,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_mfg_inddem",
+  "source": "mfginvest",
+  "target": "inddemand",
+  "relation": "positive",
+  "mechanism": "制造业投资支撑工业品需求",
+  "strength": 0.4,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_infra_inddem",
+  "source": "infrainvest",
+  "target": "inddemand",
+  "relation": "positive",
+  "mechanism": "基建对冲地产需求缺口",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_power_indprod",
+  "source": "power",
+  "target": "indprod",
+  "relation": "positive",
+  "mechanism": "电量验证工业活动",
+  "strength": 0.4,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_dr001_dr007",
+  "source": "dr001",
+  "target": "dr007",
+  "relation": "positive",
+  "mechanism": "隔夜向7天传导",
+  "strength": 0.4,
+  "status": "ACTIVE"
+ },
+ {
+  "id": "e_dr007_shibor",
+  "source": "dr007",
+  "target": "shibor3m",
+  "relation": "positive",
+  "mechanism": "资金利率向中期传导",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_shibor_ncd",
+  "source": "shibor3m",
+  "target": "ncd1y",
+  "relation": "positive",
+  "mechanism": "银行负债成本联动",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_ncd_cn1y",
+  "source": "ncd1y",
+  "target": "cn1y",
+  "relation": "positive",
+  "mechanism": "存单与短债比价",
+  "strength": 0.4,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_cn1y_cn5y",
+  "source": "cn1y",
+  "target": "cn5y",
+  "relation": "positive",
+  "mechanism": "曲线短中段联动",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_cn5y_cn10y",
+  "source": "cn5y",
+  "target": "cn10y",
+  "relation": "positive",
+  "mechanism": "曲线中长段联动",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_cn10y_cn30y",
+  "source": "cn10y",
+  "target": "cn30y",
+  "relation": "positive",
+  "mechanism": "超长端配置盘联动",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_lpr5_propsales",
+  "source": "lpr5y",
+  "target": "propsales",
+  "relation": "negative",
+  "mechanism": "按揭利率影响购房意愿",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_us10y_cnus",
+  "source": "us10y",
+  "target": "cnusspread",
+  "relation": "negative",
+  "mechanism": "美债上行加深中美倒挂",
+  "strength": 0.6,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_cn10y_cnus",
+  "source": "cn10y",
+  "target": "cnusspread",
+  "relation": "positive",
+  "mechanism": "中债收益率收窄倒挂",
+  "strength": 0.6,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_cnus_cny",
+  "source": "cnusspread",
+  "target": "usdcny",
+  "relation": "negative",
+  "mechanism": "利差倒挂施压人民币",
+  "strength": 0.6,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_liqstress_dr007",
+  "source": "cnliqstress",
+  "target": "dr007",
+  "relation": "positive",
+  "mechanism": "流动性压力推升资金利率",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_liqstress_ncd",
+  "source": "cnliqstress",
+  "target": "ncd1y",
+  "relation": "positive",
+  "mechanism": "压力期存单利率先行",
+  "strength": 0.4,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_ppi_cpi",
+  "source": "usppi",
+  "target": "uscpi",
+  "relation": "positive",
+  "mechanism": "上游向终端传导",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_rent_corecpi",
+  "source": "rentcpi",
+  "target": "uscorecpi",
+  "relation": "positive",
+  "mechanism": "租金是核心通胀最大权重",
+  "strength": 0.6,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_oil_gasoline",
+  "source": "oil",
+  "target": "gasoline",
+  "relation": "positive",
+  "mechanism": "原油向零售油价传导",
+  "strength": 0.7,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_gasoline_cpi",
+  "source": "gasoline",
+  "target": "uscpi",
+  "relation": "positive",
+  "mechanism": "汽油直接计入CPI能源项",
+  "strength": 0.6,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_cncorecpi_cncpi",
+  "source": "cncorecpi",
+  "target": "cncpi",
+  "relation": "positive",
+  "mechanism": "核心与整体口径联动",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_pmiraw_ppirm",
+  "source": "pmiraw",
+  "target": "ppirm",
+  "relation": "positive",
+  "mechanism": "购进价格指数领先PPIRM",
+  "strength": 0.4,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_ppirm_cnppi",
+  "source": "ppirm",
+  "target": "cnppi",
+  "relation": "positive",
+  "mechanism": "购进成本传导至出厂价",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_gscpi_cpi",
+  "source": "gscpi",
+  "target": "uscpi",
+  "relation": "positive",
+  "mechanism": "供应链压力推升商品通胀",
+  "strength": 0.4,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_bdi_gscpi",
+  "source": "bdi",
+  "target": "gscpi",
+  "relation": "positive",
+  "mechanism": "运价是供应链压力分项",
+  "strength": 0.3,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_cdxhy_hy",
+  "source": "cdxhy",
+  "target": "hyspread",
+  "relation": "positive",
+  "mechanism": "CDS与现券利差互证",
+  "strength": 0.6,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_cdxig_ig",
+  "source": "cdxig",
+  "target": "igspread",
+  "relation": "positive",
+  "mechanism": "CDS与现券利差互证",
+  "strength": 0.6,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_vvix_vix",
+  "source": "vvix",
+  "target": "vix",
+  "relation": "positive",
+  "mechanism": "波动率曲面联动",
+  "strength": 0.6,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_hydef_hy",
+  "source": "hydefault",
+  "target": "hyspread",
+  "relation": "positive",
+  "mechanism": "违约率是利差的基本面锚",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_bankcds_bankidx",
+  "source": "bankcds",
+  "target": "bankidx",
+  "relation": "negative",
+  "mechanism": "信用风险压制银行股估值",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_bankcds_usbankrisk",
+  "source": "bankcds",
+  "target": "usbankrisk",
+  "relation": "positive",
+  "mechanism": "CDS定价银行体系风险",
+  "strength": 0.6,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_10y_usbankrisk",
+  "source": "us10y",
+  "target": "usbankrisk",
+  "relation": "positive",
+  "mechanism": "长端上行扩大银行债券浮亏",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_oil_brent",
+  "source": "oil",
+  "target": "brent",
+  "relation": "positive",
+  "mechanism": "两油联动",
+  "strength": 0.9,
+  "status": "ACTIVE"
+ },
+ {
+  "id": "e_opec_oil",
+  "source": "opecprod",
+  "target": "oil",
+  "relation": "negative",
+  "mechanism": "供给纪律决定油价底部",
+  "strength": 0.6,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_usoilinv_oil",
+  "source": "usoilinv",
+  "target": "oil",
+  "relation": "negative",
+  "mechanism": "库存去化支撑价格",
+  "strength": 0.6,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_rig_usoilinv",
+  "source": "rigcount",
+  "target": "usoilinv",
+  "relation": "positive",
+  "mechanism": "钻机领先供给与补库",
+  "strength": 0.3,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_oilterm_oil",
+  "source": "oilterm",
+  "target": "oil",
+  "relation": "positive",
+  "mechanism": "升水结构确认现货紧张",
+  "strength": 0.4,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_natgas_cpi",
+  "source": "natgas",
+  "target": "uscpi",
+  "relation": "positive",
+  "mechanism": "能源价格计入通胀",
+  "strength": 0.3,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_gold_silver",
+  "source": "gold",
+  "target": "silver",
+  "relation": "positive",
+  "mechanism": "贵金属联动, 白银弹性更高",
+  "strength": 0.7,
+  "status": "ACTIVE"
+ },
+ {
+  "id": "e_real_silver",
+  "source": "us10yreal",
+  "target": "silver",
+  "relation": "negative",
+  "mechanism": "实际利率同样定价白银",
+  "strength": 0.4,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_alu_comidx",
+  "source": "aluminum",
+  "target": "comidx",
+  "relation": "positive",
+  "mechanism": "有色构成商品指数权重",
+  "strength": 0.3,
+  "status": "ACTIVE"
+ },
+ {
+  "id": "e_lmeinv_copper",
+  "source": "lmecopperinv",
+  "target": "copper",
+  "relation": "negative",
+  "mechanism": "低库存放大铜价弹性",
+  "strength": 0.6,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_dem_ironore",
+  "source": "inddemand",
+  "target": "ironore",
+  "relation": "positive",
+  "mechanism": "工业需求决定黑色系",
+  "strength": 0.4,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_shlngold_gold",
+  "source": "shlngold",
+  "target": "gold",
+  "relation": "positive",
+  "mechanism": "境内溢价反映边际买盘",
+  "strength": 0.3,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_worry_goldflow",
+  "source": "fiscalworry",
+  "target": "goldetfflow",
+  "relation": "positive",
+  "mechanism": "财政担忧驱动配置型买盘",
+  "strength": 0.7,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_goldflow_gold",
+  "source": "goldetfflow",
+  "target": "gold",
+  "relation": "positive",
+  "mechanism": "ETF流入是金价的资金面确认",
+  "strength": 0.8,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_cftcgold_gold",
+  "source": "cftcgold",
+  "target": "gold",
+  "relation": "positive",
+  "mechanism": "投机仓位放大波动",
+  "strength": 0.4,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_putcall_vix",
+  "source": "putcall",
+  "target": "vix",
+  "relation": "positive",
+  "mechanism": "对冲需求推升隐含波动率",
+  "strength": 0.4,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_gamma_vix",
+  "source": "gammaproxy",
+  "target": "vix",
+  "relation": "negative",
+  "mechanism": "负Gamma放大现实波动",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_cta_spx",
+  "source": "cta",
+  "target": "spx",
+  "relation": "positive",
+  "mechanism": "趋势资金顺势加压",
+  "strength": 0.4,
+  "status": "ACTIVE"
+ },
+ {
+  "id": "e_buyback_spx",
+  "source": "buyback",
+  "target": "spx",
+  "relation": "positive",
+  "mechanism": "回购构成底部买盘",
+  "strength": 0.4,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_usequityflow_spx",
+  "source": "usequityflow",
+  "target": "spx",
+  "relation": "positive",
+  "mechanism": "资金流与价格互为因果",
+  "strength": 0.4,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_margin_csi",
+  "source": "margindebt",
+  "target": "csi300",
+  "relation": "positive",
+  "mechanism": "杠杆资金放大A股动量",
+  "strength": 0.4,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_10y_tlt",
+  "source": "us10y",
+  "target": "tlt",
+  "relation": "negative",
+  "mechanism": "收益率上行=长债指数下跌",
+  "strength": 0.7,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_real_sox",
+  "source": "us10yreal",
+  "target": "sox",
+  "relation": "negative",
+  "mechanism": "半导体是最长久期成长资产",
+  "strength": 0.6,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_sox_ndx",
+  "source": "sox",
+  "target": "ndx",
+  "relation": "positive",
+  "mechanism": "半导体领跌拖累纳指",
+  "strength": 0.7,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_sox_chipetf",
+  "source": "sox",
+  "target": "chipetf",
+  "relation": "positive",
+  "mechanism": "全球半导体联动",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_rut_spx",
+  "source": "rut",
+  "target": "spx",
+  "relation": "positive",
+  "mechanism": "小盘与大盘β联动",
+  "strength": 0.4,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_10y_utilities",
+  "source": "us10y",
+  "target": "utilities",
+  "relation": "negative",
+  "mechanism": "类债券板块的利率敏感性",
+  "strength": 0.4,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_10y_reits",
+  "source": "us10y",
+  "target": "reits",
+  "relation": "negative",
+  "mechanism": "利率+再融资双重压制REITs",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_csi_csi500",
+  "source": "csi300",
+  "target": "csi500",
+  "relation": "positive",
+  "mechanism": "A股大小盘联动",
+  "strength": 0.4,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_chinext_csi",
+  "source": "chinext",
+  "target": "csi300",
+  "relation": "positive",
+  "mechanism": "成长与大盘联动",
+  "strength": 0.4,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_hstech_hsi",
+  "source": "hstech",
+  "target": "hsi",
+  "relation": "positive",
+  "mechanism": "科技权重驱动恒指",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_div_value",
+  "source": "dividendetf",
+  "target": "valueidx",
+  "relation": "positive",
+  "mechanism": "红利与价值风格同源",
+  "strength": 0.4,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_gold_goldetf",
+  "source": "gold",
+  "target": "goldetf",
+  "relation": "positive",
+  "mechanism": "金价驱动ETF净值",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_usepu_vix",
+  "source": "usepu",
+  "target": "vix",
+  "relation": "positive",
+  "mechanism": "政策不确定性推升波动率",
+  "strength": 0.4,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_cnepu_csi",
+  "source": "cnepu",
+  "target": "csi300",
+  "relation": "negative",
+  "mechanism": "政策不确定性压制风险偏好",
+  "strength": 0.4,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_propregime_link",
+  "source": "cnpropregime",
+  "target": "cnpropcredit",
+  "relation": "negative",
+  "mechanism": "政策放松缓和地产信用",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_usbank_hy",
+  "source": "usbankrisk",
+  "target": "hyspread",
+  "relation": "positive",
+  "mechanism": "银行体系风险外溢至信用",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_liqc_dxy",
+  "source": "liqcrisis",
+  "target": "dxy",
+  "relation": "positive",
+  "mechanism": "流动性危机=美元荒",
+  "strength": 0.7,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_dxy_hyspread",
+  "source": "dxy",
+  "target": "hyspread",
+  "relation": "positive",
+  "mechanism": "美元飙升收紧全球金融条件",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_liqc_hy",
+  "source": "liqcrisis",
+  "target": "hyspread",
+  "relation": "positive",
+  "mechanism": "融资压力直接走阔利差",
+  "strength": 0.7,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_liqc_gold",
+  "source": "liqcrisis",
+  "target": "gold",
+  "relation": "conditional",
+  "mechanism": "冲击初期黄金同跌, 后期避险",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_refl_oil",
+  "source": "reflation",
+  "target": "oil",
+  "relation": "positive",
+  "mechanism": "再通胀确认需要能源配合",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_refl_bankidx",
+  "source": "reflation",
+  "target": "bankidx",
+  "relation": "positive",
+  "mechanism": "再通胀利好银行息差",
+  "strength": 0.4,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_rec_hy",
+  "source": "recession",
+  "target": "hyspread",
+  "relation": "positive",
+  "mechanism": "衰退定价首先体现在利差",
+  "strength": 0.6,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_rec_spx",
+  "source": "recession",
+  "target": "spx",
+  "relation": "negative",
+  "mechanism": "衰退压制盈利与估值",
+  "strength": 0.6,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_stag_gold",
+  "source": "stagflation",
+  "target": "gold",
+  "relation": "positive",
+  "mechanism": "滞胀是黄金最优环境",
+  "strength": 0.5,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_riskoff_vix",
+  "source": "riskoff",
+  "target": "vix",
+  "relation": "positive",
+  "mechanism": "避险状态推升波动率",
+  "strength": 0.6,
+  "status": "INACTIVE"
+ },
+ {
+  "id": "e_riskoff_risk",
+  "source": "riskoff",
+  "target": "riskappetite",
+  "relation": "negative",
+  "mechanism": "risk-off与风险偏好互为镜像",
+  "strength": 0.6,
   "status": "INACTIVE"
  }
 ]
