@@ -33,18 +33,32 @@ TODAY = dt.date.today()
 # ------------------------------------------------------------------
 
 FRED_KEY = os.environ.get("FRED_API_KEY", "")
+if not FRED_KEY:
+    print("=" * 70, file=sys.stderr)
+    print("[FATAL-ish] FRED_API_KEY 为空! 全部FRED节点(约40个)将失败。", file=sys.stderr)
+    print("  检查: GitHub仓库 Settings → Secrets and variables → Actions", file=sys.stderr)
+    print("  确认存在名为 FRED_API_KEY 的 Repository secret。", file=sys.stderr)
+    print("=" * 70, file=sys.stderr)
 SESSION = requests.Session()
 SESSION.headers["User-Agent"] = "macro-topology-pipeline/1.0"
 
 
 def fetch_fred(series: str, days: int) -> pd.Series:
+    """FRED 免费限速 120次/分钟; 节点扩容后必须带退避重试, 否则一旦被限流会雪崩。"""
     start = (TODAY - dt.timedelta(days=days + 400)).isoformat()
     url = ("https://api.stlouisfed.org/fred/series/observations"
            f"?series_id={series}&api_key={FRED_KEY}&file_type=json&observation_start={start}")
-    obs = SESSION.get(url, timeout=30).json()["observations"]
-    s = pd.Series({o["date"]: o["value"] for o in obs})
-    s.index = pd.to_datetime(s.index)
-    return pd.to_numeric(s, errors="coerce").dropna()
+    last_err = "unknown"
+    for attempt in range(3):
+        js = SESSION.get(url, timeout=30).json()
+        if "observations" in js:
+            s = pd.Series({o["date"]: o["value"] for o in js["observations"]})
+            s.index = pd.to_datetime(s.index)
+            return pd.to_numeric(s, errors="coerce").dropna()
+        last_err = js.get("error_message", str(js)[:120])
+        if attempt < 2:
+            time.sleep(20)  # 大概率是限流, 等满一个窗口再试
+    raise ValueError(f"FRED error: {last_err}")
 
 
 def fetch_yahoo(ticker: str, days: int) -> pd.Series:
@@ -223,7 +237,7 @@ def fetch_treasury_auctions(days: int, cfg: dict | None = None) -> pd.Series:
 
 def fetch_csv_url(cfg: dict, days: int) -> pd.Series:
     df = pd.read_excel(cfg["url"]) if cfg["url"].endswith((".xls", ".xlsx")) else pd.read_csv(cfg["url"])
-    date_col = next(c for c in df.columns if "date" in str(c).lower() or "day" in str(c).lower())
+    date_col = next((c for c in df.columns if "date" in str(c).lower() or "day" in str(c).lower()), df.columns[0])
     s = df.set_index(pd.to_datetime(df[date_col]))[cfg["column"]]
     return pd.to_numeric(s, errors="coerce").dropna()
 
@@ -432,11 +446,12 @@ def main():
 
     series: dict[str, pd.Series] = {}
     stale: list[str] = []
+    err_map: dict[str, str] = {}   # nid -> 错误原文 (写入 data_status 便于远程诊断)
 
     # ---- 第一遍: 拉取所有非派生节点 ----
     for nid, cfg in reg["nodes"].items():
         src = cfg["source"]
-        if src in ("derived", "manual"):
+        if src in ("derived", "manual", "alias"):
             continue
         try:
             if src == "fred":
@@ -457,10 +472,12 @@ def main():
             if cleaned.empty:
                 raise ValueError("empty series after transform (insufficient history?)")
             series[nid] = cleaned
-            time.sleep(0.4)  # 温和限速
+            time.sleep(0.55)  # FRED 120/min 限制: 44个序列必须 ≥0.5s 间隔
         except Exception as exc:
-            print(f"[WARN] {nid} fetch failed: {exc}", file=sys.stderr)
+            print(f"[WARN] {nid} fetch failed: {type(exc).__name__}: {exc}", file=sys.stderr)
+            err_map[nid] = f"{type(exc).__name__}: {str(exc)[:160]}"
             stale.append(nid)
+            time.sleep(1.0)  # 失败也休眠, 防止限流雪崩
 
     # debtceiling 的 spread 特例
     try:
@@ -533,6 +550,15 @@ def main():
                     unit=m.get("unit", ""), description=m["description"],
                     status=node_status(node["percentile"], z.get(nid, 0.0)),
                     stale=nid in stale)
+        # 数据质量标记: live(真实) / derived(派生·代理) / manual(手工) / stale(未取到)
+        if cfg["source"] == "manual":
+            node["quality"] = "manual"
+        elif nid in series and len(series[nid]) > 0:
+            node["quality"] = "derived" if cfg["source"] in ("derived", "alias") else "live"
+        elif cfg["source"] in ("derived", "alias"):
+            node["quality"] = "derived" if z.get(nid) not in (None, 0.0) or nid == "debtceiling" else "stale"
+        else:
+            node["quality"] = "stale"
         if "invalidation" in m:
             node["invalidation"] = m["invalidation"]
         # 历史序列 (前端迷你图): 最近60个交易日
@@ -600,7 +626,26 @@ def main():
         or n["status"] in ("DIVERGENCE", "INVALIDATED")
         for n in nodes_out)
     regime = "EXTREME" if high_risk >= 8 else ("ELEVATED" if high_risk >= 3 else "NORMAL")
+    manual_ids = [nid for nid, cfg in reg["nodes"].items() if cfg["source"] == "manual"]
+    proxy_ids = [nid for nid, cfg in reg["nodes"].items()
+                 if cfg["source"] == "alias" or (cfg["source"] == "derived" and "代理" in str(cfg.get("note", "")))]
+    # 每个数据源家族保留一条错误样本, 远程读 market_state.json 即可诊断
+    src_errors: dict[str, str] = {}
+    for nid, msg in err_map.items():
+        fam = reg["nodes"][nid]["source"]
+        if fam == "akshare":
+            fam = f"akshare:{reg['nodes'][nid].get('fn', '')}"
+        elif fam == "fred":
+            fam = "fred"
+        src_errors.setdefault(fam, f"{nid} → {msg}")
+    data_status = dict(
+        stale=sorted(stale), manual=sorted(manual_ids), proxy=sorted(proxy_ids),
+        liveCount=len(reg["nodes"]) - len(stale) - len(manual_ids),
+        totalCount=len(reg["nodes"]),
+        sourceErrors=src_errors)
+
     market_state = dict(
+        data_status=data_status,
         topMover=dict(nodeId=top["id"],
                       text=f"{top['name']} {_fmt_change(top)}/5D · {top['percentile']}分位"),
         dominantPathId=paths[0]["id"] if paths else "",

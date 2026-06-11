@@ -49,6 +49,23 @@ const PRIORITIES = ["P0", "P1", "P2", "P3"];
 const N = (id, name, category, priority, value, unit, c1, c5, c20, c60, percentile, status, description, invalidation) =>
   ({ id, name, category, priority, value, unit, change1d: c1, change5d: c5, change20d: c20, change60d: c60, percentile, status, description, invalidation });
 
+/* 数据质量标识: 管道输出 quality 字段 → 徽章 (模拟数据无此字段则不显示) */
+const QUALITY_BADGE = {
+  derived: { label: "派生", color: "#9a7fe8", title: "由其他真实序列派生/代理计算" },
+  manual:  { label: "手工", color: "#8fa3b8", title: "暂无免费数据源, 注册表手工维护" },
+  stale:   { label: "未取到", color: "#ff7a45", title: "本次抓取失败, 显示占位值" },
+};
+const QualityTag = ({ n, big }) => {
+  const q = QUALITY_BADGE[n?.quality];
+  if (!q) return null;
+  return (
+    <span title={q.title} className={big ? "px-2 py-0.5 rounded text-xs" : "px-1.5 py-0.5 rounded text-xs"}
+      style={{ fontFamily: "'JetBrains Mono','SF Mono',Consolas,monospace", fontSize: 10, color: q.color, border: `1px solid ${q.color}55`, background: `${q.color}18` }}>
+      {q.label}
+    </span>
+  );
+};
+
 const REGIME_IDS = new Set(["geopolitics", "debtceiling", "fiscalworry", "usepu", "cnepu",
   "cnpropregime", "usbankrisk", "liqcrisis", "reflation", "recession", "stagflation", "riskoff"]);
 
@@ -413,7 +430,7 @@ const RAW_EDGES = [
 
   // 金融条件与信用
   E("e_fedbs_fci", "fedbs", "usfci", "negative", "INACTIVE", "缩表边际收紧金融条件", 0.45),
-  E("e_rrp_fci", "rrp", "usfci", "negative", "INACTIVE", "RRP消耗缓冲银行准备金", 0.35),
+  E("e_rrp_fci", "rrp", "usfci", "positive", "INACTIVE", "RRP回升抽走体系流动性, 边际收紧金融条件", 0.35),
   E("e_fci_spx", "usfci", "spx", "negative", "INACTIVE", "金融条件收紧压制风险资产", 0.6),
   E("e_hy_fci", "hyspread", "usfci", "positive", "INACTIVE", "信用利差是金融条件分项", 0.5),
   E("e_ig_hy", "igspread", "hyspread", "positive", "INACTIVE", "信用利差同向联动", 0.6),
@@ -1087,6 +1104,7 @@ function Topo2D({ nodes, edges, adjacency, pathEdgeIds, paths, hoverId, selected
         if (isHover || isSel) r *= 1.35;
         if (brightNodes && !inB) op *= 0.12;
         if (p.searchSet) op = searchHit ? 1 : op * 0.15;
+        if (n.quality === "stale") op *= 0.45;
         if (!visible) op = 0.04;
         const col = CATS[n.category].color;
         ctx.globalAlpha = Math.min(1, op);
@@ -1218,6 +1236,7 @@ export default function MacroTopologyTerminal({ live = null }) {
   const [leftOpen, setLeftOpen] = useState(true);
   const [activeTab, setActiveTab] = useState("Global Map");
   const [viewMode, setViewMode] = useState("3D"); // "3D" | "2D"
+  const [dataNoticeOpen, setDataNoticeOpen] = useState(false); // 数据状态声明面板
   const [webglError, setWebglError] = useState(false);
 
   const mountRef = useRef(null);
@@ -1250,6 +1269,22 @@ export default function MacroTopologyTerminal({ live = null }) {
       divergence: focusDivId ? DIVERGENCES.find((d) => d.id === focusDivId) : null,
     };
   }, [hoverId, selectedId, focusDivId, focusPathId, autoRotate, visibleSet, searchSet, adjacency, pathEdgeIds, viewMode]);
+
+  /* 数据状态清单: 优先读管道写入的 market_state.data_status, 回退用节点quality字段推断 */
+  const dataStatus = useMemo(() => {
+    if (!isLive) return null;
+    const ds = STATE.data_status;
+    const byQ = (q) => nodes.filter((n) => n.quality === q).map((n) => n.id);
+    const stale = ds?.stale ?? byQ("stale");
+    const manual = ds?.manual ?? byQ("manual");
+    const proxy = ds?.proxy ?? byQ("derived");
+    return {
+      stale, manual, proxy,
+      liveCount: ds?.liveCount ?? Math.max(0, nodes.length - stale.length - manual.length),
+      totalCount: ds?.totalCount ?? nodes.length,
+      sourceErrors: ds?.sourceErrors ?? null,
+    };
+  }, [isLive, STATE, nodes]);
 
   const focusOnNode = useCallback((id) => {
     const sc = sceneRef.current; if (!sc) return;
@@ -1604,6 +1639,7 @@ export default function MacroTopologyTerminal({ live = null }) {
 
         if (brightNodes && !inBright) { op *= 0.14; glowOp *= 0.1; ringOp *= 0.12; }
         if (ui.searchSet) { if (searchHit) { op = 1; glowOp = Math.max(glowOp, 0.4); } else { op *= 0.18; glowOp *= 0.1; ringOp *= 0.15; } }
+        if (n.quality === "stale") { op *= 0.45; glowOp *= 0.4; } // 未取到数据的节点压暗
         if (!visible) { op = 0.04; glowOp = 0; ringOp = 0; }
 
         const overlayOn = !!(ui.hoverId || ui.selectedId || ui.focusDivId || ui.focusPathId);
@@ -1923,6 +1959,65 @@ export default function MacroTopologyTerminal({ live = null }) {
       </div>
 
       {/* ====== 悬浮卡片 ====== */}
+      {/* ====== 数据状态声明面板 (辅助声明, 可关闭) ====== */}
+      {dataNoticeOpen && dataStatus && (
+        <div className="absolute z-30 left-4 bottom-12 w-[26rem] max-h-[24rem] overflow-auto rounded-md border p-4"
+          style={{ background: PANEL, borderColor: PANEL_BORDER, backdropFilter: "blur(10px)" }}>
+          <div className="flex items-center justify-between mb-2">
+            <div className="text-xs tracking-widest" style={{ fontFamily: MONO, color: "#8fa9cc" }}>DATA STATUS · 数据源状态声明</div>
+            <button onClick={() => setDataNoticeOpen(false)} className="text-xs px-1.5" style={{ color: TXT_DIM }}>✕</button>
+          </div>
+          <div className="text-xs mb-3" style={{ color: TXT_DIM }}>
+            {dataStatus.totalCount} 个指标中 <span style={{ color: "#6fc28a" }}>{dataStatus.liveCount} 个为自动抓取的真实数据</span>。以下指标当前未能自动取数或需人工维护,展示的是占位/上次值:
+          </div>
+          {dataStatus.stale.length > 0 && (
+            <div className="mb-3">
+              <div className="text-xs mb-1.5" style={{ fontFamily: MONO, color: "#e8c558" }}>未提取到数据 ({dataStatus.stale.length}) — 接口失败或被拒,等待下次运行</div>
+              <div className="flex flex-wrap gap-1">
+                {dataStatus.stale.map((id) => nodeById[id] && (
+                  <button key={id} onClick={() => selectNode(id)} className="px-1.5 py-0.5 rounded text-xs border hover:opacity-80"
+                    style={{ borderColor: "rgba(232,197,88,0.35)", color: "#d9c27a", background: "rgba(232,197,88,0.06)" }}>
+                    {nodeById[id].name}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+          {dataStatus.manual.length > 0 && (
+            <div className="mb-3">
+              <div className="text-xs mb-1.5" style={{ fontFamily: MONO, color: "#9fb0c4" }}>需手动输入 ({dataStatus.manual.length}) — 无免费数据源,在 pipeline/data_registry.yaml 中更新 value</div>
+              <div className="flex flex-wrap gap-1">
+                {dataStatus.manual.map((id) => nodeById[id] && (
+                  <button key={id} onClick={() => selectNode(id)} className="px-1.5 py-0.5 rounded text-xs border hover:opacity-80"
+                    style={{ borderColor: PANEL_BORDER, color: "#9fb0c4", background: "rgba(120,140,170,0.06)" }}>
+                    {nodeById[id].name}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+          {dataStatus.proxy.length > 0 && (
+            <div className="mb-3">
+              <div className="text-xs mb-1.5" style={{ fontFamily: MONO, color: "#7f93ad" }}>代理/合成指标 ({dataStatus.proxy.length}) — 由其他真实序列派生</div>
+              <div className="text-xs leading-relaxed" style={{ color: "#6c7f96" }}>
+                {dataStatus.proxy.map((id) => nodeById[id]?.name).filter(Boolean).join(" · ")}
+              </div>
+            </div>
+          )}
+          {dataStatus.sourceErrors && Object.keys(dataStatus.sourceErrors).length > 0 && (
+            <div className="mb-2">
+              <div className="text-xs mb-1" style={{ fontFamily: MONO, color: "#7f93ad" }}>错误样本 (诊断用)</div>
+              {Object.entries(dataStatus.sourceErrors).slice(0, 5).map(([k, v]) => (
+                <div key={k} className="text-xs truncate" style={{ fontFamily: MONO, fontSize: 10, color: "#5d7088" }} title={v}>{k}: {v}</div>
+              ))}
+            </div>
+          )}
+          <div className="text-xs pt-2 border-t" style={{ color: "#46546a", borderColor: PANEL_BORDER }}>
+            本面板仅为数据透明度声明,不影响图谱任何功能。
+          </div>
+        </div>
+      )}
+
       {hoverNode && !panelOpen && (
         <div className="absolute z-40 pointer-events-none rounded-md border p-3 w-72"
           style={{
@@ -1935,7 +2030,7 @@ export default function MacroTopologyTerminal({ live = null }) {
               <span className="w-2 h-2 rounded-full" style={{ background: CATS[hoverNode.category].color }} />
               <span className="text-sm" style={{ color: "#e8eef6" }}>{hoverNode.name}</span>
             </div>
-            <span className="px-1.5 py-0.5 rounded text-xs" style={{ fontFamily: MONO, fontSize: 10, color: "#0a0e16", background: STATUS[hoverNode.status].color }}>{hoverNode.status}</span>
+            <span className="flex items-center gap-1"><QualityTag n={hoverNode} /><span className="px-1.5 py-0.5 rounded text-xs" style={{ fontFamily: MONO, fontSize: 10, color: "#0a0e16", background: STATUS[hoverNode.status].color }}>{hoverNode.status}</span></span>
           </div>
           <div className="grid grid-cols-2 gap-x-3 gap-y-1 text-xs" style={{ fontFamily: MONO }}>
             <div><span style={{ color: TXT_DIM }}>当前值 </span><span style={{ color: "#e8eef6" }}>{fmtValue(hoverNode)}</span></div>
@@ -1969,9 +2064,13 @@ export default function MacroTopologyTerminal({ live = null }) {
 
             <div className="flex items-center gap-3">
               <span className="text-2xl" style={{ fontFamily: MONO, color: "#eef3f9" }}>{fmtValue(selectedNode)}</span>
-              <span className="px-2 py-0.5 rounded text-xs" style={{ fontFamily: MONO, color: "#0a0e16", background: STATUS[selectedNode.status].color }}>{selectedNode.status}</span>
+              <span className="flex items-center gap-1.5"><QualityTag n={selectedNode} big /><span className="px-2 py-0.5 rounded text-xs" style={{ fontFamily: MONO, color: "#0a0e16", background: STATUS[selectedNode.status].color }}>{selectedNode.status}</span></span>
             </div>
-
+            {(selectedNode.quality === "stale" || selectedNode.quality === "manual") && (
+              <div className="mt-1 text-xs rounded px-2 py-1" style={{ color: selectedNode.quality === "stale" ? "#ffb38f" : "#9fb0c4", background: "rgba(20,27,40,0.6)", border: "1px solid rgba(70,90,120,0.3)" }}>
+                {selectedNode.quality === "stale" ? "⚠ 本次未成功抓取, 当前显示占位值, 勿据此判断。" : "✎ 该指标暂无免费数据源, 数值为注册表手工维护。"}
+              </div>
+            )}
             <div className="grid grid-cols-4 gap-2 text-center text-xs" style={{ fontFamily: MONO }}>
               {[["1D", selectedNode.change1d], ["5D", selectedNode.change5d], ["20D", selectedNode.change20d], ["60D", selectedNode.change60d]].map(([w, v]) => (
                 <div key={w} className="rounded border py-1.5" style={{ borderColor: timeWindow === w ? "#7e93b3" : PANEL_BORDER, background: "rgba(14,19,29,0.8)" }}>
@@ -2148,7 +2247,14 @@ export default function MacroTopologyTerminal({ live = null }) {
         <span className="flex items-center gap-1.5"><span className="inline-block w-5 h-px" style={{ background: EDGE_STYLE.ACTIVE.color }} /><span style={{ color: TXT_DIM }}>激活路径</span></span>
         <span className="flex items-center gap-1.5"><span className="inline-block w-5 h-px" style={{ background: EDGE_STYLE.DIVERGENCE.color }} /><span style={{ color: TXT_DIM }}>背离</span></span>
         <span className="flex items-center gap-1.5"><span className="inline-block w-5 h-px" style={{ background: EDGE_STYLE.INVALIDATED.color }} /><span style={{ color: TXT_DIM }}>失效/异常</span></span>
-        <span style={{ color: "#46546a" }}>拖拽旋转 · 滚轮缩放 · 点击节点查看详情</span>
+        <span style={{ color: "#46546a" }}>徽章: 派生/手工/未取到 · 拖拽旋转 · 滚轮缩放 · 点击节点查看详情</span>
+        {dataStatus && (
+          <button onClick={() => setDataNoticeOpen((v) => !v)}
+            className="px-2 py-0.5 rounded border text-xs"
+            style={{ fontFamily: MONO, borderColor: dataStatus.stale.length ? "rgba(232,197,88,0.5)" : PANEL_BORDER, color: dataStatus.stale.length ? "#e8c558" : TXT_DIM, background: "rgba(15,20,30,0.85)" }}>
+            ⚠ 数据状态 · {dataStatus.stale.length}未取到 / {dataStatus.manual.length}手动
+          </button>
+        )}
       </div>
     </div>
   );
