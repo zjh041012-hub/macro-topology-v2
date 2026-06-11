@@ -36,12 +36,15 @@ export async function loadAll() {
     getJSON("divergences.json"),
     getJSON("market_state.json"),
   ]);
+  let changes = null;
+  try { changes = await getJSON("changes.json"); } catch { /* 首次运行可能不存在, 可选 */ }
   return {
     nodes: adaptNodes(nodes),
     edges,
     paths: adaptPaths(paths),
     divergences,
     marketState,
+    changes,
     live: true,
   };
 }

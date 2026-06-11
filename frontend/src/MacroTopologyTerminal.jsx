@@ -937,7 +937,9 @@ const collectForcedIds = (ui, adjacency, paths) => {
 /* ============================================================
    2D MAP 视图 (原生Canvas 2D, 与3D共享同一份数据与状态)
    ============================================================ */
-function Topo2D({ nodes, edges, adjacency, pathEdgeIds, paths, hoverId, selectedId, focusDivId, focusPathId, divergence, visibleSet, searchSet, onHover, onSelect, onClear }) {
+function Topo2D({ nodes, edges, adjacency, pathEdgeIds, paths, hoverId, selectedId, focusDivId, focusPathId, divergence, visibleSet, searchSet, onHover, onSelect, onClear, onEdgeClick }) {
+  const cbRef = useRef({});
+  cbRef.current = { onHover, onSelect, onClear, onEdgeClick };
   const canvasRef = useRef(null);
   const propsRef = useRef({});
   propsRef.current = { hoverId, selectedId, focusDivId, focusPathId, divergence, visibleSet, searchSet };
@@ -1020,18 +1022,41 @@ function Topo2D({ nodes, edges, adjacency, pathEdgeIds, paths, hoverId, selected
         if (st.drag.type === "pan") { st.tx += dx; st.ty += dy; }
         else { const p = P(st.drag.id); st.override.set(st.drag.id, { x: p.x + dx / st.k, y: p.y + dy / st.k }); }
         st.last = { x: mx, y: my };
-        if (st.moved > 4 && st.hoverLocal) { st.hoverLocal = null; onHover(null); }
+        if (st.moved > 4 && st.hoverLocal) { st.hoverLocal = null; cbRef.current.onHover(null); }
         return;
       }
       const id = hitTest(mx, my);
-      if (id !== st.hoverLocal) { st.hoverLocal = id; onHover(id, ev.clientX, ev.clientY); }
-      else if (id) onHover(id, ev.clientX, ev.clientY);
+      if (id !== st.hoverLocal) { st.hoverLocal = id; cbRef.current.onHover(id, ev.clientX, ev.clientY); }
+      else if (id) cbRef.current.onHover(id, ev.clientX, ev.clientY);
       canvas.style.cursor = id ? "pointer" : "grab";
     };
-    const onUp = () => {
+    const edgeHit = (mx, my) => {
+      const pp = propsRef.current;
+      const wx = (mx - st.tx) / st.k, wy = (my - st.ty) / st.k;
+      let best = null, bestD = 7 / st.k;
+      for (const e of edges) {
+        if (!pp.visibleSet.has(e.source) || !pp.visibleSet.has(e.target)) continue;
+        const a = P(e.source), b = P(e.target); if (!a || !b) continue;
+        const dx = b.x - a.x, dy = b.y - a.y, L = Math.hypot(dx, dy) || 1;
+        const cx = (a.x + b.x) / 2 - dy / L * L * 0.1, cy = (a.y + b.y) / 2 + dx / L * L * 0.1;
+        for (let t = 0.08; t <= 0.92; t += 0.07) {
+          const it = 1 - t;
+          const px = it * it * a.x + 2 * it * t * cx + t * t * b.x;
+          const py = it * it * a.y + 2 * it * t * cy + t * t * b.y;
+          const d = Math.hypot(px - wx, py - wy);
+          if (d < bestD) { bestD = d; best = e; }
+        }
+      }
+      return best;
+    };
+    const onUp = (ev) => {
       if (st.drag && st.moved <= 4) {
-        if (st.drag.type === "node") onSelect(st.drag.id);
-        else onClear();
+        if (st.drag.type === "node") cbRef.current.onSelect(st.drag.id);
+        else {
+          const eh = edgeHit(st.last.x, st.last.y);
+          if (eh && cbRef.current.onEdgeClick) cbRef.current.onEdgeClick(eh, ev.clientX, ev.clientY);
+          else cbRef.current.onClear();
+        }
       }
       st.drag = null;
     };
@@ -1044,7 +1069,7 @@ function Topo2D({ nodes, edges, adjacency, pathEdgeIds, paths, hoverId, selected
       st.ty = my - ((my - st.ty) / st.k) * k2;
       st.k = k2;
     };
-    const onLeave2 = () => { st.hoverLocal = null; onHover(null); };
+    const onLeave2 = () => { st.hoverLocal = null; cbRef.current.onHover(null); };
     canvas.addEventListener("pointerdown", onDown);
     canvas.addEventListener("pointermove", onMove);
     window.addEventListener("pointerup", onUp);
@@ -1219,7 +1244,7 @@ function Topo2D({ nodes, edges, adjacency, pathEdgeIds, paths, hoverId, selected
       canvas.removeEventListener("wheel", onWheel2);
       canvas.removeEventListener("pointerleave", onLeave2);
     };
-  }, [nodes, edges, layout, adjacency, pathEdgeIds, paths, onHover, onSelect, onClear]);
+  }, [nodes, edges, layout, adjacency, pathEdgeIds, paths]); // 回调经 cbRef 访问, 不进依赖 (修复悬浮触发画布重建)
 
   return <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" style={{ display: "block" }} />;
 }
@@ -1233,6 +1258,7 @@ export default function MacroTopologyTerminal({ live = null }) {
   const PATHS = live?.paths?.length ? live.paths : MOCK_PATHS;
   const DIVERGENCES = live?.divergences ?? MOCK_DIVERGENCES;
   const STATE = live?.marketState ?? MARKET_STATE;
+  const CHANGES = live?.changes ?? null;
 
   /* ---------- 派生数据 ---------- */
   const nodes = useMemo(() => {
@@ -1282,6 +1308,9 @@ export default function MacroTopologyTerminal({ live = null }) {
   const [search, setSearch] = useState("");
   const [leftOpen, setLeftOpen] = useState(true);
   const [activeTab, setActiveTab] = useState("Global Map");
+  const [changesOpen, setChangesOpen] = useState(true);   // 今日变化横幅
+  const [changesExpand, setChangesExpand] = useState(false);
+  const [edgeCard, setEdgeCard] = useState(null);          // 2D边机制卡 {e, x, y}
   const [viewMode, setViewMode] = useState("3D"); // "3D" | "2D"
   const [dataNoticeOpen, setDataNoticeOpen] = useState(false); // 数据状态声明面板
   const [webglError, setWebglError] = useState(false);
@@ -1859,7 +1888,9 @@ export default function MacroTopologyTerminal({ live = null }) {
             divergence={focusDivId ? DIVERGENCES.find((d) => d.id === focusDivId) : null}
             visibleSet={visibleSet} searchSet={searchSet}
             onHover={(id, x, y) => { setHoverId(id); if (id != null && x != null) setMouse({ x, y }); }}
-            onSelect={selectNode} onClear={exitFocus} />
+            onSelect={(id) => { setEdgeCard(null); selectNode(id); }}
+            onClear={() => { setEdgeCard(null); exitFocus(); }}
+            onEdgeClick={(e, x, y) => setEdgeCard({ e, x, y })} />
         </div>
       )}
       {webglError && (
@@ -1879,7 +1910,7 @@ export default function MacroTopologyTerminal({ live = null }) {
             <span className="tracking-widest text-sm font-semibold" style={{ fontFamily: MONO, color: "#dfe7f1" }}>MACRO&nbsp;TOPOLOGY</span>
           </div>
           <nav className="hidden md:flex items-center gap-1">
-            {["Global Map", "Assets", "Drivers", "Divergences", "Scenarios", "Alerts"].map((tab) => (
+            {["Global Map", "Divergences", "Scenarios"].map((tab) => (
               <button key={tab} onClick={() => setActiveTab(tab)}
                 className="px-3 py-1 text-xs rounded transition-colors"
                 style={{
@@ -1893,7 +1924,7 @@ export default function MacroTopologyTerminal({ live = null }) {
         <div className="flex items-center gap-3">
           <div className="flex rounded overflow-hidden border" style={{ borderColor: PANEL_BORDER }}>
             {["3D", "2D"].map((m) => (
-              <button key={m} onClick={() => { setViewMode(m); setHoverId(null); }}
+              <button key={m} onClick={() => { setViewMode(m); setHoverId(null); setEdgeCard(null); }}
                 className="px-2.5 py-1 text-xs" style={{ fontFamily: MONO, letterSpacing: 1, color: viewMode === m ? "#0a0e16" : TXT_DIM, background: viewMode === m ? "#9fb6d8" : "rgba(15,20,30,0.8)" }}>
                 {m === "3D" ? "3D SPHERE" : "2D MAP"}
               </button>
@@ -1922,6 +1953,129 @@ export default function MacroTopologyTerminal({ live = null }) {
           <span className="hidden lg:block text-xs" style={{ color: TXT_DIM, fontFamily: MONO }}>{isLive ? `LIVE · ${(STATE.updatedAt || "").slice(0, 16).replace("T", " ")} UTC` : "SIMULATED DATA · For interface demonstration only"}</span>
         </div>
       </div>
+
+      {/* ====== 今日变化横幅 ====== */}
+      {CHANGES && changesOpen && ((CHANGES.nodeChanges?.length || 0) + (CHANGES.pathChanges?.length || 0) + (CHANGES.divAdded?.length || 0) + (CHANGES.divRemoved?.length || 0)) > 0 && (
+        <div className="absolute z-20 top-14 left-1/2 -translate-x-1/2 rounded-md border px-3 py-2 text-xs max-w-[42rem]"
+          style={{ background: "rgba(10,15,24,0.93)", borderColor: "rgba(232,197,88,0.4)", backdropFilter: "blur(8px)" }}>
+          <div className="flex items-center gap-2 whitespace-nowrap">
+            <span style={{ fontFamily: MONO, color: "#e8c558" }}>较上次更新</span>
+            {CHANGES.since && <span style={{ color: TXT_DIM, fontFamily: MONO }}>{CHANGES.since.slice(5, 16).replace("T", " ")}</span>}
+            <span style={{ color: "#c9d3e0" }}>
+              节点状态 {CHANGES.nodeChanges?.length || 0} 项变化 · 路径 {CHANGES.pathChanges?.length || 0} · 背离 +{CHANGES.divAdded?.length || 0}/−{CHANGES.divRemoved?.length || 0}
+            </span>
+            <button onClick={() => setChangesExpand((v) => !v)} className="px-1.5 rounded border"
+              style={{ borderColor: PANEL_BORDER, color: "#9fb6d8", fontFamily: MONO }}>{changesExpand ? "收起" : "展开"}</button>
+            <button onClick={() => setChangesOpen(false)} style={{ color: TXT_DIM }}>✕</button>
+          </div>
+          {changesExpand && (
+            <div className="mt-2 space-y-1 max-h-44 overflow-auto pr-1">
+              {(CHANGES.nodeChanges || []).slice(0, 16).map((c) => (
+                <button key={c.id} onClick={() => { setActiveTab("Global Map"); selectNode(c.id); }} className="block w-full text-left hover:underline">
+                  <span style={{ color: (STATUS[c.to] || {}).color || "#c9d3e0" }}>{c.name}</span>
+                  <span style={{ color: TXT_DIM, fontFamily: MONO }}>  {c.from} → {c.to}</span>
+                </button>
+              ))}
+              {(CHANGES.pathChanges || []).map((s, i) => <div key={`p${i}`} style={{ color: "#ffd9a0" }}>{s}</div>)}
+              {(CHANGES.divAdded || []).map((s, i) => <div key={`a${i}`} style={{ color: STATUS.DIVERGENCE.color }}>+ {s}</div>)}
+              {(CHANGES.divRemoved || []).map((s, i) => <div key={`r${i}`} style={{ color: TXT_DIM }}>− {s}</div>)}
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* ====== Divergences 页 ====== */}
+      {activeTab === "Divergences" && (
+        <div className="absolute inset-0 z-40 overflow-auto px-8 pb-10" style={{ background: "rgba(5,7,12,0.97)", paddingTop: "4.5rem" }}>
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-center justify-between mb-4">
+              <div>
+                <div className="text-xs tracking-widest" style={{ fontFamily: MONO, color: "#8fa9cc" }}>DIVERGENCE MONITOR</div>
+                <div className="text-lg" style={{ color: "#e6edf5" }}>背离监控 — 预期关系被打破的位置</div>
+              </div>
+              <button onClick={() => setActiveTab("Global Map")} className="px-3 py-1 rounded border text-xs"
+                style={{ borderColor: PANEL_BORDER, color: TXT_DIM, fontFamily: MONO }}>✕ 返回图谱</button>
+            </div>
+            {DIVERGENCES.length === 0 && (
+              <div className="rounded-md border p-6 text-sm" style={{ borderColor: PANEL_BORDER, background: PANEL, color: TXT_DIM }}>
+                当前无背离记录 — 各资产沿预期传导关系一致联动,市场结构高度自洽。背离往往出现在拐点附近,持续关注。
+              </div>
+            )}
+            <div className="space-y-3">
+              {DIVERGENCES.map((d) => (
+                <div key={d.id} className="rounded-md border p-4" style={{ borderColor: "rgba(224,85,200,0.3)", background: PANEL }}>
+                  <div className="flex items-start justify-between gap-3">
+                    <div className="text-sm" style={{ color: "#eadcf3" }}>{d.title}</div>
+                    <div className="flex gap-1.5 shrink-0 text-xs" style={{ fontFamily: MONO }}>
+                      {d.strength && <span className="px-1.5 py-0.5 rounded" style={{ background: "rgba(224,85,200,0.15)", color: STATUS.DIVERGENCE.color }}>强度 {d.strength}</span>}
+                      {d.persistence && <span className="px-1.5 py-0.5 rounded" style={{ background: "rgba(120,140,170,0.12)", color: TXT_DIM }}>{d.persistence}</span>}
+                      {d.invalidationRisk && <span className="px-1.5 py-0.5 rounded" style={{ background: "rgba(255,82,82,0.12)", color: "#ff8a8a" }}>失效风险 {d.invalidationRisk}</span>}
+                    </div>
+                  </div>
+                  <div className="mt-2 grid md:grid-cols-2 gap-3 text-xs leading-relaxed">
+                    <div><span style={{ color: TXT_DIM }}>预期关系: </span><span style={{ color: "#c9d3e0" }}>{d.expectedRelation}</span></div>
+                    <div><span style={{ color: TXT_DIM }}>实际观察: </span><span style={{ color: "#c9d3e0" }}>{d.observedRelation}</span></div>
+                  </div>
+                  {Array.isArray(d.alternativePaths) && d.alternativePaths.length > 0 && (
+                    <div className="mt-2 text-xs" style={{ color: "#9fb0c4" }}>替代解释: {d.alternativePaths.join(" / ")}</div>
+                  )}
+                  <button onClick={() => { focusDivergence(d); setActiveTab("Global Map"); }}
+                    className="mt-3 px-2.5 py-1 rounded border text-xs"
+                    style={{ borderColor: "rgba(224,85,200,0.4)", color: STATUS.DIVERGENCE.color, fontFamily: MONO }}>在图谱中聚焦 →</button>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* ====== Scenarios 页: 八条标准传导路径 ====== */}
+      {activeTab === "Scenarios" && (
+        <div className="absolute inset-0 z-40 overflow-auto px-8 pb-10" style={{ background: "rgba(5,7,12,0.97)", paddingTop: "4.5rem" }}>
+          <div className="max-w-5xl mx-auto">
+            <div className="flex items-center justify-between mb-4">
+              <div>
+                <div className="text-xs tracking-widest" style={{ fontFamily: MONO, color: "#8fa9cc" }}>SCENARIO PLAYBOOK</div>
+                <div className="text-lg" style={{ color: "#e6edf5" }}>标准传导路径 — 状态由真实动量逐日评估</div>
+              </div>
+              <button onClick={() => setActiveTab("Global Map")} className="px-3 py-1 rounded border text-xs"
+                style={{ borderColor: PANEL_BORDER, color: TXT_DIM, fontFamily: MONO }}>✕ 返回图谱</button>
+            </div>
+            <div className="grid md:grid-cols-2 gap-4">
+              {RAW_PATHS.map((p) => {
+                const letter = p.id.split("_")[1];
+                const livep = PATHS.find((x) => x.id === `p_std_${letter}`);
+                const stt = livep?.status ?? p.status ?? "INACTIVE";
+                const stCol = stt === "ACTIVE" ? "#e8c558" : stt === "PARTIAL" ? "#9fb6d8" : TXT_DIM;
+                const disp = livep?.label || livep?.title || p.name;
+                const targetId = (livep || PATHS.find((x) => x.id === p.id) || {}).id;
+                return (
+                  <div key={p.id} className="rounded-md border p-4 flex flex-col" style={{ borderColor: stt === "ACTIVE" ? "rgba(232,197,88,0.4)" : PANEL_BORDER, background: PANEL }}>
+                    <div className="flex items-start justify-between gap-2">
+                      <div className="text-sm" style={{ color: "#ffe9c2" }}>{disp}</div>
+                      <div className="flex gap-1.5 shrink-0 text-xs" style={{ fontFamily: MONO }}>
+                        <span className="px-1.5 py-0.5 rounded" style={{ background: "rgba(120,140,170,0.1)", color: stCol }}>{stt}</span>
+                        {livep?.consistency != null && <span className="px-1.5 py-0.5 rounded" style={{ background: "rgba(120,140,170,0.1)", color: TXT_DIM }}>一致性 {Math.round(livep.consistency * 100)}%</span>}
+                      </div>
+                    </div>
+                    <div className="mt-2 space-y-2 text-xs leading-relaxed flex-1">
+                      <div style={{ color: "#c9d3e0" }}>{p.description}</div>
+                      {p.expectedMarketStructure && <div><span style={{ color: TXT_DIM }}>预期市场结构: </span><span style={{ color: "#9fc3a8" }}>{p.expectedMarketStructure}</span></div>}
+                      {p.alternativeExplanation && <div><span style={{ color: TXT_DIM }}>替代解释: </span><span style={{ color: "#9fb0c4" }}>{p.alternativeExplanation}</span></div>}
+                      {p.invalidation && <div><span style={{ color: TXT_DIM }}>证伪条件: </span><span style={{ color: "#d9a0a0" }}>{p.invalidation}</span></div>}
+                    </div>
+                    {targetId && (
+                      <button onClick={() => { setSelectedId(null); setFocusDivId(null); setFocusPathId(targetId); focusOnNode((livep || p).nodeIds[0]); setActiveTab("Global Map"); }}
+                        className="mt-3 self-start px-2.5 py-1 rounded border text-xs"
+                        style={{ borderColor: "rgba(232,197,88,0.4)", color: "#e8c558", fontFamily: MONO }}>在图谱中查看 →</button>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* ====== 左上:Current Market State ====== */}
       <div className="absolute z-20 left-4 top-16 w-80 rounded-md border p-4"
@@ -2110,6 +2264,37 @@ export default function MacroTopologyTerminal({ live = null }) {
         </div>
       )}
 
+      {/* ====== 边机制卡 (2D点击边) ====== */}
+      {edgeCard && (() => {
+        const e = edgeCard.e;
+        const sn = nodeById[e.source], tn = nodeById[e.target];
+        const stl = EDGE_STYLE[e.status] || {};
+        const vw = typeof window !== "undefined" ? window.innerWidth : 1200;
+        const vh = typeof window !== "undefined" ? window.innerHeight : 800;
+        return (
+          <div className="absolute z-40 rounded-md border p-3 w-80"
+            style={{ left: Math.min(edgeCard.x + 14, vw - 340), top: Math.min(edgeCard.y + 10, vh - 220), background: "rgba(8,12,19,0.95)", borderColor: PANEL_BORDER, backdropFilter: "blur(8px)" }}>
+            <div className="flex items-center justify-between mb-1.5">
+              <div className="text-xs tracking-widest" style={{ fontFamily: MONO, color: "#8fa9cc" }}>传导机制</div>
+              <button onClick={() => setEdgeCard(null)} className="text-xs px-1" style={{ color: TXT_DIM }}>✕</button>
+            </div>
+            <div className="text-sm mb-1.5" style={{ color: "#e8eef6" }}>
+              <button className="hover:underline" onClick={() => { setEdgeCard(null); selectNode(e.source); }}>{sn?.name || e.source}</button>
+              <span style={{ color: TXT_DIM }}> → </span>
+              <button className="hover:underline" onClick={() => { setEdgeCard(null); selectNode(e.target); }}>{tn?.name || e.target}</button>
+            </div>
+            <div className="flex gap-1.5 text-xs mb-2" style={{ fontFamily: MONO }}>
+              <span className="px-1.5 py-0.5 rounded" style={{ background: "rgba(120,140,170,0.12)", color: e.relation === "negative" ? "#e07070" : e.relation === "conditional" ? "#c9b46a" : "#6fc28a" }}>
+                {e.relation === "negative" ? "反向 −" : e.relation === "conditional" ? "条件 ~" : "正向 +"}
+              </span>
+              <span className="px-1.5 py-0.5 rounded" style={{ background: "rgba(120,140,170,0.12)", color: stl.color || TXT_DIM }}>{e.status}</span>
+              {e.strength != null && <span className="px-1.5 py-0.5 rounded" style={{ background: "rgba(120,140,170,0.12)", color: TXT_DIM }}>强度 {e.strength}</span>}
+            </div>
+            {e.mechanism && <div className="text-xs leading-relaxed" style={{ color: "#b9c6d6" }}>{e.mechanism}</div>}
+          </div>
+        );
+      })()}
+
       {hoverNode && !panelOpen && (
         <div className="absolute z-40 pointer-events-none rounded-md border p-3 w-72"
           style={{
@@ -2208,8 +2393,12 @@ export default function MacroTopologyTerminal({ live = null }) {
                   {upstream.map(({ e, n }) => (
                     <button key={e.id} onClick={() => selectNode(n.id)} className="w-full text-left px-2 py-1 rounded border hover:opacity-80"
                       style={{ borderColor: PANEL_BORDER, background: "rgba(14,19,29,0.6)" }}>
-                      <span style={{ color: e.relation === "negative" ? "#e07070" : "#6fc28a", fontFamily: MONO }}>{e.relation === "negative" ? "−" : e.relation === "conditional" ? "~" : "+"}</span>
-                      <span className="ml-1.5" style={{ color: "#c9d3e0" }}>{n.name}</span>
+                      <div className="flex items-center gap-1.5">
+                        <span className="w-1.5 h-1.5 rounded-full shrink-0" style={{ background: EDGE_STYLE[e.status]?.color || "#5a6a80" }} />
+                        <span style={{ color: e.relation === "negative" ? "#e07070" : e.relation === "conditional" ? "#c9b46a" : "#6fc28a", fontFamily: MONO }}>{e.relation === "negative" ? "−" : e.relation === "conditional" ? "~" : "+"}</span>
+                        <span style={{ color: "#c9d3e0" }}>{n.name}</span>
+                      </div>
+                      {e.mechanism && <div className="mt-0.5 pl-3 leading-snug" style={{ color: "#7a8ba0", fontSize: 10.5 }}>{e.mechanism}</div>}
                     </button>
                   ))}
                   {!upstream.length && <div style={{ color: TXT_DIM }}>—</div>}
@@ -2221,8 +2410,12 @@ export default function MacroTopologyTerminal({ live = null }) {
                   {downstream.map(({ e, n }) => (
                     <button key={e.id} onClick={() => selectNode(n.id)} className="w-full text-left px-2 py-1 rounded border hover:opacity-80"
                       style={{ borderColor: PANEL_BORDER, background: "rgba(14,19,29,0.6)" }}>
-                      <span style={{ color: e.relation === "negative" ? "#e07070" : "#6fc28a", fontFamily: MONO }}>{e.relation === "negative" ? "−" : e.relation === "conditional" ? "~" : "+"}</span>
-                      <span className="ml-1.5" style={{ color: "#c9d3e0" }}>{n.name}</span>
+                      <div className="flex items-center gap-1.5">
+                        <span className="w-1.5 h-1.5 rounded-full shrink-0" style={{ background: EDGE_STYLE[e.status]?.color || "#5a6a80" }} />
+                        <span style={{ color: e.relation === "negative" ? "#e07070" : e.relation === "conditional" ? "#c9b46a" : "#6fc28a", fontFamily: MONO }}>{e.relation === "negative" ? "−" : e.relation === "conditional" ? "~" : "+"}</span>
+                        <span style={{ color: "#c9d3e0" }}>{n.name}</span>
+                      </div>
+                      {e.mechanism && <div className="mt-0.5 pl-3 leading-snug" style={{ color: "#7a8ba0", fontSize: 10.5 }}>{e.mechanism}</div>}
                     </button>
                   ))}
                   {!downstream.length && <div style={{ color: TXT_DIM }}>—</div>}

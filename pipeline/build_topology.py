@@ -754,7 +754,46 @@ def main():
         updatedAt=dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"))
 
     # ---- 写出 ----
+    # ---- 今日变化: 与上一次输出对比 (回访核心) ----
+    changes = dict(since="", generatedAt=market_state.get("updatedAt", ""),
+                   nodeChanges=[], pathChanges=[], divAdded=[], divRemoved=[])
+    try:
+        prev_nodes = {n["id"]: n for n in json.load(open(outdir / "nodes.json", encoding="utf-8"))}
+        try:
+            changes["since"] = json.load(open(outdir / "market_state.json", encoding="utf-8")).get("updatedAt", "")
+        except Exception:
+            pass
+        sev = {"NORMAL": 0, "ELEVATED": 1, "DIVERGENCE": 2, "INVALIDATED": 2, "EXTREME": 3}
+        ncs = []
+        for n in nodes_out:
+            pv = prev_nodes.get(n["id"])
+            if pv and pv.get("status") != n["status"] and not n.get("stale"):
+                ncs.append(dict(id=n["id"], name=n["name"], frm=pv["status"], to=n["status"],
+                                delta=abs(sev.get(n["status"], 0) - sev.get(pv.get("status"), 0)),
+                                pri=n["priority"]))
+        ncs.sort(key=lambda c: (-c["delta"], c["pri"]))
+        changes["nodeChanges"] = [{"id": c["id"], "name": c["name"], "from": c["frm"], "to": c["to"]} for c in ncs[:30]]
+        try:
+            prev_paths = {p["id"]: p for p in json.load(open(outdir / "paths.json", encoding="utf-8"))}
+            for p in paths:
+                if p["id"].startswith("p_std_"):
+                    ps = prev_paths.get(p["id"], {}).get("status")
+                    if ps and ps != p.get("status"):
+                        changes["pathChanges"].append(f'{p.get("title") or p.get("name")}: {ps} → {p["status"]}')
+        except Exception:
+            pass
+        try:
+            prev_divs = {d.get("title") for d in json.load(open(outdir / "divergences.json", encoding="utf-8"))}
+            cur_divs = {d.get("title") for d in divs}
+            changes["divAdded"] = sorted(cur_divs - prev_divs)[:8]
+            changes["divRemoved"] = sorted(prev_divs - cur_divs)[:8]
+        except Exception:
+            pass
+    except Exception:
+        pass  # 首次运行无历史文件, changes 为空
+
     dump = lambda name, obj: json.dump(obj, open(outdir / name, "w"), ensure_ascii=False, indent=1)
+    dump("changes.json", changes)
     dump("nodes.json", nodes_out)
     dump("edges.json", edges_out)
     dump("paths.json", paths)
