@@ -105,7 +105,7 @@
   "relation": "negative",
   "mechanism": "实际利率与黄金的传统负相关本期失效:同步上行",
   "strength": 0.8,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_10y_dxy",
@@ -132,7 +132,7 @@
   "relation": "positive",
   "mechanism": "油价上行未带动盈亏平衡通胀,通胀预期未确认",
   "strength": 0.55,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_style",
@@ -636,7 +636,7 @@
   "relation": "negative",
   "mechanism": "波动率与股指反向",
   "strength": 0.7,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_vix_risk",
@@ -816,7 +816,7 @@
   "relation": "positive",
   "mechanism": "实际利率曲线联动",
   "strength": 0.5,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_cpi_cuts",
@@ -1518,7 +1518,7 @@
   "relation": "positive",
   "mechanism": "原油向零售油价传导",
   "strength": 0.7,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_gasoline_cpi",
@@ -1707,7 +1707,7 @@
   "relation": "negative",
   "mechanism": "实际利率同样定价白银",
   "strength": 0.4,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_alu_comidx",
@@ -1788,7 +1788,7 @@
   "relation": "negative",
   "mechanism": "负Gamma放大现实波动",
   "strength": 0.5,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_cta_spx",
@@ -2013,7 +2013,7 @@
   "relation": "positive",
   "mechanism": "再通胀确认需要能源配合",
   "strength": 0.5,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_refl_bankidx",
@@ -2058,7 +2058,7 @@
   "relation": "positive",
   "mechanism": "避险状态推升波动率",
   "strength": 0.6,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_riskoff_risk",
