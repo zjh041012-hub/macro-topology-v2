@@ -457,3 +457,625 @@ nodes:
     priority: P3
     unit: idx
     description: 短期无到期窗口,风险温和。
+  us3m:
+    name: 美国3个月国库券收益率
+    category: rates
+    priority: P2
+    unit: '%'
+    description: 政策利率锚定下的短端基准。
+  us5y:
+    name: 美国5年期国债收益率
+    category: rates
+    priority: P2
+    unit: '%'
+    description: 中段跟随长端上移,但弱于10Y/30Y——供给冲击集中在长端。
+  us20y:
+    name: 美国20年期国债收益率
+    category: rates
+    priority: P3
+    unit: '%'
+    description: 20Y流动性最差,供给冲击下表现最弱。
+  us5yreal:
+    name: 美国5年期实际利率
+    category: rates
+    priority: P2
+    unit: '%'
+    description: 中段实际利率同步上行,幅度小于10Y。
+  cutsexp:
+    name: 市场隐含未来12个月降息次数
+    category: rates
+    priority: P1
+    unit: 次
+    description: 降息预期仅温和回落——与利率大幅上行不匹配,佐证本轮非政策预期驱动。
+    invalidation: 若降息预期快速归零且美元走强,主导解释切换为政策转鹰(路径A)。
+  netissue:
+    name: 美国国债季度净发行量
+    category: risk
+    priority: P0
+    unit: 亿$
+    description: 再融资规模连续上修,长债占比提升,是本轮期限溢价上行的直接供给来源。
+    invalidation: 若财政部下调发行指引或缩短久期结构,供给压力链条降级。
+  auctiontail:
+    name: 美国国债拍卖尾差
+    category: risk
+    priority: P1
+    unit: bp
+    description: 近三次10Y/30Y拍卖连续出现明显尾差,需求消化吃力。
+  bidcover:
+    name: 美国国债投标倍数
+    category: risk
+    priority: P1
+    unit: x
+    description: 投标倍数降至低分位,与尾差互相印证需求走弱。
+  dealerinv:
+    name: 美国一级交易商国债库存
+    category: risk
+    priority: P2
+    unit: 亿$
+    description: 做市商被动吸收供给,库存接近历史高位,定价能力受限。
+  usdeficit:
+    name: 美国财政赤字(12M滚动)
+    category: risk
+    priority: P1
+    unit: 万亿$
+    description: 赤字率在非衰退期罕见走阔,是净发行压力的源头。
+  fiscalimpulse:
+    name: 美国财政冲量
+    category: risk
+    priority: P3
+    unit: '%GDP'
+    description: 财政对增长的边际贡献仍为正。
+  tga:
+    name: 美国财政部TGA账户
+    category: liquidity
+    priority: P1
+    unit: 亿$
+    description: TGA回落部分对冲发行抽水,缓和银行体系流动性。
+  reserves:
+    name: 美国银行准备金
+    category: liquidity
+    priority: P1
+    unit: 万亿$
+    description: 准备金仍处\u201c充裕\u201d区间,未见融资压力信号。
+  mmf:
+    name: 美国货币市场基金规模
+    category: liquidity
+    priority: P2
+    unit: 万亿$
+    description: 高收益短端持续吸金,货基规模创新高。
+  cn1y:
+    name: 中国1年期国债收益率
+    category: rates
+    priority: P3
+    unit: '%'
+    description: 短端围绕资金面波动。
+  cn5y:
+    name: 中国5年期国债收益率
+    category: rates
+    priority: P3
+    unit: '%'
+    description: 中段平稳。
+  cn30y:
+    name: 中国30年期国债收益率
+    category: rates
+    priority: P2
+    unit: '%'
+    description: 超长端配置盘主导,与美债长端走势脱敏。
+  lpr5y:
+    name: 5年期LPR
+    category: rates
+    priority: P3
+    unit: '%'
+    description: 按揭定价基准,政策调降后持稳。
+  dr001:
+    name: DR001
+    category: rates
+    priority: P3
+    unit: '%'
+    description: 隔夜资金利率平稳。
+  shibor3m:
+    name: SHIBOR 3个月
+    category: rates
+    priority: P3
+    unit: '%'
+    description: 银行间中期资金成本。
+  ncd1y:
+    name: AAA同业存单1年期收益率
+    category: rates
+    priority: P2
+    unit: '%'
+    description: 银行负债端边际定价,流动性压力的前哨指标。
+  cnusspread:
+    name: 中美国债10年利差
+    category: rates
+    priority: P2
+    unit: '%'
+    description: 倒挂幅度随美债上行再度走阔,人民币汇率的关键约束。
+  cnchengtou:
+    name: 中国城投债利差
+    category: credit
+    priority: P1
+    unit: '%'
+    description: 化债推进下城投利差持续压缩。
+  cnpropcredit:
+    name: 中国房地产债信用利差
+    category: credit
+    priority: P1
+    unit: '%'
+    description: 地产销售走弱背景下,民企地产债利差再度走阔。
+  cnaaa:
+    name: 中国AAA信用债利差
+    category: credit
+    priority: P2
+    unit: '%'
+    description: 高等级信用利差低位平稳。
+  ismneworder:
+    name: ISM制造业新订单
+    category: growth
+    priority: P1
+    unit: idx
+    description: 新订单徘徊于荣枯线下方,需求端未现再加速。
+  ismserv:
+    name: ISM服务业PMI
+    category: growth
+    priority: P1
+    unit: idx
+    description: 服务业维持温和扩张。
+  usretail:
+    name: 美国零售销售(环比)
+    category: growth
+    priority: P2
+    unit: '%'
+    description: 消费动能边际放缓但仍有韧性。
+  gdpnow:
+    name: 亚特兰大联储GDPNow
+    category: growth
+    priority: P2
+    unit: '%'
+    description: 增长跟踪温和——利率上行并非增长预期驱动,佐证供给叙事。
+  usconf:
+    name: 美国消费者信心
+    category: growth
+    priority: P2
+    unit: idx
+    description: 信心受高利率与物价拖累。
+  housingstarts:
+    name: 美国住房开工
+    category: growth
+    priority: P2
+    unit: 万套
+    description: 长端利率上行直接压制地产开工——利率敏感部门最先受损。
+  jolts:
+    name: JOLTS职位空缺
+    category: growth
+    priority: P2
+    unit: 万
+    description: 劳动力市场降温但未失速。
+  ahe:
+    name: 美国平均时薪(同比)
+    category: growth
+    priority: P2
+    unit: '%YoY'
+    description: 薪资增速缓步回落,不构成通胀再加速证据。
+  cxpmi:
+    name: 财新制造业PMI
+    category: growth
+    priority: P2
+    unit: idx
+    description: 中小出口型企业景气度略好于官方口径。
+  pminewexport:
+    name: PMI新出口订单
+    category: growth
+    priority: P3
+    unit: idx
+    description: 外需边际改善但仍处收缩区。
+  creditimpulse:
+    name: 中国信用脉冲
+    category: growth
+    priority: P0
+    unit: '%GDP'
+    description: 信用脉冲处于回升早期,尚未传导至实体需求——决定铜与周期股的中期方向。
+    invalidation: 若信用脉冲转正且企业中长贷连续改善,中国信用扩张路径(C)激活。
+  corploan:
+    name: 企业中长期贷款(同比多增)
+    category: growth
+    priority: P1
+    unit: 亿元
+    description: 企业融资需求修复缓慢,信用扩张的关键观察项。
+  hhloanlt:
+    name: 居民中长期贷款(同比多增)
+    category: growth
+    priority: P2
+    unit: 亿元
+    description: 按揭需求疲弱,与地产销售互相印证。
+  lgsb:
+    name: 地方政府专项债发行
+    category: liquidity
+    priority: P2
+    unit: 亿元
+    description: 专项债前置发行支撑基建。
+  reinvest:
+    name: 房地产开发投资(累计同比)
+    category: growth
+    priority: P1
+    unit: '%YoY'
+    description: 地产投资降幅再度扩大,地产下行路径(G)的核心节点。
+  propsales:
+    name: 商品房销售面积(同比)
+    category: growth
+    priority: P1
+    unit: '%YoY'
+    description: 销售端未见底,负反馈仍在向投资与信用传导。
+  newstarts:
+    name: 房屋新开工面积(同比)
+    category: growth
+    priority: P2
+    unit: '%YoY'
+    description: 新开工深度收缩,直接压制钢铁与建材需求。
+  infrainvest:
+    name: 基础设施投资(累计同比)
+    category: growth
+    priority: P2
+    unit: '%YoY'
+    description: 基建对冲地产,专项债资金到位支撑。
+  mfginvest:
+    name: 制造业投资(累计同比)
+    category: growth
+    priority: P3
+    unit: '%YoY'
+    description: 设备更新驱动制造业投资高位。
+  power:
+    name: 发电量(同比)
+    category: growth
+    priority: P3
+    unit: '%YoY'
+    description: 电量增速验证实体活动温和。
+  usppi:
+    name: 美国PPI(同比)
+    category: inflation
+    priority: P2
+    unit: '%YoY'
+    description: 上游价格温和回升,尚未失控。
+  rentcpi:
+    name: 美国租金通胀(同比)
+    category: inflation
+    priority: P2
+    unit: '%YoY'
+    description: 租金分项延续缓慢降温,核心通胀的最大权重项。
+  gasoline:
+    name: 美国汽油零售价
+    category: inflation
+    priority: P2
+    unit: $/gal
+    description: 油价上行逐步传导至终端。
+  cncorecpi:
+    name: 中国核心CPI(同比)
+    category: inflation
+    priority: P2
+    unit: '%YoY'
+    description: 内需偏弱,核心通胀低位。
+  ppirm:
+    name: 中国PPIRM(同比)
+    category: inflation
+    priority: P3
+    unit: '%YoY'
+    description: 购进价格降幅收窄。
+  pmiraw:
+    name: PMI原材料购进价格
+    category: inflation
+    priority: P3
+    unit: idx
+    description: 上游涨价向中游传导的先行信号。
+  gscpi:
+    name: 全球供应链压力指数
+    category: inflation
+    priority: P2
+    unit: σ
+    description: 供应链压力略高于中性,未现系统性紧张。
+  bdi:
+    name: 波罗的海干散货指数
+    category: inflation
+    priority: P3
+    unit: idx
+    description: 干散运价反映大宗实物需求温和。
+  sloos:
+    name: 美国银行贷款标准(收紧净占比)
+    category: liquidity
+    priority: P2
+    unit: '%'
+    description: 信贷标准边际放松,信用渠道未受利率冲击。
+  bankloans:
+    name: 美国商业银行贷款(同比)
+    category: liquidity
+    priority: P2
+    unit: '%YoY'
+    description: 银行信贷温和扩张。
+  pbocbs:
+    name: 中国央行资产负债表
+    category: liquidity
+    priority: P2
+    unit: 万亿元
+    description: 央行扩表配合政府债发行。
+  cngovbond:
+    name: 中国政府债券净融资
+    category: liquidity
+    priority: P2
+    unit: 亿元
+    description: 政府债供给放量,社融的主要支撑项。
+  landsales:
+    name: 中国土地出让收入(同比)
+    category: liquidity
+    priority: P2
+    unit: '%YoY'
+    description: 土地财政持续收缩,地方财力与地产负反馈的交点。
+  cdxig:
+    name: CDX IG
+    category: credit
+    priority: P2
+    unit: bp
+    description: 投资级CDS平稳,信用市场未跟随利率恐慌。
+  cdxhy:
+    name: CDX HY
+    category: credit
+    priority: P2
+    unit: bp
+    description: 高收益CDS小幅走阔,远未到压力区。
+  vvix:
+    name: VVIX
+    category: credit
+    priority: P2
+    unit: idx
+    description: 波动率的波动率抬升,尾部对冲需求增加。
+  hydefault:
+    name: 美国高收益债违约率
+    category: credit
+    priority: P2
+    unit: '%'
+    description: 违约率处于历史均值附近,基本面未恶化。
+  bankcds:
+    name: 美国银行CDS指数
+    category: credit
+    priority: P2
+    unit: bp
+    description: 银行CDS小幅走阔——关注长端利率对银行债券浮亏的压力。
+  cnliqstress:
+    name: 中国银行间流动性压力
+    category: credit
+    priority: P2
+    unit: σ
+    description: 银行间流动性平稳,无跨季压力。
+  brent:
+    name: Brent原油
+    category: asset
+    priority: P2
+    unit: $/bbl
+    description: 与WTI同步,布伦特溢价稳定。
+  natgas:
+    name: 美国天然气
+    category: asset
+    priority: P2
+    unit: $/mmbtu
+    description: 气价区间震荡,供需双弱。
+  silver:
+    name: 白银
+    category: asset
+    priority: P2
+    unit: $/oz
+    description: 跟随黄金上行,贵金属对冲需求外溢。
+  aluminum:
+    name: 铝(LME)
+    category: asset
+    priority: P3
+    unit: $/t
+    description: 电解铝供给受限,价格高位。
+  ironore:
+    name: 铁矿石
+    category: asset
+    priority: P2
+    unit: $/t
+    description: 地产新开工收缩直接压制矿价——地产下行路径(G)的价格端确认。
+  rebar:
+    name: 螺纹钢
+    category: asset
+    priority: P3
+    unit: 元/t
+    description: 建材需求弱势,钢价承压。
+  usoilinv:
+    name: 美国原油库存
+    category: asset
+    priority: P2
+    unit: 亿桶
+    description: 库存持续去化,支撑油价底部。
+  rigcount:
+    name: 美国钻机数量
+    category: asset
+    priority: P3
+    unit: 台
+    description: 资本开支纪律下钻机回落,供给弹性受限。
+  lmecopperinv:
+    name: LME铜库存
+    category: asset
+    priority: P2
+    unit: 万吨
+    description: 显性库存低位,铜价对需求信号高度敏感。
+  oilterm:
+    name: 原油期限结构(M1-M12)
+    category: asset
+    priority: P2
+    unit: $/bbl
+    description: 现货升水加深,实物市场偏紧的直接证据。
+  shlngold:
+    name: 上海-伦敦黄金溢价
+    category: asset
+    priority: P3
+    unit: $/oz
+    description: 境内溢价高企,反映人民币计价的黄金配置需求旺盛。
+  opecprod:
+    name: OPEC原油产量
+    category: asset
+    priority: P3
+    unit: 万桶/日
+    description: 减产执行率高,供给端持续收紧。
+  goldetfflow:
+    name: 全球黄金ETF资金流(4周)
+    category: liquidity
+    priority: P1
+    unit: 亿$
+    description: 黄金ETF持续大额净流入——财政信用对冲需求的资金面证据,支撑\u201c黄金上涨非投机\u201d判断。
+  cftcgold:
+    name: CFTC黄金净多头
+    category: liquidity
+    priority: P2
+    unit: 万手
+    description: 投机净多头高位但未极端,挤仓风险可控。
+  usequityflow:
+    name: 美国股票ETF资金流(4周)
+    category: liquidity
+    priority: P2
+    unit: 亿$
+    description: 股票资金转为净流出,与利率冲击一致。
+  putcall:
+    name: 股票Put/Call比例
+    category: liquidity
+    priority: P2
+    unit: x
+    description: 对冲需求抬升,情绪偏防御。
+  cta:
+    name: CTA趋势仓位代理
+    category: liquidity
+    priority: P2
+    unit: σ
+    description: 趋势资金已转向做空债券、减持股票。
+  gammaproxy:
+    name: 期权做市商Gamma代理
+    category: liquidity
+    priority: P2
+    unit: σ
+    description: 负Gamma环境放大日内波动。
+  margindebt:
+    name: 融资余额(A股)
+    category: liquidity
+    priority: P3
+    unit: 万亿元
+    description: 杠杆资金温和回升。
+  buyback:
+    name: 美国股票回购规模(季)
+    category: liquidity
+    priority: P2
+    unit: 亿$
+    description: 回购仍是美股最大边际买家,托底估值。
+  rut:
+    name: 罗素2000
+    category: asset
+    priority: P2
+    unit: idx
+    description: 小盘股受融资成本冲击,弱于大盘。
+  sox:
+    name: 美国半导体指数(SOX)
+    category: asset
+    priority: P1
+    unit: idx
+    description: 最长久期的成长资产,实际利率上行下领跌——本轮利率冲击的风险放大器。
+  tlt:
+    name: 美国长期国债指数(TLT)
+    category: asset
+    priority: P2
+    unit: idx
+    description: 长债指数创阶段新低,久期资产全面承压。
+  utilities:
+    name: 美国公用事业指数
+    category: asset
+    priority: P3
+    unit: idx
+    description: 类债券板块随利率上行走弱。
+  reits:
+    name: 美国房地产REITs
+    category: asset
+    priority: P3
+    unit: idx
+    description: 利率敏感+再融资压力双重打击。
+  csi500:
+    name: 中证500
+    category: asset
+    priority: P2
+    unit: idx
+    description: 中盘成长温和走强,内资定价为主。
+  chinext:
+    name: 创业板指
+    category: asset
+    priority: P2
+    unit: idx
+    description: 国内流动性宽松支撑成长风格。
+  hstech:
+    name: 恒生科技
+    category: asset
+    priority: P2
+    unit: idx
+    description: 离岸科技受美债利率与国内政策双重定价。
+  dividendetf:
+    name: 红利ETF
+    category: asset
+    priority: P2
+    unit: idx
+    description: 高股息防御属性在利率冲击中相对抗跌。
+  goldetf:
+    name: 黄金ETF(518880)
+    category: asset
+    priority: P3
+    unit: 元
+    description: 境内黄金ETF份额与净值齐升。
+  usepu:
+    name: 美国经济政策不确定性
+    category: risk
+    priority: P2
+    unit: idx
+    description: 财政与监管政策不确定性抬升。
+  cnepu:
+    name: 中国经济政策不确定性
+    category: risk
+    priority: P3
+    unit: idx
+    description: 政策预期相对平稳。
+  cnpropregime:
+    name: 中国房地产政策状态
+    category: risk
+    priority: P2
+    unit: σ
+    description: 政策处于\u201c托而不举\u201d状态,放松空间仍在。
+  usbankrisk:
+    name: 美国银行体系风险状态
+    category: risk
+    priority: P2
+    unit: σ
+    description: 长端利率上行重新拉大银行债券浮亏,风险状态由低位抬头。
+  liqcrisis:
+    name: 全球流动性危机状态
+    category: risk
+    priority: P1
+    unit: σ
+    description: 融资市场平稳,流动性冲击路径(E)处于休眠——一旦激活,所有资产相关性趋同。
+    invalidation: 若FRA-OIS、交叉货币基差与HY利差同步异动,该状态节点升级并覆盖其他路径。
+  reflation:
+    name: 再通胀状态
+    category: risk
+    priority: P1
+    unit: σ
+    description: 增长端未确认,再通胀路径(F)尚未激活。
+  recession:
+    name: 衰退状态
+    category: risk
+    priority: P1
+    unit: σ
+    description: 就业与信用利差均未给出衰退信号,路径(H)休眠。
+  stagflation:
+    name: 滞胀状态
+    category: risk
+    priority: P2
+    unit: σ
+    description: 利率上行+增长平淡的组合带有轻度滞胀气味,尚不构成主导。
+  riskoff:
+    name: Risk-off状态
+    category: risk
+    priority: P1
+    unit: σ
+    description: 避险情绪温和——典型risk-off中美元黄金齐涨,当前美元走弱说明并非全面避险。

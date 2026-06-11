@@ -143,3 +143,171 @@ nodes:
                   formula: "z60(spread(DTB4WK, DTB3))",
                   extra_fred: [DTB4WK, DTB3],
                   note: "1M/3M短债利差异常陡升 = 上限博弈定价; 平时近0" }
+
+  # ================= 扩容: 美国利率/政策/国债供给 =================
+  us3m:       { source: fred, series: DGS3MO,  transform: level, unit_changes: bp }
+  us5y:       { source: fred, series: DGS5,    transform: level, unit_changes: bp }
+  us20y:      { source: fred, series: DGS20,   transform: level, unit_changes: bp }
+  us5yreal:   { source: fred, series: DFII5,   transform: level, unit_changes: bp }
+  cutsexp:    { source: derived, unit_changes: idx,
+                formula: "series:(fedfunds-fedpath)/0.25",
+                note: "真实派生: (EFFR−1Y国债)/25bp ≈ 未来12个月隐含降息次数, 全部来自FRED真实序列" }
+  netissue:   { source: treasury, endpoint: "v1/accounting/od/auctions_query",
+                transform: rolling_issuance, window_days: 91, unit_changes: pct,
+                note: "财政部FiscalData真实拍卖数据: 91天滚动发行额" }
+  auctiontail: { source: manual, value: 0, unit_changes: idx,
+                note: "尾差需WI收益率, 无免费API; 每次再融资季拍卖后手填(财政部新闻稿), 后续可接Codex抓取" }
+  bidcover:   { source: treasury, endpoint: "v1/accounting/od/auctions_query",
+                transform: bid_to_cover, unit_changes: pct,
+                note: "FiscalData真实字段bid_to_cover_ratio: 附息国债近10场滚动均值" }
+  dealerinv:  { source: manual, value: 0, unit_changes: idx,
+                note: "纽约联储一级交易商周报为xlsx多表, 暂手填; 后续可写专用解析" }
+  usdeficit:  { source: fred, series: MTSDS133FMS, transform: rolling_sum_12m, unit_changes: pct, freq: monthly,
+                note: "月度财政收支差额12个月滚动求和 = 滚动赤字" }
+  fiscalimpulse: { source: manual, value: 0.8, unit_changes: idx, note: "学术口径季频, 手工维护" }
+  tga:        { source: fred, series: WTREGEN,  transform: level, unit_changes: pct, freq: weekly }
+  reserves:   { source: fred, series: WRESBAL,  transform: level, unit_changes: pct, freq: weekly }
+  mmf:        { source: fred, series: MMMFFAQ027S, transform: level, unit_changes: pct, freq: quarterly,
+                note: "货基规模季频(FRED), 周频ICI数据无免费API" }
+
+  # ================= 扩容: 中国利率与信用 =================
+  cn1y:       { source: akshare, fn: bond_china_yield, code: "1年", transform: level, unit_changes: bp,
+                note: "中债国债收益率曲线1年期" }
+  cn5y:       { source: akshare, fn: bond_zh_us_rate, column: "中国国债收益率5年", transform: level, unit_changes: bp }
+  cn30y:      { source: akshare, fn: bond_zh_us_rate, column: "中国国债收益率30年", transform: level, unit_changes: bp }
+  lpr5y:      { source: akshare, fn: macro_china_lpr, column: "LPR5Y", transform: level, unit_changes: bp }
+  dr001:      { source: akshare, fn: repo_rate_query, code: FDR001, transform: level, unit_changes: bp }
+  shibor3m:   { source: akshare, fn: macro_china_shibor_all, column: "3月", transform: level, unit_changes: bp,
+                note: "列名若变更在fetch_akshare的shibor分支调整" }
+  ncd1y:      { source: manual, value: 1.86, unit_changes: bp, note: "存单收益率无稳定免费接口, 周更" }
+  cnusspread: { source: derived, unit_changes: bp,
+                formula: "series:cn10y-us10y",
+                note: "真实派生: 中债10Y − 美债10Y, 两端均为真实序列" }
+  cnchengtou: { source: manual, value: 1.12, unit_changes: bp, note: "中债利差周度手填; 后续可接中债API" }
+  cnpropcredit: { source: manual, value: 4.85, unit_changes: bp, note: "地产债利差周度手填" }
+  cnaaa:      { source: manual, value: 0.42, unit_changes: bp, note: "AAA信用利差周度手填" }
+
+  # ================= 扩容: 美国增长与就业 =================
+  ismneworder: { source: manual, value: 49.2, unit_changes: idx, note: "ISM分项无免费API, 每月发布日手填" }
+  ismserv:    { source: akshare, fn: macro_usa_ism_non_pmi, transform: level, unit_changes: idx, freq: monthly }
+  usretail:   { source: fred, series: RSAFS, transform: mom_pct, unit_changes: pp, freq: monthly }
+  gdpnow:     { source: fred, series: GDPNOW, transform: level, unit_changes: pp,
+                note: "亚特兰大联储GDPNow官方序列在FRED" }
+  usconf:     { source: fred, series: UMCSENT, transform: level, unit_changes: idx, freq: monthly,
+                note: "用密歇根消费者信心代理(谘商会无免费API)" }
+  housingstarts: { source: fred, series: HOUST, transform: level, unit_changes: pct, freq: monthly }
+  jolts:      { source: fred, series: JTSJOL, transform: level, unit_changes: pct, freq: monthly }
+  ahe:        { source: fred, series: CES0500000003, transform: yoy, unit_changes: pp, freq: monthly }
+
+  # ================= 扩容: 中国增长/地产/信用周期 =================
+  cxpmi:      { source: akshare, fn: macro_china_cx_pmi_yearly, transform: level, unit_changes: idx, freq: monthly }
+  pminewexport: { source: manual, value: 48.9, unit_changes: idx, note: "PMI分项, 每月统计局发布后手填" }
+  creditimpulse: { source: derived, unit_changes: idx,
+                formula: "1.0*z20(tsf)",
+                note: "代理: 社融存量增速z分; 严格口径(12M增量/GDP)待接GDP序列后升级" }
+  corploan:   { source: manual, value: 0, unit_changes: idx, note: "信贷收支表分项, 每月央行发布后手填" }
+  hhloanlt:   { source: manual, value: 0, unit_changes: idx, note: "同上" }
+  lgsb:       { source: manual, value: 0, unit_changes: idx, note: "专项债发行额, 月度手填或接中债数据" }
+  reinvest:   { source: manual, value: -9.8, unit_changes: pp, note: "统计局月度发布后手填; 后续可接NBS接口" }
+  propsales:  { source: manual, value: -16.4, unit_changes: pp, note: "同上" }
+  newstarts:  { source: manual, value: -22.1, unit_changes: pp, note: "同上" }
+  infrainvest: { source: manual, value: 6.2, unit_changes: pp, note: "FAI分项, 月度手填" }
+  mfginvest:  { source: manual, value: 8.1, unit_changes: pp, note: "FAI分项, 月度手填" }
+  power:      { source: akshare, fn: macro_china_society_electricity, column: "全社会用电量同比",
+                transform: level, unit_changes: pp, freq: monthly,
+                note: "统计时间为累计口径(如2026年1-4月), 解析取末月" }
+
+  # ================= 扩容: 通胀与供应链 =================
+  usppi:      { source: fred, series: PPIACO, transform: yoy, unit_changes: pp, freq: monthly }
+  rentcpi:    { source: fred, series: CUSR0000SEHA, transform: yoy, unit_changes: pp, freq: monthly }
+  gasoline:   { source: fred, series: GASREGW, transform: level, unit_changes: pct, freq: weekly }
+  cncorecpi:  { source: manual, value: 0.6, unit_changes: pp, note: "核心CPI分项, 月度手填(统计局)" }
+  ppirm:      { source: manual, value: -2.1, unit_changes: pp, note: "PPIRM月度手填" }
+  pmiraw:     { source: manual, value: 52.8, unit_changes: idx, note: "PMI分项, 月度手填" }
+  gscpi:      { source: csv_url, url: "https://www.newyorkfed.org/medialibrary/research/policy/gscpi/gscpi_data.xlsx",
+                column: GSCPI, transform: level, unit_changes: idx, freq: monthly,
+                note: "纽约联储全球供应链压力指数官方文件" }
+  bdi:        { source: manual, value: 1840, unit_changes: pct, note: "波交所数据无免费API, 周更" }
+
+  # ================= 扩容: 全球流动性与财政 =================
+  sloos:      { source: fred, series: DRTSCILM, transform: level, unit_changes: pp, freq: quarterly }
+  bankloans:  { source: fred, series: TOTLL, transform: yoy, unit_changes: pp, freq: weekly }
+  pbocbs:     { source: manual, value: 45.8, unit_changes: pct, note: "央行资产负债表月度手填; 后续可接央行调查统计司表格" }
+  cngovbond:  { source: manual, value: 0, unit_changes: idx, note: "政府债净融资, 月度手填" }
+  landsales:  { source: manual, value: -18.6, unit_changes: pp, note: "财政部月度发布后手填" }
+
+  # ================= 扩容: 信用与金融压力 =================
+  cdxig:      { source: alias, of: igspread, unit_changes: bp, note: "代理: 以IG现券利差替代CDX IG(CDS无免费源)" }
+  cdxhy:      { source: alias, of: hyspread, unit_changes: bp, note: "代理: 以HY现券利差替代CDX HY" }
+  vvix:       { source: yahoo, ticker: "^VVIX", transform: level, unit_changes: idx }
+  hydefault:  { source: manual, value: 2.8, unit_changes: pp, note: "评级机构月报, 手填" }
+  bankcds:    { source: manual, value: 78.2, unit_changes: bp, note: "CDS无免费源, 周更" }
+  cnliqstress: { source: derived, unit_changes: idx,
+                formula: "0.6*z20(dr007) + 0.4*z20(shibor3m)",
+                note: "真实派生: 资金利率动量合成" }
+
+  # ================= 扩容: 商品供需与库存 =================
+  brent:      { source: yahoo, ticker: "BZ=F", transform: level, unit_changes: pct }
+  natgas:     { source: yahoo, ticker: "NG=F", transform: level, unit_changes: pct }
+  silver:     { source: yahoo, ticker: "SI=F", transform: level, unit_changes: pct }
+  aluminum:   { source: akshare, fn: futures_main_sina, code: AL0, transform: level, unit_changes: pct,
+                note: "沪铝主力代理LME铝" }
+  ironore:    { source: akshare, fn: futures_main_sina, code: I0, transform: level, unit_changes: pct }
+  rebar:      { source: akshare, fn: futures_main_sina, code: RB0, transform: level, unit_changes: pct }
+  usoilinv:   { source: fred, series: WCESTUS1, transform: level, unit_changes: pct, freq: weekly,
+                note: "EIA周度商业原油库存(FRED镜像)" }
+  rigcount:   { source: manual, value: 512, unit_changes: pct, note: "贝克休斯周五发布, 手填" }
+  lmecopperinv: { source: akshare, fn: futures_inventory_em, code: "沪铜", transform: level, unit_changes: pct,
+                note: "以上期所铜库存代理LME(LME数据收费)" }
+  oilterm:    { source: manual, value: 4.2, unit_changes: pct, note: "期限结构需多合约, 暂手填; 后续可用CL连一-连四差实现" }
+  shlngold:   { source: manual, value: 28.5, unit_changes: pct, note: "沪伦溢价需现货+汇率合成, 暂手填" }
+  opecprod:   { source: manual, value: 2685, unit_changes: pct, note: "OPEC月报/路透调查, 月度手填" }
+
+  # ================= 扩容: 资金流与仓位 =================
+  goldetfflow: { source: manual, value: 86.4, unit_changes: pct, note: "世界黄金协会周度数据, 手填; 后续可接其CSV" }
+  cftcgold:   { source: manual, value: 24.8, unit_changes: pct, note: "CFTC持仓报告周五发布; 后续可接CFTC Socrata API自动化" }
+  usequityflow: { source: manual, value: -124, unit_changes: idx, note: "资金流数据商收费, 周更" }
+  putcall:    { source: manual, value: 1.08, unit_changes: pct, note: "Cboe比率无稳定免费API, 周更" }
+  cta:        { source: derived, unit_changes: idx,
+                formula: "0.5*z20(spx) + 0.5*z20(comidx)",
+                note: "代理: 股票+商品趋势动量合成" }
+  gammaproxy: { source: derived, unit_changes: idx,
+                formula: "-1.0*z20(vix)",
+                note: "代理: VIX动量取负" }
+  margindebt: { source: akshare, fn: macro_china_market_margin_sh, column: "融资余额",
+                transform: level, unit_changes: pct, scale: 0.000000000001,
+                note: "上交所融资余额(万亿元), 真实日频" }
+  buyback:    { source: manual, value: 2280, unit_changes: pct, note: "回购数据商收费, 季度手填" }
+
+  # ================= 扩容: 资产与风格 =================
+  rut:        { source: yahoo, ticker: "^RUT", transform: level, unit_changes: pct }
+  sox:        { source: yahoo, ticker: "^SOX", transform: level, unit_changes: pct }
+  tlt:        { source: yahoo, ticker: "TLT", transform: level, unit_changes: pct }
+  utilities:  { source: yahoo, ticker: "XLU", transform: level, unit_changes: pct }
+  reits:      { source: yahoo, ticker: "VNQ", transform: level, unit_changes: pct }
+  csi500:     { source: akshare, fn: stock_zh_index_daily, code: sh000905, transform: level, unit_changes: pct }
+  chinext:    { source: akshare, fn: stock_zh_index_daily, code: sz399006, transform: level, unit_changes: pct }
+  hstech:     { source: yahoo, ticker: "^HSTECH", transform: level, unit_changes: pct,
+                note: "若Yahoo代码失效改用akshare恒生科技" }
+  dividendetf: { source: akshare, fn: fund_etf_hist_em, code: "510880", transform: level, unit_changes: pct }
+  goldetf:    { source: akshare, fn: fund_etf_hist_em, code: "518880", transform: level, unit_changes: pct }
+
+  # ================= 扩容: Regime/风险状态 (真实派生合成) =================
+  usepu:      { source: akshare, fn: article_epu_index, code: "USA", transform: level, unit_changes: idx, freq: monthly,
+                note: "政策不确定性指数(Baker-Bloom-Davis), akshare桥接" }
+  cnepu:      { source: akshare, fn: article_epu_index, code: "China", transform: level, unit_changes: idx, freq: monthly }
+  cnpropregime: { source: manual, value: 0.4, unit_changes: idx, note: "政策状态为定性判断, 手工维护" }
+  usbankrisk: { source: derived, unit_changes: idx,
+                formula: "0.5*z20(us10y) - 0.5*z20(bankidx)",
+                note: "真实派生: 长端利率上行+银行股走弱 → 体系压力" }
+  liqcrisis:  { source: derived, unit_changes: idx,
+                formula: "0.5*z20(dxy) + 0.5*z20(hyspread)",
+                note: "真实派生: 美元荒+利差走阔的共振强度" }
+  reflation:  { source: derived, unit_changes: idx,
+                formula: "0.4*z20(oil) + 0.3*z20(copper) + 0.3*z20(us10ybe)" }
+  recession:  { source: derived, unit_changes: idx,
+                formula: "0.6*z20(hyspread) - 0.4*z20(gdpnow)" }
+  stagflation: { source: derived, unit_changes: idx,
+                formula: "0.5*z20(uscpi) - 0.4*z20(gdpnow)" }
+  riskoff:    { source: derived, unit_changes: idx,
+                formula: "0.5*z20(vix) - 0.5*z20(spx)" }

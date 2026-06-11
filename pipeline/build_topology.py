@@ -60,8 +60,8 @@ def fetch_yahoo(ticker: str, days: int) -> pd.Series:
 def _parse_cn_month(x):
     """东方财富口径 '2026年04月份'/'2026年4月' → Timestamp(月末)。其余格式交给 to_datetime。"""
     import re as _re
-    m = _re.search(r"(\d{4})\s*年\s*(\d{1,2})\s*月", str(x))
-    if m:
+    m = _re.search(r"(\d{4})\s*年\s*(?:\d{1,2}\s*-\s*)?(\d{1,2})\s*月", str(x))
+    if m:  # 兼容 "2026年04月份" 与累计口径 "2026年1-4月"(取末月)
         return pd.Timestamp(int(m[1]), int(m[2]), 1) + pd.offsets.MonthEnd(0)
     return pd.to_datetime(x, errors="coerce")
 
@@ -132,6 +132,30 @@ def fetch_akshare(cfg: dict, days: int) -> pd.Series:
                 df = ak.futures_main_sina(symbol=code)
                 dcol = "日期" if "日期" in df.columns else df.columns[0]
                 s = df.set_index(dcol)[_pick_value_col(df, dcol, "收盘价")]
+            elif fn == "bond_china_yield":
+                # 中债国债收益率曲线: code为期限列(如 "1年")
+                df = ak.bond_china_yield(
+                    start_date=(TODAY - dt.timedelta(days=days)).strftime("%Y%m%d"),
+                    end_date=TODAY.strftime("%Y%m%d"))
+                if "曲线名称" in df.columns:
+                    df = df[df["曲线名称"].str.contains("国债", na=False)]
+                dcol = next(c for c in df.columns if "日期" in str(c) or "date" in str(c).lower())
+                s = df.set_index(dcol)[code]
+            elif fn == "macro_china_shibor_all":
+                df = ak.macro_china_shibor_all()
+                dcol = next(c for c in df.columns if "日期" in str(c) or "时间" in str(c) or "date" in str(c).lower())
+                vcol = column if column in df.columns else next(c for c in df.columns if "3" in str(c) and "月" in str(c))
+                s = df.set_index(dcol)[vcol]
+            elif fn == "futures_inventory_em":
+                df = ak.futures_inventory_em(symbol=code)
+                s = df.set_index(df["日期"])["库存"]
+            elif fn == "article_epu_index":
+                df = ak.article_epu_index(symbol=code)
+                dcol = df.columns[0]
+                s = df.set_index(pd.to_datetime(df[dcol].astype(str), errors="coerce"))[df.columns[-1]]
+            elif fn == "macro_china_society_electricity":
+                df = ak.macro_china_society_electricity()
+                s = df.set_index(df["统计时间"].map(_parse_cn_month))[column or "全社会用电量同比"]
             elif fn == "futures_index_ccidx":
                 # 中证商品期货指数 (替代已下线的南华指数接口)
                 df = ak.futures_index_ccidx(symbol=code or "中证商品期货指数")
@@ -172,18 +196,29 @@ def fetch_nyfed_acm(cfg: dict, days: int) -> pd.Series:
     return pd.to_numeric(s, errors="coerce").dropna()
 
 
-def fetch_treasury_auctions(days: int) -> pd.Series:
-    """财政部拍卖规模 → 4周滚动发行额(十亿美元), 衡量财政供给压力。"""
+def fetch_treasury_auctions(days: int, cfg: dict | None = None) -> pd.Series:
+    """财政部FiscalData真实拍卖数据。
+    transform=rolling_issuance: 滚动发行额(十亿美元), 窗口由 window_days 决定(默认28);
+    transform=bid_to_cover:     附息国债投标倍数的近10场滚动均值。"""
+    cfg = cfg or {}
+    mode = cfg.get("transform", "rolling_issuance")
+    fields = "auction_date,offering_amt,bid_to_cover_ratio,security_type"
     url = ("https://api.fiscaldata.treasury.gov/services/api/fiscal_service/"
            "v1/accounting/od/auctions_query"
-           f"?fields=auction_date,offering_amt&filter=auction_date:gte:{(TODAY - dt.timedelta(days=days)).isoformat()}"
+           f"?fields={fields}&filter=auction_date:gte:{(TODAY - dt.timedelta(days=days)).isoformat()}"
            "&page[size]=10000")
     rows = SESSION.get(url, timeout=60).json()["data"]
     df = pd.DataFrame(rows)
     df["auction_date"] = pd.to_datetime(df["auction_date"])
+    if mode == "bid_to_cover":
+        df["bid_to_cover_ratio"] = pd.to_numeric(df["bid_to_cover_ratio"], errors="coerce")
+        df = df[df["security_type"].isin(["Note", "Bond"])].dropna(subset=["bid_to_cover_ratio"])
+        daily = df.groupby("auction_date")["bid_to_cover_ratio"].mean().sort_index()
+        return daily.rolling(10, min_periods=3).mean().dropna()
     df["offering_amt"] = pd.to_numeric(df["offering_amt"], errors="coerce")
     daily = df.groupby("auction_date")["offering_amt"].sum() / 1e9
-    return daily.resample("D").sum().rolling(28).sum().dropna()
+    win = int(cfg.get("window_days", 28))
+    return daily.resample("D").sum().rolling(win).sum().dropna()
 
 
 def fetch_csv_url(cfg: dict, days: int) -> pd.Series:
@@ -210,6 +245,10 @@ def transform_series(s: pd.Series, cfg: dict) -> pd.Series:
         s = s.diff()
     elif t == "rolling_net_7d":
         s = s.rolling(7, min_periods=1).sum()
+    elif t == "mom_pct":
+        s = (s / s.shift(1) - 1) * 100
+    elif t == "rolling_sum_12m":
+        s = s.rolling(12, min_periods=12).sum()
     if cfg.get("scale"):
         s = s * cfg["scale"]
     return s.dropna()
@@ -409,7 +448,7 @@ def main():
             elif src == "nyfed_acm":
                 s = fetch_nyfed_acm(cfg, days)
             elif src == "treasury":
-                s = fetch_treasury_auctions(days)
+                s = fetch_treasury_auctions(days, cfg)
             elif src == "csv_url":
                 s = fetch_csv_url(cfg, days)
             else:
@@ -430,6 +469,24 @@ def main():
     except Exception:
         pass
 
+    # ---- 别名源: 直接复用其他节点的真实序列 (cdxig/cdxhy 等代理) ----
+    for nid, cfg in reg["nodes"].items():
+        if cfg["source"] == "alias" and cfg["of"] in series:
+            series[nid] = series[cfg["of"]].copy()
+
+    # ---- series: 真实派生 (两条真实序列的算术组合, 如中美利差/隐含降息次数) ----
+    import re as _re
+    for nid, cfg in reg["nodes"].items():
+        if cfg["source"] != "derived":
+            continue
+        f = str(cfg.get("formula", ""))
+        m = _re.match(r"series:\(?(\w+)-(\w+)\)?(?:/([\d.]+))?$", f.replace(" ", ""))
+        if m and m[1] in series and m[2] in series:
+            a, b = series[m[1]].align(series[m[2]], join="inner")
+            out = (a - b) / (float(m[3]) if m[3] else 1.0)
+            if not out.empty:
+                series[nid] = out.dropna()
+
     z = {nid: zscore_20d_momentum(s) for nid, s in series.items() if not nid.startswith("_")}
 
     # ---- 第二遍: 派生与手工节点 ----
@@ -437,7 +494,16 @@ def main():
     for nid, cfg in reg["nodes"].items():
         m = meta[nid]
         unit_ch = cfg.get("unit_changes", "pct")
-        if cfg["source"] == "derived":
+        if nid in series and len(series[nid]) > 0 and cfg["source"] in ("derived", "alias"):
+            # alias / series派生节点拥有完整真实序列, 与普通节点同等处理
+            s = series[nid]
+            node = dict(
+                value=round(float(s.iloc[-1]), 2 if abs(s.iloc[-1]) < 1000 else 0),
+                change1d=change(s, 1, unit_ch), change5d=change(s, 5, unit_ch),
+                change20d=change(s, 20, unit_ch), change60d=change(s, 60, unit_ch),
+                percentile=pct_rank(s, pwin))
+            z.setdefault(nid, zscore_20d_momentum(s))
+        elif cfg["source"] == "derived":
             if nid == "debtceiling" and "_dc_spread" in series:
                 zz = zscore_20d_momentum(series["_dc_spread"]); value = round(zz, 2)
             else:
