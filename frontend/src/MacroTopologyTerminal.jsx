@@ -907,6 +907,34 @@ function makeLabelTexture(text, color) {
 
 
 /* ============================================================
+   语义缩放标签 (Semantic Zoom LOD) —— 3D/2D 共用业务逻辑
+   优先级: 选中 > 悬浮 > 一阶邻居 > 背离 > 激活路径 > 搜索命中(强制层)
+          > INVALIDATED > EXTREME·P0 > P0 > P1 > P2 > P3(环境层, 受缩放预算控制)
+   ============================================================ */
+const LABEL_TIER = (n) => (
+  n.status === "INVALIDATED" ? 0 :
+  n.status === "EXTREME" && n.priority === "P0" ? 1 :
+  n.priority === "P0" ? 2 : n.priority === "P1" ? 3 : n.priority === "P2" ? 4 : 5);
+const AMBIENT_BUDGET = (zoom01) => {
+  const z = Math.max(0, Math.min(1, zoom01));
+  return Math.round(3 + Math.pow(z, 1.4) * 45); // 拉远≈3个, 拉满≈48个, 平滑过渡
+};
+const pickAmbient = (cands, zoom01) =>
+  cands.sort((a, b) => a.tier - b.tier || a.prox - b.prox).slice(0, AMBIENT_BUDGET(zoom01));
+const collectForcedIds = (ui, adjacency, paths) => {
+  const f = new Set();
+  if (ui.selectedId) { f.add(ui.selectedId); (adjacency.adj[ui.selectedId] || []).forEach((m) => f.add(m)); }
+  if (ui.hoverId) { f.add(ui.hoverId); (adjacency.adj[ui.hoverId] || []).forEach((m) => f.add(m)); }
+  if (ui.divergence) ui.divergence.relatedNodeIds.forEach((m) => f.add(m));
+  if (ui.focusPathId) {
+    const p = paths.find((x) => x.id === ui.focusPathId);
+    if (p) p.nodeIds.forEach((m) => f.add(m));
+  }
+  if (ui.searchSet) { let c = 0; for (const m of ui.searchSet) { if (c++ >= 24) break; f.add(m); } }
+  return f;
+};
+
+/* ============================================================
    2D MAP 视图 (原生Canvas 2D, 与3D共享同一份数据与状态)
    ============================================================ */
 function Topo2D({ nodes, edges, adjacency, pathEdgeIds, paths, hoverId, selectedId, focusDivId, focusPathId, divergence, visibleSet, searchSet, onHover, onSelect, onClear }) {
@@ -1129,36 +1157,55 @@ function Topo2D({ nodes, edges, adjacency, pathEdgeIds, paths, hoverId, selected
         }
       });
 
-      /* 标签: 主节点+全部一阶邻居 / 默认仅P0 */
-      const drawLabel = (n, pos, main) => {
+      /* 语义缩放标签: 与3D共用 collectForcedIds / LABEL_TIER / pickAmbient 业务逻辑 */
+      const zoom01 = (st.k - 0.25) / (3 - 0.25);
+      const forcedIds = collectForcedIds(p, adjacency, paths);
+      const mainId = p.hoverId || p.selectedId || (p.divergence ? p.divergence.relatedNodeIds[0] : null);
+      const focusOn = !!(p.hoverId || p.selectedId || p.focusDivId || p.focusPathId);
+      const placedRects = [];
+      const place = (n, pos, main, force) => {
         const name = !main && (n.priority === "P2" || n.priority === "P3") && n.name.length > 8 ? n.name.slice(0, 7) + "…" : n.name;
-        const fs = (main ? 12.5 : 11) / st.k;
+        const fs = (main ? 12.5 : force ? 11 : 10.5) / st.k;
         ctx.font = `${main ? 600 : 400} ${fs}px -apple-system,'PingFang SC','Microsoft YaHei',sans-serif`;
         const tw = ctx.measureText(name).width;
-        const lx = pos.x - tw / 2, ly = pos.y - NODE_R[n.priority] - 9 / st.k;
-        ctx.globalAlpha = 0.88;
-        ctx.fillStyle = "rgba(8,12,20,0.88)";
-        ctx.fillRect(lx - 5 / st.k, ly - fs, tw + 10 / st.k, fs + 7 / st.k);
-        ctx.fillStyle = CATS[n.category].color;
-        ctx.fillRect(lx - 5 / st.k, ly - fs, 2 / st.k, fs + 7 / st.k);
-        ctx.globalAlpha = 1;
-        ctx.fillStyle = main ? "#eef4fb" : "#c8d4e2";
-        ctx.fillText(name, lx, ly);
-      };
-      const mainId = p.hoverId || p.selectedId;
-      if (brightNodes) {
-        let i = 0;
-        for (const id of brightNodes) {
-          if (i++ > 30) break;
-          const n = nodes.find((x) => x.id === id); const pos = n && P(id);
-          if (n && pos && p.visibleSet.has(id)) drawLabel(n, pos, id === mainId || (p.divergence && id === p.divergence.relatedNodeIds[0]));
+        const ly = pos.y - NODE_R[n.priority] - 9 / st.k;
+        /* 碰撞: 强制标签偏移、永不隐藏; 环境标签冲突即隐藏 */
+        const offs = force ? [0, -16 / st.k, 16 / st.k, -32 / st.k, 32 / st.k] : [0, -14 / st.k, 14 / st.k];
+        let fy = ly, ok = false;
+        for (const off of offs) {
+          const ty = ly + off;
+          const clash = placedRects.some((r) => Math.abs(r.y - ty) < fs + 6 / st.k && Math.abs(r.x - pos.x) < (r.w + tw) / 2 + 8 / st.k);
+          if (!clash) { fy = ty; ok = true; break; }
         }
-      } else if (st.k >= 0.55) {
+        if (!ok && !force) return;
+        placedRects.push({ x: pos.x, y: fy, w: tw });
+        const lx = pos.x - tw / 2;
+        ctx.globalAlpha = force || main ? 0.9 : 0.72;
+        ctx.fillStyle = "rgba(8,12,20,0.88)";
+        ctx.fillRect(lx - 5 / st.k, fy - fs, tw + 10 / st.k, fs + 7 / st.k);
+        ctx.fillStyle = CATS[n.category].color;
+        ctx.fillRect(lx - 5 / st.k, fy - fs, 2 / st.k, fs + 7 / st.k);
+        ctx.globalAlpha = 1;
+        ctx.fillStyle = main ? "#eef4fb" : force ? "#c8d4e2" : "#8b9cb1";
+        ctx.fillText(name, lx, fy);
+      };
+      let fc = 0;
+      for (const id of forcedIds) {
+        if (fc++ > 40) break;
+        const n = nodes.find((x) => x.id === id); const pos = n && P(id);
+        if (n && pos && p.visibleSet.has(id)) place(n, pos, id === mainId, true);
+      }
+      if (!focusOn && !p.searchSet) {
+        const cx = (W / 2 - st.tx) / st.k, cy = (H / 2 - st.ty) / st.k;
+        const cands = [];
         nodes.forEach((n) => {
-          if (n.priority !== "P0") return;
-          const pos = P(n.id);
-          if (pos && p.visibleSet.has(n.id) && (!p.searchSet || p.searchSet.has(n.id))) drawLabel(n, pos, false);
+          if (forcedIds.has(n.id) || !p.visibleSet.has(n.id)) return;
+          const pos = P(n.id); if (!pos) return;
+          const sx = pos.x * st.k + st.tx, sy = pos.y * st.k + st.ty;
+          if (sx < 0 || sx > W || sy < 0 || sy > H) return; // 仅当前视野内逐级出现
+          cands.push({ n, pos, tier: LABEL_TIER(n), prox: Math.hypot(pos.x - cx, pos.y - cy) });
         });
+        pickAmbient(cands, zoom01).forEach((c) => place(c.n, c.pos, false, false));
       }
       ctx.globalAlpha = 1;
     };
@@ -1480,7 +1527,7 @@ export default function MacroTopologyTerminal({ live = null }) {
     const overlayEl = overlayRef.current;
     const labelPool = [];
     if (overlayEl) {
-      for (let i = 0; i < 30; i++) {
+      for (let i = 0; i < 64; i++) {
         const d = document.createElement("div");
         d.style.cssText = "position:absolute;left:0;top:0;display:none;white-space:nowrap;border-radius:3px;padding:1px 6px;background:rgba(8,12,20,0.88);border:1px solid rgba(70,90,120,0.35);color:#c8d4e2;font:11px -apple-system,'PingFang SC','Microsoft YaHei',sans-serif;will-change:transform;";
         overlayEl.appendChild(d);
@@ -1491,65 +1538,84 @@ export default function MacroTopologyTerminal({ live = null }) {
     const tmpV = new THREE.Vector3();
     const updateOverlay = (ui) => {
       if (!overlayEl) return;
-      let ids = null, mainId = null;
-      if (ui.hoverId && nodeObjs[ui.hoverId]) {
-        mainId = ui.hoverId; ids = [ui.hoverId, ...(ui.adjacency.adj[ui.hoverId] || [])];
-      } else if (ui.selectedId && nodeObjs[ui.selectedId]) {
-        mainId = ui.selectedId; ids = [ui.selectedId, ...(ui.adjacency.adj[ui.selectedId] || [])];
-      } else if (ui.focusDivId && ui.divergence) {
-        mainId = ui.divergence.relatedNodeIds[0]; ids = [...ui.divergence.relatedNodeIds];
-      } else if (ui.focusPathId) {
-        const p = PATHS.find((x) => x.id === ui.focusPathId);
-        if (p) { mainId = p.nodeIds[0]; ids = [...p.nodeIds]; }
-      }
-      if (!ids) { labelPool.forEach((d) => { if (d.style.display !== "none") d.style.display = "none"; }); return; }
-
       const w = mount.clientWidth, h = mount.clientHeight;
-      const mainPos = nodeObjs[mainId] && nodeObjs[mainId].core.getWorldPosition(tmpV).clone();
+      /* 缩放依据: 相机实际距离归一化 (targetZ 13-44), 聚焦/动画引起的距离变化同样生效 */
+      const zoom01 = (44 - camera.position.z) / (44 - 13);
+      const forced = collectForcedIds(ui, ui.adjacency, PATHS);
+      const mainId = ui.hoverId || ui.selectedId || (ui.divergence ? ui.divergence.relatedNodeIds[0] : null);
+      const focusActive = !!(ui.hoverId || ui.selectedId || ui.focusDivId || ui.focusPathId);
       const panelOpen = !!(ui.selectedId || ui.focusDivId);
-      const entries = [];
-      for (const id of ids) {
-        const o = nodeObjs[id]; if (!o || !ui.visibleSet.has(id)) continue;
+      const mainPos = mainId && nodeObjs[mainId] ? nodeObjs[mainId].core.getWorldPosition(tmpV).clone() : null;
+
+      const raw = [];
+      const ambientCands = [];
+      for (const id of Object.keys(nodeObjs)) {
+        if (!ui.visibleSet.has(id)) continue;
+        const o = nodeObjs[id];
+        const isForced = forced.has(id);
+        if (!isForced && (focusActive || ui.searchSet)) continue; // 聚焦/搜索时只保留强制标签
         o.core.getWorldPosition(tmpV);
+        const wz = tmpV.z;
         const dist = mainPos ? tmpV.distanceTo(mainPos) : 0;
         tmpV.project(camera);
         if (tmpV.z > 1) continue;
-        let x = (tmpV.x * 0.5 + 0.5) * w;
-        let y = (-tmpV.y * 0.5 + 0.5) * h - 14;
-        const main = id === mainId;
-        const n = o.node;
-        const name = !main && (n.priority === "P2" || n.priority === "P3") && n.name.length > 8 ? n.name.slice(0, 7) + "…" : n.name;
-        const ew = 14 + name.length * (main ? 13 : 11.5);
-        const maxX = (panelOpen ? w - 368 : w - 20) - ew / 2;
-        x = Math.min(Math.max(x, 10 + ew / 2), Math.max(60, maxX));
-        y = Math.min(Math.max(y, 56), h - 46);
-        entries.push({ id, name, x, y, ew, main, pri: PRI_RANK[n.priority], dist, color: CATS[n.category].color });
+        const sx = (tmpV.x * 0.5 + 0.5) * w, sy = (-tmpV.y * 0.5 + 0.5) * h - 14;
+        if (isForced) {
+          raw.push({ id, sx, sy, dist, forced: true });
+        } else {
+          if (wz < -1.5) continue;                                          // 球体背面不出环境标签
+          if (sx < 20 || sx > w - 20 || sy < 60 || sy > h - 50) continue;   // 仅当前视野内
+          ambientCands.push({ id, tier: LABEL_TIER(o.node), prox: Math.hypot(sx - w / 2, sy - h / 2), sx, sy, dist: 0 });
+        }
       }
-      entries.sort((a, b) => (a.main !== b.main ? (a.main ? -1 : 1) : a.pri - b.pri || a.dist - b.dist));
-      /* 轻量碰撞: 依次尝试上下偏移, 用尽后仍显示 (不整体隐藏) */
+      pickAmbient(ambientCands, zoom01).forEach((c) => raw.push({ id: c.id, sx: c.sx, sy: c.sy, dist: 0, forced: false }));
+      if (!raw.length) { labelPool.forEach((d) => { if (d.style.display !== "none") d.style.display = "none"; }); return; }
+
+      const fmt = [];
+      for (const e of raw) {
+        const n = nodeObjs[e.id].node;
+        const main = e.id === mainId;
+        const name = !main && (n.priority === "P2" || n.priority === "P3") && n.name.length > 8 ? n.name.slice(0, 7) + "…" : n.name;
+        const ew = 14 + name.length * (main ? 13 : e.forced ? 11.5 : 10.5);
+        const maxX = (panelOpen ? w - 368 : w - 20) - ew / 2;
+        fmt.push({
+          id: e.id, name, ew, main, forced: e.forced, dist: e.dist,
+          x: Math.min(Math.max(e.sx, 10 + ew / 2), Math.max(60, maxX)),
+          y: Math.min(Math.max(e.sy, 56), h - 46),
+          pri: PRI_RANK[n.priority], color: CATS[n.category].color,
+        });
+      }
+      fmt.sort((a, b) => (a.main !== b.main ? (a.main ? -1 : 1) : a.forced !== b.forced ? (a.forced ? -1 : 1) : a.pri - b.pri || a.dist - b.dist));
+      /* 碰撞: 强制标签尝试偏移、永不隐藏; 环境标签冲突即隐藏 (数量受控) */
       const placed = [];
-      const offsets = [0, -18, 18, -36, 36, -54, 54];
-      for (const e of entries.slice(0, labelPool.length)) {
-        let fy = e.y;
+      const final = [];
+      for (const e of fmt) {
+        if (final.length >= labelPool.length) break;
+        const offsets = e.forced ? [0, -18, 18, -36, 36, -54, 54] : [0, -16, 16];
+        let fy = e.y, ok = false;
         for (const off of offsets) {
           const ty = e.y + off;
           const clash = placed.some((r) => Math.abs(r.y - ty) < 17 && Math.abs(r.x - e.x) < (r.ew + e.ew) / 2);
-          if (!clash) { fy = ty; break; }
+          if (!clash) { fy = ty; ok = true; break; }
         }
+        if (!ok && !e.forced) continue;
         placed.push({ x: e.x, y: fy, ew: e.ew });
         e.fy = Math.min(Math.max(fy, 56), h - 46);
+        final.push(e);
       }
       labelPool.forEach((d, i) => {
-        const e = entries[i];
+        const e = final[i];
         if (!e) { if (d.style.display !== "none") d.style.display = "none"; return; }
-        if (d._id !== e.id || d._main !== e.main) {
-          d._id = e.id; d._main = e.main;
+        const kind = e.main ? 2 : e.forced ? 1 : 0;
+        if (d._id !== e.id || d._kind !== kind) {
+          d._id = e.id; d._kind = kind;
           d.textContent = e.name;
           d.style.borderLeft = `2px solid ${e.color}`;
-          d.style.fontSize = e.main ? "12.5px" : "11px";
-          d.style.fontWeight = e.main ? "600" : "400";
-          d.style.color = e.main ? "#eef4fb" : "#c8d4e2";
-          d.style.zIndex = e.main ? "12" : "11";
+          d.style.fontSize = kind === 2 ? "12.5px" : kind === 1 ? "11px" : "10.5px";
+          d.style.fontWeight = kind === 2 ? "600" : "400";
+          d.style.color = kind === 2 ? "#eef4fb" : kind === 1 ? "#c8d4e2" : "#8b9cb1";
+          d.style.opacity = kind === 0 ? "0.78" : "1";
+          d.style.zIndex = kind === 2 ? "12" : "11";
         }
         d.style.transform = `translate(${e.x.toFixed(1)}px, ${e.fy.toFixed(1)}px) translate(-50%, -100%)`;
         if (d.style.display !== "block") d.style.display = "block";
@@ -1638,8 +1704,7 @@ export default function MacroTopologyTerminal({ live = null }) {
         if (n.quality === "stale") { op *= 0.45; glowOp *= 0.4; } // 未取到数据的节点压暗
         if (!visible) { op = 0.04; glowOp = 0; ringOp = 0; }
 
-        const overlayOn = !!(ui.hoverId || ui.selectedId || ui.focusDivId || ui.focusPathId);
-        const labelTarget = overlayOn ? 0 : ((n.priority === "P0" && !brightNodes && visible && (!ui.searchSet || searchHit)) ? 0.85 : 0.0);
+        const labelTarget = 0; // 标签全部由屏幕空间Overlay的语义缩放系统接管
 
         o.curScale += (scale * ease - o.curScale) * 0.14;
         o.curOp += (op * ease - o.curOp) * 0.12;
