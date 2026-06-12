@@ -1,132 +1,18 @@
 {
- "since": "2026-06-12T00:06:02+00:00",
- "generatedAt": "2026-06-12T08:34:04+00:00",
+ "since": "2026-06-12T08:34:04+00:00",
+ "generatedAt": "2026-06-12T09:25:04+00:00",
  "nodeChanges": [
   {
-   "id": "fiscalsupply",
-   "name": "美债财政供给压力",
-   "from": "EXTREME",
-   "to": "NORMAL"
-  },
-  {
-   "id": "chipetf",
-   "name": "芯片ETF",
+   "id": "usepu",
+   "name": "美国经济政策不确定性",
    "from": "NORMAL",
    "to": "EXTREME"
   },
   {
-   "id": "lmecopperinv",
-   "name": "LME铜库存",
+   "id": "cnepu",
+   "name": "中国经济政策不确定性",
    "from": "NORMAL",
    "to": "EXTREME"
-  },
-  {
-   "id": "cftcgold",
-   "name": "CFTC黄金净多头",
-   "from": "NORMAL",
-   "to": "EXTREME"
-  },
-  {
-   "id": "dividendetf",
-   "name": "红利ETF",
-   "from": "NORMAL",
-   "to": "EXTREME"
-  },
-  {
-   "id": "bdi",
-   "name": "波罗的海干散货指数",
-   "from": "NORMAL",
-   "to": "EXTREME"
-  },
-  {
-   "id": "opecprod",
-   "name": "OPEC原油产量",
-   "from": "NORMAL",
-   "to": "EXTREME"
-  },
-  {
-   "id": "goldetf",
-   "name": "黄金ETF(518880)",
-   "from": "NORMAL",
-   "to": "EXTREME"
-  },
-  {
-   "id": "gold",
-   "name": "黄金",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "netissue",
-   "name": "美国国债季度净发行量",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "oil",
-   "name": "原油(WTI)",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "csi300",
-   "name": "沪深300",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "crb",
-   "name": "CRB商品指数",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "brent",
-   "name": "Brent原油",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "silver",
-   "name": "白银",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "goldminers",
-   "name": "黄金矿业股",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "nfp",
-   "name": "美国非农新增就业",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "cnbond",
-   "name": "中国10年期国债期货",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "pbocbs",
-   "name": "中国央行资产负债表",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "hsi",
-   "name": "恒生指数",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "rigcount",
-   "name": "美国钻机数量",
-   "from": "NORMAL",
-   "to": "ELEVATED"
   }
  ],
  "pathChanges": [],

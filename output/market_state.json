@@ -1,20 +1,13 @@
 {
  "data_status": {
   "stale": [
-   "aluminum",
    "cn1y",
-   "cnepu",
-   "geopolitics",
+   "dividendetf",
+   "goldetf",
    "gscpi",
-   "ironore",
-   "mmf",
-   "reserves",
    "shibor3m",
-   "sox",
-   "tga",
    "tsf",
    "usclaims",
-   "usepu",
    "usoilinv"
   ],
   "manual": [
@@ -60,17 +53,13 @@
    "cta",
    "gammaproxy"
   ],
-  "liveCount": 129,
+  "liveCount": 136,
   "totalCount": 178,
   "sourceErrors": {
    "fred": "usclaims → ValueError: empty series after transform (insufficient history?)",
-   "akshare:macro_china_shrzgm": "tsf → ValueError: macro_china_shrzgm returned no usable rows",
-   "csv_url": "geopolitics → ValueError: empty series after transform (insufficient history?)",
-   "akshare:bond_china_yield": "cn1y → ValueError: bond_china_yield returned no usable rows",
-   "akshare:macro_china_shibor_all": "shibor3m → StopIteration: ",
-   "akshare:futures_main_sina": "aluminum → ValueError: sanity: 提取值 24055.0 超出合理区间 (1200, 5000), 疑似列名/单位/解析错误",
-   "yahoo": "sox → ValueError: sanity: 提取值 13171.4404296875 超出合理区间 (2000, 12000), 疑似列名/单位/解析错误",
-   "akshare:article_epu_index": "usepu → ValueError: cannot reindex on an axis with duplicate labels"
+   "tushare": "tsf → ValueError: tushare: 抱歉，您没有接口(sf_month)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。",
+   "csv_url": "gscpi → ValueError: Excel file format cannot be determined, you must specify an engine manually.",
+   "akshare:fund_etf_hist_em": "dividendetf → ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
   }
  },
  "topMover": {
@@ -82,5 +71,5 @@
  "highRiskCount": 12,
  "regime": "EXTREME",
  "regimeNote": "自动识别: 0条背离, 12个高风险节点。",
- "updatedAt": "2026-06-12T08:34:04+00:00"
+ "updatedAt": "2026-06-12T09:25:04+00:00"
 }
