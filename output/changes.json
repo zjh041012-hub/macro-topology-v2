@@ -1,18 +1,18 @@
 {
- "since": "2026-06-12T08:34:04+00:00",
- "generatedAt": "2026-06-12T09:25:04+00:00",
+ "since": "2026-06-12T09:25:04+00:00",
+ "generatedAt": "2026-06-12T12:51:02+00:00",
  "nodeChanges": [
   {
-   "id": "usepu",
-   "name": "美国经济政策不确定性",
-   "from": "NORMAL",
+   "id": "gold",
+   "name": "黄金",
+   "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "cnepu",
-   "name": "中国经济政策不确定性",
-   "from": "NORMAL",
-   "to": "EXTREME"
+   "id": "oil",
+   "name": "原油(WTI)",
+   "from": "EXTREME",
+   "to": "ELEVATED"
   }
  ],
  "pathChanges": [],

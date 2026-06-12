@@ -1,6 +1,7 @@
 {
  "data_status": {
   "stale": [
+   "chipetf",
    "cn1y",
    "dividendetf",
    "goldetf",
@@ -53,13 +54,13 @@
    "cta",
    "gammaproxy"
   ],
-  "liveCount": 136,
+  "liveCount": 135,
   "totalCount": 178,
   "sourceErrors": {
    "fred": "usclaims → ValueError: empty series after transform (insufficient history?)",
    "tushare": "tsf → ValueError: tushare: 抱歉，您没有接口(sf_month)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。",
-   "csv_url": "gscpi → ValueError: Excel file format cannot be determined, you must specify an engine manually.",
-   "akshare:fund_etf_hist_em": "dividendetf → ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+   "akshare:fund_etf_hist_em": "chipetf → ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+   "csv_url": "gscpi → ValueError: Excel file format cannot be determined, you must specify an engine manually."
   }
  },
  "topMover": {
@@ -71,5 +72,5 @@
  "highRiskCount": 12,
  "regime": "EXTREME",
  "regimeNote": "自动识别: 0条背离, 12个高风险节点。",
- "updatedAt": "2026-06-12T09:25:04+00:00"
+ "updatedAt": "2026-06-12T12:51:02+00:00"
 }
