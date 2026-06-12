@@ -227,12 +227,13 @@ nodes:
   gscpi:      { source: csv_url, url: "https://www.newyorkfed.org/medialibrary/research/policy/gscpi/gscpi_data.xlsx",
                 column: GSCPI, transform: level, unit_changes: idx, freq: monthly,
                 note: "纽约联储全球供应链压力指数官方文件" }
-  bdi:        { source: manual, value: 1840, unit_changes: pct, note: "波交所数据无免费API, 周更" }
-
-  # ================= 扩容: 全球流动性与财政 =================
+  bdi:        { source: akshare, fn: macro_shipping_bdi, transform: level, unit_changes: pct,
+                note: "波罗的海干散货指数(akshare航运接口), 列名自动识别" }
   sloos:      { source: fred, series: DRTSCILM, transform: level, unit_changes: pp, freq: quarterly }
   bankloans:  { source: fred, series: TOTLL, transform: yoy, unit_changes: pp, freq: weekly }
-  pbocbs:     { source: manual, value: 45.8, unit_changes: pct, note: "央行资产负债表月度手填; 后续可接央行调查统计司表格" }
+  pbocbs:     { source: akshare, fn: macro_china_central_bank_balance, column: "总资产", transform: level,
+                unit_changes: pct, freq: monthly, scale: 0.0001,
+                note: "央行货币当局资产负债表-总资产(新浪源, 亿元→万亿元)" }
   cngovbond:  { source: manual, value: 0, unit_changes: idx, note: "政府债净融资, 月度手填" }
   landsales:  { source: manual, value: -18.6, unit_changes: pp, note: "财政部月度发布后手填" }
 
@@ -256,16 +257,18 @@ nodes:
   rebar:      { source: akshare, fn: futures_main_sina, code: RB0, transform: level, unit_changes: pct }
   usoilinv:   { source: fred, series: WCESTUS1, transform: level, unit_changes: pct, freq: weekly,
                 note: "EIA周度商业原油库存(FRED镜像)" }
-  rigcount:   { source: manual, value: 512, unit_changes: pct, note: "贝克休斯周五发布, 手填" }
+  rigcount:   { source: akshare, fn: macro_usa_rig_count, code: "石油", transform: level, unit_changes: pct, freq: weekly,
+                note: "贝克休斯钻机报告(金十源), 优先取含'石油'的列" }
   lmecopperinv: { source: akshare, fn: futures_inventory_em, code: "沪铜", transform: level, unit_changes: pct,
                 note: "以上期所铜库存代理LME(LME数据收费)" }
   oilterm:    { source: manual, value: 4.2, unit_changes: pct, note: "期限结构需多合约, 暂手填; 后续可用CL连一-连四差实现" }
   shlngold:   { source: manual, value: 28.5, unit_changes: pct, note: "沪伦溢价需现货+汇率合成, 暂手填" }
-  opecprod:   { source: manual, value: 2685, unit_changes: pct, note: "OPEC月报/路透调查, 月度手填" }
-
-  # ================= 扩容: 资金流与仓位 =================
-  goldetfflow: { source: manual, value: 86.4, unit_changes: pct, note: "世界黄金协会周度数据, 手填; 后续可接其CSV" }
-  cftcgold:   { source: manual, value: 24.8, unit_changes: pct, note: "CFTC持仓报告周五发布; 后续可接CFTC Socrata API自动化" }
+  opecprod:   { source: akshare, fn: macro_cons_opec_month, code: "产量", transform: level, unit_changes: pct, freq: monthly,
+                note: "OPEC月报产量(金十源); 列名兜底取最后一列" }
+  goldetfflow: { source: akshare, fn: macro_cons_gold, column: "总库存", transform: diff_20d, unit_changes: pct,
+                note: "SPDR黄金ETF持仓(吨), 20交易日变化≈4周资金流向; 金十数据源" }
+  cftcgold:   { source: akshare, fn: macro_usa_cftc_c_holding, code: "黄金", transform: level, unit_changes: pct, freq: weekly,
+                note: "CFTC商品类持仓报告含'黄金'的列; 金十数据源, 每周五发布" }
   usequityflow: { source: manual, value: -124, unit_changes: idx, note: "资金流数据商收费, 周更" }
   putcall:    { source: manual, value: 1.08, unit_changes: pct, note: "Cboe比率无稳定免费API, 周更" }
   cta:        { source: derived, unit_changes: idx,
@@ -287,8 +290,8 @@ nodes:
   reits:      { source: yahoo, ticker: "VNQ", transform: level, unit_changes: pct }
   csi500:     { source: akshare, fn: stock_zh_index_daily, code: sh000905, transform: level, unit_changes: pct }
   chinext:    { source: akshare, fn: stock_zh_index_daily, code: sz399006, transform: level, unit_changes: pct }
-  hstech:     { source: yahoo, ticker: "^HSTECH", transform: level, unit_changes: pct,
-                note: "若Yahoo代码失效改用akshare恒生科技" }
+  hstech:     { source: akshare, fn: stock_hk_index_daily_sina, code: HSTECH, transform: level, unit_changes: pct,
+                note: "恒生科技(新浪港股指数源, Yahoo代码不可用已切换)" }
   dividendetf: { source: akshare, fn: fund_etf_hist_em, code: "510880", transform: level, unit_changes: pct }
   goldetf:    { source: akshare, fn: fund_etf_hist_em, code: "518880", transform: level, unit_changes: pct }
 

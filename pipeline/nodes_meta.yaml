@@ -313,14 +313,14 @@ nodes:
     name: 美国高收益债信用利差
     category: credit
     priority: P0
-    unit: '%'
+    unit: bp
     description: 股票回调的同时高收益利差几乎未动,信用市场没有确认衰退或系统性风险担忧。
     invalidation: 若利差5日内快速走阔超过50bp,背离解除,情景转向风险收缩。
   igspread:
     name: 美国投资级信用利差
     category: credit
     priority: P1
-    unit: '%'
+    unit: bp
     description: 投资级利差处于历史低位区间。
   vix:
     name: VIX指数
@@ -351,7 +351,7 @@ nodes:
     name: 铜(LME)
     category: asset
     priority: P1
-    unit: $/t
+    unit: $/lb
     description: 铜价随中国新订单与工业品需求改善走强。
   csi300:
     name: 沪深300
@@ -917,16 +917,16 @@ nodes:
     unit: 万桶/日
     description: 减产执行率高,供给端持续收紧。
   goldetfflow:
-    name: 全球黄金ETF资金流(4周)
+    name: 黄金ETF持仓变化(SPDR·4周)
     category: liquidity
     priority: P1
-    unit: 亿$
+    unit: 吨
     description: 黄金ETF持续大额净流入——财政信用对冲需求的资金面证据,支撑\u201c黄金上涨非投机\u201d判断。
   cftcgold:
     name: CFTC黄金净多头
     category: liquidity
     priority: P2
-    unit: 万手
+    unit: 张
     description: 投机净多头高位但未极端,挤仓风险可控。
   usequityflow:
     name: 美国股票ETF资金流(4周)

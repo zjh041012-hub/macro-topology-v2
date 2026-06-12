@@ -32,6 +32,35 @@ TODAY = dt.date.today()
 # 1. Fetchers —— 每个数据源一个函数, 返回 pd.Series(DatetimeIndex, float)
 # ------------------------------------------------------------------
 
+# ---- 合理性校验: 提取值超出物理/历史合理区间 → 视为提取错误, 标stale不展示 ----
+SANITY_RANGES = {
+    "us3m": (0.0, 9), "us2y": (0.0, 9), "us5y": (0.0, 9), "us10y": (0.3, 9), "us20y": (0.5, 10), "us30y": (0.5, 10),
+    "us5yreal": (-3, 6), "us10yreal": (-3, 6), "termprem": (-3, 5), "us10ybe": (0, 6), "infl5y5y": (0, 6),
+    "cn1y": (0.3, 5), "cn5y": (0.5, 5.5), "cn10y": (0.8, 5.5), "cn30y": (1.0, 6), "dr007": (0.5, 5), "dr001": (0.3, 5),
+    "lpr5y": (2.0, 6), "shibor3m": (0.5, 6), "cnusspread": (-5, 3),
+    "dxy": (80, 130), "usdcny": (5.5, 9), "usdjpy": (80, 200), "eurusd": (0.8, 1.6),
+    "gold": (1200, 9000), "silver": (10, 200), "copper": (1.5, 9), "oil": (15, 200), "brent": (15, 210),
+    "natgas": (0.8, 20), "ironore": (40, 250), "rebar": (1500, 7000), "aluminum": (1200, 5000),
+    "spx": (3000, 16000), "ndx": (10000, 45000), "rut": (1200, 5000), "sox": (2000, 12000),
+    "csi300": (2000, 9000), "csi500": (3000, 12000), "chinext": (1000, 6000), "hsi": (12000, 45000), "hstech": (2000, 16000),
+    "vix": (8, 90), "vvix": (60, 220), "hyspread": (150, 1500), "igspread": (40, 500),
+    "uscpi": (-3, 16), "uscorecpi": (-2, 12), "cncpi": (-3, 10), "cnppi": (-12, 15),
+    "margindebt": (0.3, 4.5), "netissue": (300, 20000), "bidcover": (1.2, 4.5),
+    "tga": (50, 2000), "reserves": (1.5, 6), "mmf": (3, 12),
+    "bdi": (300, 8000), "rigcount": (150, 1200), "opecprod": (2000, 4000), "pbocbs": (25, 80),
+    "cftcgold": (-400000, 1200000), "goldetfflow": (-500, 500), "gscpi": (-3, 6),
+}
+
+
+def sanity_check(nid: str, s: "pd.Series") -> None:
+    rng = SANITY_RANGES.get(nid)
+    if rng is None or s is None or len(s) == 0:
+        return
+    v = float(s.iloc[-1])
+    if not (rng[0] <= v <= rng[1]):
+        raise ValueError(f"sanity: 提取值 {v} 超出合理区间 {rng}, 疑似列名/单位/解析错误")
+
+
 FRED_KEY = os.environ.get("FRED_API_KEY", "")
 if not FRED_KEY:
     print("=" * 70, file=sys.stderr)
@@ -146,6 +175,37 @@ def fetch_akshare(cfg: dict, days: int) -> pd.Series:
                 df = ak.futures_main_sina(symbol=code)
                 dcol = "日期" if "日期" in df.columns else df.columns[0]
                 s = df.set_index(dcol)[_pick_value_col(df, dcol, "收盘价")]
+            elif fn == "macro_cons_gold":
+                df = ak.macro_cons_gold()
+                s = df.set_index(pd.to_datetime(df["日期"], errors="coerce"))[column or "总库存"]
+            elif fn == "macro_usa_cftc_c_holding":
+                df = ak.macro_usa_cftc_c_holding()
+                vcol = next((c for c in df.columns if code and str(code) in str(c)), df.columns[-1])
+                s = df.set_index(pd.to_datetime(df["日期"], errors="coerce"))[vcol]
+            elif fn == "macro_usa_rig_count":
+                df = ak.macro_usa_rig_count()
+                vcol = next((c for c in df.columns if code and str(code) in str(c)), df.columns[1])
+                s = df.set_index(pd.to_datetime(df["日期"], errors="coerce"))[vcol]
+            elif fn == "macro_cons_opec_month":
+                df = ak.macro_cons_opec_month()
+                vcol = next((c for c in df.columns if code and str(code) in str(c)), df.columns[-1])
+                s = df.set_index(pd.to_datetime(df["日期"], errors="coerce"))[vcol]
+            elif fn == "macro_china_central_bank_balance":
+                df = ak.macro_china_central_bank_balance()
+                dcol = df.columns[0]
+                idx = pd.to_datetime(df[dcol].astype(str).str.replace("年", "-").str.replace("月", ""), errors="coerce")
+                if idx.isna().all():
+                    idx = df[dcol].map(_parse_cn_month)
+                vcol = next((c for c in df.columns if "总资产" in str(c)), df.columns[1])
+                s = df.set_index(idx)[vcol]
+            elif fn == "macro_shipping_bdi":
+                df = ak.macro_shipping_bdi()
+                dcol = next((c for c in df.columns if "日期" in str(c) or "date" in str(c).lower()), df.columns[0])
+                vcol = next((c for c in df.columns if c != dcol and pd.api.types.is_numeric_dtype(df[c])), df.columns[-1])
+                s = df.set_index(pd.to_datetime(df[dcol], errors="coerce"))[vcol]
+            elif fn == "stock_hk_index_daily_sina":
+                df = ak.stock_hk_index_daily_sina(symbol=code)
+                s = df.set_index(pd.to_datetime(df["date"], errors="coerce"))["close"]
             elif fn == "bond_china_yield":
                 # 中债国债收益率曲线: code为期限列(如 "1年")
                 df = ak.bond_china_yield(
@@ -157,7 +217,7 @@ def fetch_akshare(cfg: dict, days: int) -> pd.Series:
                 s = df.set_index(dcol)[code]
             elif fn == "macro_china_shibor_all":
                 df = ak.macro_china_shibor_all()
-                dcol = next(c for c in df.columns if "日期" in str(c) or "时间" in str(c) or "date" in str(c).lower())
+                dcol = next((c for c in df.columns if "日期" in str(c) or "时间" in str(c) or "date" in str(c).lower()), df.columns[0])
                 vcol = column if column in df.columns else next(c for c in df.columns if "3" in str(c) and "月" in str(c))
                 s = df.set_index(dcol)[vcol]
             elif fn == "futures_inventory_em":
@@ -229,6 +289,7 @@ def fetch_treasury_auctions(days: int, cfg: dict | None = None) -> pd.Series:
         df = df[df["security_type"].isin(["Note", "Bond"])].dropna(subset=["bid_to_cover_ratio"])
         daily = df.groupby("auction_date")["bid_to_cover_ratio"].mean().sort_index()
         return daily.rolling(10, min_periods=3).mean().dropna()
+    df = df[~df["security_type"].isin(["Bill", "CMB"])]  # 剔除短债滚动, 聚焦附息供给
     df["offering_amt"] = pd.to_numeric(df["offering_amt"], errors="coerce")
     daily = df.groupby("auction_date")["offering_amt"].sum() / 1e9
     win = int(cfg.get("window_days", 28))
@@ -263,6 +324,8 @@ def transform_series(s: pd.Series, cfg: dict) -> pd.Series:
         s = (s / s.shift(1) - 1) * 100
     elif t == "rolling_sum_12m":
         s = s.rolling(12, min_periods=12).sum()
+    elif t == "diff_20d":
+        s = s - s.shift(20)
     if cfg.get("scale"):
         s = s * cfg["scale"]
     return s.dropna()
@@ -564,6 +627,7 @@ def main():
             cleaned = to_daily(transform_series(s, cfg))
             if cleaned.empty:
                 raise ValueError("empty series after transform (insufficient history?)")
+            sanity_check(nid, cleaned)
             series[nid] = cleaned
             time.sleep(0.55)  # FRED 120/min 限制: 44个序列必须 ≥0.5s 间隔
         except Exception as exc:
@@ -582,7 +646,12 @@ def main():
     # ---- 别名源: 直接复用其他节点的真实序列 (cdxig/cdxhy 等代理) ----
     for nid, cfg in reg["nodes"].items():
         if cfg["source"] == "alias" and cfg["of"] in series:
-            series[nid] = series[cfg["of"]].copy()
+            try:
+                sanity_check(nid, series[cfg["of"]])
+                series[nid] = series[cfg["of"]].copy()
+            except ValueError as exc:
+                err_map[nid] = str(exc)[:160]
+                stale.append(nid)
 
     # ---- series: 真实派生 (两条真实序列的算术组合, 如中美利差/隐含降息次数) ----
     import re as _re
@@ -595,7 +664,12 @@ def main():
             a, b = series[m[1]].align(series[m[2]], join="inner")
             out = (a - b) / (float(m[3]) if m[3] else 1.0)
             if not out.empty:
-                series[nid] = out.dropna()
+                try:
+                    sanity_check(nid, out.dropna())
+                    series[nid] = out.dropna()
+                except ValueError as exc:
+                    err_map[nid] = str(exc)[:160]
+                    stale.append(nid)
 
     z = {nid: zscore_20d_momentum(s) for nid, s in series.items() if not nid.startswith("_")}
 
