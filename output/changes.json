@@ -1,7 +1,26 @@
 {
- "since": "2026-06-11T17:38:38+00:00",
- "generatedAt": "2026-06-11T18:12:27+00:00",
- "nodeChanges": [],
+ "since": "2026-06-11T18:12:27+00:00",
+ "generatedAt": "2026-06-12T00:06:02+00:00",
+ "nodeChanges": [
+  {
+   "id": "us10ybe",
+   "name": "美国10年期盈亏平衡通胀",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "fiscalworry",
+   "name": "财政信用担忧指数",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "tga",
+   "name": "美国财政部TGA账户",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  }
+ ],
  "pathChanges": [],
  "divAdded": [],
  "divRemoved": []
