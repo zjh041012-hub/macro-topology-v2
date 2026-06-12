@@ -40,13 +40,13 @@ SANITY_RANGES = {
     "lpr5y": (2.0, 6), "shibor3m": (0.5, 6), "cnusspread": (-5, 3),
     "dxy": (80, 130), "usdcny": (5.5, 9), "usdjpy": (80, 200), "eurusd": (0.8, 1.6),
     "gold": (1200, 9000), "silver": (10, 200), "copper": (1.5, 9), "oil": (15, 200), "brent": (15, 210),
-    "natgas": (0.8, 20), "ironore": (40, 250), "rebar": (1500, 7000), "aluminum": (1200, 5000),
-    "spx": (3000, 16000), "ndx": (10000, 45000), "rut": (1200, 5000), "sox": (2000, 12000),
+    "natgas": (0.8, 20), "ironore": (300, 1500), "rebar": (1500, 7000), "aluminum": (10000, 40000),
+    "spx": (3000, 16000), "ndx": (10000, 45000), "rut": (1200, 5000), "sox": (2000, 25000),
     "csi300": (2000, 9000), "csi500": (3000, 12000), "chinext": (1000, 6000), "hsi": (12000, 45000), "hstech": (2000, 16000),
     "vix": (8, 90), "vvix": (60, 220), "hyspread": (150, 1500), "igspread": (40, 500),
-    "uscpi": (-3, 16), "uscorecpi": (-2, 12), "cncpi": (-3, 10), "cnppi": (-12, 15),
+    "uscpi": (-3, 16), "tsf": (-5, 30), "uscorecpi": (-2, 12), "cncpi": (-3, 10), "cnppi": (-12, 15),
     "margindebt": (0.3, 4.5), "netissue": (300, 20000), "bidcover": (1.2, 4.5),
-    "tga": (50, 2000), "reserves": (1.5, 6), "mmf": (3, 12),
+    "tga": (1000, 20000), "usclaims": (120, 800), "reserves": (1.5, 6), "mmf": (3, 12),
     "bdi": (300, 8000), "rigcount": (150, 1200), "opecprod": (2000, 4000), "pbocbs": (25, 80),
     "cftcgold": (-400000, 1200000), "goldetfflow": (-500, 500), "gscpi": (-3, 6),
 }
@@ -270,6 +270,49 @@ def fetch_nyfed_acm(cfg: dict, days: int) -> pd.Series:
     return pd.to_numeric(s, errors="coerce").dropna()
 
 
+def fetch_tushare(cfg: dict, days: int) -> pd.Series:
+    """Tushare Pro 通用取数 (HTTP直连, 不依赖SDK)。积分不足时透传官方错误信息。"""
+    token = os.environ.get("TUSHARE_TOKEN", "")
+    if not token:
+        raise ValueError("TUSHARE_TOKEN 未设置 (仓库 Settings → Secrets)")
+    fn = cfg["fn"]
+    start = TODAY - dt.timedelta(days=days)
+    params = dict(cfg.get("params", {}))
+    if fn == "sf_month":
+        params.setdefault("start_m", start.strftime("%Y%m"))
+    elif fn == "yc_cb":
+        params.setdefault("start_date", start.strftime("%Y%m%d"))
+        params.setdefault("ts_code", "1001.CB")  # 中债国债收益率曲线
+    else:
+        params.setdefault("start_date", start.strftime("%Y%m%d"))
+    r = SESSION.post("https://api.tushare.pro",
+                     json={"api_name": fn, "token": token, "params": params, "fields": ""}, timeout=60)
+    j = r.json()
+    if j.get("code") != 0:
+        raise ValueError(f"tushare: {j.get('msg', 'unknown error')}"[:150])
+    data = j["data"]
+    df = pd.DataFrame(data["items"], columns=data["fields"])
+    if df.empty:
+        raise ValueError("tushare returned empty")
+    if fn == "sf_month":
+        idx = pd.to_datetime(df["month"], format="%Y%m") + pd.offsets.MonthEnd(0)
+        inc_col = next((c for c in df.columns if "inc" in c and "cum" not in c), df.columns[1])
+        s = pd.Series(pd.to_numeric(df[inc_col], errors="coerce").values, index=idx).sort_index()
+        roll = s.rolling(12, min_periods=12).sum()
+        return ((roll / roll.shift(12) - 1) * 100).dropna()  # 12M滚动增量求和同比, 代理社融存量增速
+    if fn == "yc_cb":
+        term = float(cfg.get("term", 1.0))
+        df = df[pd.to_numeric(df["curve_term"], errors="coerce") == term]
+        if df.empty:
+            raise ValueError(f"yc_cb 无 curve_term={term} 数据")
+        idx = pd.to_datetime(df["trade_date"].astype(str))
+        return pd.Series(pd.to_numeric(df["yield"], errors="coerce").values, index=idx).sort_index().dropna()
+    dcol = "trade_date" if "trade_date" in df.columns else ("date" if "date" in df.columns else df.columns[0])
+    vcol = cfg.get("field") or df.columns[1]
+    idx = pd.to_datetime(df[dcol].astype(str))
+    return pd.Series(pd.to_numeric(df[vcol], errors="coerce").values, index=idx).sort_index().dropna()
+
+
 def fetch_treasury_auctions(days: int, cfg: dict | None = None) -> pd.Series:
     """财政部FiscalData真实拍卖数据。
     transform=rolling_issuance: 滚动发行额(十亿美元), 窗口由 window_days 决定(默认28);
@@ -299,8 +342,15 @@ def fetch_treasury_auctions(days: int, cfg: dict | None = None) -> pd.Series:
 def fetch_csv_url(cfg: dict, days: int) -> pd.Series:
     df = pd.read_excel(cfg["url"]) if cfg["url"].endswith((".xls", ".xlsx")) else pd.read_csv(cfg["url"])
     date_col = next((c for c in df.columns if "date" in str(c).lower() or "day" in str(c).lower()), df.columns[0])
-    s = df.set_index(pd.to_datetime(df[date_col]))[cfg["column"]]
-    return pd.to_numeric(s, errors="coerce").dropna()
+    raw = df[date_col]
+    if pd.api.types.is_numeric_dtype(raw) and raw.dropna().between(19000101, 21001231).all():
+        idx = pd.to_datetime(raw.astype("Int64").astype(str), format="%Y%m%d", errors="coerce")  # GPR等源的YYYYMMDD整数
+    else:
+        idx = pd.to_datetime(raw, errors="coerce")
+        if idx.isna().mean() > 0.5:
+            idx = pd.to_datetime(raw.astype(str).str.slice(0, 8), format="%Y%m%d", errors="coerce")
+    s = pd.Series(pd.to_numeric(df[cfg["column"]], errors="coerce").values, index=idx)
+    return s[s.index.notna()].sort_index().dropna()
 
 
 # ------------------------------------------------------------------
@@ -618,12 +668,15 @@ def main():
                 s = fetch_akshare(cfg, days)
             elif src == "nyfed_acm":
                 s = fetch_nyfed_acm(cfg, days)
+            elif src == "tushare":
+                s = fetch_tushare(cfg, days)
             elif src == "treasury":
                 s = fetch_treasury_auctions(days, cfg)
             elif src == "csv_url":
                 s = fetch_csv_url(cfg, days)
             else:
                 raise ValueError(f"unknown source {src}")
+            s = s[~s.index.duplicated(keep="last")]  # EPU等源存在重复日期, reindex前必须去重
             cleaned = to_daily(transform_series(s, cfg))
             if cleaned.empty:
                 raise ValueError("empty series after transform (insufficient history?)")

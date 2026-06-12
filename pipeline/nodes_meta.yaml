@@ -863,16 +863,16 @@ nodes:
     unit: $/oz
     description: 跟随黄金上行,贵金属对冲需求外溢。
   aluminum:
-    name: 铝(LME)
+    name: 铝(沪铝主力)
     category: asset
     priority: P3
-    unit: $/t
+    unit: 元/吨
     description: 电解铝供给受限,价格高位。
   ironore:
-    name: 铁矿石
+    name: 铁矿石(大商所主力)
     category: asset
     priority: P2
-    unit: $/t
+    unit: 元/吨
     description: 地产新开工收缩直接压制矿价——地产下行路径(G)的价格端确认。
   rebar:
     name: 螺纹钢

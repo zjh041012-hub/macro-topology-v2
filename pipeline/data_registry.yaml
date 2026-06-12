@@ -80,7 +80,7 @@ nodes:
   nfp:        { source: fred, series: PAYEMS, transform: mom_diff, unit_changes: idx, freq: monthly, scale: 1 }
   unemp:      { source: fred, series: UNRATE, transform: level, unit_changes: pp, freq: monthly }
   exports:    { source: akshare, fn: macro_china_exports_yoy, transform: level, unit_changes: pp, freq: monthly }
-  usclaims:   { source: fred, series: ICSA, transform: level, unit_changes: idx, freq: weekly }
+  usclaims:   { source: fred, series: ICSA, transform: level, unit_changes: idx, freq: weekly, scale: 0.001 }
   inddemand:  { source: derived, unit_changes: idx,
                 formula: "0.4*z20(copper) + 0.3*z20(oil) + 0.3*z20(cnppi)",
                 note: "工业品需求合成指标: 铜/油20日动量z分 + PPI z分加权" }
@@ -88,8 +88,8 @@ nodes:
   # ---------------- 流动性与信用 ----------------
   m1:         { source: akshare, fn: macro_china_money_supply, column: "货币(M1)-同比增长", transform: level, unit_changes: pp, freq: monthly }
   m2:         { source: akshare, fn: macro_china_money_supply, column: "货币和准货币(M2)-同比增长", transform: level, unit_changes: pp, freq: monthly }
-  tsf:        { source: akshare, fn: macro_china_shrzgm, transform: level, unit_changes: pp, freq: monthly,
-                note: "当前接口仅提供增量: 用12个月滚动求和同比代理存量增速, 逻辑在fetch_akshare内" }
+  tsf:        { source: tushare, fn: sf_month, transform: level, unit_changes: pp, freq: monthly,
+                note: "Tushare社融月度增量→12M滚动求和同比代理存量增速 (需2000积分, 学生认证可免费获得)" }
   usfci:      { source: fred, series: NFCI,      transform: level, unit_changes: idx, freq: weekly }
   fedbs:      { source: fred, series: WALCL,     transform: level, unit_changes: pct, freq: weekly }
   rrp:        { source: fred, series: RRPONTSYD, transform: level, unit_changes: pct }
@@ -165,20 +165,20 @@ nodes:
   usdeficit:  { source: fred, series: MTSDS133FMS, transform: rolling_sum_12m, unit_changes: pct, freq: monthly,
                 note: "月度财政收支差额12个月滚动求和 = 滚动赤字" }
   fiscalimpulse: { source: manual, value: 0.8, unit_changes: idx, note: "学术口径季频, 手工维护" }
-  tga:        { source: fred, series: WTREGEN,  transform: level, unit_changes: pct, freq: weekly }
-  reserves:   { source: fred, series: WRESBAL,  transform: level, unit_changes: pct, freq: weekly }
+  tga:        { source: fred, series: WTREGEN,  transform: level, unit_changes: pct, freq: weekly, scale: 0.01 }
+  reserves:   { source: fred, series: WRESBAL,  transform: level, unit_changes: pct, freq: weekly, scale: 0.000001 }
   mmf:        { source: fred, series: MMMFFAQ027S, transform: level, unit_changes: pct, freq: quarterly,
-                note: "货基规模季频(FRED), 周频ICI数据无免费API" }
+                note: "货基规模季频(FRED), 周频ICI数据无免费API", scale: 0.000001 }
 
   # ================= 扩容: 中国利率与信用 =================
-  cn1y:       { source: akshare, fn: bond_china_yield, code: "1年", transform: level, unit_changes: bp,
-                note: "中债国债收益率曲线1年期" }
+  cn1y:       { source: tushare, fn: yc_cb, term: 1, transform: level, unit_changes: bp,
+                note: "中债国债收益率曲线1年期(Tushare, 需2000积分; 中债官网拒GitHub海外IP)" }
   cn5y:       { source: akshare, fn: bond_zh_us_rate, column: "中国国债收益率5年", transform: level, unit_changes: bp }
   cn30y:      { source: akshare, fn: bond_zh_us_rate, column: "中国国债收益率30年", transform: level, unit_changes: bp }
   lpr5y:      { source: akshare, fn: macro_china_lpr, column: "LPR5Y", transform: level, unit_changes: bp }
   dr001:      { source: akshare, fn: repo_rate_query, code: FDR001, transform: level, unit_changes: bp }
-  shibor3m:   { source: akshare, fn: macro_china_shibor_all, column: "3月", transform: level, unit_changes: bp,
-                note: "列名若变更在fetch_akshare的shibor分支调整" }
+  shibor3m:   { source: tushare, fn: shibor, field: "3m", transform: level, unit_changes: bp,
+                note: "Tushare SHIBOR(120积分即可调用), 替换不稳定的金十源" }
   ncd1y:      { source: manual, value: 1.86, unit_changes: bp, note: "存单收益率无稳定免费接口, 周更" }
   cnusspread: { source: derived, unit_changes: bp,
                 formula: "series:cn10y-us10y",

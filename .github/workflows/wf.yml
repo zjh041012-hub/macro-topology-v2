@@ -28,6 +28,7 @@ jobs:
       - name: Build topology data
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+          TUSHARE_TOKEN: ${{ secrets.TUSHARE_TOKEN }}
         run: python pipeline/build_topology.py --out output
 
       - name: Commit data
