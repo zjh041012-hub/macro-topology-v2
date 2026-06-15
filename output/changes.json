@@ -1,72 +1,66 @@
 {
- "since": "2026-06-12T12:51:02+00:00",
- "generatedAt": "2026-06-13T00:09:52+00:00",
+ "since": "2026-06-13T00:09:52+00:00",
+ "generatedAt": "2026-06-15T15:37:32+00:00",
  "nodeChanges": [
   {
-   "id": "gold",
-   "name": "黄金",
+   "id": "lmecopperinv",
+   "name": "LME铜库存",
    "from": "EXTREME",
-   "to": "ELEVATED"
+   "to": "NORMAL"
   },
   {
-   "id": "oil",
-   "name": "原油(WTI)",
+   "id": "igspread",
+   "name": "美国投资级信用利差",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
    "id": "csi300",
    "name": "沪深300",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "us30y",
-   "name": "美国30年期国债收益率",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "us20y",
-   "name": "美国20年期国债收益率",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "us10y",
-   "name": "美国10年期国债收益率",
    "from": "ELEVATED",
-   "to": "NORMAL"
+   "to": "EXTREME"
   },
   {
-   "id": "hyspread",
-   "name": "美国高收益债信用利差",
+   "id": "cdxig",
+   "name": "CDX IG",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "csi500",
+   "name": "中证500",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "sofr",
+   "name": "SOFR",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "t2s10s",
+   "name": "美债2s10s利差",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "vix",
-   "name": "VIX指数",
+   "id": "cnusspread",
+   "name": "中美国债10年利差",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "us5yreal",
-   "name": "美国5年期实际利率",
+   "id": "cta",
+   "name": "CTA趋势仓位代理",
    "from": "ELEVATED",
    "to": "NORMAL"
-  },
-  {
-   "id": "cdxhy",
-   "name": "CDX HY",
-   "from": "NORMAL",
-   "to": "ELEVATED"
   },
   {
    "id": "hsi",
    "name": "恒生指数",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "NORMAL"
   }
  ],
  "pathChanges": [],

@@ -64,13 +64,13 @@
   }
  },
  "topMover": {
-  "nodeId": "us10ybe",
-  "text": "美国10年期盈亏平衡通胀 -5bp/5D · 48分位"
+  "nodeId": "oil",
+  "text": "原油(WTI) -11.9%/5D · 75分位"
  },
  "dominantPathId": "p_std_f",
  "divergenceCount": 0,
- "highRiskCount": 11,
+ "highRiskCount": 13,
  "regime": "EXTREME",
- "regimeNote": "自动识别: 0条背离, 11个高风险节点。",
- "updatedAt": "2026-06-13T00:09:52+00:00"
+ "regimeNote": "自动识别: 0条背离, 13个高风险节点。",
+ "updatedAt": "2026-06-15T15:37:32+00:00"
 }
