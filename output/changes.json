@@ -1,17 +1,33 @@
 {
- "since": "2026-06-15T15:37:32+00:00",
- "generatedAt": "2026-06-16T00:22:39+00:00",
+ "since": "2026-06-16T00:22:39+00:00",
+ "generatedAt": "2026-06-16T14:42:14+00:00",
  "nodeChanges": [
   {
-   "id": "cnusspread",
-   "name": "中美国债10年利差",
-   "from": "NORMAL",
+   "id": "hyspread",
+   "name": "美国高收益债信用利差",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "housingstarts",
+   "name": "美国住房开工",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "cdxhy",
+   "name": "CDX HY",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "bdi",
+   "name": "波罗的海干散货指数",
+   "from": "EXTREME",
    "to": "ELEVATED"
   }
  ],
- "pathChanges": [
-  "路径F · 全球再通胀 (反向: 通缩交易): INACTIVE → PARTIAL"
- ],
+ "pathChanges": [],
  "divAdded": [],
  "divRemoved": []
 }

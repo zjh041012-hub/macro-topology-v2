@@ -1482,7 +1482,7 @@
   "relation": "positive",
   "mechanism": "流动性压力推升资金利率",
   "strength": 0.5,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_liqstress_ncd",
@@ -1716,7 +1716,7 @@
   "relation": "positive",
   "mechanism": "有色构成商品指数权重",
   "strength": 0.3,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_lmeinv_copper",
