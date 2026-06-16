@@ -1,69 +1,17 @@
 {
- "since": "2026-06-13T00:09:52+00:00",
- "generatedAt": "2026-06-15T15:37:32+00:00",
+ "since": "2026-06-15T15:37:32+00:00",
+ "generatedAt": "2026-06-16T00:22:39+00:00",
  "nodeChanges": [
-  {
-   "id": "lmecopperinv",
-   "name": "LME铜库存",
-   "from": "EXTREME",
-   "to": "NORMAL"
-  },
-  {
-   "id": "igspread",
-   "name": "美国投资级信用利差",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "csi300",
-   "name": "沪深300",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "cdxig",
-   "name": "CDX IG",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "csi500",
-   "name": "中证500",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "sofr",
-   "name": "SOFR",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "t2s10s",
-   "name": "美债2s10s利差",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
   {
    "id": "cnusspread",
    "name": "中美国债10年利差",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "cta",
-   "name": "CTA趋势仓位代理",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "hsi",
-   "name": "恒生指数",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "from": "NORMAL",
+   "to": "ELEVATED"
   }
  ],
- "pathChanges": [],
+ "pathChanges": [
+  "路径F · 全球再通胀 (反向: 通缩交易): INACTIVE → PARTIAL"
+ ],
  "divAdded": [],
  "divRemoved": []
 }

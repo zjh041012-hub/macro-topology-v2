@@ -1,7 +1,6 @@
 {
  "data_status": {
   "stale": [
-   "chipetf",
    "cn1y",
    "dividendetf",
    "goldetf",
@@ -54,23 +53,23 @@
    "cta",
    "gammaproxy"
   ],
-  "liveCount": 135,
+  "liveCount": 136,
   "totalCount": 178,
   "sourceErrors": {
    "fred": "usclaims → ValueError: empty series after transform (insufficient history?)",
    "tushare": "tsf → ValueError: tushare: 抱歉，您没有接口(sf_month)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。",
-   "akshare:fund_etf_hist_em": "chipetf → ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-   "csv_url": "gscpi → ValueError: Excel file format cannot be determined, you must specify an engine manually."
+   "csv_url": "gscpi → ValueError: Excel file format cannot be determined, you must specify an engine manually.",
+   "akshare:fund_etf_hist_em": "dividendetf → ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
   }
  },
  "topMover": {
   "nodeId": "oil",
-  "text": "原油(WTI) -11.9%/5D · 75分位"
+  "text": "原油(WTI) -7.7%/5D · 77分位"
  },
  "dominantPathId": "p_std_f",
  "divergenceCount": 0,
  "highRiskCount": 13,
  "regime": "EXTREME",
  "regimeNote": "自动识别: 0条背离, 13个高风险节点。",
- "updatedAt": "2026-06-15T15:37:32+00:00"
+ "updatedAt": "2026-06-16T00:22:39+00:00"
 }

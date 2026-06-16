@@ -1,8 +1,8 @@
 [
  {
   "id": "p_std_f",
-  "name": "路径F · 全球再通胀",
-  "title": "路径F · 全球再通胀",
+  "name": "路径F · 全球再通胀 (反向: 通缩交易)",
+  "title": "路径F · 全球再通胀 (反向: 通缩交易)",
   "nodeIds": [
    "ismneworder",
    "oil",
@@ -16,32 +16,9 @@
    "e_be_10y",
    "e_10y_bank"
   ],
-  "status": "INACTIVE",
-  "consistency": 0.25,
-  "note": "实时评估: 1/4 条边动量一致 (ismneworder→oil×, oil→us10ybe✓, us10ybe→us10y×, us10y→bankidx×)。"
- },
- {
-  "id": "p_std_a",
-  "name": "路径A · 美国政策转鹰",
-  "title": "路径A · 美国政策转鹰",
-  "nodeIds": [
-   "uscpi",
-   "cutsexp",
-   "us2y",
-   "us10y",
-   "us10yreal",
-   "dxy"
-  ],
-  "edgeIds": [
-   "e_cpi_cuts",
-   "e_cuts_2y",
-   "e_2y_10y",
-   "e_10y_real",
-   "e_real_dxy"
-  ],
-  "status": "INACTIVE",
-  "consistency": 0.0,
-  "note": "实时评估: 0/5 条边动量一致 (uscpi→cutsexp×, cutsexp→us2y×, us2y→us10y×, us10y→us10yreal×, us10yreal→dxy×)。"
+  "status": "PARTIAL",
+  "consistency": 0.5,
+  "note": "实时评估: 2/4 条边动量一致 (ismneworder→oil×, oil→us10ybe✓, us10ybe→us10y✓, us10y→bankidx×)。"
  },
  {
   "id": "p_std_b",
@@ -65,8 +42,31 @@
    "e_real_ndx"
   ],
   "status": "INACTIVE",
+  "consistency": 0.17,
+  "note": "实时评估: 1/6 条边动量一致 (usdeficit→netissue×, netissue→auctiontail×, auctiontail→termprem×, termprem→us10y✓, us10y→us10yreal×, us10yreal→ndx×)。"
+ },
+ {
+  "id": "p_std_a",
+  "name": "路径A · 美国政策转鹰",
+  "title": "路径A · 美国政策转鹰",
+  "nodeIds": [
+   "uscpi",
+   "cutsexp",
+   "us2y",
+   "us10y",
+   "us10yreal",
+   "dxy"
+  ],
+  "edgeIds": [
+   "e_cpi_cuts",
+   "e_cuts_2y",
+   "e_2y_10y",
+   "e_10y_real",
+   "e_real_dxy"
+  ],
+  "status": "INACTIVE",
   "consistency": 0.0,
-  "note": "实时评估: 0/6 条边动量一致 (usdeficit→netissue×, netissue→auctiontail×, auctiontail→termprem×, termprem→us10y×, us10y→us10yreal×, us10yreal→ndx×)。"
+  "note": "实时评估: 0/5 条边动量一致 (uscpi→cutsexp×, cutsexp→us2y×, us2y→us10y×, us10y→us10yreal×, us10yreal→dxy×)。"
  },
  {
   "id": "p_std_c",
@@ -193,13 +193,13 @@
  },
  {
   "id": "p_auto_3",
-  "title": "黄金 → 白银",
+  "title": "MOVE利率波动率指数 → 美债10Y期限溢价",
   "nodeIds": [
-   "gold",
-   "silver"
+   "move",
+   "termprem"
   ],
   "edgeIds": [
-   "e_gold_silver"
+   "e_move_tp"
   ],
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  }
