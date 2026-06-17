@@ -1,29 +1,23 @@
 {
- "since": "2026-06-16T00:22:39+00:00",
- "generatedAt": "2026-06-16T14:42:14+00:00",
+ "since": "2026-06-16T14:42:14+00:00",
+ "generatedAt": "2026-06-17T00:07:16+00:00",
  "nodeChanges": [
   {
-   "id": "hyspread",
-   "name": "美国高收益债信用利差",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "housingstarts",
-   "name": "美国住房开工",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "cdxhy",
-   "name": "CDX HY",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "bdi",
-   "name": "波罗的海干散货指数",
+   "id": "rrp",
+   "name": "美联储隔夜逆回购(RRP)",
    "from": "EXTREME",
+   "to": "NORMAL"
+  },
+  {
+   "id": "us10yreal",
+   "name": "美国10年期实际利率",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "termprem",
+   "name": "美债10Y期限溢价",
+   "from": "NORMAL",
    "to": "ELEVATED"
   }
  ],

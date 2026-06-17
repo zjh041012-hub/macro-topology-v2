@@ -181,25 +181,25 @@
  },
  {
   "id": "p_auto_2",
-  "title": "原油(WTI) → 美国汽油零售价",
+  "title": "财政信用担忧指数 → 美债10Y期限溢价",
   "nodeIds": [
-   "oil",
-   "gasoline"
+   "fiscalworry",
+   "termprem"
   ],
   "edgeIds": [
-   "e_oil_gasoline"
+   "e_worry_tp"
   ],
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  },
  {
   "id": "p_auto_3",
-  "title": "MOVE利率波动率指数 → 美债10Y期限溢价",
+  "title": "财政信用担忧指数 → 黄金",
   "nodeIds": [
-   "move",
-   "termprem"
+   "fiscalworry",
+   "gold"
   ],
   "edgeIds": [
-   "e_move_tp"
+   "e_worry_gold"
   ],
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  }
