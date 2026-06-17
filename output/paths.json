@@ -1,8 +1,8 @@
 [
  {
   "id": "p_std_f",
-  "name": "路径F · 全球再通胀 (反向: 通缩交易)",
-  "title": "路径F · 全球再通胀 (反向: 通缩交易)",
+  "name": "路径F · 全球再通胀",
+  "title": "路径F · 全球再通胀",
   "nodeIds": [
    "ismneworder",
    "oil",
@@ -16,34 +16,9 @@
    "e_be_10y",
    "e_10y_bank"
   ],
-  "status": "PARTIAL",
-  "consistency": 0.5,
-  "note": "实时评估: 2/4 条边动量一致 (ismneworder→oil×, oil→us10ybe✓, us10ybe→us10y✓, us10y→bankidx×)。"
- },
- {
-  "id": "p_std_b",
-  "name": "路径B · 财政供给与期限溢价",
-  "title": "路径B · 财政供给与期限溢价",
-  "nodeIds": [
-   "usdeficit",
-   "netissue",
-   "auctiontail",
-   "termprem",
-   "us10y",
-   "us10yreal",
-   "ndx"
-  ],
-  "edgeIds": [
-   "e_deficit_netissue",
-   "e_netissue_tail",
-   "e_tail_tp",
-   "e_tp_10y",
-   "e_10y_real",
-   "e_real_ndx"
-  ],
   "status": "INACTIVE",
-  "consistency": 0.17,
-  "note": "实时评估: 1/6 条边动量一致 (usdeficit→netissue×, netissue→auctiontail×, auctiontail→termprem×, termprem→us10y✓, us10y→us10yreal×, us10yreal→ndx×)。"
+  "consistency": 0.25,
+  "note": "实时评估: 1/4 条边动量一致 (ismneworder→oil×, oil→us10ybe✓, us10ybe→us10y×, us10y→bankidx×)。"
  },
  {
   "id": "p_std_a",
@@ -67,6 +42,31 @@
   "status": "INACTIVE",
   "consistency": 0.0,
   "note": "实时评估: 0/5 条边动量一致 (uscpi→cutsexp×, cutsexp→us2y×, us2y→us10y×, us10y→us10yreal×, us10yreal→dxy×)。"
+ },
+ {
+  "id": "p_std_b",
+  "name": "路径B · 财政供给与期限溢价",
+  "title": "路径B · 财政供给与期限溢价",
+  "nodeIds": [
+   "usdeficit",
+   "netissue",
+   "auctiontail",
+   "termprem",
+   "us10y",
+   "us10yreal",
+   "ndx"
+  ],
+  "edgeIds": [
+   "e_deficit_netissue",
+   "e_netissue_tail",
+   "e_tail_tp",
+   "e_tp_10y",
+   "e_10y_real",
+   "e_real_ndx"
+  ],
+  "status": "INACTIVE",
+  "consistency": 0.0,
+  "note": "实时评估: 0/6 条边动量一致 (usdeficit→netissue×, netissue→auctiontail×, auctiontail→termprem×, termprem→us10y×, us10y→us10yreal×, us10yreal→ndx×)。"
  },
  {
   "id": "p_std_c",
@@ -181,25 +181,25 @@
  },
  {
   "id": "p_auto_2",
-  "title": "财政信用担忧指数 → 美债10Y期限溢价",
+  "title": "原油(WTI) → 美国汽油零售价",
   "nodeIds": [
-   "fiscalworry",
-   "termprem"
+   "oil",
+   "gasoline"
   ],
   "edgeIds": [
-   "e_worry_tp"
+   "e_oil_gasoline"
   ],
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  },
  {
   "id": "p_auto_3",
-  "title": "财政信用担忧指数 → 黄金",
+  "title": "黄金 → 白银",
   "nodeIds": [
-   "fiscalworry",
-   "gold"
+   "gold",
+   "silver"
   ],
   "edgeIds": [
-   "e_worry_gold"
+   "e_gold_silver"
   ],
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  }
