@@ -1,48 +1,30 @@
 {
- "since": "2026-06-17T13:12:57+00:00",
- "generatedAt": "2026-06-18T00:07:54+00:00",
+ "since": "2026-06-18T00:07:54+00:00",
+ "generatedAt": "2026-06-18T12:47:57+00:00",
  "nodeChanges": [
   {
    "id": "us10ybe",
    "name": "美国10年期盈亏平衡通胀",
-   "from": "ELEVATED",
-   "to": "EXTREME"
+   "from": "EXTREME",
+   "to": "ELEVATED"
   },
   {
    "id": "t2s10s",
    "name": "美债2s10s利差",
-   "from": "ELEVATED",
-   "to": "EXTREME"
+   "from": "EXTREME",
+   "to": "ELEVATED"
   },
   {
    "id": "termprem",
    "name": "美债10Y期限溢价",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "fiscalworry",
-   "name": "财政信用担忧指数",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "cnusspread",
-   "name": "中美国债10年利差",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "cta",
-   "name": "CTA趋势仓位代理",
+   "id": "debtceiling",
+   "name": "债务上限博弈风险",
    "from": "NORMAL",
    "to": "ELEVATED"
-  },
-  {
-   "id": "goldminers",
-   "name": "黄金矿业股",
-   "from": "ELEVATED",
-   "to": "NORMAL"
   }
  ],
  "pathChanges": [],
