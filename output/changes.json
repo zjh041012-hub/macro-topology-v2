@@ -1,71 +1,51 @@
 {
- "since": "2026-06-17T00:07:16+00:00",
- "generatedAt": "2026-06-17T13:12:57+00:00",
+ "since": "2026-06-17T13:12:57+00:00",
+ "generatedAt": "2026-06-18T00:07:54+00:00",
  "nodeChanges": [
-  {
-   "id": "lmecopperinv",
-   "name": "LME铜库存",
-   "from": "NORMAL",
-   "to": "EXTREME"
-  },
-  {
-   "id": "hyspread",
-   "name": "美国高收益债信用利差",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
   {
    "id": "us10ybe",
    "name": "美国10年期盈亏平衡通胀",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "igspread",
-   "name": "美国投资级信用利差",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "bankloans",
-   "name": "美国商业银行贷款(同比)",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "cdxig",
-   "name": "CDX IG",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "cdxhy",
-   "name": "CDX HY",
-   "from": "EXTREME",
-   "to": "ELEVATED"
+   "id": "t2s10s",
+   "name": "美债2s10s利差",
+   "from": "ELEVATED",
+   "to": "EXTREME"
   },
   {
    "id": "termprem",
    "name": "美债10Y期限溢价",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "fiscalworry",
+   "name": "财政信用担忧指数",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "cnusspread",
+   "name": "中美国债10年利差",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "fedbs",
-   "name": "美联储资产负债表",
+   "id": "cta",
+   "name": "CTA趋势仓位代理",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "usretail",
-   "name": "美国零售销售(环比)",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "id": "goldminers",
+   "name": "黄金矿业股",
+   "from": "ELEVATED",
+   "to": "NORMAL"
   }
  ],
- "pathChanges": [
-  "路径F · 全球再通胀: PARTIAL → INACTIVE"
- ],
+ "pathChanges": [],
  "divAdded": [],
  "divRemoved": []
 }
