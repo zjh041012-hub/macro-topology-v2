@@ -1,24 +1,12 @@
 {
- "since": "2026-06-19T00:18:35+00:00",
- "generatedAt": "2026-06-19T13:10:02+00:00",
+ "since": "2026-06-19T13:10:02+00:00",
+ "generatedAt": "2026-06-19T23:46:18+00:00",
  "nodeChanges": [
-  {
-   "id": "gold",
-   "name": "黄金",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "bdi",
-   "name": "波罗的海干散货指数",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
   {
    "id": "cta",
    "name": "CTA趋势仓位代理",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "NORMAL"
   }
  ],
  "pathChanges": [],
