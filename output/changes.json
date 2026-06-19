@@ -1,90 +1,24 @@
 {
- "since": "2026-06-18T12:47:57+00:00",
- "generatedAt": "2026-06-19T00:18:35+00:00",
+ "since": "2026-06-19T00:18:35+00:00",
+ "generatedAt": "2026-06-19T13:10:02+00:00",
  "nodeChanges": [
   {
-   "id": "rrp",
-   "name": "美联储隔夜逆回购(RRP)",
-   "from": "NORMAL",
-   "to": "EXTREME"
-  },
-  {
-   "id": "hyspread",
-   "name": "美国高收益债信用利差",
+   "id": "gold",
+   "name": "黄金",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "igspread",
-   "name": "美国投资级信用利差",
+   "id": "bdi",
+   "name": "波罗的海干散货指数",
    "from": "ELEVATED",
    "to": "EXTREME"
-  },
-  {
-   "id": "comidx",
-   "name": "南华商品指数",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "bankloans",
-   "name": "美国商业银行贷款(同比)",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "cdxig",
-   "name": "CDX IG",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "cdxhy",
-   "name": "CDX HY",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "us10yreal",
-   "name": "美国10年期实际利率",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "bidcover",
-   "name": "美国国债投标倍数",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "tga",
-   "name": "美国财政部TGA账户",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "dr007",
-   "name": "DR007",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "us5yreal",
-   "name": "美国5年期实际利率",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "cnusspread",
-   "name": "中美国债10年利差",
-   "from": "NORMAL",
-   "to": "ELEVATED"
   },
   {
    "id": "cta",
    "name": "CTA趋势仓位代理",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "from": "NORMAL",
+   "to": "ELEVATED"
   }
  ],
  "pathChanges": [],

@@ -1383,7 +1383,7 @@
   "relation": "positive",
   "mechanism": "隔夜向7天传导",
   "strength": 0.4,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_dr007_shibor",
