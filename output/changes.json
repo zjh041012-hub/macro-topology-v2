@@ -1,12 +1,36 @@
 {
- "since": "2026-06-19T13:10:02+00:00",
- "generatedAt": "2026-06-19T23:46:18+00:00",
+ "since": "2026-06-19T23:46:18+00:00",
+ "generatedAt": "2026-06-22T15:17:10+00:00",
  "nodeChanges": [
   {
-   "id": "cta",
-   "name": "CTA趋势仓位代理",
+   "id": "gold",
+   "name": "黄金",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "sofr",
+   "name": "SOFR",
    "from": "ELEVATED",
-   "to": "NORMAL"
+   "to": "EXTREME"
+  },
+  {
+   "id": "bdi",
+   "name": "波罗的海干散货指数",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "ironore",
+   "name": "铁矿石(大商所主力)",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "hsi",
+   "name": "恒生指数",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   }
  ],
  "pathChanges": [],
