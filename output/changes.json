@@ -1,36 +1,30 @@
 {
- "since": "2026-06-19T23:46:18+00:00",
- "generatedAt": "2026-06-22T15:17:10+00:00",
+ "since": "2026-06-22T15:17:10+00:00",
+ "generatedAt": "2026-06-23T00:00:53+00:00",
  "nodeChanges": [
   {
-   "id": "gold",
-   "name": "黄金",
+   "id": "rrp",
+   "name": "美联储隔夜逆回购(RRP)",
    "from": "EXTREME",
-   "to": "ELEVATED"
+   "to": "NORMAL"
   },
   {
-   "id": "sofr",
-   "name": "SOFR",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "bdi",
-   "name": "波罗的海干散货指数",
+   "id": "cftcgold",
+   "name": "CFTC黄金净多头",
    "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "ironore",
-   "name": "铁矿石(大商所主力)",
-   "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
    "id": "hsi",
    "name": "恒生指数",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "us20y",
+   "name": "美国20年期国债收益率",
+   "from": "ELEVATED",
+   "to": "NORMAL"
   }
  ],
  "pathChanges": [],

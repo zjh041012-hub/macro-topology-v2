@@ -4,14 +4,12 @@
    "chipetf",
    "cn1y",
    "dividendetf",
-   "dr001",
-   "dr007",
    "goldetf",
    "gscpi",
-   "r007",
    "shibor3m",
    "tsf",
    "usclaims",
+   "usdcnh",
    "usoilinv"
   ],
   "manual": [
@@ -57,10 +55,10 @@
    "cta",
    "gammaproxy"
   ],
-  "liveCount": 132,
+  "liveCount": 134,
   "totalCount": 178,
   "sourceErrors": {
-   "akshare:repo_rate_query": "r007 → HTTPError: HTTP Error 403: Forbidden",
+   "yahoo": "usdcnh → ValueError: Neither `start` nor `end` can be NaT",
    "fred": "usclaims → ValueError: empty series after transform (insufficient history?)",
    "tushare": "tsf → ValueError: tushare: 抱歉，您没有接口(sf_month)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。",
    "akshare:fund_etf_hist_em": "chipetf → ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
@@ -69,12 +67,12 @@
  },
  "topMover": {
   "nodeId": "oil",
-  "text": "原油(WTI) -8.4%/5D · 55分位"
+  "text": "原油(WTI) -8.2%/5D · 56分位"
  },
  "dominantPathId": "p_std_f",
  "divergenceCount": 0,
  "highRiskCount": 13,
  "regime": "EXTREME",
  "regimeNote": "自动识别: 0条背离, 13个高风险节点。",
- "updatedAt": "2026-06-22T15:17:10+00:00"
+ "updatedAt": "2026-06-23T00:00:53+00:00"
 }
