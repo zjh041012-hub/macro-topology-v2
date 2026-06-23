@@ -1,81 +1,59 @@
 {
- "since": "2026-06-23T00:00:53+00:00",
- "generatedAt": "2026-06-23T12:31:04+00:00",
+ "since": "2026-06-23T12:31:04+00:00",
+ "generatedAt": "2026-06-23T23:45:13+00:00",
  "nodeChanges": [
   {
-   "id": "gold",
-   "name": "黄金",
+   "id": "us10yreal",
+   "name": "美国10年期实际利率",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "comidx",
-   "name": "南华商品指数",
+   "id": "us10ybe",
+   "name": "美国10年期盈亏平衡通胀",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "silver",
-   "name": "白银",
+   "id": "debtceiling",
+   "name": "债务上限博弈风险",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "fedpath",
-   "name": "美联储政策利率预期(1Y远期)",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "dxy",
-   "name": "美元指数",
+   "id": "us10y",
+   "name": "美国10年期国债收益率",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
    "id": "bidcover",
    "name": "美国国债投标倍数",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "r007",
-   "name": "R007",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "eurusd",
-   "name": "欧元兑美元",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "cta",
-   "name": "CTA趋势仓位代理",
+   "id": "hstech",
+   "name": "恒生科技",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
    "id": "gbpusd",
    "name": "英镑兑美元",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "NORMAL"
   },
   {
-   "id": "hsi",
-   "name": "恒生指数",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "goldminers",
-   "name": "黄金矿业股",
+   "id": "us20y",
+   "name": "美国20年期国债收益率",
    "from": "NORMAL",
    "to": "ELEVATED"
   }
  ],
- "pathChanges": [],
+ "pathChanges": [
+  "路径A · 美国政策转鹰: INACTIVE → PARTIAL"
+ ],
  "divAdded": [],
  "divRemoved": []
 }
