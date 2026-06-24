@@ -1,59 +1,45 @@
 {
- "since": "2026-06-23T12:31:04+00:00",
- "generatedAt": "2026-06-23T23:45:13+00:00",
+ "since": "2026-06-23T23:45:13+00:00",
+ "generatedAt": "2026-06-24T12:16:34+00:00",
  "nodeChanges": [
   {
-   "id": "us10yreal",
-   "name": "美国10年期实际利率",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "us10ybe",
-   "name": "美国10年期盈亏平衡通胀",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "debtceiling",
-   "name": "债务上限博弈风险",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "us10y",
-   "name": "美国10年期国债收益率",
-   "from": "NORMAL",
+   "id": "oil",
+   "name": "原油(WTI)",
+   "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "bidcover",
-   "name": "美国国债投标倍数",
+   "id": "copper",
+   "name": "铜(LME)",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "dr007",
+   "name": "DR007",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
    "id": "hstech",
    "name": "恒生科技",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "gbpusd",
-   "name": "英镑兑美元",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "us20y",
-   "name": "美国20年期国债收益率",
+   "id": "gbpusd",
+   "name": "英镑兑美元",
    "from": "NORMAL",
    "to": "ELEVATED"
+  },
+  {
+   "id": "dr001",
+   "name": "DR001",
+   "from": "ELEVATED",
+   "to": "NORMAL"
   }
  ],
- "pathChanges": [
-  "路径A · 美国政策转鹰: INACTIVE → PARTIAL"
- ],
+ "pathChanges": [],
  "divAdded": [],
  "divRemoved": []
 }

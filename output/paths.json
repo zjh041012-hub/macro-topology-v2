@@ -86,8 +86,8 @@
    "e_real_ndx"
   ],
   "status": "INACTIVE",
-  "consistency": 0.17,
-  "note": "实时评估: 1/6 条边动量一致 (usdeficit→netissue×, netissue→auctiontail×, auctiontail→termprem×, termprem→us10y×, us10y→us10yreal×, us10yreal→ndx✓)。"
+  "consistency": 0.0,
+  "note": "实时评估: 0/6 条边动量一致 (usdeficit→netissue×, netissue→auctiontail×, auctiontail→termprem×, termprem→us10y×, us10y→us10yreal×, us10yreal→ndx×)。"
  },
  {
   "id": "p_std_d",

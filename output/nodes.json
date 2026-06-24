@@ -2,9 +2,9 @@
  {
   "value": 4.51,
   "change1d": 0.0,
-  "change5d": 8.0,
-  "change20d": 1.0,
-  "change60d": 21.0,
+  "change5d": 2.0,
+  "change20d": 3.0,
+  "change60d": 18.0,
   "percentile": 86,
   "id": "us10y",
   "name": "美国10年期国债收益率",
@@ -17,10 +17,6 @@
   "quality": "live",
   "invalidation": "若收益率回落至4.20%下方且美元同步走强,则财政供给主导逻辑失效,回归联储路径框架。",
   "history": [
-   {
-    "date": "04-01",
-    "value": 4.33
-   },
    {
     "date": "04-02",
     "value": 4.31
@@ -256,16 +252,20 @@
    {
     "date": "06-23",
     "value": 4.51
+   },
+   {
+    "date": "06-24",
+    "value": 4.51
    }
   ]
  },
  {
   "value": 4.24,
   "change1d": 0.0,
-  "change5d": 19.0,
-  "change20d": 23.0,
-  "change60d": 45.0,
-  "percentile": 59,
+  "change5d": 4.0,
+  "change20d": 24.0,
+  "change60d": 43.0,
+  "percentile": 60,
   "id": "us2y",
   "name": "美国2年期国债收益率",
   "category": "rates",
@@ -276,10 +276,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 3.81
-   },
    {
     "date": "04-02",
     "value": 3.79
@@ -515,15 +511,19 @@
    {
     "date": "06-23",
     "value": 4.24
+   },
+   {
+    "date": "06-24",
+    "value": 4.24
    }
   ]
  },
  {
   "value": 2.28,
   "change1d": 0.0,
-  "change5d": 14.0,
-  "change20d": 18.0,
-  "change60d": 28.0,
+  "change5d": 5.0,
+  "change20d": 19.0,
+  "change60d": 26.0,
   "percentile": 96,
   "id": "us10yreal",
   "name": "美国10年期实际利率",
@@ -536,10 +536,6 @@
   "quality": "live",
   "invalidation": "若黄金在实际利率维持高位的情况下持续上涨超过20日,实际利率-黄金负相关框架视为阶段性失效。",
   "history": [
-   {
-    "date": "04-01",
-    "value": 2.02
-   },
    {
     "date": "04-02",
     "value": 1.97
@@ -775,15 +771,19 @@
    {
     "date": "06-23",
     "value": 2.28
+   },
+   {
+    "date": "06-24",
+    "value": 2.28
    }
   ]
  },
  {
   "value": 2.21,
-  "change1d": -2.0,
-  "change5d": -8.0,
-  "change20d": -19.0,
-  "change60d": -9.0,
+  "change1d": 0.0,
+  "change5d": -5.0,
+  "change20d": -18.0,
+  "change60d": -10.0,
   "percentile": 11,
   "id": "us10ybe",
   "name": "美国10年期盈亏平衡通胀",
@@ -795,10 +795,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 2.31
-   },
    {
     "date": "04-02",
     "value": 2.34
@@ -1034,6 +1030,10 @@
    {
     "date": "06-23",
     "value": 2.21
+   },
+   {
+    "date": "06-24",
+    "value": 2.21
    }
   ]
  },
@@ -1043,7 +1043,7 @@
   "change5d": 0.0,
   "change20d": 1.0,
   "change60d": -1.0,
-  "percentile": 4,
+  "percentile": 5,
   "id": "fedfunds",
   "name": "美联储政策利率",
   "category": "rates",
@@ -1054,10 +1054,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 3.64
-   },
    {
     "date": "04-02",
     "value": 3.64
@@ -1293,16 +1289,20 @@
    {
     "date": "06-23",
     "value": 3.63
+   },
+   {
+    "date": "06-24",
+    "value": 3.63
    }
   ]
  },
  {
   "value": 4.04,
   "change1d": 0.0,
-  "change5d": 20.0,
-  "change20d": 22.0,
+  "change5d": 6.0,
+  "change20d": 24.0,
   "change60d": 36.0,
-  "percentile": 38,
+  "percentile": 39,
   "id": "fedpath",
   "name": "美联储政策利率预期(1Y远期)",
   "category": "rates",
@@ -1313,10 +1313,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 3.68
-   },
    {
     "date": "04-02",
     "value": 3.68
@@ -1552,15 +1548,19 @@
    {
     "date": "06-23",
     "value": 4.04
+   },
+   {
+    "date": "06-24",
+    "value": 4.04
    }
   ]
  },
  {
   "value": 0.54,
   "change1d": 0.0,
-  "change5d": -5.4,
-  "change20d": -17.3,
-  "change60d": -12.4,
+  "change5d": -0.7,
+  "change20d": -16.1,
+  "change60d": -15.5,
   "percentile": 59,
   "id": "termprem",
   "name": "美债10Y期限溢价",
@@ -1573,10 +1573,6 @@
   "quality": "live",
   "invalidation": "若期限溢价在供给落地后快速回落>20bp,本轮利率冲击视为阶段性结束。",
   "history": [
-   {
-    "date": "04-01",
-    "value": 0.691
-   },
    {
     "date": "04-02",
     "value": 0.663
@@ -1812,6 +1808,10 @@
    {
     "date": "06-23",
     "value": 0.536
+   },
+   {
+    "date": "06-24",
+    "value": 0.536
    }
   ]
  },
@@ -1819,8 +1819,8 @@
   "value": 4.95,
   "change1d": 0.0,
   "change5d": 2.0,
-  "change20d": -8.0,
-  "change60d": 7.0,
+  "change20d": -6.0,
+  "change60d": 4.0,
   "percentile": 91,
   "id": "us30y",
   "name": "美国30年期国债收益率",
@@ -1832,10 +1832,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 4.91
-   },
    {
     "date": "04-02",
     "value": 4.88
@@ -2071,15 +2067,19 @@
    {
     "date": "06-23",
     "value": 4.95
+   },
+   {
+    "date": "06-24",
+    "value": 4.95
    }
   ]
  },
  {
   "value": 0.34,
-  "change1d": 7.0,
-  "change5d": -4.0,
-  "change20d": -15.0,
-  "change60d": -17.0,
+  "change1d": 0.0,
+  "change5d": 5.0,
+  "change20d": -14.0,
+  "change60d": -18.0,
   "percentile": 56,
   "id": "t2s10s",
   "name": "美债2s10s利差",
@@ -2091,10 +2091,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 0.52
-   },
    {
     "date": "04-02",
     "value": 0.52
@@ -2330,15 +2326,19 @@
    {
     "date": "06-23",
     "value": 0.34
+   },
+   {
+    "date": "06-24",
+    "value": 0.34
    }
   ]
  },
  {
-  "value": 1.74,
-  "change1d": 0.6,
-  "change5d": 1.1,
-  "change20d": 0.3,
-  "change60d": -7.3,
+  "value": 1.75,
+  "change1d": 0.2,
+  "change5d": 1.8,
+  "change20d": 2.4,
+  "change60d": -7.9,
   "percentile": 23,
   "id": "cn10y",
   "name": "中国10年期国债收益率",
@@ -2350,10 +2350,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 1.824
-   },
    {
     "date": "04-02",
     "value": 1.821
@@ -2589,16 +2585,20 @@
    {
     "date": "06-23",
     "value": 1.744
+   },
+   {
+    "date": "06-24",
+    "value": 1.745
    }
   ]
  },
  {
-  "value": 1.53,
-  "change1d": 5.0,
-  "change5d": 4.0,
-  "change20d": 14.0,
-  "change60d": 4.0,
-  "percentile": 24,
+  "value": 1.57,
+  "change1d": 4.0,
+  "change5d": 9.0,
+  "change20d": 19.0,
+  "change60d": 10.0,
+  "percentile": 30,
   "id": "r007",
   "name": "R007",
   "category": "rates",
@@ -2609,10 +2609,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 1.47
-   },
    {
     "date": "04-02",
     "value": 1.44
@@ -2848,30 +2844,30 @@
    {
     "date": "06-23",
     "value": 1.53
+   },
+   {
+    "date": "06-24",
+    "value": 1.57
    }
   ]
  },
  {
-  "value": 1.48,
-  "change1d": 1.0,
-  "change5d": -1.0,
-  "change20d": 10.7,
-  "change60d": 5.0,
-  "percentile": 63,
+  "value": 1.55,
+  "change1d": 6.6,
+  "change5d": 8.6,
+  "change20d": 18.2,
+  "change60d": 12.6,
+  "percentile": 84,
   "id": "dr007",
   "name": "DR007",
   "category": "rates",
   "priority": "P2",
   "unit": "%",
   "description": "存款类机构资金利率围绕政策利率窄幅波动。",
-  "status": "NORMAL",
+  "status": "ELEVATED",
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 1.42
-   },
    {
     "date": "04-02",
     "value": 1.4
@@ -3107,6 +3103,10 @@
    {
     "date": "06-23",
     "value": 1.48
+   },
+   {
+    "date": "06-24",
+    "value": 1.546
    }
   ]
  },
@@ -3144,10 +3144,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 3.0
-   },
    {
     "date": "04-02",
     "value": 3.0
@@ -3383,16 +3379,20 @@
    {
     "date": "06-23",
     "value": 3.0
+   },
+   {
+    "date": "06-24",
+    "value": 3.0
    }
   ]
  },
  {
-  "value": 3.61,
+  "value": 3.62,
   "change1d": 0.0,
-  "change5d": -2.0,
-  "change20d": -2.0,
-  "change60d": -7.0,
-  "percentile": 3,
+  "change5d": -1.0,
+  "change20d": -1.0,
+  "change60d": -3.0,
+  "percentile": 4,
   "id": "sofr",
   "name": "SOFR",
   "category": "rates",
@@ -3403,10 +3403,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 3.65
-   },
    {
     "date": "04-02",
     "value": 3.66
@@ -3641,7 +3637,11 @@
    },
    {
     "date": "06-23",
-    "value": 3.61
+    "value": 3.62
+   },
+   {
+    "date": "06-24",
+    "value": 3.62
    }
   ]
  },
@@ -3650,7 +3650,7 @@
   "change1d": 0.0,
   "change5d": 0.0,
   "change20d": 0.0,
-  "change60d": 41.0,
+  "change60d": 13.5,
   "percentile": 100,
   "id": "jgb10y",
   "name": "日本10年期国债收益率",
@@ -3663,10 +3663,6 @@
   "quality": "live",
   "history": [
    {
-    "date": "04-01",
-    "value": 2.515
-   },
-   {
     "date": "04-02",
     "value": 2.515
    },
@@ -3901,6 +3897,10 @@
    {
     "date": "06-23",
     "value": 2.65
+   },
+   {
+    "date": "06-24",
+    "value": 2.65
    }
   ]
  },
@@ -3909,7 +3909,7 @@
   "change1d": 0.0,
   "change5d": 0.0,
   "change20d": 0.0,
-  "change60d": 24.0,
+  "change60d": 4.6,
   "percentile": 100,
   "id": "bund10y",
   "name": "德国10年期国债收益率",
@@ -3922,10 +3922,6 @@
   "quality": "live",
   "history": [
    {
-    "date": "04-01",
-    "value": 3.001
-   },
-   {
     "date": "04-02",
     "value": 3.001
    },
@@ -4160,16 +4156,20 @@
    {
     "date": "06-23",
     "value": 3.046
+   },
+   {
+    "date": "06-24",
+    "value": 3.046
    }
   ]
  },
  {
-  "value": 101.39,
-  "change1d": 0.37,
-  "change5d": 1.86,
-  "change20d": 2.24,
-  "change60d": 1.43,
-  "percentile": 45,
+  "value": 101.68,
+  "change1d": 0.27,
+  "change5d": 1.59,
+  "change20d": 2.49,
+  "change60d": 2.04,
+  "percentile": 46,
   "id": "dxy",
   "name": "美元指数",
   "category": "fx",
@@ -4181,10 +4181,6 @@
   "quality": "live",
   "invalidation": "若美元随利率回升而修复,背离解除;若持续走弱,则指向财政信用溢价与资金流出主导。",
   "history": [
-   {
-    "date": "04-01",
-    "value": 99.65
-   },
    {
     "date": "04-02",
     "value": 100.03
@@ -4419,17 +4415,21 @@
    },
    {
     "date": "06-23",
-    "value": 101.39
+    "value": 101.41
+   },
+   {
+    "date": "06-24",
+    "value": 101.684
    }
   ]
  },
  {
-  "value": 6.79,
-  "change1d": 0.22,
-  "change5d": 0.48,
-  "change20d": 0.05,
-  "change60d": -1.52,
-  "percentile": 3,
+  "value": 6.8,
+  "change1d": 0.33,
+  "change5d": 0.59,
+  "change20d": 0.16,
+  "change60d": -1.41,
+  "percentile": 4,
   "id": "usdcny",
   "name": "美元兑人民币",
   "category": "fx",
@@ -4678,17 +4678,17 @@
    },
    {
     "date": "06-24",
-    "value": 6.79
+    "value": 6.797
    }
   ]
  },
  {
-  "value": 1.14,
-  "change1d": -0.39,
-  "change5d": -1.95,
-  "change20d": -2.18,
-  "change60d": -1.65,
-  "percentile": 63,
+  "value": 1.13,
+  "change1d": -0.72,
+  "change5d": -2.29,
+  "change20d": -2.51,
+  "change60d": -1.99,
+  "percentile": 62,
   "id": "eurusd",
   "name": "欧元兑美元",
   "category": "fx",
@@ -4937,16 +4937,16 @@
    },
    {
     "date": "06-24",
-    "value": 1.138
+    "value": 1.134
    }
   ]
  },
  {
-  "value": 161.56,
-  "change1d": -0.01,
-  "change5d": 0.71,
-  "change20d": 1.45,
-  "change60d": 1.88,
+  "value": 161.66,
+  "change1d": 0.06,
+  "change5d": 0.77,
+  "change20d": 1.52,
+  "change60d": 1.94,
   "percentile": 100,
   "id": "usdjpy",
   "name": "美元兑日元",
@@ -5196,7 +5196,7 @@
    },
    {
     "date": "06-24",
-    "value": 161.556
+    "value": 161.661
    }
   ]
  },
@@ -5214,29 +5214,23 @@
   "unit": "",
   "description": "离岸价差稳定,无明显贬值预期。",
   "status": "EXTREME",
-  "stale": false,
-  "quality": "live",
-  "history": [
-   {
-    "date": "06-24",
-    "value": 6.794
-   }
-  ]
+  "stale": true,
+  "quality": "stale"
  },
  {
   "value": 1.32,
-  "change1d": -0.37,
-  "change5d": -1.7,
-  "change20d": -1.91,
-  "change60d": -0.34,
-  "percentile": 60,
+  "change1d": -0.65,
+  "change5d": -1.97,
+  "change20d": -2.18,
+  "change60d": -0.62,
+  "percentile": 59,
   "id": "gbpusd",
   "name": "英镑兑美元",
   "category": "fx",
   "priority": "P3",
   "unit": "",
   "description": "英镑随美元走弱被动升值。",
-  "status": "NORMAL",
+  "status": "ELEVATED",
   "stale": false,
   "quality": "live",
   "history": [
@@ -5478,16 +5472,16 @@
    },
    {
     "date": "06-24",
-    "value": 1.32
+    "value": 1.316
    }
   ]
  },
  {
   "value": 0.69,
-  "change1d": -1.15,
-  "change5d": -2.14,
-  "change20d": -3.58,
-  "change60d": -0.09,
+  "change1d": -1.35,
+  "change5d": -2.34,
+  "change20d": -3.77,
+  "change60d": -0.29,
   "percentile": 86,
   "id": "audusd",
   "name": "澳元兑美元",
@@ -5737,7 +5731,7 @@
    },
    {
     "date": "06-24",
-    "value": 0.691
+    "value": 0.69
    }
   ]
  },
@@ -5746,7 +5740,7 @@
   "change1d": 0.0,
   "change5d": 0.0,
   "change20d": 0.0,
-  "change60d": 1.44,
+  "change60d": 0.32,
   "percentile": 100,
   "id": "uscpi",
   "name": "美国CPI(同比)",
@@ -5759,10 +5753,6 @@
   "quality": "live",
   "history": [
    {
-    "date": "04-01",
-    "value": 3.947
-   },
-   {
     "date": "04-02",
     "value": 3.947
    },
@@ -5997,6 +5987,10 @@
    {
     "date": "06-23",
     "value": 4.27
+   },
+   {
+    "date": "06-24",
+    "value": 4.27
    }
   ]
  },
@@ -6005,7 +5999,7 @@
   "change1d": 0.0,
   "change5d": 0.0,
   "change20d": 0.0,
-  "change60d": 0.01,
+  "change60d": -0.03,
   "percentile": 25,
   "id": "uscorecpi",
   "name": "美国核心CPI(同比)",
@@ -6018,10 +6012,6 @@
   "quality": "live",
   "history": [
    {
-    "date": "04-01",
-    "value": 2.988
-   },
-   {
     "date": "04-02",
     "value": 2.988
    },
@@ -6256,6 +6246,10 @@
    {
     "date": "06-23",
     "value": 2.957
+   },
+   {
+    "date": "06-24",
+    "value": 2.957
    }
   ]
  },
@@ -6264,7 +6258,7 @@
   "change1d": 0.0,
   "change5d": 0.0,
   "change20d": 0.0,
-  "change60d": 0.2,
+  "change60d": 0.0,
   "percentile": 88,
   "id": "uspce",
   "name": "美国核心PCE(同比)",
@@ -6277,10 +6271,6 @@
   "quality": "live",
   "history": [
    {
-    "date": "04-01",
-    "value": 3.289
-   },
-   {
     "date": "04-02",
     "value": 3.289
    },
@@ -6514,6 +6504,10 @@
    },
    {
     "date": "06-23",
+    "value": 3.289
+   },
+   {
+    "date": "06-24",
     "value": 3.289
    }
   ]
@@ -6536,10 +6530,6 @@
   "quality": "live",
   "history": [
    {
-    "date": "04-01",
-    "value": 0.1
-   },
-   {
     "date": "04-02",
     "value": 0.1
    },
@@ -6773,6 +6763,10 @@
    },
    {
     "date": "06-23",
+    "value": 0.1
+   },
+   {
+    "date": "06-24",
     "value": 0.1
    }
   ]
@@ -6795,10 +6789,6 @@
   "quality": "live",
   "history": [
    {
-    "date": "04-01",
-    "value": -3.6
-   },
-   {
     "date": "04-02",
     "value": -3.6
    },
@@ -7033,15 +7023,19 @@
    {
     "date": "06-23",
     "value": -3.6
+   },
+   {
+    "date": "06-24",
+    "value": -3.6
    }
   ]
  },
  {
   "value": 2.18,
   "change1d": 0.0,
-  "change5d": -4.0,
-  "change20d": -9.0,
-  "change60d": 12.0,
+  "change5d": -3.0,
+  "change20d": -7.0,
+  "change60d": 11.0,
   "percentile": 17,
   "id": "infl5y5y",
   "name": "美国5y5y通胀互换",
@@ -7053,10 +7047,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 2.07
-   },
    {
     "date": "04-02",
     "value": 2.11
@@ -7292,15 +7282,19 @@
    {
     "date": "06-23",
     "value": 2.18
+   },
+   {
+    "date": "06-24",
+    "value": 2.18
    }
   ]
  },
  {
   "value": 629.19,
-  "change1d": -0.95,
-  "change5d": -2.09,
-  "change20d": -12.22,
-  "change60d": -15.57,
+  "change1d": -0.0,
+  "change5d": -2.77,
+  "change20d": -9.99,
+  "change60d": -14.82,
   "percentile": 89,
   "id": "crb",
   "name": "CRB商品指数",
@@ -7312,10 +7306,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 738.66
-   },
    {
     "date": "04-02",
     "value": 771.83
@@ -7551,6 +7541,10 @@
    {
     "date": "06-23",
     "value": 629.19
+   },
+   {
+    "date": "06-24",
+    "value": 629.19
    }
   ]
  },
@@ -7571,10 +7565,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 48.7
-   },
    {
     "date": "04-02",
     "value": 48.7
@@ -7809,6 +7799,10 @@
    },
    {
     "date": "06-23",
+    "value": 48.7
+   },
+   {
+    "date": "06-24",
     "value": 48.7
    }
   ]
@@ -7831,10 +7825,6 @@
   "quality": "live",
   "history": [
    {
-    "date": "04-01",
-    "value": 49.3
-   },
-   {
     "date": "04-02",
     "value": 49.3
    },
@@ -8068,6 +8058,10 @@
    },
    {
     "date": "06-23",
+    "value": 49.3
+   },
+   {
+    "date": "06-24",
     "value": 49.3
    }
   ]
@@ -8107,10 +8101,6 @@
   "quality": "live",
   "history": [
    {
-    "date": "04-01",
-    "value": 5.7
-   },
-   {
     "date": "04-02",
     "value": 5.7
    },
@@ -8344,6 +8334,10 @@
    },
    {
     "date": "06-23",
+    "value": 5.7
+   },
+   {
+    "date": "06-24",
     "value": 5.7
    }
   ]
@@ -8366,10 +8360,6 @@
   "quality": "live",
   "history": [
    {
-    "date": "04-01",
-    "value": 1.7
-   },
-   {
     "date": "04-02",
     "value": 1.7
    },
@@ -8603,6 +8593,10 @@
    },
    {
     "date": "06-23",
+    "value": 0.2
+   },
+   {
+    "date": "06-24",
     "value": 0.2
    }
   ]
@@ -8625,10 +8619,6 @@
   "quality": "live",
   "history": [
    {
-    "date": "04-01",
-    "value": -1.12
-   },
-   {
     "date": "04-02",
     "value": -1.12
    },
@@ -8863,6 +8853,10 @@
    {
     "date": "06-23",
     "value": -12.01
+   },
+   {
+    "date": "06-24",
+    "value": -12.01
    }
   ]
  },
@@ -8871,8 +8865,8 @@
   "change1d": 0.0,
   "change5d": 0.0,
   "change20d": 0.0,
-  "change60d": 12.0,
-  "percentile": 85,
+  "change60d": -7.0,
+  "percentile": 86,
   "id": "nfp",
   "name": "美国非农新增就业",
   "category": "growth",
@@ -8884,10 +8878,6 @@
   "quality": "live",
   "history": [
    {
-    "date": "04-01",
-    "value": 179.0
-   },
-   {
     "date": "04-02",
     "value": 179.0
    },
@@ -9121,6 +9111,10 @@
    },
    {
     "date": "06-23",
+    "value": 172.0
+   },
+   {
+    "date": "06-24",
     "value": 172.0
    }
   ]
@@ -9143,10 +9137,6 @@
   "quality": "live",
   "history": [
    {
-    "date": "04-01",
-    "value": 4.3
-   },
-   {
     "date": "04-02",
     "value": 4.3
    },
@@ -9380,6 +9370,10 @@
    },
    {
     "date": "06-23",
+    "value": 4.3
+   },
+   {
+    "date": "06-24",
     "value": 4.3
    }
   ]
@@ -9402,10 +9396,6 @@
   "quality": "live",
   "history": [
    {
-    "date": "04-01",
-    "value": 7.2
-   },
-   {
     "date": "04-02",
     "value": 7.2
    },
@@ -9640,6 +9630,10 @@
    {
     "date": "06-23",
     "value": 7.2
+   },
+   {
+    "date": "06-24",
+    "value": 7.2
    }
   ]
  },
@@ -9661,12 +9655,12 @@
   "quality": "stale"
  },
  {
-  "value": -1.04,
+  "value": -0.97,
   "change1d": 0.0,
-  "change5d": -0.31,
-  "change20d": -1.04,
-  "change60d": -1.25,
-  "percentile": 29,
+  "change5d": -0.29,
+  "change20d": -0.97,
+  "change60d": -1.16,
+  "percentile": 30,
   "id": "inddemand",
   "name": "工业品需求(合成指标)",
   "category": "growth",
@@ -9695,10 +9689,6 @@
   "quality": "live",
   "history": [
    {
-    "date": "04-01",
-    "value": 5.1
-   },
-   {
     "date": "04-02",
     "value": 5.1
    },
@@ -9932,6 +9922,10 @@
    },
    {
     "date": "06-23",
+    "value": 5.0
+   },
+   {
+    "date": "06-24",
     "value": 5.0
    }
   ]
@@ -9954,10 +9948,6 @@
   "quality": "live",
   "history": [
    {
-    "date": "04-01",
-    "value": 8.5
-   },
-   {
     "date": "04-02",
     "value": 8.5
    },
@@ -10191,6 +10181,10 @@
    },
    {
     "date": "06-23",
+    "value": 8.6
+   },
+   {
+    "date": "06-24",
     "value": 8.6
    }
   ]
@@ -10230,10 +10224,6 @@
   "quality": "live",
   "history": [
    {
-    "date": "04-01",
-    "value": -0.454
-   },
-   {
     "date": "04-02",
     "value": -0.454
    },
@@ -10468,15 +10458,19 @@
    {
     "date": "06-23",
     "value": -0.505
+   },
+   {
+    "date": "06-24",
+    "value": -0.505
    }
   ]
  },
  {
   "value": 6736424.0,
   "change1d": 0.0,
-  "change5d": 0.16,
-  "change20d": 0.34,
-  "change60d": 1.19,
+  "change5d": 0.0,
+  "change20d": 0.48,
+  "change60d": 0.92,
   "percentile": 42,
   "id": "fedbs",
   "name": "美联储资产负债表",
@@ -10489,10 +10483,6 @@
   "quality": "live",
   "history": [
    {
-    "date": "04-01",
-    "value": 6675344.0
-   },
-   {
     "date": "04-02",
     "value": 6675344.0
    },
@@ -10727,15 +10717,19 @@
    {
     "date": "06-23",
     "value": 6736424.0
+   },
+   {
+    "date": "06-24",
+    "value": 6736424.0
    }
   ]
  },
  {
   "value": 6.48,
-  "change1d": 65.2,
-  "change5d": -39.52,
-  "change20d": 262.84,
-  "change60d": -58.92,
+  "change1d": 0.0,
+  "change5d": -5.04,
+  "change20d": 249.92,
+  "change60d": 207.74,
   "percentile": 20,
   "id": "rrp",
   "name": "美联储隔夜逆回购(RRP)",
@@ -10747,10 +10741,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 2.107
-   },
    {
     "date": "04-02",
     "value": 0.327
@@ -10986,6 +10976,10 @@
    {
     "date": "06-23",
     "value": 6.484
+   },
+   {
+    "date": "06-24",
+    "value": 6.484
    }
   ]
  },
@@ -11007,12 +11001,12 @@
   "quality": "manual"
  },
  {
-  "value": -0.03,
+  "value": -0.13,
   "change1d": 0.0,
-  "change5d": -0.01,
-  "change20d": -0.03,
-  "change60d": -0.04,
-  "percentile": 49,
+  "change5d": -0.04,
+  "change20d": -0.13,
+  "change60d": -0.16,
+  "percentile": 47,
   "id": "riskappetite",
   "name": "全球风险偏好指数",
   "category": "liquidity",
@@ -11043,10 +11037,10 @@
  {
   "value": 265.0,
   "change1d": 0.0,
-  "change5d": -6.0,
-  "change20d": -7.0,
-  "change60d": -63.0,
-  "percentile": 3,
+  "change5d": 2.0,
+  "change20d": -6.0,
+  "change60d": -51.0,
+  "percentile": 4,
   "id": "hyspread",
   "name": "美国高收益债信用利差",
   "category": "credit",
@@ -11058,10 +11052,6 @@
   "quality": "live",
   "invalidation": "若利差5日内快速走阔超过50bp,背离解除,情景转向风险收缩。",
   "history": [
-   {
-    "date": "04-01",
-    "value": 316.0
-   },
    {
     "date": "04-02",
     "value": 317.0
@@ -11297,15 +11287,19 @@
    {
     "date": "06-23",
     "value": 265.0
+   },
+   {
+    "date": "06-24",
+    "value": 265.0
    }
   ]
  },
  {
   "value": 74.0,
   "change1d": 0.0,
-  "change5d": -1.0,
+  "change5d": 0.0,
   "change20d": 0.0,
-  "change60d": -16.0,
+  "change60d": -13.0,
   "percentile": 4,
   "id": "igspread",
   "name": "美国投资级信用利差",
@@ -11317,10 +11311,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 87.0
-   },
    {
     "date": "04-02",
     "value": 86.0
@@ -11556,15 +11546,19 @@
    {
     "date": "06-23",
     "value": 74.0
+   },
+   {
+    "date": "06-24",
+    "value": 74.0
    }
   ]
  },
  {
   "value": 17.28,
   "change1d": 0.0,
-  "change5d": 0.87,
-  "change20d": 0.27,
-  "change60d": -7.97,
+  "change5d": -1.16,
+  "change20d": 0.99,
+  "change60d": -7.26,
   "percentile": 62,
   "id": "vix",
   "name": "VIX指数",
@@ -11576,10 +11570,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 24.54
-   },
    {
     "date": "04-02",
     "value": 23.87
@@ -11815,16 +11805,20 @@
    {
     "date": "06-23",
     "value": 17.28
+   },
+   {
+    "date": "06-24",
+    "value": 17.28
    }
   ]
  },
  {
-  "value": 68.78,
-  "change1d": 3.39,
-  "change5d": 1.5,
-  "change20d": -6.17,
-  "change60d": -27.27,
-  "percentile": 10,
+  "value": 65.39,
+  "change1d": 0.0,
+  "change5d": -5.27,
+  "change20d": -5.51,
+  "change60d": -24.8,
+  "percentile": 6,
   "id": "move",
   "name": "MOVE利率波动率指数",
   "category": "credit",
@@ -11835,10 +11829,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 90.19
-   },
    {
     "date": "04-02",
     "value": 84.41
@@ -12073,17 +12063,21 @@
    },
    {
     "date": "06-23",
-    "value": 68.78
+    "value": 65.39
+   },
+   {
+    "date": "06-24",
+    "value": 65.39
    }
   ]
  },
  {
-  "value": 4115.0,
-  "change1d": -1.61,
-  "change5d": -4.99,
-  "change20d": -8.57,
-  "change60d": -11.47,
-  "percentile": 79,
+  "value": 4065.0,
+  "change1d": -1.58,
+  "change5d": -6.75,
+  "change20d": -8.61,
+  "change60d": -15.02,
+  "percentile": 78,
   "id": "gold",
   "name": "黄金",
   "category": "asset",
@@ -12095,10 +12089,6 @@
   "quality": "live",
   "invalidation": "若金价随实际利率回落而下跌,传统机会成本框架恢复;若继续同涨,确认财政/信用对冲叙事。",
   "history": [
-   {
-    "date": "04-01",
-    "value": 4783.2
-   },
    {
     "date": "04-02",
     "value": 4651.5
@@ -12333,31 +12323,31 @@
    },
    {
     "date": "06-23",
-    "value": 4114.7
+    "value": 4129.9
+   },
+   {
+    "date": "06-24",
+    "value": 4064.6
    }
   ]
  },
  {
-  "value": 72.88,
-  "change1d": -2.59,
-  "change5d": -4.17,
-  "change20d": -22.38,
-  "change60d": -28.11,
-  "percentile": 51,
+  "value": 71.1,
+  "change1d": -2.88,
+  "change5d": -7.41,
+  "change20d": -19.82,
+  "change60d": -28.99,
+  "percentile": 44,
   "id": "oil",
   "name": "原油(WTI)",
   "category": "asset",
   "priority": "P1",
   "unit": "$/bbl",
   "description": "油价温和上行,供给端扰动为主,需求定价有限。",
-  "status": "EXTREME",
+  "status": "ELEVATED",
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 100.12
-   },
    {
     "date": "04-02",
     "value": 111.54
@@ -12592,31 +12582,31 @@
    },
    {
     "date": "06-23",
-    "value": 72.88
+    "value": 73.21
+   },
+   {
+    "date": "06-24",
+    "value": 71.1
    }
   ]
  },
  {
-  "value": 6.13,
-  "change1d": -3.63,
-  "change5d": -5.59,
-  "change20d": -3.69,
-  "change60d": 9.64,
-  "percentile": 95,
+  "value": 6.06,
+  "change1d": -1.3,
+  "change5d": -6.49,
+  "change20d": -3.87,
+  "change60d": 7.77,
+  "percentile": 94,
   "id": "copper",
   "name": "铜(LME)",
   "category": "asset",
   "priority": "P1",
   "unit": "$/lb",
   "description": "铜价随中国新订单与工业品需求改善走强。",
-  "status": "EXTREME",
+  "status": "ELEVATED",
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 5.624
-   },
    {
     "date": "04-02",
     "value": 5.563
@@ -12851,16 +12841,20 @@
    },
    {
     "date": "06-23",
-    "value": 6.126
+    "value": 6.141
+   },
+   {
+    "date": "06-24",
+    "value": 6.061
    }
   ]
  },
  {
-  "value": 4942.0,
-  "change1d": 0.0,
-  "change5d": 1.17,
-  "change20d": -0.13,
-  "change60d": 11.05,
+  "value": 4943.0,
+  "change1d": 0.03,
+  "change5d": 0.24,
+  "change20d": 0.71,
+  "change60d": 9.21,
   "percentile": 99,
   "id": "csi300",
   "name": "沪深300",
@@ -12872,10 +12866,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 4526.07
-   },
    {
     "date": "04-02",
     "value": 4478.91
@@ -13111,15 +13101,19 @@
    {
     "date": "06-23",
     "value": 4941.6
+   },
+   {
+    "date": "06-24",
+    "value": 4943.02
    }
   ]
  },
  {
   "value": 29347.0,
-  "change1d": -3.29,
-  "change5d": -2.07,
-  "change20d": -2.18,
-  "change60d": 23.62,
+  "change1d": 0.0,
+  "change5d": -1.09,
+  "change20d": -2.09,
+  "change60d": 22.18,
   "percentile": 97,
   "id": "ndx",
   "name": "纳斯达克100",
@@ -13132,10 +13126,6 @@
   "quality": "live",
   "invalidation": "若实际利率回落而纳指继续下跌,则压力来源转向盈利端,利率框架失效。",
   "history": [
-   {
-    "date": "04-01",
-    "value": 24019.99
-   },
    {
     "date": "04-02",
     "value": 24045.529
@@ -13370,16 +13360,20 @@
    },
    {
     "date": "06-23",
-    "value": 29347.273
+    "value": 29347.27
+   },
+   {
+    "date": "06-24",
+    "value": 29347.27
    }
   ]
  },
  {
   "value": 7365.0,
-  "change1d": -1.44,
-  "change5d": -1.94,
-  "change20d": -2.04,
-  "change60d": 12.82,
+  "change1d": 0.0,
+  "change5d": -0.74,
+  "change20d": -2.06,
+  "change60d": 12.02,
   "percentile": 96,
   "id": "spx",
   "name": "标普500",
@@ -13391,10 +13385,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 6575.32
-   },
    {
     "date": "04-02",
     "value": 6582.69
@@ -13630,16 +13620,20 @@
    {
     "date": "06-23",
     "value": 7365.46
+   },
+   {
+    "date": "06-24",
+    "value": 7365.46
    }
   ]
  },
  {
-  "value": 108.95,
-  "change1d": -0.1,
-  "change5d": -0.02,
-  "change20d": 0.09,
-  "change60d": 0.51,
-  "percentile": 88,
+  "value": 108.99,
+  "change1d": 0.03,
+  "change5d": -0.05,
+  "change20d": -0.01,
+  "change60d": 0.72,
+  "percentile": 89,
   "id": "cnbond",
   "name": "中国10年期国债期货",
   "category": "asset",
@@ -13650,10 +13644,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 108.21
-   },
    {
     "date": "04-02",
     "value": 108.2
@@ -13889,6 +13879,10 @@
    {
     "date": "06-23",
     "value": 108.955
+   },
+   {
+    "date": "06-24",
+    "value": 108.99
    }
   ]
  },
@@ -13909,10 +13903,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 279.651
-   },
    {
     "date": "04-02",
     "value": 279.651
@@ -14148,15 +14138,19 @@
    {
     "date": "06-23",
     "value": 279.651
+   },
+   {
+    "date": "06-24",
+    "value": 279.651
    }
   ]
  },
  {
-  "value": 2209.0,
-  "change1d": -1.23,
-  "change5d": -1.99,
-  "change20d": -6.85,
-  "change60d": -8.57,
+  "value": 2188.0,
+  "change1d": -0.94,
+  "change5d": -2.9,
+  "change20d": -7.17,
+  "change60d": -9.58,
   "percentile": 84,
   "id": "comidx",
   "name": "南华商品指数",
@@ -14168,10 +14162,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 2420.03
-   },
    {
     "date": "04-02",
     "value": 2411.61
@@ -14407,6 +14397,10 @@
    {
     "date": "06-23",
     "value": 2209.12
+   },
+   {
+    "date": "06-24",
+    "value": 2188.31
    }
   ]
  },
@@ -14428,12 +14422,12 @@
   "quality": "stale"
  },
  {
-  "value": 7068.0,
-  "change1d": 1.07,
-  "change5d": -1.73,
-  "change20d": 0.63,
-  "change60d": -3.46,
-  "percentile": 55,
+  "value": 6890.0,
+  "change1d": -2.51,
+  "change5d": -3.3,
+  "change20d": -1.58,
+  "change60d": -6.0,
+  "percentile": 47,
   "id": "bankidx",
   "name": "银行指数",
   "category": "asset",
@@ -14444,10 +14438,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 7329.502
-   },
    {
     "date": "04-02",
     "value": 7368.011
@@ -14683,6 +14673,10 @@
    {
     "date": "06-23",
     "value": 7067.5
+   },
+   {
+    "date": "06-24",
+    "value": 6890.025
    }
   ]
  },
@@ -14703,10 +14697,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 4346.27
-   },
    {
     "date": "04-02",
     "value": 4346.27
@@ -14941,6 +14931,10 @@
    },
    {
     "date": "06-23",
+    "value": 4346.27
+   },
+   {
+    "date": "06-24",
     "value": 4346.27
    }
   ]
@@ -14963,10 +14957,6 @@
   "quality": "live",
   "history": [
    {
-    "date": "04-01",
-    "value": 7879.529
-   },
-   {
     "date": "04-02",
     "value": 7879.529
    },
@@ -15201,16 +15191,20 @@
    {
     "date": "06-23",
     "value": 7879.529
+   },
+   {
+    "date": "06-24",
+    "value": 7879.529
    }
   ]
  },
  {
-  "value": 23769.0,
-  "change1d": 0.0,
-  "change5d": -2.96,
-  "change20d": -7.15,
-  "change60d": -4.11,
-  "percentile": 63,
+  "value": 23412.0,
+  "change1d": 0.33,
+  "change5d": -3.7,
+  "change20d": -7.56,
+  "change60d": -7.44,
+  "percentile": 60,
   "id": "hsi",
   "name": "恒生指数",
   "category": "asset",
@@ -15221,10 +15215,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 25294.029
-   },
    {
     "date": "04-02",
     "value": 25116.529
@@ -15459,16 +15449,20 @@
    },
    {
     "date": "06-23",
-    "value": 23768.52
+    "value": 23336.279
+   },
+   {
+    "date": "06-24",
+    "value": 23412.18
    }
   ]
  },
  {
   "value": 67.17,
-  "change1d": -5.67,
-  "change5d": -2.14,
-  "change20d": -1.29,
-  "change60d": 18.89,
+  "change1d": 0.0,
+  "change5d": -2.03,
+  "change20d": -1.27,
+  "change60d": 17.98,
   "percentile": 98,
   "id": "em",
   "name": "新兴市场股指(MSCI EM)",
@@ -15480,10 +15474,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 56.934
-   },
    {
     "date": "04-02",
     "value": 56.297
@@ -15719,15 +15709,19 @@
    {
     "date": "06-23",
     "value": 67.17
+   },
+   {
+    "date": "06-24",
+    "value": 67.17
    }
   ]
  },
  {
   "value": 77.66,
-  "change1d": -4.64,
-  "change5d": -10.98,
-  "change20d": -12.25,
-  "change60d": -15.38,
+  "change1d": 0.0,
+  "change5d": -7.94,
+  "change20d": -9.11,
+  "change60d": -19.11,
   "percentile": 79,
   "id": "goldminers",
   "name": "黄金矿业股",
@@ -15739,10 +15733,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 96.01
-   },
    {
     "date": "04-02",
     "value": 94.59
@@ -15977,6 +15967,10 @@
    },
    {
     "date": "06-23",
+    "value": 77.66
+   },
+   {
+    "date": "06-24",
     "value": 77.66
    }
   ]
@@ -16242,11 +16236,11 @@
   ]
  },
  {
-  "value": -1.54,
+  "value": -1.55,
   "change1d": 0.0,
   "change5d": -0.46,
-  "change20d": -1.54,
-  "change60d": -1.85,
+  "change20d": -1.55,
+  "change60d": -1.86,
   "percentile": 19,
   "id": "fiscalworry",
   "name": "财政信用担忧指数",
@@ -16261,9 +16255,9 @@
  {
   "value": 159.34,
   "change1d": 0.0,
-  "change5d": -144.31,
-  "change20d": -10.17,
-  "change60d": -288.48,
+  "change5d": -49.62,
+  "change20d": -61.98,
+  "change60d": -123.22,
   "percentile": 54,
   "id": "geopolitics",
   "name": "地缘政治风险指数",
@@ -16275,10 +16269,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 282.56
-   },
    {
     "date": "04-02",
     "value": 328.426
@@ -16514,15 +16504,19 @@
    {
     "date": "06-23",
     "value": 159.339
+   },
+   {
+    "date": "06-24",
+    "value": 159.339
    }
   ]
  },
  {
-  "value": -2.4,
+  "value": -2.55,
   "change1d": 0.0,
-  "change5d": -0.72,
-  "change20d": -2.4,
-  "change60d": -2.88,
+  "change5d": -0.76,
+  "change20d": -2.55,
+  "change60d": -3.06,
   "percentile": 1,
   "id": "debtceiling",
   "name": "债务上限博弈风险",
@@ -16537,10 +16531,10 @@
  {
   "value": 3.85,
   "change1d": 0.0,
-  "change5d": 6.0,
+  "change5d": 2.0,
   "change20d": 17.0,
   "change60d": 15.0,
-  "percentile": 19,
+  "percentile": 20,
   "id": "us3m",
   "name": "美国3个月国库券收益率",
   "category": "rates",
@@ -16551,10 +16545,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 3.7
-   },
    {
     "date": "04-02",
     "value": 3.7
@@ -16790,15 +16780,19 @@
    {
     "date": "06-23",
     "value": 3.85
+   },
+   {
+    "date": "06-24",
+    "value": 3.85
    }
   ]
  },
  {
   "value": 4.29,
   "change1d": 0.0,
-  "change5d": 13.0,
-  "change20d": 10.0,
-  "change60d": 37.0,
+  "change5d": 2.0,
+  "change20d": 12.0,
+  "change60d": 32.0,
   "percentile": 75,
   "id": "us5y",
   "name": "美国5年期国债收益率",
@@ -16810,10 +16804,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 3.97
-   },
    {
     "date": "04-02",
     "value": 3.94
@@ -17049,15 +17039,19 @@
    {
     "date": "06-23",
     "value": 4.29
+   },
+   {
+    "date": "06-24",
+    "value": 4.29
    }
   ]
  },
  {
   "value": 4.97,
   "change1d": 0.0,
-  "change5d": 5.0,
-  "change20d": -6.0,
-  "change60d": 9.0,
+  "change5d": 2.0,
+  "change20d": -4.0,
+  "change60d": 6.0,
   "percentile": 91,
   "id": "us20y",
   "name": "美国20年期国债收益率",
@@ -17069,10 +17063,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 4.91
-   },
    {
     "date": "04-02",
     "value": 4.88
@@ -17308,15 +17298,19 @@
    {
     "date": "06-23",
     "value": 4.97
+   },
+   {
+    "date": "06-24",
+    "value": 4.97
    }
   ]
  },
  {
   "value": 2.01,
   "change1d": 0.0,
-  "change5d": 21.0,
-  "change20d": 35.0,
-  "change60d": 63.0,
+  "change5d": 5.0,
+  "change20d": 37.0,
+  "change60d": 59.0,
   "percentile": 78,
   "id": "us5yreal",
   "name": "美国5年期实际利率",
@@ -17328,10 +17322,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 1.42
-   },
    {
     "date": "04-02",
     "value": 1.37
@@ -17567,14 +17557,18 @@
    {
     "date": "06-23",
     "value": 2.01
+   },
+   {
+    "date": "06-24",
+    "value": 2.01
    }
   ]
  },
  {
   "value": -1.64,
   "change1d": 0.0,
-  "change5d": -0.8,
-  "change20d": -0.84,
+  "change5d": -0.24,
+  "change20d": -0.92,
   "change60d": -1.48,
   "percentile": 0,
   "id": "cutsexp",
@@ -17588,10 +17582,6 @@
   "quality": "derived",
   "invalidation": "若降息预期快速归零且美元走强,主导解释切换为政策转鹰(路径A)。",
   "history": [
-   {
-    "date": "04-01",
-    "value": -0.16
-   },
    {
     "date": "04-02",
     "value": -0.16
@@ -17826,6 +17816,10 @@
    },
    {
     "date": "06-23",
+    "value": -1.64
+   },
+   {
+    "date": "06-24",
     "value": -1.64
    }
   ]
@@ -18109,9 +18103,9 @@
  },
  {
   "value": 2.61,
-  "change1d": 0.35,
+  "change1d": 0.0,
   "change5d": 1.55,
-  "change20d": 1.67,
+  "change20d": 0.75,
   "change60d": 3.5,
   "percentile": 89,
   "id": "bidcover",
@@ -18124,10 +18118,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 2.525
-   },
    {
     "date": "04-02",
     "value": 2.525
@@ -18363,6 +18353,10 @@
    {
     "date": "06-23",
     "value": 2.613
+   },
+   {
+    "date": "06-24",
+    "value": 2.613
    }
   ]
  },
@@ -18388,7 +18382,7 @@
   "change1d": 0.0,
   "change5d": 0.0,
   "change20d": 0.0,
-  "change60d": 1.47,
+  "change60d": -1.39,
   "percentile": 86,
   "id": "usdeficit",
   "name": "美国财政赤字(12M滚动)",
@@ -18400,10 +18394,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": -1680547.917
-   },
    {
     "date": "04-02",
     "value": -1680547.917
@@ -18638,6 +18628,10 @@
    },
    {
     "date": "06-23",
+    "value": -1657192.618
+   },
+   {
+    "date": "06-24",
     "value": -1657192.618
    }
   ]
@@ -18662,9 +18656,9 @@
  {
   "value": 8807.0,
   "change1d": 0.0,
-  "change5d": 6.35,
-  "change20d": 12.73,
-  "change60d": 0.76,
+  "change5d": 0.0,
+  "change20d": 6.07,
+  "change60d": 3.89,
   "percentile": 89,
   "id": "tga",
   "name": "美国财政部TGA账户",
@@ -18677,10 +18671,6 @@
   "quality": "live",
   "history": [
    {
-    "date": "04-01",
-    "value": 8477.18
-   },
-   {
     "date": "04-02",
     "value": 8477.18
    },
@@ -18915,15 +18905,19 @@
    {
     "date": "06-23",
     "value": 8807.13
+   },
+   {
+    "date": "06-24",
+    "value": 8807.13
    }
   ]
  },
  {
   "value": 3.03,
   "change1d": 0.0,
-  "change5d": -1.53,
-  "change20d": -3.07,
-  "change60d": 1.32,
+  "change5d": 0.0,
+  "change20d": -1.08,
+  "change60d": 0.22,
   "percentile": 21,
   "id": "reserves",
   "name": "美国银行准备金",
@@ -18936,10 +18930,6 @@
   "quality": "live",
   "history": [
    {
-    "date": "04-01",
-    "value": 3.027
-   },
-   {
     "date": "04-02",
     "value": 3.027
    },
@@ -19173,6 +19163,10 @@
    },
    {
     "date": "06-23",
+    "value": 3.033
+   },
+   {
+    "date": "06-24",
     "value": 3.033
    }
   ]
@@ -19195,10 +19189,6 @@
   "quality": "live",
   "history": [
    {
-    "date": "04-01",
-    "value": 8.29
-   },
-   {
     "date": "04-02",
     "value": 8.29
    },
@@ -19432,6 +19422,10 @@
    },
    {
     "date": "06-23",
+    "value": 8.29
+   },
+   {
+    "date": "06-24",
     "value": 8.29
    }
   ]
@@ -19455,10 +19449,10 @@
  },
  {
   "value": 1.45,
-  "change1d": 0.8,
-  "change5d": -0.8,
-  "change20d": -0.1,
-  "change60d": -9.0,
+  "change1d": 0.3,
+  "change5d": -0.1,
+  "change20d": 1.3,
+  "change60d": -10.2,
   "percentile": 8,
   "id": "cn5y",
   "name": "中国5年期国债收益率",
@@ -19470,10 +19464,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 1.554
-   },
    {
     "date": "04-02",
     "value": 1.549
@@ -19709,16 +19699,20 @@
    {
     "date": "06-23",
     "value": 1.449
+   },
+   {
+    "date": "06-24",
+    "value": 1.452
    }
   ]
  },
  {
   "value": 2.23,
-  "change1d": 0.7,
-  "change5d": 1.2,
-  "change20d": 0.9,
-  "change60d": -12.3,
-  "percentile": 38,
+  "change1d": 0.2,
+  "change5d": 1.3,
+  "change20d": 2.3,
+  "change60d": -13.6,
+  "percentile": 39,
   "id": "cn30y",
   "name": "中国30年期国债收益率",
   "category": "rates",
@@ -19729,10 +19723,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 2.367
-   },
    {
     "date": "04-02",
     "value": 2.373
@@ -19968,6 +19958,10 @@
    {
     "date": "06-23",
     "value": 2.229
+   },
+   {
+    "date": "06-24",
+    "value": 2.231
    }
   ]
  },
@@ -19988,10 +19982,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 3.0
-   },
    {
     "date": "04-02",
     "value": 3.0
@@ -20227,30 +20217,30 @@
    {
     "date": "06-23",
     "value": 3.0
+   },
+   {
+    "date": "06-24",
+    "value": 3.0
    }
   ]
  },
  {
-  "value": 1.46,
-  "change1d": 3.0,
-  "change5d": 1.0,
-  "change20d": 14.0,
-  "change60d": 18.0,
-  "percentile": 93,
+  "value": 1.41,
+  "change1d": -5.0,
+  "change5d": -2.0,
+  "change20d": 9.0,
+  "change60d": 14.0,
+  "percentile": 84,
   "id": "dr001",
   "name": "DR001",
   "category": "rates",
   "priority": "P3",
   "unit": "%",
   "description": "隔夜资金利率平稳。",
-  "status": "ELEVATED",
+  "status": "NORMAL",
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 1.27
-   },
    {
     "date": "04-02",
     "value": 1.27
@@ -20486,6 +20476,10 @@
    {
     "date": "06-23",
     "value": 1.46
+   },
+   {
+    "date": "06-24",
+    "value": 1.41
    }
   ]
  },
@@ -20524,12 +20518,12 @@
   "quality": "manual"
  },
  {
-  "value": -2.77,
-  "change1d": 0.6,
-  "change5d": -6.9,
-  "change20d": -0.7,
-  "change60d": -28.3,
-  "percentile": 11,
+  "value": -2.76,
+  "change1d": 0.2,
+  "change5d": -0.2,
+  "change20d": -0.6,
+  "change60d": -25.9,
+  "percentile": 12,
   "id": "cnusspread",
   "name": "中美国债10年利差",
   "category": "rates",
@@ -20540,10 +20534,6 @@
   "stale": false,
   "quality": "derived",
   "history": [
-   {
-    "date": "04-01",
-    "value": -2.506
-   },
    {
     "date": "04-02",
     "value": -2.489
@@ -20779,6 +20769,10 @@
    {
     "date": "06-23",
     "value": -2.766
+   },
+   {
+    "date": "06-24",
+    "value": -2.765
    }
   ]
  },
@@ -20868,10 +20862,6 @@
   "quality": "live",
   "history": [
    {
-    "date": "04-01",
-    "value": 52.0
-   },
-   {
     "date": "04-02",
     "value": 52.0
    },
@@ -21106,6 +21096,10 @@
    {
     "date": "06-23",
     "value": 52.0
+   },
+   {
+    "date": "06-24",
+    "value": 52.0
    }
   ]
  },
@@ -21114,7 +21108,7 @@
   "change1d": 0.0,
   "change5d": 0.0,
   "change20d": 0.0,
-  "change60d": 0.91,
+  "change60d": 0.48,
   "percentile": 94,
   "id": "usretail",
   "name": "美国零售销售(环比)",
@@ -21127,10 +21121,6 @@
   "quality": "live",
   "history": [
    {
-    "date": "04-01",
-    "value": 0.401
-   },
-   {
     "date": "04-02",
     "value": 0.401
    },
@@ -21365,6 +21355,10 @@
    {
     "date": "06-23",
     "value": 0.881
+   },
+   {
+    "date": "06-24",
+    "value": 0.881
    }
   ]
  },
@@ -21373,7 +21367,7 @@
   "change1d": 0.0,
   "change5d": 0.0,
   "change20d": 0.0,
-  "change60d": 1.8,
+  "change60d": 0.0,
   "percentile": 68,
   "id": "gdpnow",
   "name": "亚特兰大联储GDPNow",
@@ -21386,10 +21380,6 @@
   "quality": "live",
   "history": [
    {
-    "date": "04-01",
-    "value": 3.038
-   },
-   {
     "date": "04-02",
     "value": 3.038
    },
@@ -21624,6 +21614,10 @@
    {
     "date": "06-23",
     "value": 3.038
+   },
+   {
+    "date": "06-24",
+    "value": 3.038
    }
   ]
  },
@@ -21632,7 +21626,7 @@
   "change1d": 0.0,
   "change5d": 0.0,
   "change20d": 0.0,
-  "change60d": -6.6,
+  "change60d": 0.0,
   "percentile": 8,
   "id": "usconf",
   "name": "美国消费者信心",
@@ -21645,10 +21639,6 @@
   "quality": "live",
   "history": [
    {
-    "date": "04-01",
-    "value": 49.8
-   },
-   {
     "date": "04-02",
     "value": 49.8
    },
@@ -21883,6 +21873,10 @@
    {
     "date": "06-23",
     "value": 49.8
+   },
+   {
+    "date": "06-24",
+    "value": 49.8
    }
   ]
  },
@@ -21891,7 +21885,7 @@
   "change1d": 0.0,
   "change5d": 0.0,
   "change20d": 0.0,
-  "change60d": -15.02,
+  "change60d": -15.45,
   "percentile": 5,
   "id": "housingstarts",
   "name": "美国住房开工",
@@ -21904,10 +21898,6 @@
   "quality": "live",
   "history": [
    {
-    "date": "04-01",
-    "value": 1392.0
-   },
-   {
     "date": "04-02",
     "value": 1392.0
    },
@@ -22142,6 +22132,10 @@
    {
     "date": "06-23",
     "value": 1177.0
+   },
+   {
+    "date": "06-24",
+    "value": 1177.0
    }
   ]
  },
@@ -22150,7 +22144,7 @@
   "change1d": 0.0,
   "change5d": 0.0,
   "change20d": 0.0,
-  "change60d": 5.22,
+  "change60d": 0.0,
   "percentile": 71,
   "id": "jolts",
   "name": "JOLTS职位空缺",
@@ -22163,10 +22157,6 @@
   "quality": "live",
   "history": [
    {
-    "date": "04-01",
-    "value": 7618.0
-   },
-   {
     "date": "04-02",
     "value": 7618.0
    },
@@ -22401,6 +22391,10 @@
    {
     "date": "06-23",
     "value": 7618.0
+   },
+   {
+    "date": "06-24",
+    "value": 7618.0
    }
   ]
  },
@@ -22409,7 +22403,7 @@
   "change1d": 0.0,
   "change5d": 0.0,
   "change20d": 0.0,
-  "change60d": -0.21,
+  "change60d": -0.13,
   "percentile": 5,
   "id": "ahe",
   "name": "美国平均时薪(同比)",
@@ -22422,10 +22416,6 @@
   "quality": "live",
   "history": [
    {
-    "date": "04-01",
-    "value": 3.571
-   },
-   {
     "date": "04-02",
     "value": 3.571
    },
@@ -22659,6 +22649,10 @@
    },
    {
     "date": "06-23",
+    "value": 3.445
+   },
+   {
+    "date": "06-24",
     "value": 3.445
    }
   ]
@@ -22681,10 +22675,6 @@
   "quality": "live",
   "history": [
    {
-    "date": "04-01",
-    "value": 50.5
-   },
-   {
     "date": "04-02",
     "value": 50.5
    },
@@ -22918,6 +22908,10 @@
    },
    {
     "date": "06-23",
+    "value": 50.5
+   },
+   {
+    "date": "06-24",
     "value": 50.5
    }
   ]
@@ -23098,7 +23092,7 @@
   "change1d": 0.0,
   "change5d": 0.0,
   "change20d": 0.0,
-  "change60d": 0.4,
+  "change60d": 0.0,
   "percentile": 46,
   "id": "power",
   "name": "发电量(同比)",
@@ -23111,10 +23105,6 @@
   "quality": "live",
   "history": [
    {
-    "date": "04-01",
-    "value": 5.4
-   },
-   {
     "date": "04-02",
     "value": 5.4
    },
@@ -23349,6 +23339,10 @@
    {
     "date": "06-23",
     "value": 5.4
+   },
+   {
+    "date": "06-24",
+    "value": 5.4
    }
   ]
  },
@@ -23357,7 +23351,7 @@
   "change1d": 0.0,
   "change5d": 0.0,
   "change20d": 0.0,
-  "change60d": 10.65,
+  "change60d": 3.67,
   "percentile": 100,
   "id": "usppi",
   "name": "美国PPI(同比)",
@@ -23370,10 +23364,6 @@
   "quality": "live",
   "history": [
    {
-    "date": "04-01",
-    "value": 9.407
-   },
-   {
     "date": "04-02",
     "value": 9.407
    },
@@ -23608,6 +23598,10 @@
    {
     "date": "06-23",
     "value": 13.076
+   },
+   {
+    "date": "06-24",
+    "value": 13.076
    }
   ]
  },
@@ -23616,7 +23610,7 @@
   "change1d": 0.0,
   "change5d": 0.0,
   "change20d": 0.0,
-  "change60d": -0.02,
+  "change60d": 0.04,
   "percentile": 8,
   "id": "rentcpi",
   "name": "美国租金通胀(同比)",
@@ -23629,10 +23623,6 @@
   "quality": "live",
   "history": [
    {
-    "date": "04-01",
-    "value": 3.121
-   },
-   {
     "date": "04-02",
     "value": 3.121
    },
@@ -23866,6 +23856,10 @@
    },
    {
     "date": "06-23",
+    "value": 3.16
+   },
+   {
+    "date": "06-24",
     "value": 3.16
    }
   ]
@@ -23887,10 +23881,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 3.99
-   },
    {
     "date": "04-02",
     "value": 3.99
@@ -24125,6 +24115,10 @@
    },
    {
     "date": "06-23",
+    "value": 3.914
+   },
+   {
+    "date": "06-24",
     "value": 3.914
    }
   ]
@@ -24199,10 +24193,10 @@
  },
  {
   "value": 2667.0,
-  "change1d": -0.63,
-  "change5d": -0.11,
-  "change20d": -13.55,
-  "change60d": 33.68,
+  "change1d": 0.0,
+  "change5d": 0.53,
+  "change20d": -14.63,
+  "change60d": 31.38,
   "percentile": 93,
   "id": "bdi",
   "name": "波罗的海干散货指数",
@@ -24214,10 +24208,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 2030.0
-   },
    {
     "date": "04-02",
     "value": 2066.0
@@ -24453,6 +24443,10 @@
    {
     "date": "06-23",
     "value": 2667.0
+   },
+   {
+    "date": "06-24",
+    "value": 2667.0
    }
   ]
  },
@@ -24461,7 +24455,7 @@
   "change1d": 0.0,
   "change5d": 0.0,
   "change20d": 0.0,
-  "change60d": 2.8,
+  "change60d": 0.0,
   "percentile": 51,
   "id": "sloos",
   "name": "美国银行贷款标准(收紧净占比)",
@@ -24474,10 +24468,6 @@
   "quality": "live",
   "history": [
    {
-    "date": "04-01",
-    "value": 8.1
-   },
-   {
     "date": "04-02",
     "value": 8.1
    },
@@ -24712,6 +24702,10 @@
    {
     "date": "06-23",
     "value": 8.1
+   },
+   {
+    "date": "06-24",
+    "value": 8.1
    }
   ]
  },
@@ -24719,8 +24713,8 @@
   "value": 1.81,
   "change1d": 0.0,
   "change5d": 0.0,
-  "change20d": -0.21,
-  "change60d": -0.59,
+  "change20d": -0.01,
+  "change60d": -0.73,
   "percentile": 89,
   "id": "bankloans",
   "name": "美国商业银行贷款(同比)",
@@ -24733,10 +24727,6 @@
   "quality": "live",
   "history": [
    {
-    "date": "04-01",
-    "value": 2.547
-   },
-   {
     "date": "04-02",
     "value": 2.547
    },
@@ -24971,6 +24961,10 @@
    {
     "date": "06-23",
     "value": 1.815
+   },
+   {
+    "date": "06-24",
+    "value": 1.815
    }
   ]
  },
@@ -24979,7 +24973,7 @@
   "change1d": 0.0,
   "change5d": 0.0,
   "change20d": 0.0,
-  "change60d": -1.9,
+  "change60d": -0.52,
   "percentile": 89,
   "id": "pbocbs",
   "name": "中国央行资产负债表",
@@ -24992,10 +24986,6 @@
   "quality": "live",
   "history": [
    {
-    "date": "04-01",
-    "value": 48.633
-   },
-   {
     "date": "04-02",
     "value": 48.633
    },
@@ -25229,6 +25219,10 @@
    },
    {
     "date": "06-23",
+    "value": 48.381
+   },
+   {
+    "date": "06-24",
     "value": 48.381
    }
   ]
@@ -25270,9 +25264,9 @@
  {
   "value": 74.0,
   "change1d": 0.0,
-  "change5d": -1.0,
+  "change5d": 0.0,
   "change20d": 0.0,
-  "change60d": -16.0,
+  "change60d": -13.0,
   "percentile": 4,
   "id": "cdxig",
   "name": "CDX IG",
@@ -25284,10 +25278,6 @@
   "stale": false,
   "quality": "derived",
   "history": [
-   {
-    "date": "04-01",
-    "value": 87.0
-   },
    {
     "date": "04-02",
     "value": 86.0
@@ -25523,16 +25513,20 @@
    {
     "date": "06-23",
     "value": 74.0
+   },
+   {
+    "date": "06-24",
+    "value": 74.0
    }
   ]
  },
  {
   "value": 265.0,
   "change1d": 0.0,
-  "change5d": -6.0,
-  "change20d": -7.0,
-  "change60d": -63.0,
-  "percentile": 3,
+  "change5d": 2.0,
+  "change20d": -6.0,
+  "change60d": -51.0,
+  "percentile": 4,
   "id": "cdxhy",
   "name": "CDX HY",
   "category": "credit",
@@ -25543,10 +25537,6 @@
   "stale": false,
   "quality": "derived",
   "history": [
-   {
-    "date": "04-01",
-    "value": 316.0
-   },
    {
     "date": "04-02",
     "value": 317.0
@@ -25782,15 +25772,19 @@
    {
     "date": "06-23",
     "value": 265.0
+   },
+   {
+    "date": "06-24",
+    "value": 265.0
    }
   ]
  },
  {
   "value": 99.5,
-  "change1d": 7.78,
-  "change5d": 11.81,
-  "change20d": 9.95,
-  "change60d": -16.55,
+  "change1d": 0.0,
+  "change5d": 4.97,
+  "change20d": 11.97,
+  "change60d": -15.33,
   "percentile": 65,
   "id": "vvix",
   "name": "VVIX",
@@ -25802,10 +25796,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 114.83
-   },
    {
     "date": "04-02",
     "value": 115.33
@@ -26041,6 +26031,10 @@
    {
     "date": "06-23",
     "value": 99.5
+   },
+   {
+    "date": "06-24",
+    "value": 99.5
    }
   ]
  },
@@ -26079,12 +26073,12 @@
   "quality": "manual"
  },
  {
-  "value": 0.64,
+  "value": 1.03,
   "change1d": 0.0,
-  "change5d": 0.19,
-  "change20d": 0.64,
-  "change60d": 0.77,
-  "percentile": 62,
+  "change5d": 0.31,
+  "change20d": 1.03,
+  "change60d": 1.24,
+  "percentile": 70,
   "id": "cnliqstress",
   "name": "中国银行间流动性压力",
   "category": "credit",
@@ -26096,12 +26090,12 @@
   "quality": "derived"
  },
  {
-  "value": 76.69,
-  "change1d": -1.55,
-  "change5d": -2.87,
-  "change20d": -22.99,
-  "change60d": -35.2,
-  "percentile": 50,
+  "value": 74.77,
+  "change1d": -3.0,
+  "change5d": -6.01,
+  "change20d": -20.7,
+  "change60d": -26.09,
+  "percentile": 45,
   "id": "brent",
   "name": "Brent原油",
   "category": "asset",
@@ -26112,10 +26106,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 101.16
-   },
    {
     "date": "04-02",
     "value": 109.03
@@ -26350,17 +26340,21 @@
    },
    {
     "date": "06-23",
-    "value": 76.69
+    "value": 77.08
+   },
+   {
+    "date": "06-24",
+    "value": 74.77
    }
   ]
  },
  {
-  "value": 3.19,
-  "change1d": -1.91,
-  "change5d": -1.48,
-  "change20d": 10.26,
-  "change60d": 10.64,
-  "percentile": 64,
+  "value": 3.24,
+  "change1d": 3.05,
+  "change5d": 3.12,
+  "change20d": 6.68,
+  "change60d": 15.04,
+  "percentile": 67,
   "id": "natgas",
   "name": "美国天然气",
   "category": "asset",
@@ -26371,10 +26365,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 2.819
-   },
    {
     "date": "04-02",
     "value": 2.8
@@ -26609,17 +26599,21 @@
    },
    {
     "date": "06-23",
-    "value": 3.191
+    "value": 3.147
+   },
+   {
+    "date": "06-24",
+    "value": 3.243
    }
   ]
  },
  {
-  "value": 61.28,
-  "change1d": -6.48,
-  "change5d": -12.33,
-  "change20d": -19.69,
-  "change60d": -17.95,
-  "percentile": 82,
+  "value": 59.56,
+  "change1d": -3.97,
+  "change5d": -15.75,
+  "change20d": -20.16,
+  "change60d": -21.49,
+  "percentile": 81,
   "id": "silver",
   "name": "白银",
   "category": "asset",
@@ -26630,10 +26624,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 75.867
-   },
    {
     "date": "04-02",
     "value": 72.735
@@ -26868,16 +26858,20 @@
    },
    {
     "date": "06-23",
-    "value": 61.28
+    "value": 62.02
+   },
+   {
+    "date": "06-24",
+    "value": 59.56
    }
   ]
  },
  {
-  "value": 23520.0,
-  "change1d": -2.69,
-  "change5d": -1.3,
-  "change20d": -4.27,
-  "change60d": -5.45,
+  "value": 23455.0,
+  "change1d": -0.28,
+  "change5d": -1.78,
+  "change20d": -4.21,
+  "change60d": -4.89,
   "percentile": 85,
   "id": "aluminum",
   "name": "铝(沪铝主力)",
@@ -26889,10 +26883,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 24660.0
-   },
    {
     "date": "04-02",
     "value": 24720.0
@@ -27128,16 +27118,20 @@
    {
     "date": "06-23",
     "value": 23520.0
+   },
+   {
+    "date": "06-24",
+    "value": 23455.0
    }
   ]
  },
  {
-  "value": 738.5,
-  "change1d": -0.14,
-  "change5d": -3.08,
-  "change20d": -5.44,
-  "change60d": -8.6,
-  "percentile": 14,
+  "value": 744.0,
+  "change1d": 0.74,
+  "change5d": -0.47,
+  "change20d": -4.8,
+  "change60d": -8.37,
+  "percentile": 15,
   "id": "ironore",
   "name": "铁矿石(大商所主力)",
   "category": "asset",
@@ -27148,10 +27142,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 812.0
-   },
    {
     "date": "04-02",
     "value": 805.0
@@ -27387,14 +27377,18 @@
    {
     "date": "06-23",
     "value": 738.5
+   },
+   {
+    "date": "06-24",
+    "value": 744.0
    }
   ]
  },
  {
-  "value": 3112.0,
-  "change1d": -0.48,
-  "change5d": -1.8,
-  "change20d": -1.08,
+  "value": 3111.0,
+  "change1d": -0.03,
+  "change5d": -1.39,
+  "change20d": -1.05,
   "change60d": -0.29,
   "percentile": 21,
   "id": "rebar",
@@ -27407,10 +27401,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 3120.0
-   },
    {
     "date": "04-02",
     "value": 3106.0
@@ -27646,6 +27636,10 @@
    {
     "date": "06-23",
     "value": 3112.0
+   },
+   {
+    "date": "06-24",
+    "value": 3111.0
    }
   ]
  },
@@ -27683,10 +27677,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 503.0
-   },
    {
     "date": "04-02",
     "value": 503.0
@@ -27922,15 +27912,19 @@
    {
     "date": "06-23",
     "value": 503.0
+   },
+   {
+    "date": "06-24",
+    "value": 503.0
    }
   ]
  },
  {
-  "value": 75080.0,
-  "change1d": -3.56,
-  "change5d": -22.14,
-  "change20d": -22.75,
-  "change60d": -66.07,
+  "value": 74943.0,
+  "change1d": -0.18,
+  "change5d": -14.95,
+  "change20d": -21.05,
+  "change60d": -64.8,
   "percentile": 1,
   "id": "lmecopperinv",
   "name": "LME铜库存",
@@ -27942,10 +27936,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 212893.0
-   },
    {
     "date": "04-02",
     "value": 205418.0
@@ -28181,6 +28171,10 @@
    {
     "date": "06-23",
     "value": 75080.0
+   },
+   {
+    "date": "06-24",
+    "value": 74943.0
    }
   ]
  },
@@ -28235,10 +28229,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 2806.5
-   },
    {
     "date": "04-02",
     "value": 2806.5
@@ -28474,15 +28464,19 @@
    {
     "date": "06-23",
     "value": 2806.5
+   },
+   {
+    "date": "06-24",
+    "value": 2806.5
    }
   ]
  },
  {
   "value": -20.64,
-  "change1d": 46.65,
-  "change5d": -1.63,
+  "change1d": 0.0,
+  "change5d": 1.12,
   "change20d": -17.13,
-  "change60d": -60.13,
+  "change60d": -31.3,
   "percentile": 17,
   "id": "goldetfflow",
   "name": "黄金ETF持仓变化(SPDR·4周)",
@@ -28494,10 +28488,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": -30.048
-   },
    {
     "date": "04-02",
     "value": -30.048
@@ -28733,6 +28723,10 @@
    {
     "date": "06-23",
     "value": -20.642
+   },
+   {
+    "date": "06-24",
+    "value": -20.642
    }
   ]
  },
@@ -28753,10 +28747,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 207602.0
-   },
    {
     "date": "04-02",
     "value": 207602.0
@@ -28992,6 +28982,10 @@
    {
     "date": "06-23",
     "value": 211127.0
+   },
+   {
+    "date": "06-24",
+    "value": 211127.0
    }
   ]
  },
@@ -29030,12 +29024,12 @@
   "quality": "manual"
  },
  {
-  "value": -1.57,
+  "value": -1.61,
   "change1d": 0.0,
-  "change5d": -0.47,
-  "change20d": -1.57,
-  "change60d": -1.88,
-  "percentile": 18,
+  "change5d": -0.48,
+  "change20d": -1.61,
+  "change60d": -1.93,
+  "percentile": 17,
   "id": "cta",
   "name": "CTA趋势仓位代理",
   "category": "liquidity",
@@ -29047,12 +29041,12 @@
   "quality": "derived"
  },
  {
-  "value": 0.07,
+  "value": -0.11,
   "change1d": 0.0,
-  "change5d": 0.02,
-  "change20d": 0.07,
-  "change60d": 0.08,
-  "percentile": 51,
+  "change5d": -0.03,
+  "change20d": -0.11,
+  "change60d": -0.13,
+  "percentile": 47,
   "id": "gammaproxy",
   "name": "期权做市商Gamma代理",
   "category": "liquidity",
@@ -29064,11 +29058,11 @@
   "quality": "derived"
  },
  {
-  "value": 1.51,
+  "value": 1.5,
   "change1d": 0.0,
-  "change5d": 2.16,
-  "change20d": 1.41,
-  "change60d": 14.35,
+  "change5d": 1.1,
+  "change20d": 1.25,
+  "change60d": 14.29,
   "percentile": 100,
   "id": "margindebt",
   "name": "融资余额(A股)",
@@ -29080,10 +29074,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 1.316
-   },
    {
     "date": "04-02",
     "value": 1.311
@@ -29318,7 +29308,11 @@
    },
    {
     "date": "06-23",
-    "value": 1.506
+    "value": 1.505
+   },
+   {
+    "date": "06-24",
+    "value": 1.505
    }
   ]
  },
@@ -29341,10 +29335,10 @@
  },
  {
   "value": 2975.0,
-  "change1d": -0.96,
-  "change5d": 1.23,
-  "change20d": 1.88,
-  "change60d": 19.19,
+  "change1d": 0.0,
+  "change5d": 1.97,
+  "change20d": 1.9,
+  "change60d": 18.43,
   "percentile": 100,
   "id": "rut",
   "name": "罗素2000",
@@ -29356,10 +29350,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 2512.37
-   },
    {
     "date": "04-02",
     "value": 2530.04
@@ -29594,16 +29584,20 @@
    },
    {
     "date": "06-23",
-    "value": 2975.481
+    "value": 2975.48
+   },
+   {
+    "date": "06-24",
+    "value": 2975.48
    }
   ]
  },
  {
   "value": 13483.0,
-  "change1d": -7.87,
-  "change5d": 1.42,
-  "change20d": 4.7,
-  "change60d": 77.68,
+  "change1d": 0.0,
+  "change5d": 0.04,
+  "change20d": 6.14,
+  "change60d": 72.8,
   "percentile": 99,
   "id": "sox",
   "name": "美国半导体指数(SOX)",
@@ -29615,10 +29609,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 7802.31
-   },
    {
     "date": "04-02",
     "value": 7833.39
@@ -29853,16 +29843,20 @@
    },
    {
     "date": "06-23",
-    "value": 13482.508
+    "value": 13482.51
+   },
+   {
+    "date": "06-24",
+    "value": 13482.51
    }
   ]
  },
  {
   "value": 86.2,
-  "change1d": 0.13,
-  "change5d": 0.01,
-  "change20d": 1.69,
-  "change60d": 0.59,
+  "change1d": 0.0,
+  "change5d": -0.15,
+  "change20d": 1.45,
+  "change60d": 0.69,
   "percentile": 69,
   "id": "tlt",
   "name": "美国长期国债指数(TLT)",
@@ -29874,10 +29868,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 85.606
-   },
    {
     "date": "04-02",
     "value": 86.132
@@ -30113,15 +30103,19 @@
    {
     "date": "06-23",
     "value": 86.2
+   },
+   {
+    "date": "06-24",
+    "value": 86.2
    }
   ]
  },
  {
   "value": 45.07,
-  "change1d": 0.78,
-  "change5d": 0.66,
-  "change20d": 0.06,
-  "change60d": -1.16,
+  "change1d": 0.0,
+  "change5d": 2.02,
+  "change20d": 0.48,
+  "change60d": -1.63,
   "percentile": 93,
   "id": "utilities",
   "name": "美国公用事业指数",
@@ -30133,10 +30127,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 45.817
-   },
    {
     "date": "04-02",
     "value": 46.046
@@ -30372,15 +30362,19 @@
    {
     "date": "06-23",
     "value": 45.07
+   },
+   {
+    "date": "06-24",
+    "value": 45.07
    }
   ]
  },
  {
   "value": 97.86,
-  "change1d": 1.31,
-  "change5d": -0.2,
-  "change20d": 0.66,
-  "change60d": 10.33,
+  "change1d": 0.0,
+  "change5d": 2.35,
+  "change20d": 0.97,
+  "change60d": 9.93,
   "percentile": 100,
   "id": "reits",
   "name": "美国房地产REITs",
@@ -30392,10 +30386,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 89.02
-   },
    {
     "date": "04-02",
     "value": 90.23
@@ -30631,16 +30621,20 @@
    {
     "date": "06-23",
     "value": 97.86
+   },
+   {
+    "date": "06-24",
+    "value": 97.86
    }
   ]
  },
  {
-  "value": 8689.0,
-  "change1d": -2.03,
-  "change5d": 2.12,
-  "change20d": 0.35,
-  "change60d": 14.06,
-  "percentile": 99,
+  "value": 8843.0,
+  "change1d": 1.78,
+  "change5d": 2.5,
+  "change20d": 3.66,
+  "change60d": 14.1,
+  "percentile": 100,
   "id": "csi500",
   "name": "中证500",
   "category": "asset",
@@ -30651,10 +30645,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 7750.092
-   },
    {
     "date": "04-02",
     "value": 7605.293
@@ -30890,15 +30880,19 @@
    {
     "date": "06-23",
     "value": 8688.592
+   },
+   {
+    "date": "06-24",
+    "value": 8842.938
    }
   ]
  },
  {
-  "value": 4192.0,
-  "change1d": -3.84,
-  "change5d": 2.18,
-  "change20d": 3.69,
-  "change60d": 31.63,
+  "value": 4251.0,
+  "change1d": 1.41,
+  "change5d": 2.02,
+  "change20d": 5.08,
+  "change60d": 30.91,
   "percentile": 100,
   "id": "chinext",
   "name": "创业板指",
@@ -30910,10 +30904,6 @@
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 3247.523
-   },
    {
     "date": "04-02",
     "value": 3172.649
@@ -31149,15 +31139,19 @@
    {
     "date": "06-23",
     "value": 4192.194
+   },
+   {
+    "date": "06-24",
+    "value": 4251.424
    }
   ]
  },
  {
   "value": 4399.0,
-  "change1d": -3.3,
-  "change5d": -5.57,
-  "change20d": -11.07,
-  "change60d": -5.39,
+  "change1d": 0.0,
+  "change5d": -5.78,
+  "change20d": -10.36,
+  "change60d": -7.51,
   "percentile": 43,
   "id": "hstech",
   "name": "恒生科技",
@@ -31165,14 +31159,10 @@
   "priority": "P2",
   "unit": "idx",
   "description": "离岸科技受美债利率与国内政策双重定价。",
-  "status": "ELEVATED",
+  "status": "NORMAL",
   "stale": false,
   "quality": "live",
   "history": [
-   {
-    "date": "04-01",
-    "value": 4756.45
-   },
    {
     "date": "04-02",
     "value": 4679.1
@@ -31408,6 +31398,10 @@
    {
     "date": "06-23",
     "value": 4399.22
+   },
+   {
+    "date": "06-24",
+    "value": 4399.22
    }
   ]
  },
@@ -31463,10 +31457,6 @@
   "quality": "live",
   "history": [
    {
-    "date": "04-01",
-    "value": 296.08
-   },
-   {
     "date": "04-02",
     "value": 296.08
    },
@@ -31700,6 +31690,10 @@
    },
    {
     "date": "06-23",
+    "value": 296.08
+   },
+   {
+    "date": "06-24",
     "value": 296.08
    }
   ]
@@ -31722,10 +31716,6 @@
   "quality": "live",
   "history": [
    {
-    "date": "04-01",
-    "value": 589.811
-   },
-   {
     "date": "04-02",
     "value": 589.811
    },
@@ -31960,6 +31950,10 @@
    {
     "date": "06-23",
     "value": 589.811
+   },
+   {
+    "date": "06-24",
+    "value": 589.811
    }
   ]
  },
@@ -31981,12 +31975,12 @@
   "quality": "manual"
  },
  {
-  "value": 0.0,
+  "value": 0.3,
   "change1d": 0.0,
-  "change5d": 0.0,
-  "change20d": 0.0,
-  "change60d": 0.0,
-  "percentile": 50,
+  "change5d": 0.09,
+  "change20d": 0.3,
+  "change60d": 0.36,
+  "percentile": 56,
   "id": "usbankrisk",
   "name": "美国银行体系风险状态",
   "category": "risk",
@@ -31995,15 +31989,15 @@
   "description": "长端利率上行重新拉大银行债券浮亏,风险状态由低位抬头。",
   "status": "NORMAL",
   "stale": false,
-  "quality": "stale"
+  "quality": "derived"
  },
  {
-  "value": 0.55,
+  "value": 0.64,
   "change1d": 0.0,
-  "change5d": 0.17,
-  "change20d": 0.55,
-  "change60d": 0.66,
-  "percentile": 61,
+  "change5d": 0.19,
+  "change20d": 0.64,
+  "change60d": 0.77,
+  "percentile": 62,
   "id": "liqcrisis",
   "name": "全球流动性危机状态",
   "category": "risk",
@@ -32016,12 +32010,12 @@
   "invalidation": "若FRA-OIS、交叉货币基差与HY利差同步异动,该状态节点升级并覆盖其他路径。"
  },
  {
-  "value": -1.83,
+  "value": -1.7,
   "change1d": 0.0,
-  "change5d": -0.55,
-  "change20d": -1.83,
-  "change60d": -2.2,
-  "percentile": 13,
+  "change5d": -0.51,
+  "change20d": -1.7,
+  "change60d": -2.04,
+  "percentile": 16,
   "id": "reflation",
   "name": "再通胀状态",
   "category": "risk",
@@ -32033,11 +32027,11 @@
   "quality": "derived"
  },
  {
-  "value": -0.13,
+  "value": -0.11,
   "change1d": 0.0,
-  "change5d": -0.04,
-  "change20d": -0.13,
-  "change60d": -0.16,
+  "change5d": -0.03,
+  "change20d": -0.11,
+  "change60d": -0.13,
   "percentile": 47,
   "id": "recession",
   "name": "衰退状态",
@@ -32067,12 +32061,12 @@
   "quality": "derived"
  },
  {
-  "value": 0.44,
+  "value": 0.53,
   "change1d": 0.0,
-  "change5d": 0.13,
-  "change20d": 0.44,
-  "change60d": 0.53,
-  "percentile": 58,
+  "change5d": 0.16,
+  "change20d": 0.53,
+  "change60d": 0.64,
+  "percentile": 60,
   "id": "riskoff",
   "name": "Risk-off状态",
   "category": "risk",

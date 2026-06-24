@@ -1383,7 +1383,7 @@
   "relation": "positive",
   "mechanism": "隔夜向7天传导",
   "strength": 0.4,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_dr007_shibor",
@@ -1482,7 +1482,7 @@
   "relation": "positive",
   "mechanism": "流动性压力推升资金利率",
   "strength": 0.5,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_liqstress_ncd",
