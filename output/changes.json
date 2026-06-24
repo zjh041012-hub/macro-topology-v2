@@ -1,40 +1,46 @@
 {
- "since": "2026-06-23T23:45:13+00:00",
- "generatedAt": "2026-06-24T12:16:34+00:00",
+ "since": "2026-06-24T12:16:34+00:00",
+ "generatedAt": "2026-06-24T23:51:53+00:00",
  "nodeChanges": [
+  {
+   "id": "hyspread",
+   "name": "美国高收益债信用利差",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
   {
    "id": "oil",
    "name": "原油(WTI)",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "us5yreal",
+   "name": "美国5年期实际利率",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "cdxhy",
+   "name": "CDX HY",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "copper",
-   "name": "铜(LME)",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "dr007",
-   "name": "DR007",
+   "id": "goldetfflow",
+   "name": "黄金ETF持仓变化(SPDR·4周)",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "hstech",
-   "name": "恒生科技",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "id": "infl5y5y",
+   "name": "美国5y5y通胀互换",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
    "id": "gbpusd",
    "name": "英镑兑美元",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "dr001",
-   "name": "DR001",
    "from": "ELEVATED",
    "to": "NORMAL"
   }

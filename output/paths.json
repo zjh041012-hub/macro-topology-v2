@@ -86,8 +86,8 @@
    "e_real_ndx"
   ],
   "status": "INACTIVE",
-  "consistency": 0.0,
-  "note": "实时评估: 0/6 条边动量一致 (usdeficit→netissue×, netissue→auctiontail×, auctiontail→termprem×, termprem→us10y×, us10y→us10yreal×, us10yreal→ndx×)。"
+  "consistency": 0.17,
+  "note": "实时评估: 1/6 条边动量一致 (usdeficit→netissue×, netissue→auctiontail×, auctiontail→termprem×, termprem→us10y×, us10y→us10yreal×, us10yreal→ndx✓)。"
  },
  {
   "id": "p_std_d",
@@ -181,25 +181,27 @@
  },
  {
   "id": "p_auto_2",
-  "title": "财政信用担忧指数 → 美债10Y期限溢价",
+  "title": "美国10年期实际利率 → 黄金 → 黄金矿业股",
   "nodeIds": [
-   "fiscalworry",
-   "termprem"
+   "us10yreal",
+   "gold",
+   "goldminers"
   ],
   "edgeIds": [
-   "e_worry_tp"
+   "e_real_gold",
+   "e_gold_miners"
   ],
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  },
  {
   "id": "p_auto_3",
-  "title": "美联储政策利率预期(1Y远期) → 美国2年期国债收益率",
+  "title": "美元指数 → 欧元兑美元",
   "nodeIds": [
-   "fedpath",
-   "us2y"
+   "dxy",
+   "eurusd"
   ],
   "edgeIds": [
-   "e_fed_2y"
+   "e_dxy_eur"
   ],
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  }
