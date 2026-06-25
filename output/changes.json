@@ -1,48 +1,18 @@
 {
- "since": "2026-06-24T12:16:34+00:00",
- "generatedAt": "2026-06-24T23:51:53+00:00",
+ "since": "2026-06-24T23:51:53+00:00",
+ "generatedAt": "2026-06-25T12:12:01+00:00",
  "nodeChanges": [
   {
-   "id": "hyspread",
-   "name": "美国高收益债信用利差",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "oil",
-   "name": "原油(WTI)",
+   "id": "copper",
+   "name": "铜(LME)",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "us5yreal",
-   "name": "美国5年期实际利率",
+   "id": "aluminum",
+   "name": "铝(沪铝主力)",
    "from": "ELEVATED",
    "to": "EXTREME"
-  },
-  {
-   "id": "cdxhy",
-   "name": "CDX HY",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "goldetfflow",
-   "name": "黄金ETF持仓变化(SPDR·4周)",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "infl5y5y",
-   "name": "美国5y5y通胀互换",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "gbpusd",
-   "name": "英镑兑美元",
-   "from": "ELEVATED",
-   "to": "NORMAL"
   }
  ],
  "pathChanges": [],
