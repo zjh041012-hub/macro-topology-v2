@@ -1,64 +1,58 @@
 {
- "since": "2026-06-26T00:02:33+00:00",
- "generatedAt": "2026-06-26T12:10:07+00:00",
+ "since": "2026-06-26T12:10:07+00:00",
+ "generatedAt": "2026-06-26T23:51:50+00:00",
  "nodeChanges": [
   {
    "id": "us10ybe",
    "name": "美国10年期盈亏平衡通胀",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "retail",
-   "name": "社会消费品零售总额(同比)",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "cnbond",
-   "name": "中国10年期国债期货",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "cta",
-   "name": "CTA趋势仓位代理",
+   "id": "goldetfflow",
+   "name": "黄金ETF持仓变化(SPDR·4周)",
    "from": "ELEVATED",
    "to": "EXTREME"
+  },
+  {
+   "id": "usconf",
+   "name": "美国消费者信心",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "sofr",
+   "name": "SOFR",
+   "from": "EXTREME",
+   "to": "ELEVATED"
   },
   {
    "id": "goldminers",
    "name": "黄金矿业股",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "cn5y",
-   "name": "中国5年期国债收益率",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "aluminum",
-   "name": "铝(沪铝主力)",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "dr007",
-   "name": "DR007",
+   "id": "debtceiling",
+   "name": "债务上限博弈风险",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "hyspread",
+   "name": "美国高收益债信用利差",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "ironore",
-   "name": "铁矿石(大商所主力)",
+   "id": "cdxhy",
+   "name": "CDX HY",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "hsi",
-   "name": "恒生指数",
+   "id": "hstech",
+   "name": "恒生科技",
    "from": "NORMAL",
    "to": "ELEVATED"
   }

@@ -9,7 +9,6 @@
    "shibor3m",
    "tsf",
    "usclaims",
-   "usdcnh",
    "usoilinv"
   ],
   "manual": [
@@ -55,10 +54,9 @@
    "cta",
    "gammaproxy"
   ],
-  "liveCount": 134,
+  "liveCount": 135,
   "totalCount": 178,
   "sourceErrors": {
-   "yahoo": "usdcnh → ValueError: Neither `start` nor `end` can be NaT",
    "fred": "usclaims → ValueError: empty series after transform (insufficient history?)",
    "tushare": "tsf → ValueError: tushare: 抱歉，您没有接口(sf_month)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。",
    "akshare:fund_etf_hist_em": "chipetf → ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
@@ -67,12 +65,12 @@
  },
  "topMover": {
   "nodeId": "gold",
-  "text": "黄金 -3.9%/5D · 78分位"
+  "text": "黄金 -2.9%/5D · 79分位"
  },
  "dominantPathId": "p_std_e",
  "divergenceCount": 0,
- "highRiskCount": 11,
+ "highRiskCount": 13,
  "regime": "EXTREME",
- "regimeNote": "自动识别: 0条背离, 11个高风险节点。",
- "updatedAt": "2026-06-26T12:10:07+00:00"
+ "regimeNote": "自动识别: 0条背离, 13个高风险节点。",
+ "updatedAt": "2026-06-26T23:51:50+00:00"
 }
