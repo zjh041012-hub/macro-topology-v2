@@ -1,21 +1,89 @@
 {
- "since": "2026-06-24T23:51:53+00:00",
- "generatedAt": "2026-06-25T12:12:01+00:00",
+ "since": "2026-06-25T12:12:01+00:00",
+ "generatedAt": "2026-06-26T00:02:33+00:00",
  "nodeChanges": [
   {
-   "id": "copper",
-   "name": "铜(LME)",
+   "id": "us10yreal",
+   "name": "美国10年期实际利率",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "igspread",
+   "name": "美国投资级信用利差",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "oil",
+   "name": "原油(WTI)",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "us5yreal",
+   "name": "美国5年期实际利率",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "cdxig",
+   "name": "CDX IG",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "utilities",
+   "name": "美国公用事业指数",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "aluminum",
-   "name": "铝(沪铝主力)",
+   "id": "us10y",
+   "name": "美国10年期国债收益率",
    "from": "ELEVATED",
-   "to": "EXTREME"
+   "to": "NORMAL"
+  },
+  {
+   "id": "reserves",
+   "name": "美国银行准备金",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "us30y",
+   "name": "美国30年期国债收益率",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "infl5y5y",
+   "name": "美国5y5y通胀互换",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "cnusspread",
+   "name": "中美国债10年利差",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "hsi",
+   "name": "恒生指数",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "us20y",
+   "name": "美国20年期国债收益率",
+   "from": "ELEVATED",
+   "to": "NORMAL"
   }
  ],
- "pathChanges": [],
+ "pathChanges": [
+  "路径A · 美国政策转鹰: PARTIAL → INACTIVE"
+ ],
  "divAdded": [],
  "divRemoved": []
 }
