@@ -1,89 +1,69 @@
 {
- "since": "2026-06-25T12:12:01+00:00",
- "generatedAt": "2026-06-26T00:02:33+00:00",
+ "since": "2026-06-26T00:02:33+00:00",
+ "generatedAt": "2026-06-26T12:10:07+00:00",
  "nodeChanges": [
   {
-   "id": "us10yreal",
-   "name": "美国10年期实际利率",
+   "id": "us10ybe",
+   "name": "美国10年期盈亏平衡通胀",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "igspread",
-   "name": "美国投资级信用利差",
+   "id": "retail",
+   "name": "社会消费品零售总额(同比)",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "oil",
-   "name": "原油(WTI)",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "us5yreal",
-   "name": "美国5年期实际利率",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "cdxig",
-   "name": "CDX IG",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "utilities",
-   "name": "美国公用事业指数",
+   "id": "cnbond",
+   "name": "中国10年期国债期货",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "us10y",
-   "name": "美国10年期国债收益率",
+   "id": "cta",
+   "name": "CTA趋势仓位代理",
    "from": "ELEVATED",
-   "to": "NORMAL"
+   "to": "EXTREME"
   },
   {
-   "id": "reserves",
-   "name": "美国银行准备金",
-   "from": "NORMAL",
+   "id": "goldminers",
+   "name": "黄金矿业股",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "cn5y",
+   "name": "中国5年期国债收益率",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "aluminum",
+   "name": "铝(沪铝主力)",
+   "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "us30y",
-   "name": "美国30年期国债收益率",
+   "id": "dr007",
+   "name": "DR007",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "infl5y5y",
-   "name": "美国5y5y通胀互换",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "cnusspread",
-   "name": "中美国债10年利差",
+   "id": "ironore",
+   "name": "铁矿石(大商所主力)",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
    "id": "hsi",
    "name": "恒生指数",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "us20y",
-   "name": "美国20年期国债收益率",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "from": "NORMAL",
+   "to": "ELEVATED"
   }
  ],
- "pathChanges": [
-  "路径A · 美国政策转鹰: PARTIAL → INACTIVE"
- ],
+ "pathChanges": [],
  "divAdded": [],
  "divRemoved": []
 }
