@@ -1,100 +1,52 @@
 {
- "since": "2026-06-26T23:51:50+00:00",
- "generatedAt": "2026-06-29T14:00:39+00:00",
+ "since": "2026-06-29T14:00:39+00:00",
+ "generatedAt": "2026-06-29T23:43:23+00:00",
  "nodeChanges": [
-  {
-   "id": "goldetf",
-   "name": "黄金ETF(518880)",
-   "from": "NORMAL",
-   "to": "EXTREME"
-  },
-  {
-   "id": "oil",
-   "name": "原油(WTI)",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
   {
    "id": "reflation",
    "name": "再通胀状态",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "usconf",
-   "name": "美国消费者信心",
    "from": "EXTREME",
    "to": "ELEVATED"
-  },
-  {
-   "id": "housingstarts",
-   "name": "美国住房开工",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "ahe",
-   "name": "美国平均时薪(同比)",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "gasoline",
-   "name": "美国汽油零售价",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "cta",
-   "name": "CTA趋势仓位代理",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "sofr",
-   "name": "SOFR",
-   "from": "ELEVATED",
-   "to": "EXTREME"
   },
   {
    "id": "audusd",
    "name": "澳元兑美元",
-   "from": "ELEVATED",
-   "to": "EXTREME"
+   "from": "EXTREME",
+   "to": "ELEVATED"
   },
   {
-   "id": "fedpath",
-   "name": "美联储政策利率预期(1Y远期)",
+   "id": "dxy",
+   "name": "美元指数",
    "from": "ELEVATED",
    "to": "NORMAL"
-  },
-  {
-   "id": "bankidx",
-   "name": "银行指数",
-   "from": "NORMAL",
-   "to": "ELEVATED"
   },
   {
    "id": "t2s10s",
    "name": "美债2s10s利差",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "eurusd",
+   "name": "欧元兑美元",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "r007",
-   "name": "R007",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
    "id": "inddemand",
    "name": "工业品需求(合成指标)",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "geopolitics",
+   "name": "地缘政治风险指数",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "us3m",
-   "name": "美国3个月国库券收益率",
+   "id": "debtceiling",
+   "name": "债务上限博弈风险",
    "from": "ELEVATED",
    "to": "NORMAL"
   }

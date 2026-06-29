@@ -1,5 +1,24 @@
 [
  {
+  "id": "p_std_e",
+  "name": "路径E · 流动性冲击",
+  "title": "路径E · 流动性冲击",
+  "nodeIds": [
+   "liqcrisis",
+   "dxy",
+   "hyspread",
+   "spx"
+  ],
+  "edgeIds": [
+   "e_liqc_dxy",
+   "e_dxy_hyspread",
+   "e_spx_hy"
+  ],
+  "status": "INACTIVE",
+  "consistency": 0.33,
+  "note": "实时评估: 1/3 条边动量一致 (liqcrisis→dxy✓, dxy→hyspread×, spx→hyspread×)。"
+ },
+ {
   "id": "p_std_c",
   "name": "路径C · 中国信用扩张",
   "title": "路径C · 中国信用扩张",
@@ -109,25 +128,6 @@
   "status": "INACTIVE",
   "consistency": 0.0,
   "note": "实时评估: 0/4 条边动量一致 (fedbs→reserves×, reserves→usfci×, usfci→hyspread×, spx→hyspread×)。"
- },
- {
-  "id": "p_std_e",
-  "name": "路径E · 流动性冲击",
-  "title": "路径E · 流动性冲击",
-  "nodeIds": [
-   "liqcrisis",
-   "dxy",
-   "hyspread",
-   "spx"
-  ],
-  "edgeIds": [
-   "e_liqc_dxy",
-   "e_dxy_hyspread",
-   "e_spx_hy"
-  ],
-  "status": "INACTIVE",
-  "consistency": 0.0,
-  "note": "实时评估: 0/3 条边动量一致 (liqcrisis→dxy×, dxy→hyspread×, spx→hyspread×)。"
  },
  {
   "id": "p_std_g",
