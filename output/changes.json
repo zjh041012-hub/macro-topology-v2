@@ -1,54 +1,66 @@
 {
- "since": "2026-06-29T14:00:39+00:00",
- "generatedAt": "2026-06-29T23:43:23+00:00",
+ "since": "2026-06-29T23:43:23+00:00",
+ "generatedAt": "2026-06-30T12:09:00+00:00",
  "nodeChanges": [
   {
-   "id": "reflation",
-   "name": "再通胀状态",
+   "id": "us10ybe",
+   "name": "美国10年期盈亏平衡通胀",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "audusd",
-   "name": "澳元兑美元",
+   "id": "usretail",
+   "name": "美国零售销售(环比)",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "hsi",
+   "name": "恒生指数",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "cn5y",
+   "name": "中国5年期国债收益率",
    "from": "EXTREME",
    "to": "ELEVATED"
+  },
+  {
+   "id": "aluminum",
+   "name": "铝(沪铝主力)",
+   "from": "ELEVATED",
+   "to": "EXTREME"
   },
   {
    "id": "dxy",
    "name": "美元指数",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "t2s10s",
-   "name": "美债2s10s利差",
    "from": "NORMAL",
    "to": "ELEVATED"
+  },
+  {
+   "id": "r007",
+   "name": "R007",
+   "from": "ELEVATED",
+   "to": "NORMAL"
   },
   {
    "id": "eurusd",
    "name": "欧元兑美元",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "inddemand",
-   "name": "工业品需求(合成指标)",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "geopolitics",
-   "name": "地缘政治风险指数",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "debtceiling",
-   "name": "债务上限博弈风险",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "id": "inddemand",
+   "name": "工业品需求(合成指标)",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "rebar",
+   "name": "螺纹钢",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   }
  ],
  "pathChanges": [],
