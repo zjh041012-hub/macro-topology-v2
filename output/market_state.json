@@ -65,12 +65,12 @@
  },
  "topMover": {
   "nodeId": "gold",
-  "text": "黄金 -2.1%/5D · 77分位"
+  "text": "黄金 -2.6%/5D · 77分位"
  },
- "dominantPathId": "p_std_e",
+ "dominantPathId": "p_std_c",
  "divergenceCount": 0,
  "highRiskCount": 13,
  "regime": "EXTREME",
  "regimeNote": "自动识别: 0条背离, 13个高风险节点。",
- "updatedAt": "2026-06-30T12:09:00+00:00"
+ "updatedAt": "2026-06-30T23:54:40+00:00"
 }
