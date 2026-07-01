@@ -1,58 +1,46 @@
 {
- "since": "2026-06-30T23:54:40+00:00",
- "generatedAt": "2026-07-01T12:29:03+00:00",
+ "since": "2026-07-01T12:29:03+00:00",
+ "generatedAt": "2026-07-01T23:58:34+00:00",
  "nodeChanges": [
   {
-   "id": "dividendetf",
-   "name": "红利ETF",
-   "from": "NORMAL",
-   "to": "EXTREME"
+   "id": "rrp",
+   "name": "美联储隔夜逆回购(RRP)",
+   "from": "EXTREME",
+   "to": "ELEVATED"
   },
   {
-   "id": "sofr",
-   "name": "SOFR",
-   "from": "EXTREME",
+   "id": "hyspread",
+   "name": "美国高收益债信用利差",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "us30y",
+   "name": "美国30年期国债收益率",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "geopolitics",
+   "name": "地缘政治风险指数",
+   "from": "ELEVATED",
    "to": "NORMAL"
-  },
-  {
-   "id": "goldetf",
-   "name": "黄金ETF(518880)",
-   "from": "NORMAL",
-   "to": "EXTREME"
-  },
-  {
-   "id": "goldetfflow",
-   "name": "黄金ETF持仓变化(SPDR·4周)",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "cnbond",
-   "name": "中国10年期国债期货",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "eurusd",
-   "name": "欧元兑美元",
-   "from": "NORMAL",
-   "to": "ELEVATED"
   },
   {
    "id": "us5yreal",
    "name": "美国5年期实际利率",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
-   "id": "bankloans",
-   "name": "美国商业银行贷款(同比)",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "id": "cdxhy",
+   "name": "CDX HY",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
-   "id": "ironore",
-   "name": "铁矿石(大商所主力)",
+   "id": "us20y",
+   "name": "美国20年期国债收益率",
    "from": "NORMAL",
    "to": "ELEVATED"
   }
