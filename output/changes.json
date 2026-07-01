@@ -1,64 +1,58 @@
 {
- "since": "2026-06-30T12:09:00+00:00",
- "generatedAt": "2026-06-30T23:54:40+00:00",
+ "since": "2026-06-30T23:54:40+00:00",
+ "generatedAt": "2026-07-01T12:29:03+00:00",
  "nodeChanges": [
   {
-   "id": "usepu",
-   "name": "美国经济政策不确定性",
-   "from": "EXTREME",
-   "to": "NORMAL"
-  },
-  {
-   "id": "rrp",
-   "name": "美联储隔夜逆回购(RRP)",
+   "id": "dividendetf",
+   "name": "红利ETF",
    "from": "NORMAL",
    "to": "EXTREME"
   },
   {
-   "id": "gasoline",
-   "name": "美国汽油零售价",
-   "from": "ELEVATED",
+   "id": "sofr",
+   "name": "SOFR",
+   "from": "EXTREME",
+   "to": "NORMAL"
+  },
+  {
+   "id": "goldetf",
+   "name": "黄金ETF(518880)",
+   "from": "NORMAL",
    "to": "EXTREME"
   },
   {
-   "id": "hsi",
-   "name": "恒生指数",
+   "id": "goldetfflow",
+   "name": "黄金ETF持仓变化(SPDR·4周)",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "utilities",
-   "name": "美国公用事业指数",
+   "id": "cnbond",
+   "name": "中国10年期国债期货",
    "from": "EXTREME",
    "to": "ELEVATED"
-  },
-  {
-   "id": "dxy",
-   "name": "美元指数",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "t2s10s",
-   "name": "美债2s10s利差",
-   "from": "ELEVATED",
-   "to": "NORMAL"
   },
   {
    "id": "eurusd",
    "name": "欧元兑美元",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "us3m",
-   "name": "美国3个月国库券收益率",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "debtceiling",
-   "name": "债务上限博弈风险",
+   "id": "us5yreal",
+   "name": "美国5年期实际利率",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "bankloans",
+   "name": "美国商业银行贷款(同比)",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "ironore",
+   "name": "铁矿石(大商所主力)",
    "from": "NORMAL",
    "to": "ELEVATED"
   }
