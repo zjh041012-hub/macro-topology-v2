@@ -1,34 +1,76 @@
 {
- "since": "2026-07-01T23:58:34+00:00",
- "generatedAt": "2026-07-02T12:12:13+00:00",
+ "since": "2026-07-02T12:12:13+00:00",
+ "generatedAt": "2026-07-02T23:45:46+00:00",
  "nodeChanges": [
   {
-   "id": "silver",
-   "name": "白银",
+   "id": "gold",
+   "name": "黄金",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "bankidx",
-   "name": "银行指数",
+   "id": "goldetfflow",
+   "name": "黄金ETF持仓变化(SPDR·4周)",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "debtceiling",
+   "name": "债务上限博弈风险",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "fedpath",
+   "name": "美联储政策利率预期(1Y远期)",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "nfp",
+   "name": "美国非农新增就业",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "eurusd",
-   "name": "欧元兑美元",
+   "id": "fedbs",
+   "name": "美联储资产负债表",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "us3m",
+   "name": "美国3个月国库券收益率",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
    "id": "us5yreal",
    "name": "美国5年期实际利率",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
-   "id": "hstech",
-   "name": "恒生科技",
+   "id": "cnusspread",
+   "name": "中美国债10年利差",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "bankloans",
+   "name": "美国商业银行贷款(同比)",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "sofr",
+   "name": "SOFR",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "unemp",
+   "name": "美国失业率",
    "from": "ELEVATED",
    "to": "NORMAL"
   }

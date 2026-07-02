@@ -3,7 +3,6 @@
   "stale": [
    "chipetf",
    "cn1y",
-   "cnbond",
    "dividendetf",
    "goldetf",
    "gscpi",
@@ -55,24 +54,23 @@
    "cta",
    "gammaproxy"
   ],
-  "liveCount": 134,
+  "liveCount": 135,
   "totalCount": 178,
   "sourceErrors": {
    "fred": "usclaims → ValueError: empty series after transform (insufficient history?)",
    "tushare": "tsf → ValueError: tushare: 抱歉，您没有接口(sf_month)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。",
-   "akshare:futures_main_sina": "cnbond → ConnectTimeout: HTTPSConnectionPool(host='stock2.finance.sina.com.cn', port=443): Max retries exceeded with url: /futures/api/jsonp.php/var%20_T02021_08_17=/InnerFuturesNewServ",
    "akshare:fund_etf_hist_em": "chipetf → ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
    "csv_url": "gscpi → ValueError: Excel file format cannot be determined, you must specify an engine manually."
   }
  },
  "topMover": {
   "nodeId": "oil",
-  "text": "原油(WTI) -6.5%/5D · 31分位"
+  "text": "原油(WTI) -4.8%/5D · 34分位"
  },
  "dominantPathId": "p_std_c",
  "divergenceCount": 0,
  "highRiskCount": 12,
  "regime": "EXTREME",
  "regimeNote": "自动识别: 0条背离, 12个高风险节点。",
- "updatedAt": "2026-07-02T12:12:13+00:00"
+ "updatedAt": "2026-07-02T23:45:46+00:00"
 }
