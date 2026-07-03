@@ -1,78 +1,18 @@
 {
- "since": "2026-07-02T23:45:46+00:00",
- "generatedAt": "2026-07-03T12:01:50+00:00",
+ "since": "2026-07-03T12:01:50+00:00",
+ "generatedAt": "2026-07-03T23:44:42+00:00",
  "nodeChanges": [
   {
-   "id": "fedfunds",
-   "name": "美联储政策利率",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "fedpath",
-   "name": "美联储政策利率预期(1Y远期)",
+   "id": "bdi",
+   "name": "波罗的海干散货指数",
    "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "termprem",
-   "name": "美债10Y期限溢价",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "gold",
-   "name": "黄金",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "bankidx",
-   "name": "银行指数",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "fiscalworry",
-   "name": "财政信用担忧指数",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "r007",
-   "name": "R007",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "inddemand",
-   "name": "工业品需求(合成指标)",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "us5yreal",
-   "name": "美国5年期实际利率",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "silver",
-   "name": "白银",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "to": "EXTREME"
   },
   {
    "id": "hsi",
    "name": "恒生指数",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "goldminers",
-   "name": "黄金矿业股",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "from": "NORMAL",
+   "to": "ELEVATED"
   }
  ],
  "pathChanges": [],
