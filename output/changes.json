@@ -1,46 +1,46 @@
 {
- "since": "2026-07-03T23:44:42+00:00",
- "generatedAt": "2026-07-06T13:15:46+00:00",
+ "since": "2026-07-06T13:15:46+00:00",
+ "generatedAt": "2026-07-06T23:49:01+00:00",
  "nodeChanges": [
   {
-   "id": "cnbond",
-   "name": "中国10年期国债期货",
+   "id": "goldetfflow",
+   "name": "黄金ETF持仓变化(SPDR·4周)",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "us30y",
+   "name": "美国30年期国债收益率",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "gasoline",
-   "name": "美国汽油零售价",
+   "id": "crb",
+   "name": "CRB商品指数",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "debtceiling",
-   "name": "债务上限博弈风险",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "aluminum",
-   "name": "铝(沪铝主力)",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "gold",
-   "name": "黄金",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "bankidx",
-   "name": "银行指数",
+   "id": "termprem",
+   "name": "美债10Y期限溢价",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "hsi",
-   "name": "恒生指数",
+   "id": "gold",
+   "name": "黄金",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "cftcgold",
+   "name": "CFTC黄金净多头",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "debtceiling",
+   "name": "债务上限博弈风险",
    "from": "ELEVATED",
    "to": "NORMAL"
   }

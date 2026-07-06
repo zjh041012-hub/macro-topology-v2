@@ -59,18 +59,18 @@
   "sourceErrors": {
    "fred": "usclaims → ValueError: empty series after transform (insufficient history?)",
    "tushare": "tsf → ValueError: tushare: 抱歉，您没有接口(sf_month)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。",
-   "akshare:fund_etf_hist_em": "chipetf → ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+   "akshare:fund_etf_hist_em": "chipetf → ConnectionError: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2",
    "csv_url": "gscpi → ValueError: Excel file format cannot be determined, you must specify an engine manually."
   }
  },
  "topMover": {
   "nodeId": "oil",
-  "text": "原油(WTI) -3.4%/5D · 34分位"
+  "text": "原油(WTI) -2.7%/5D · 36分位"
  },
  "dominantPathId": "p_std_f",
  "divergenceCount": 0,
- "highRiskCount": 11,
+ "highRiskCount": 10,
  "regime": "EXTREME",
- "regimeNote": "自动识别: 0条背离, 11个高风险节点。",
- "updatedAt": "2026-07-06T13:15:46+00:00"
+ "regimeNote": "自动识别: 0条背离, 10个高风险节点。",
+ "updatedAt": "2026-07-06T23:49:01+00:00"
 }
