@@ -1,18 +1,48 @@
 {
- "since": "2026-07-03T12:01:50+00:00",
- "generatedAt": "2026-07-03T23:44:42+00:00",
+ "since": "2026-07-03T23:44:42+00:00",
+ "generatedAt": "2026-07-06T13:15:46+00:00",
  "nodeChanges": [
   {
-   "id": "bdi",
-   "name": "波罗的海干散货指数",
+   "id": "cnbond",
+   "name": "中国10年期国债期货",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "hsi",
-   "name": "恒生指数",
+   "id": "gasoline",
+   "name": "美国汽油零售价",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "debtceiling",
+   "name": "债务上限博弈风险",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "aluminum",
+   "name": "铝(沪铝主力)",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "gold",
+   "name": "黄金",
    "from": "NORMAL",
    "to": "ELEVATED"
+  },
+  {
+   "id": "bankidx",
+   "name": "银行指数",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "hsi",
+   "name": "恒生指数",
+   "from": "ELEVATED",
+   "to": "NORMAL"
   }
  ],
  "pathChanges": [],
