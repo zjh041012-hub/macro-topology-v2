@@ -1,46 +1,28 @@
 {
- "since": "2026-07-06T13:15:46+00:00",
- "generatedAt": "2026-07-06T23:49:01+00:00",
+ "since": "2026-07-06T23:49:01+00:00",
+ "generatedAt": "2026-07-07T12:25:25+00:00",
  "nodeChanges": [
   {
-   "id": "goldetfflow",
-   "name": "黄金ETF持仓变化(SPDR·4周)",
+   "id": "csi300",
+   "name": "沪深300",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "us30y",
-   "name": "美国30年期国债收益率",
+   "id": "us10ybe",
+   "name": "美国10年期盈亏平衡通胀",
    "from": "ELEVATED",
-   "to": "EXTREME"
+   "to": "NORMAL"
   },
   {
-   "id": "crb",
-   "name": "CRB商品指数",
-   "from": "EXTREME",
+   "id": "bankidx",
+   "name": "银行指数",
+   "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "termprem",
-   "name": "美债10Y期限溢价",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "gold",
-   "name": "黄金",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "cftcgold",
-   "name": "CFTC黄金净多头",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "debtceiling",
-   "name": "债务上限博弈风险",
+   "id": "cta",
+   "name": "CTA趋势仓位代理",
    "from": "ELEVATED",
    "to": "NORMAL"
   }

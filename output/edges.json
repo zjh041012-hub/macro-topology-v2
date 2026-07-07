@@ -132,7 +132,7 @@
   "relation": "positive",
   "mechanism": "油价上行未带动盈亏平衡通胀,通胀预期未确认",
   "strength": 0.55,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_style",
@@ -1698,7 +1698,7 @@
   "relation": "positive",
   "mechanism": "贵金属联动, 白银弹性更高",
   "strength": 0.7,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_real_silver",
@@ -1761,7 +1761,7 @@
   "relation": "positive",
   "mechanism": "ETF流入是金价的资金面确认",
   "strength": 0.8,
-  "status": "DIVERGENCE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_cftcgold_gold",

@@ -193,13 +193,13 @@
  },
  {
   "id": "p_auto_3",
-  "title": "黄金 → 白银",
+  "title": "南华商品指数 → CRB商品指数",
   "nodeIds": [
-   "gold",
-   "silver"
+   "comidx",
+   "crb"
   ],
   "edgeIds": [
-   "e_gold_silver"
+   "e_com_crb"
   ],
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  }
