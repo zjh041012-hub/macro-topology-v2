@@ -1,30 +1,42 @@
 {
- "since": "2026-07-06T23:49:01+00:00",
- "generatedAt": "2026-07-07T12:25:25+00:00",
+ "since": "2026-07-07T12:25:25+00:00",
+ "generatedAt": "2026-07-07T23:39:26+00:00",
  "nodeChanges": [
   {
-   "id": "csi300",
-   "name": "沪深300",
+   "id": "oil",
+   "name": "原油(WTI)",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "us10ybe",
-   "name": "美国10年期盈亏平衡通胀",
+   "id": "csi300",
+   "name": "沪深300",
    "from": "ELEVATED",
-   "to": "NORMAL"
+   "to": "EXTREME"
   },
   {
-   "id": "bankidx",
-   "name": "银行指数",
-   "from": "NORMAL",
+   "id": "brent",
+   "name": "Brent原油",
+   "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "cta",
-   "name": "CTA趋势仓位代理",
+   "id": "bidcover",
+   "name": "美国国债投标倍数",
    "from": "ELEVATED",
    "to": "NORMAL"
+  },
+  {
+   "id": "reflation",
+   "name": "再通胀状态",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "debtceiling",
+   "name": "债务上限博弈风险",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   }
  ],
  "pathChanges": [],
