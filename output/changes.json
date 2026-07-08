@@ -1,42 +1,72 @@
 {
- "since": "2026-07-07T12:25:25+00:00",
- "generatedAt": "2026-07-07T23:39:26+00:00",
+ "since": "2026-07-07T23:39:26+00:00",
+ "generatedAt": "2026-07-08T11:41:43+00:00",
  "nodeChanges": [
   {
-   "id": "oil",
-   "name": "原油(WTI)",
+   "id": "copper",
+   "name": "铜(LME)",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
    "id": "csi300",
    "name": "沪深300",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "brent",
-   "name": "Brent原油",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "bidcover",
-   "name": "美国国债投标倍数",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "id": "comidx",
+   "name": "南华商品指数",
+   "from": "EXTREME",
+   "to": "ELEVATED"
   },
   {
-   "id": "reflation",
-   "name": "再通胀状态",
+   "id": "bankloans",
+   "name": "美国商业银行贷款(同比)",
    "from": "ELEVATED",
-   "to": "NORMAL"
+   "to": "EXTREME"
   },
   {
-   "id": "debtceiling",
-   "name": "债务上限博弈风险",
+   "id": "csi500",
+   "name": "中证500",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "rrp",
+   "name": "美联储隔夜逆回购(RRP)",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "vix",
+   "name": "VIX指数",
    "from": "NORMAL",
    "to": "ELEVATED"
+  },
+  {
+   "id": "vvix",
+   "name": "VVIX",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "ironore",
+   "name": "铁矿石(大商所主力)",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "gammaproxy",
+   "name": "期权做市商Gamma代理",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "rebar",
+   "name": "螺纹钢",
+   "from": "ELEVATED",
+   "to": "NORMAL"
   }
  ],
  "pathChanges": [],

@@ -1599,7 +1599,7 @@
   "relation": "positive",
   "mechanism": "波动率曲面联动",
   "strength": 0.6,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_hydef_hy",
@@ -1761,7 +1761,7 @@
   "relation": "positive",
   "mechanism": "ETF流入是金价的资金面确认",
   "strength": 0.8,
-  "status": "DIVERGENCE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_cftcgold_gold",
