@@ -1,70 +1,64 @@
 {
- "since": "2026-07-07T23:39:26+00:00",
- "generatedAt": "2026-07-08T11:41:43+00:00",
+ "since": "2026-07-08T11:41:43+00:00",
+ "generatedAt": "2026-07-08T23:45:46+00:00",
  "nodeChanges": [
+  {
+   "id": "us10yreal",
+   "name": "美国10年期实际利率",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "usdcny",
+   "name": "美元兑人民币",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
   {
    "id": "copper",
    "name": "铜(LME)",
-   "from": "EXTREME",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "EXTREME"
   },
   {
    "id": "csi300",
    "name": "沪深300",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "comidx",
-   "name": "南华商品指数",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "bankloans",
-   "name": "美国商业银行贷款(同比)",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "csi500",
-   "name": "中证500",
-   "from": "EXTREME",
-   "to": "ELEVATED"
+   "id": "sofr",
+   "name": "SOFR",
+   "from": "ELEVATED",
+   "to": "EXTREME"
   },
   {
    "id": "rrp",
    "name": "美联储隔夜逆回购(RRP)",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "us20y",
+   "name": "美国20年期国债收益率",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "vix",
-   "name": "VIX指数",
+   "id": "us10y",
+   "name": "美国10年期国债收益率",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "vvix",
-   "name": "VVIX",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "ironore",
-   "name": "铁矿石(大商所主力)",
+   "id": "move",
+   "name": "MOVE利率波动率指数",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "gammaproxy",
-   "name": "期权做市商Gamma代理",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "rebar",
-   "name": "螺纹钢",
+   "id": "vvix",
+   "name": "VVIX",
    "from": "ELEVATED",
    "to": "NORMAL"
   }
