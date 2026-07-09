@@ -708,7 +708,7 @@
   "relation": "positive",
   "mechanism": "商品指数联动",
   "strength": 0.5,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_geo_oil",
@@ -1599,7 +1599,7 @@
   "relation": "positive",
   "mechanism": "波动率曲面联动",
   "strength": 0.6,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_hydef_hy",
@@ -1788,7 +1788,7 @@
   "relation": "negative",
   "mechanism": "负Gamma放大现实波动",
   "strength": 0.5,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_cta_spx",
@@ -2013,7 +2013,7 @@
   "relation": "positive",
   "mechanism": "再通胀确认需要能源配合",
   "strength": 0.5,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_refl_bankidx",
@@ -2022,7 +2022,7 @@
   "relation": "positive",
   "mechanism": "再通胀利好银行息差",
   "strength": 0.4,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_rec_hy",
