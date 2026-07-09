@@ -708,7 +708,7 @@
   "relation": "positive",
   "mechanism": "商品指数联动",
   "strength": 0.5,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_geo_oil",
@@ -861,7 +861,7 @@
   "relation": "negative",
   "mechanism": "降息次数与政策路径互为镜像",
   "strength": 0.7,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_ahe_cpi",

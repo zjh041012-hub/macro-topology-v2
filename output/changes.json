@@ -1,48 +1,42 @@
 {
- "since": "2026-07-08T23:45:46+00:00",
- "generatedAt": "2026-07-09T12:33:51+00:00",
+ "since": "2026-07-09T12:33:51+00:00",
+ "generatedAt": "2026-07-09T23:56:14+00:00",
  "nodeChanges": [
   {
-   "id": "usdcny",
-   "name": "美元兑人民币",
+   "id": "fedfunds",
+   "name": "美联储政策利率",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "csi500",
-   "name": "中证500",
+   "id": "rrp",
+   "name": "美联储隔夜逆回购(RRP)",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "fedpath",
-   "name": "美联储政策利率预期(1Y远期)",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "id": "debtceiling",
+   "name": "债务上限博弈风险",
+   "from": "ELEVATED",
+   "to": "EXTREME"
   },
   {
-   "id": "vix",
-   "name": "VIX指数",
+   "id": "tga",
+   "name": "美国财政部TGA账户",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "move",
-   "name": "MOVE利率波动率指数",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "ironore",
-   "name": "铁矿石(大商所主力)",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "gammaproxy",
-   "name": "期权做市商Gamma代理",
+   "id": "reserves",
+   "name": "美国银行准备金",
    "from": "ELEVATED",
    "to": "NORMAL"
+  },
+  {
+   "id": "us3m",
+   "name": "美国3个月国库券收益率",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   }
  ],
  "pathChanges": [],
