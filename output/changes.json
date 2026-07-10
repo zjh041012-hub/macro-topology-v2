@@ -1,40 +1,46 @@
 {
- "since": "2026-07-09T12:33:51+00:00",
- "generatedAt": "2026-07-09T23:56:14+00:00",
+ "since": "2026-07-09T23:56:14+00:00",
+ "generatedAt": "2026-07-10T23:38:29+00:00",
  "nodeChanges": [
-  {
-   "id": "fedfunds",
-   "name": "美联储政策利率",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "rrp",
-   "name": "美联储隔夜逆回购(RRP)",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
   {
    "id": "debtceiling",
    "name": "债务上限博弈风险",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "tga",
-   "name": "美国财政部TGA账户",
-   "from": "ELEVATED",
+   "from": "EXTREME",
    "to": "NORMAL"
   },
   {
-   "id": "reserves",
-   "name": "美国银行准备金",
+   "id": "csi500",
+   "name": "中证500",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "fedpath",
+   "name": "美联储政策利率预期(1Y远期)",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
    "id": "us3m",
    "name": "美国3个月国库券收益率",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "silver",
+   "name": "白银",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "ironore",
+   "name": "铁矿石(大商所主力)",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "rebar",
+   "name": "螺纹钢",
    "from": "NORMAL",
    "to": "ELEVATED"
   }
