@@ -1,58 +1,28 @@
 {
- "since": "2026-07-10T23:38:29+00:00",
- "generatedAt": "2026-07-13T12:30:53+00:00",
+ "since": "2026-07-13T12:30:53+00:00",
+ "generatedAt": "2026-07-13T23:36:02+00:00",
  "nodeChanges": [
   {
-   "id": "csi300",
-   "name": "沪深300",
+   "id": "rrp",
+   "name": "美联储隔夜逆回购(RRP)",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "chinext",
-   "name": "创业板指",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "fedpath",
-   "name": "美联储政策利率预期(1Y远期)",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "gold",
-   "name": "黄金",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "oil",
-   "name": "原油(WTI)",
+   "id": "usdeficit",
+   "name": "美国财政赤字(12M滚动)",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "bankidx",
-   "name": "银行指数",
+   "id": "move",
+   "name": "MOVE利率波动率指数",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "brent",
-   "name": "Brent原油",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "ironore",
-   "name": "铁矿石(大商所主力)",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "goldminers",
-   "name": "黄金矿业股",
+   "id": "us5yreal",
+   "name": "美国5年期实际利率",
    "from": "NORMAL",
    "to": "ELEVATED"
   }
