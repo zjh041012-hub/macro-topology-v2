@@ -1,26 +1,24 @@
 [
  {
-  "id": "p_std_a",
-  "name": "路径A · 美国政策转鹰",
-  "title": "路径A · 美国政策转鹰",
+  "id": "p_std_f",
+  "name": "路径F · 全球再通胀",
+  "title": "路径F · 全球再通胀",
   "nodeIds": [
-   "uscpi",
-   "cutsexp",
-   "us2y",
+   "ismneworder",
+   "oil",
+   "us10ybe",
    "us10y",
-   "us10yreal",
-   "dxy"
+   "bankidx"
   ],
   "edgeIds": [
-   "e_cpi_cuts",
-   "e_cuts_2y",
-   "e_2y_10y",
-   "e_10y_real",
-   "e_real_dxy"
+   "e_ismno_oil",
+   "e_oil_be",
+   "e_be_10y",
+   "e_10y_bank"
   ],
   "status": "INACTIVE",
-  "consistency": 0.0,
-  "note": "实时评估: 0/5 条边动量一致 (uscpi→cutsexp×, cutsexp→us2y×, us2y→us10y×, us10y→us10yreal×, us10yreal→dxy×)。"
+  "consistency": 0.25,
+  "note": "实时评估: 1/4 条边动量一致 (ismneworder→oil×, oil→us10ybe✓, us10ybe→us10y×, us10y→bankidx×)。"
  },
  {
   "id": "p_std_b",
@@ -44,8 +42,31 @@
    "e_real_ndx"
   ],
   "status": "INACTIVE",
+  "consistency": 0.17,
+  "note": "实时评估: 1/6 条边动量一致 (usdeficit→netissue×, netissue→auctiontail×, auctiontail→termprem×, termprem→us10y×, us10y→us10yreal×, us10yreal→ndx✓)。"
+ },
+ {
+  "id": "p_std_a",
+  "name": "路径A · 美国政策转鹰",
+  "title": "路径A · 美国政策转鹰",
+  "nodeIds": [
+   "uscpi",
+   "cutsexp",
+   "us2y",
+   "us10y",
+   "us10yreal",
+   "dxy"
+  ],
+  "edgeIds": [
+   "e_cpi_cuts",
+   "e_cuts_2y",
+   "e_2y_10y",
+   "e_10y_real",
+   "e_real_dxy"
+  ],
+  "status": "INACTIVE",
   "consistency": 0.0,
-  "note": "实时评估: 0/6 条边动量一致 (usdeficit→netissue×, netissue→auctiontail×, auctiontail→termprem×, termprem→us10y×, us10y→us10yreal×, us10yreal→ndx×)。"
+  "note": "实时评估: 0/5 条边动量一致 (uscpi→cutsexp×, cutsexp→us2y×, us2y→us10y×, us10y→us10yreal×, us10yreal→dxy×)。"
  },
  {
   "id": "p_std_c",
@@ -109,27 +130,6 @@
   "note": "实时评估: 0/3 条边动量一致 (liqcrisis→dxy×, dxy→hyspread×, spx→hyspread×)。"
  },
  {
-  "id": "p_std_f",
-  "name": "路径F · 全球再通胀",
-  "title": "路径F · 全球再通胀",
-  "nodeIds": [
-   "ismneworder",
-   "oil",
-   "us10ybe",
-   "us10y",
-   "bankidx"
-  ],
-  "edgeIds": [
-   "e_ismno_oil",
-   "e_oil_be",
-   "e_be_10y",
-   "e_10y_bank"
-  ],
-  "status": "INACTIVE",
-  "consistency": 0.0,
-  "note": "实时评估: 0/4 条边动量一致 (ismneworder→oil×, oil→us10ybe×, us10ybe→us10y×, us10y→bankidx×)。"
- },
- {
   "id": "p_std_g",
   "name": "路径G · 中国地产下行",
   "title": "路径G · 中国地产下行",
@@ -169,37 +169,37 @@
  },
  {
   "id": "p_auto_1",
-  "title": "原油(WTI) → Brent原油",
+  "title": "黄金 → 黄金矿业股",
   "nodeIds": [
-   "oil",
-   "brent"
+   "gold",
+   "goldminers"
   ],
   "edgeIds": [
-   "e_oil_brent"
+   "e_gold_miners"
   ],
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  },
  {
   "id": "p_auto_2",
-  "title": "原油(WTI) → 美国汽油零售价",
+  "title": "黄金 → 白银",
   "nodeIds": [
-   "oil",
-   "gasoline"
+   "gold",
+   "silver"
   ],
   "edgeIds": [
-   "e_oil_gasoline"
+   "e_gold_silver"
   ],
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  },
  {
   "id": "p_auto_3",
-  "title": "再通胀状态 → 原油(WTI)",
+  "title": "铝(沪铝主力) → 南华商品指数",
   "nodeIds": [
-   "reflation",
-   "oil"
+   "aluminum",
+   "comidx"
   ],
   "edgeIds": [
-   "e_refl_oil"
+   "e_alu_comidx"
   ],
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  }

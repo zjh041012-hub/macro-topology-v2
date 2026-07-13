@@ -1,46 +1,58 @@
 {
- "since": "2026-07-09T23:56:14+00:00",
- "generatedAt": "2026-07-10T23:38:29+00:00",
+ "since": "2026-07-10T23:38:29+00:00",
+ "generatedAt": "2026-07-13T12:30:53+00:00",
  "nodeChanges": [
   {
-   "id": "debtceiling",
-   "name": "债务上限博弈风险",
+   "id": "csi300",
+   "name": "沪深300",
    "from": "EXTREME",
-   "to": "NORMAL"
+   "to": "ELEVATED"
   },
   {
-   "id": "csi500",
-   "name": "中证500",
+   "id": "chinext",
+   "name": "创业板指",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
    "id": "fedpath",
    "name": "美联储政策利率预期(1Y远期)",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "us3m",
-   "name": "美国3个月国库券收益率",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "silver",
-   "name": "白银",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "ironore",
-   "name": "铁矿石(大商所主力)",
+   "id": "gold",
+   "name": "黄金",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "oil",
+   "name": "原油(WTI)",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "rebar",
-   "name": "螺纹钢",
+   "id": "bankidx",
+   "name": "银行指数",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "brent",
+   "name": "Brent原油",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "ironore",
+   "name": "铁矿石(大商所主力)",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "goldminers",
+   "name": "黄金矿业股",
    "from": "NORMAL",
    "to": "ELEVATED"
   }
