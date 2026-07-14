@@ -18,9 +18,9 @@
    "e_10y_real",
    "e_real_dxy"
   ],
-  "status": "INACTIVE",
-  "consistency": 0.2,
-  "note": "实时评估: 1/5 条边动量一致 (uscpi→cutsexp×, cutsexp→us2y×, us2y→us10y×, us10y→us10yreal×, us10yreal→dxy✓)。"
+  "status": "PARTIAL",
+  "consistency": 0.4,
+  "note": "实时评估: 2/5 条边动量一致 (uscpi→cutsexp×, cutsexp→us2y✓, us2y→us10y×, us10y→us10yreal×, us10yreal→dxy✓)。"
  },
  {
   "id": "p_std_b",

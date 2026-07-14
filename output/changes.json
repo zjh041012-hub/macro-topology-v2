@@ -1,33 +1,53 @@
 {
- "since": "2026-07-13T12:30:53+00:00",
- "generatedAt": "2026-07-13T23:36:02+00:00",
+ "since": "2026-07-13T23:36:02+00:00",
+ "generatedAt": "2026-07-14T11:18:04+00:00",
  "nodeChanges": [
   {
-   "id": "rrp",
-   "name": "美联储隔夜逆回购(RRP)",
+   "id": "chinext",
+   "name": "创业板指",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "em",
+   "name": "新兴市场股指(MSCI EM)",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "usdeficit",
-   "name": "美国财政赤字(12M滚动)",
+   "id": "goldminers",
+   "name": "黄金矿业股",
    "from": "ELEVATED",
-   "to": "NORMAL"
+   "to": "EXTREME"
   },
   {
    "id": "move",
    "name": "MOVE利率波动率指数",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
    "id": "us5yreal",
    "name": "美国5年期实际利率",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "ironore",
+   "name": "铁矿石(大商所主力)",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "rebar",
+   "name": "螺纹钢",
+   "from": "ELEVATED",
+   "to": "NORMAL"
   }
  ],
- "pathChanges": [],
+ "pathChanges": [
+  "路径A · 美国政策转鹰: INACTIVE → PARTIAL"
+ ],
  "divAdded": [],
  "divRemoved": []
 }
