@@ -1,53 +1,81 @@
 {
- "since": "2026-07-13T23:36:02+00:00",
- "generatedAt": "2026-07-14T11:18:04+00:00",
+ "since": "2026-07-14T11:18:04+00:00",
+ "generatedAt": "2026-07-14T23:34:44+00:00",
  "nodeChanges": [
   {
-   "id": "chinext",
-   "name": "创业板指",
+   "id": "uscpi",
+   "name": "美国CPI(同比)",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "cnusspread",
+   "name": "中美国债10年利差",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "rentcpi",
+   "name": "美国租金通胀(同比)",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "rrp",
+   "name": "美联储隔夜逆回购(RRP)",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
    "id": "em",
    "name": "新兴市场股指(MSCI EM)",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "goldminers",
-   "name": "黄金矿业股",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
+   "id": "goldminers",
+   "name": "黄金矿业股",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "uscorecpi",
+   "name": "美国核心CPI(同比)",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "igspread",
+   "name": "美国投资级信用利差",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
    "id": "move",
    "name": "MOVE利率波动率指数",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "us3m",
+   "name": "美国3个月国库券收益率",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
    "id": "us5yreal",
    "name": "美国5年期实际利率",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
-   "id": "ironore",
-   "name": "铁矿石(大商所主力)",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "rebar",
-   "name": "螺纹钢",
+   "id": "cdxig",
+   "name": "CDX IG",
    "from": "ELEVATED",
    "to": "NORMAL"
   }
  ],
- "pathChanges": [
-  "路径A · 美国政策转鹰: INACTIVE → PARTIAL"
- ],
+ "pathChanges": [],
  "divAdded": [],
  "divRemoved": []
 }

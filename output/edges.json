@@ -105,7 +105,7 @@
   "relation": "negative",
   "mechanism": "实际利率与黄金的传统负相关本期失效:同步上行",
   "strength": 0.8,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_10y_dxy",
@@ -159,7 +159,7 @@
   "relation": "positive",
   "mechanism": "政策路径预期锚定短端",
   "strength": 0.8,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_2y_10y",
@@ -762,7 +762,7 @@
   "relation": "positive",
   "mechanism": "短端政策锚向2Y传导",
   "strength": 0.5,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_2y_5y",
@@ -816,7 +816,7 @@
   "relation": "positive",
   "mechanism": "实际利率曲线联动",
   "strength": 0.5,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_cpi_cuts",
@@ -852,7 +852,7 @@
   "relation": "negative",
   "mechanism": "降息预期回吐推升短端",
   "strength": 0.8,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_cuts_fedpath",
@@ -1707,7 +1707,7 @@
   "relation": "negative",
   "mechanism": "实际利率同样定价白银",
   "strength": 0.4,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_alu_comidx",
