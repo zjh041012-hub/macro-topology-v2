@@ -193,13 +193,13 @@
  },
  {
   "id": "p_auto_3",
-  "title": "铝(沪铝主力) → 南华商品指数",
+  "title": "黄金 → 黄金ETF(518880)",
   "nodeIds": [
-   "aluminum",
-   "comidx"
+   "gold",
+   "goldetf"
   ],
   "edgeIds": [
-   "e_alu_comidx"
+   "e_gold_goldetf"
   ],
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  }

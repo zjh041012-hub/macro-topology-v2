@@ -1932,7 +1932,7 @@
   "relation": "positive",
   "mechanism": "金价驱动ETF净值",
   "strength": 0.5,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_usepu_vix",
