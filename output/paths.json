@@ -18,9 +18,9 @@
    "e_10y_real",
    "e_real_dxy"
   ],
-  "status": "PARTIAL",
-  "consistency": 0.8,
-  "note": "实时评估: 4/5 条边动量一致 (uscpi→cutsexp×, cutsexp→us2y✓, us2y→us10y✓, us10y→us10yreal✓, us10yreal→dxy✓)。"
+  "status": "INACTIVE",
+  "consistency": 0.0,
+  "note": "实时评估: 0/5 条边动量一致 (uscpi→cutsexp×, cutsexp→us2y×, us2y→us10y×, us10y→us10yreal×, us10yreal→dxy×)。"
  },
  {
   "id": "p_std_b",
@@ -44,8 +44,8 @@
    "e_real_ndx"
   ],
   "status": "INACTIVE",
-  "consistency": 0.17,
-  "note": "实时评估: 1/6 条边动量一致 (usdeficit→netissue×, netissue→auctiontail×, auctiontail→termprem×, termprem→us10y×, us10y→us10yreal✓, us10yreal→ndx×)。"
+  "consistency": 0.0,
+  "note": "实时评估: 0/6 条边动量一致 (usdeficit→netissue×, netissue→auctiontail×, auctiontail→termprem×, termprem→us10y×, us10y→us10yreal×, us10yreal→ndx×)。"
  },
  {
   "id": "p_std_c",
@@ -169,39 +169,37 @@
  },
  {
   "id": "p_auto_1",
-  "title": "美国10年期实际利率 → 黄金 → 黄金矿业股",
+  "title": "黄金 → 黄金矿业股",
   "nodeIds": [
-   "us10yreal",
    "gold",
    "goldminers"
   ],
   "edgeIds": [
-   "e_real_gold",
    "e_gold_miners"
   ],
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  },
  {
   "id": "p_auto_2",
-  "title": "美联储政策利率预期(1Y远期) → 美国2年期国债收益率",
+  "title": "黄金 → 白银",
   "nodeIds": [
-   "fedpath",
-   "us2y"
+   "gold",
+   "silver"
   ],
   "edgeIds": [
-   "e_fed_2y"
+   "e_gold_silver"
   ],
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  },
  {
   "id": "p_auto_3",
-  "title": "市场隐含未来12个月降息次数 → 美国2年期国债收益率",
+  "title": "铝(沪铝主力) → 南华商品指数",
   "nodeIds": [
-   "cutsexp",
-   "us2y"
+   "aluminum",
+   "comidx"
   ],
   "edgeIds": [
-   "e_cuts_2y"
+   "e_alu_comidx"
   ],
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  }

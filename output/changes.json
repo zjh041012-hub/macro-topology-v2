@@ -1,81 +1,71 @@
 {
- "since": "2026-07-14T11:18:04+00:00",
- "generatedAt": "2026-07-14T23:34:44+00:00",
+ "since": "2026-07-14T23:34:44+00:00",
+ "generatedAt": "2026-07-15T11:19:41+00:00",
  "nodeChanges": [
   {
-   "id": "uscpi",
-   "name": "美国CPI(同比)",
+   "id": "fai",
+   "name": "固定资产投资(累计同比)",
+   "from": "NORMAL",
+   "to": "EXTREME"
+  },
+  {
+   "id": "retail",
+   "name": "社会消费品零售总额(同比)",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "chinext",
+   "name": "创业板指",
    "from": "EXTREME",
    "to": "ELEVATED"
-  },
-  {
-   "id": "cnusspread",
-   "name": "中美国债10年利差",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "rentcpi",
-   "name": "美国租金通胀(同比)",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "rrp",
-   "name": "美联储隔夜逆回购(RRP)",
-   "from": "ELEVATED",
-   "to": "EXTREME"
   },
   {
    "id": "em",
    "name": "新兴市场股指(MSCI EM)",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "goldminers",
-   "name": "黄金矿业股",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "uscorecpi",
-   "name": "美国核心CPI(同比)",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "igspread",
-   "name": "美国投资级信用利差",
+   "id": "fedpath",
+   "name": "美联储政策利率预期(1Y远期)",
    "from": "ELEVATED",
    "to": "NORMAL"
+  },
+  {
+   "id": "m2",
+   "name": "中国M2(同比)",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
    "id": "move",
    "name": "MOVE利率波动率指数",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
    "id": "us3m",
    "name": "美国3个月国库券收益率",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "NORMAL"
   },
   {
    "id": "us5yreal",
    "name": "美国5年期实际利率",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "NORMAL"
   },
   {
-   "id": "cdxig",
-   "name": "CDX IG",
+   "id": "aluminum",
+   "name": "铝(沪铝主力)",
    "from": "ELEVATED",
    "to": "NORMAL"
   }
  ],
- "pathChanges": [],
+ "pathChanges": [
+  "路径A · 美国政策转鹰: PARTIAL → INACTIVE"
+ ],
  "divAdded": [],
  "divRemoved": []
 }
