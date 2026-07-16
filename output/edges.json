@@ -591,7 +591,7 @@
   "relation": "negative",
   "mechanism": "缩表边际收紧金融条件",
   "strength": 0.45,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_rrp_fci",
@@ -1005,7 +1005,7 @@
   "relation": "positive",
   "mechanism": "央行资产端决定准备金总量",
   "strength": 0.6,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_reserves_fci",
@@ -1014,7 +1014,7 @@
   "relation": "negative",
   "mechanism": "准备金充裕压低融资条件",
   "strength": 0.6,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_mmf_rrp",
@@ -1824,7 +1824,7 @@
   "relation": "positive",
   "mechanism": "杠杆资金放大A股动量",
   "strength": 0.4,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_10y_tlt",
@@ -1851,7 +1851,7 @@
   "relation": "positive",
   "mechanism": "半导体领跌拖累纳指",
   "strength": 0.7,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_sox_chipetf",
@@ -1896,7 +1896,7 @@
   "relation": "positive",
   "mechanism": "A股大小盘联动",
   "strength": 0.4,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_chinext_csi",
@@ -1905,7 +1905,7 @@
   "relation": "positive",
   "mechanism": "成长与大盘联动",
   "strength": 0.4,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_hstech_hsi",

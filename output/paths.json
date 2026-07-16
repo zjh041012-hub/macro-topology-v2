@@ -1,5 +1,26 @@
 [
  {
+  "id": "p_std_d",
+  "name": "路径D · 全球流动性改善 (方向不明)",
+  "title": "路径D · 全球流动性改善 (方向不明)",
+  "nodeIds": [
+   "fedbs",
+   "reserves",
+   "usfci",
+   "hyspread",
+   "spx"
+  ],
+  "edgeIds": [
+   "e_fedbs_reserves",
+   "e_reserves_fci",
+   "e_fci_hy2",
+   "e_spx_hy"
+  ],
+  "status": "PARTIAL",
+  "consistency": 0.5,
+  "note": "实时评估: 2/4 条边动量一致 (fedbs→reserves✓, reserves→usfci✓, usfci→hyspread×, spx→hyspread×)。"
+ },
+ {
   "id": "p_std_a",
   "name": "路径A · 美国政策转鹰",
   "title": "路径A · 美国政策转鹰",
@@ -67,27 +88,6 @@
   "status": "INACTIVE",
   "consistency": 0.0,
   "note": "实时评估: 0/4 条边动量一致 (tsf→creditimpulse×, creditimpulse→cnpminew×, cnpminew→inddemand×, inddemand→copper×)。"
- },
- {
-  "id": "p_std_d",
-  "name": "路径D · 全球流动性改善",
-  "title": "路径D · 全球流动性改善",
-  "nodeIds": [
-   "fedbs",
-   "reserves",
-   "usfci",
-   "hyspread",
-   "spx"
-  ],
-  "edgeIds": [
-   "e_fedbs_reserves",
-   "e_reserves_fci",
-   "e_fci_hy2",
-   "e_spx_hy"
-  ],
-  "status": "INACTIVE",
-  "consistency": 0.0,
-  "note": "实时评估: 0/4 条边动量一致 (fedbs→reserves×, reserves→usfci×, usfci→hyspread×, spx→hyspread×)。"
  },
  {
   "id": "p_std_e",
@@ -193,15 +193,13 @@
  },
  {
   "id": "p_auto_3",
-  "title": "融资余额(A股) → 沪深300 → 中证500",
+  "title": "美国半导体指数(SOX) → 纳斯达克100",
   "nodeIds": [
-   "margindebt",
-   "csi300",
-   "csi500"
+   "sox",
+   "ndx"
   ],
   "edgeIds": [
-   "e_margin_csi",
-   "e_csi_csi500"
+   "e_sox_ndx"
   ],
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  }
