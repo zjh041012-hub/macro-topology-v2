@@ -3,6 +3,8 @@
   "stale": [
    "chipetf",
    "cn1y",
+   "dividendetf",
+   "goldetf",
    "gscpi",
    "shibor3m",
    "tsf",
@@ -52,7 +54,7 @@
    "cta",
    "gammaproxy"
   ],
-  "liveCount": 137,
+  "liveCount": 135,
   "totalCount": 178,
   "sourceErrors": {
    "fred": "usclaims → ValueError: empty series after transform (insufficient history?)",
@@ -62,13 +64,13 @@
   }
  },
  "topMover": {
-  "nodeId": "gold",
-  "text": "黄金 -0.2%/5D · 76分位"
+  "nodeId": "sox",
+  "text": "美国半导体指数(SOX) -4.3%/5D · 96分位"
  },
  "dominantPathId": "p_std_a",
  "divergenceCount": 0,
  "highRiskCount": 9,
  "regime": "EXTREME",
  "regimeNote": "自动识别: 0条背离, 9个高风险节点。",
- "updatedAt": "2026-07-15T23:37:56+00:00"
+ "updatedAt": "2026-07-16T11:28:16+00:00"
 }

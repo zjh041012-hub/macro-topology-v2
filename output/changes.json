@@ -1,54 +1,30 @@
 {
- "since": "2026-07-15T11:19:41+00:00",
- "generatedAt": "2026-07-15T23:37:56+00:00",
+ "since": "2026-07-15T23:37:56+00:00",
+ "generatedAt": "2026-07-16T11:28:16+00:00",
  "nodeChanges": [
   {
-   "id": "usfci",
-   "name": "美国金融条件指数",
-   "from": "NORMAL",
-   "to": "EXTREME"
-  },
-  {
-   "id": "fedfunds",
-   "name": "美联储政策利率",
+   "id": "cnbond",
+   "name": "中国10年期国债期货",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "cnusspread",
-   "name": "中美国债10年利差",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "sofr",
-   "name": "SOFR",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "em",
-   "name": "新兴市场股指(MSCI EM)",
+   "id": "pbocbs",
+   "name": "中国央行资产负债表",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "dividendetf",
-   "name": "红利ETF",
-   "from": "NORMAL",
+   "id": "margindebt",
+   "name": "融资余额(A股)",
+   "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "gbpusd",
-   "name": "英镑兑美元",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "goldetf",
-   "name": "黄金ETF(518880)",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "id": "comidx",
+   "name": "南华商品指数",
+   "from": "ELEVATED",
+   "to": "NORMAL"
   }
  ],
  "pathChanges": [],
