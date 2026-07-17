@@ -169,18 +169,6 @@
  },
  {
   "id": "p_auto_1",
-  "title": "芯片ETF → 纳斯达克100",
-  "nodeIds": [
-   "chipetf",
-   "ndx"
-  ],
-  "edgeIds": [
-   "e_chip_ndx"
-  ],
-  "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
- },
- {
-  "id": "p_auto_2",
   "title": "黄金 → 黄金矿业股",
   "nodeIds": [
    "gold",
@@ -192,7 +180,7 @@
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  },
  {
-  "id": "p_auto_3",
+  "id": "p_auto_2",
   "title": "黄金 → 白银",
   "nodeIds": [
    "gold",
@@ -200,6 +188,18 @@
   ],
   "edgeIds": [
    "e_gold_silver"
+  ],
+  "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
+ },
+ {
+  "id": "p_auto_3",
+  "title": "美国半导体指数(SOX) → 纳斯达克100",
+  "nodeIds": [
+   "sox",
+   "ndx"
+  ],
+  "edgeIds": [
+   "e_sox_ndx"
   ],
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  }

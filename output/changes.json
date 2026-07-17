@@ -1,28 +1,22 @@
 {
- "since": "2026-07-16T23:34:44+00:00",
- "generatedAt": "2026-07-17T11:17:48+00:00",
+ "since": "2026-07-17T11:17:48+00:00",
+ "generatedAt": "2026-07-17T23:34:25+00:00",
  "nodeChanges": [
   {
-   "id": "cnbond",
-   "name": "中国10年期国债期货",
-   "from": "ELEVATED",
-   "to": "EXTREME"
+   "id": "bdi",
+   "name": "波罗的海干散货指数",
+   "from": "EXTREME",
+   "to": "ELEVATED"
   },
   {
-   "id": "csi500",
-   "name": "中证500",
+   "id": "us10ybe",
+   "name": "美国10年期盈亏平衡通胀",
    "from": "ELEVATED",
-   "to": "EXTREME"
+   "to": "NORMAL"
   },
   {
-   "id": "chinext",
-   "name": "创业板指",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "comidx",
-   "name": "南华商品指数",
+   "id": "brent",
+   "name": "Brent原油",
    "from": "NORMAL",
    "to": "ELEVATED"
   }
