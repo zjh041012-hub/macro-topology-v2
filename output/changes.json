@@ -1,47 +1,33 @@
 {
- "since": "2026-07-16T11:28:16+00:00",
- "generatedAt": "2026-07-16T23:34:44+00:00",
+ "since": "2026-07-16T23:34:44+00:00",
+ "generatedAt": "2026-07-17T11:17:48+00:00",
  "nodeChanges": [
   {
-   "id": "fiscalsupply",
-   "name": "美债财政供给压力",
-   "from": "NORMAL",
+   "id": "cnbond",
+   "name": "中国10年期国债期货",
+   "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "usretail",
-   "name": "美国零售销售(环比)",
-   "from": "EXTREME",
-   "to": "NORMAL"
+   "id": "csi500",
+   "name": "中证500",
+   "from": "ELEVATED",
+   "to": "EXTREME"
   },
   {
-   "id": "ndx",
-   "name": "纳斯达克100",
-   "from": "EXTREME",
-   "to": "ELEVATED"
+   "id": "chinext",
+   "name": "创业板指",
+   "from": "ELEVATED",
+   "to": "EXTREME"
   },
   {
-   "id": "bund10y",
-   "name": "德国10年期国债收益率",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "us10ybe",
-   "name": "美国10年期盈亏平衡通胀",
+   "id": "comidx",
+   "name": "南华商品指数",
    "from": "NORMAL",
    "to": "ELEVATED"
-  },
-  {
-   "id": "gbpusd",
-   "name": "英镑兑美元",
-   "from": "ELEVATED",
-   "to": "NORMAL"
   }
  ],
- "pathChanges": [
-  "路径D · 全球流动性改善 (方向不明): INACTIVE → PARTIAL"
- ],
+ "pathChanges": [],
  "divAdded": [],
  "divRemoved": []
 }
