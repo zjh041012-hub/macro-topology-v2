@@ -1,54 +1,48 @@
 {
- "since": "2026-07-17T23:34:25+00:00",
- "generatedAt": "2026-07-20T12:12:22+00:00",
+ "since": "2026-07-20T12:12:22+00:00",
+ "generatedAt": "2026-07-20T23:40:24+00:00",
  "nodeChanges": [
   {
-   "id": "usfci",
-   "name": "美国金融条件指数",
-   "from": "EXTREME",
-   "to": "ELEVATED"
+   "id": "csi300",
+   "name": "沪深300",
+   "from": "ELEVATED",
+   "to": "EXTREME"
   },
   {
-   "id": "cnbond",
-   "name": "中国10年期国债期货",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "margindebt",
-   "name": "融资余额(A股)",
+   "id": "sofr",
+   "name": "SOFR",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
    "id": "gold",
    "name": "黄金",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "goldetfflow",
+   "name": "黄金ETF持仓变化(SPDR·4周)",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "move",
+   "name": "MOVE利率波动率指数",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
    "id": "brent",
    "name": "Brent原油",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
    "id": "debtceiling",
    "name": "债务上限博弈风险",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "dr001",
-   "name": "DR001",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "aluminum",
-   "name": "铝(沪铝主力)",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "NORMAL"
   }
  ],
  "pathChanges": [],
