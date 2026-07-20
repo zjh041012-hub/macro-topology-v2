@@ -1,22 +1,52 @@
 {
- "since": "2026-07-17T11:17:48+00:00",
- "generatedAt": "2026-07-17T23:34:25+00:00",
+ "since": "2026-07-17T23:34:25+00:00",
+ "generatedAt": "2026-07-20T12:12:22+00:00",
  "nodeChanges": [
   {
-   "id": "bdi",
-   "name": "波罗的海干散货指数",
+   "id": "usfci",
+   "name": "美国金融条件指数",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "us10ybe",
-   "name": "美国10年期盈亏平衡通胀",
+   "id": "cnbond",
+   "name": "中国10年期国债期货",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "margindebt",
+   "name": "融资余额(A股)",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "gold",
+   "name": "黄金",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
    "id": "brent",
    "name": "Brent原油",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "debtceiling",
+   "name": "债务上限博弈风险",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "dr001",
+   "name": "DR001",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "aluminum",
+   "name": "铝(沪铝主力)",
    "from": "NORMAL",
    "to": "ELEVATED"
   }

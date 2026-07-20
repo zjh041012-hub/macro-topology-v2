@@ -4,10 +4,8 @@
    "chipetf",
    "cn1y",
    "dividendetf",
-   "fiscalsupply",
    "goldetf",
    "gscpi",
-   "netissue",
    "shibor3m",
    "tsf",
    "usclaims",
@@ -56,24 +54,23 @@
    "cta",
    "gammaproxy"
   ],
-  "liveCount": 133,
+  "liveCount": 135,
   "totalCount": 178,
   "sourceErrors": {
    "fred": "usclaims → ValueError: empty series after transform (insufficient history?)",
    "tushare": "tsf → ValueError: tushare: 抱歉，您没有接口(sf_month)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。",
    "akshare:fund_etf_hist_em": "chipetf → ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-   "treasury": "fiscalsupply → ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
    "csv_url": "gscpi → ValueError: Excel file format cannot be determined, you must specify an engine manually."
   }
  },
  "topMover": {
   "nodeId": "sox",
-  "text": "美国半导体指数(SOX) -10.0%/5D · 94分位"
+  "text": "美国半导体指数(SOX) -5.5%/5D · 94分位"
  },
  "dominantPathId": "p_std_d",
  "divergenceCount": 0,
- "highRiskCount": 9,
+ "highRiskCount": 8,
  "regime": "EXTREME",
- "regimeNote": "自动识别: 0条背离, 9个高风险节点。",
- "updatedAt": "2026-07-17T23:34:25+00:00"
+ "regimeNote": "自动识别: 0条背离, 8个高风险节点。",
+ "updatedAt": "2026-07-20T12:12:22+00:00"
 }
