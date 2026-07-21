@@ -1,46 +1,88 @@
 {
- "since": "2026-07-20T12:12:22+00:00",
- "generatedAt": "2026-07-20T23:40:24+00:00",
+ "since": "2026-07-20T23:40:24+00:00",
+ "generatedAt": "2026-07-21T11:33:48+00:00",
  "nodeChanges": [
   {
    "id": "csi300",
    "name": "沪深300",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "sox",
+   "name": "美国半导体指数(SOX)",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "cnbond",
+   "name": "中国10年期国债期货",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "sofr",
-   "name": "SOFR",
-   "from": "ELEVATED",
-   "to": "EXTREME"
+   "id": "csi500",
+   "name": "中证500",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "chinext",
+   "name": "创业板指",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "em",
+   "name": "新兴市场股指(MSCI EM)",
+   "from": "EXTREME",
+   "to": "ELEVATED"
   },
   {
    "id": "gold",
    "name": "黄金",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "goldetfflow",
-   "name": "黄金ETF持仓变化(SPDR·4周)",
    "from": "ELEVATED",
    "to": "NORMAL"
+  },
+  {
+   "id": "oil",
+   "name": "原油(WTI)",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
    "id": "move",
    "name": "MOVE利率波动率指数",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "brent",
-   "name": "Brent原油",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
+   "id": "comidx",
+   "name": "南华商品指数",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "silver",
+   "name": "白银",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
    "id": "debtceiling",
    "name": "债务上限博弈风险",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "dr001",
+   "name": "DR001",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "aluminum",
+   "name": "铝(沪铝主力)",
    "from": "ELEVATED",
    "to": "NORMAL"
   }

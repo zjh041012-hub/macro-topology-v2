@@ -699,7 +699,7 @@
   "relation": "positive",
   "mechanism": "矿业股放大金价弹性",
   "strength": 0.7,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_com_crb",
@@ -708,7 +708,7 @@
   "relation": "positive",
   "mechanism": "商品指数联动",
   "strength": 0.5,
-  "status": "DIVERGENCE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_geo_oil",
@@ -1644,7 +1644,7 @@
   "relation": "positive",
   "mechanism": "两油联动",
   "strength": 0.9,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_opec_oil",
@@ -1698,7 +1698,7 @@
   "relation": "positive",
   "mechanism": "贵金属联动, 白银弹性更高",
   "strength": 0.7,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_real_silver",
@@ -1716,7 +1716,7 @@
   "relation": "positive",
   "mechanism": "有色构成商品指数权重",
   "strength": 0.3,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_lmeinv_copper",
@@ -1761,7 +1761,7 @@
   "relation": "positive",
   "mechanism": "ETF流入是金价的资金面确认",
   "strength": 0.8,
-  "status": "DIVERGENCE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_cftcgold_gold",
@@ -1824,7 +1824,7 @@
   "relation": "positive",
   "mechanism": "杠杆资金放大A股动量",
   "strength": 0.4,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_10y_tlt",
@@ -1851,7 +1851,7 @@
   "relation": "positive",
   "mechanism": "半导体领跌拖累纳指",
   "strength": 0.7,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_sox_chipetf",
@@ -1896,7 +1896,7 @@
   "relation": "positive",
   "mechanism": "A股大小盘联动",
   "strength": 0.4,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_chinext_csi",
@@ -1905,7 +1905,7 @@
   "relation": "positive",
   "mechanism": "成长与大盘联动",
   "strength": 0.4,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_hstech_hsi",

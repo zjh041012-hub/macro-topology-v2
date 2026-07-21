@@ -64,13 +64,13 @@
   }
  },
  "topMover": {
-  "nodeId": "sox",
-  "text": "美国半导体指数(SOX) -4.9%/5D · 94分位"
+  "nodeId": "fiscalsupply",
+  "text": "美债财政供给压力 -177.0%/5D · 1分位"
  },
  "dominantPathId": "p_std_d",
  "divergenceCount": 0,
- "highRiskCount": 9,
- "regime": "EXTREME",
- "regimeNote": "自动识别: 0条背离, 9个高风险节点。",
- "updatedAt": "2026-07-20T23:40:24+00:00"
+ "highRiskCount": 7,
+ "regime": "ELEVATED",
+ "regimeNote": "自动识别: 0条背离, 7个高风险节点。",
+ "updatedAt": "2026-07-21T11:33:48+00:00"
 }
