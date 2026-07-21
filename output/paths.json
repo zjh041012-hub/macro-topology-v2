@@ -21,6 +21,27 @@
   "note": "实时评估: 2/4 条边动量一致 (fedbs→reserves✓, reserves→usfci✓, usfci→hyspread×, spx→hyspread×)。"
  },
  {
+  "id": "p_std_c",
+  "name": "路径C · 中国信用扩张",
+  "title": "路径C · 中国信用扩张",
+  "nodeIds": [
+   "tsf",
+   "creditimpulse",
+   "cnpminew",
+   "inddemand",
+   "copper"
+  ],
+  "edgeIds": [
+   "e_tsf_impulse",
+   "e_impulse_pminew",
+   "e_neworder_dem",
+   "e_dem_copper"
+  ],
+  "status": "INACTIVE",
+  "consistency": 0.25,
+  "note": "实时评估: 1/4 条边动量一致 (tsf→creditimpulse×, creditimpulse→cnpminew×, cnpminew→inddemand×, inddemand→copper✓)。"
+ },
+ {
   "id": "p_std_a",
   "name": "路径A · 美国政策转鹰",
   "title": "路径A · 美国政策转鹰",
@@ -67,27 +88,6 @@
   "status": "INACTIVE",
   "consistency": 0.0,
   "note": "实时评估: 0/6 条边动量一致 (usdeficit→netissue×, netissue→auctiontail×, auctiontail→termprem×, termprem→us10y×, us10y→us10yreal×, us10yreal→ndx×)。"
- },
- {
-  "id": "p_std_c",
-  "name": "路径C · 中国信用扩张",
-  "title": "路径C · 中国信用扩张",
-  "nodeIds": [
-   "tsf",
-   "creditimpulse",
-   "cnpminew",
-   "inddemand",
-   "copper"
-  ],
-  "edgeIds": [
-   "e_tsf_impulse",
-   "e_impulse_pminew",
-   "e_neworder_dem",
-   "e_dem_copper"
-  ],
-  "status": "INACTIVE",
-  "consistency": 0.0,
-  "note": "实时评估: 0/4 条边动量一致 (tsf→creditimpulse×, creditimpulse→cnpminew×, cnpminew→inddemand×, inddemand→copper×)。"
  },
  {
   "id": "p_std_e",
@@ -195,13 +195,13 @@
  },
  {
   "id": "p_auto_3",
-  "title": "美联储资产负债表 → 美国金融条件指数",
+  "title": "再通胀状态 → 原油(WTI)",
   "nodeIds": [
-   "fedbs",
-   "usfci"
+   "reflation",
+   "oil"
   ],
   "edgeIds": [
-   "e_fedbs_fci"
+   "e_refl_oil"
   ],
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  }
