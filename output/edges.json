@@ -6,7 +6,7 @@
   "relation": "positive",
   "mechanism": "国债净供给放量推升期限溢价",
   "strength": 0.9,
-  "status": "INACTIVE"
+  "status": "DIVERGENCE"
  },
  {
   "id": "e_worry_tp",
@@ -339,7 +339,7 @@
   "relation": "positive",
   "mechanism": "需求改善推升铜价",
   "strength": 0.7,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_copper_com",
@@ -492,7 +492,7 @@
   "relation": "positive",
   "mechanism": "中国资产联动",
   "strength": 0.5,
-  "status": "DIVERGENCE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_nb_csi",
@@ -798,7 +798,7 @@
   "relation": "positive",
   "mechanism": "超长端联动",
   "strength": 0.5,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_5y_5yreal",
@@ -960,7 +960,7 @@
   "relation": "negative",
   "mechanism": "投标倍数下降推升期限溢价",
   "strength": 0.7,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_deficit_worry",

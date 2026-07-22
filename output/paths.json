@@ -21,6 +21,27 @@
   "note": "实时评估: 2/4 条边动量一致 (fedbs→reserves✓, reserves→usfci✓, usfci→hyspread×, spx→hyspread×)。"
  },
  {
+  "id": "p_std_f",
+  "name": "路径F · 全球再通胀",
+  "title": "路径F · 全球再通胀",
+  "nodeIds": [
+   "ismneworder",
+   "oil",
+   "us10ybe",
+   "us10y",
+   "bankidx"
+  ],
+  "edgeIds": [
+   "e_ismno_oil",
+   "e_oil_be",
+   "e_be_10y",
+   "e_10y_bank"
+  ],
+  "status": "PARTIAL",
+  "consistency": 0.5,
+  "note": "实时评估: 2/4 条边动量一致 (ismneworder→oil×, oil→us10ybe✓, us10ybe→us10y✓, us10y→bankidx×)。"
+ },
+ {
   "id": "p_std_c",
   "name": "路径C · 中国信用扩张",
   "title": "路径C · 中国信用扩张",
@@ -40,6 +61,31 @@
   "status": "INACTIVE",
   "consistency": 0.25,
   "note": "实时评估: 1/4 条边动量一致 (tsf→creditimpulse×, creditimpulse→cnpminew×, cnpminew→inddemand×, inddemand→copper✓)。"
+ },
+ {
+  "id": "p_std_b",
+  "name": "路径B · 财政供给与期限溢价",
+  "title": "路径B · 财政供给与期限溢价",
+  "nodeIds": [
+   "usdeficit",
+   "netissue",
+   "auctiontail",
+   "termprem",
+   "us10y",
+   "us10yreal",
+   "ndx"
+  ],
+  "edgeIds": [
+   "e_deficit_netissue",
+   "e_netissue_tail",
+   "e_tail_tp",
+   "e_tp_10y",
+   "e_10y_real",
+   "e_real_ndx"
+  ],
+  "status": "INACTIVE",
+  "consistency": 0.17,
+  "note": "实时评估: 1/6 条边动量一致 (usdeficit→netissue×, netissue→auctiontail×, auctiontail→termprem×, termprem→us10y✓, us10y→us10yreal×, us10yreal→ndx×)。"
  },
  {
   "id": "p_std_a",
@@ -65,31 +111,6 @@
   "note": "实时评估: 0/5 条边动量一致 (uscpi→cutsexp×, cutsexp→us2y×, us2y→us10y×, us10y→us10yreal×, us10yreal→dxy×)。"
  },
  {
-  "id": "p_std_b",
-  "name": "路径B · 财政供给与期限溢价",
-  "title": "路径B · 财政供给与期限溢价",
-  "nodeIds": [
-   "usdeficit",
-   "netissue",
-   "auctiontail",
-   "termprem",
-   "us10y",
-   "us10yreal",
-   "ndx"
-  ],
-  "edgeIds": [
-   "e_deficit_netissue",
-   "e_netissue_tail",
-   "e_tail_tp",
-   "e_tp_10y",
-   "e_10y_real",
-   "e_real_ndx"
-  ],
-  "status": "INACTIVE",
-  "consistency": 0.0,
-  "note": "实时评估: 0/6 条边动量一致 (usdeficit→netissue×, netissue→auctiontail×, auctiontail→termprem×, termprem→us10y×, us10y→us10yreal×, us10yreal→ndx×)。"
- },
- {
   "id": "p_std_e",
   "name": "路径E · 流动性冲击",
   "title": "路径E · 流动性冲击",
@@ -107,27 +128,6 @@
   "status": "INACTIVE",
   "consistency": 0.0,
   "note": "实时评估: 0/3 条边动量一致 (liqcrisis→dxy×, dxy→hyspread×, spx→hyspread×)。"
- },
- {
-  "id": "p_std_f",
-  "name": "路径F · 全球再通胀",
-  "title": "路径F · 全球再通胀",
-  "nodeIds": [
-   "ismneworder",
-   "oil",
-   "us10ybe",
-   "us10y",
-   "bankidx"
-  ],
-  "edgeIds": [
-   "e_ismno_oil",
-   "e_oil_be",
-   "e_be_10y",
-   "e_10y_bank"
-  ],
-  "status": "INACTIVE",
-  "consistency": 0.0,
-  "note": "实时评估: 0/4 条边动量一致 (ismneworder→oil×, oil→us10ybe×, us10ybe→us10y×, us10y→bankidx×)。"
  },
  {
   "id": "p_std_g",
@@ -181,27 +181,25 @@
  },
  {
   "id": "p_auto_2",
-  "title": "美联储资产负债表 → 美国银行准备金 → 美国金融条件指数",
+  "title": "工业品需求(合成指标) → 铜(LME)",
   "nodeIds": [
-   "fedbs",
-   "reserves",
-   "usfci"
+   "inddemand",
+   "copper"
   ],
   "edgeIds": [
-   "e_fedbs_reserves",
-   "e_reserves_fci"
+   "e_dem_copper"
   ],
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  },
  {
   "id": "p_auto_3",
-  "title": "再通胀状态 → 原油(WTI)",
+  "title": "美国国债投标倍数 → 美债10Y期限溢价",
   "nodeIds": [
-   "reflation",
-   "oil"
+   "bidcover",
+   "termprem"
   ],
   "edgeIds": [
-   "e_refl_oil"
+   "e_bidcover_tp"
   ],
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  }
