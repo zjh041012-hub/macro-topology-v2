@@ -1,57 +1,77 @@
 {
- "since": "2026-07-22T11:35:19+00:00",
- "generatedAt": "2026-07-22T23:38:21+00:00",
+ "since": "2026-07-22T23:38:21+00:00",
+ "generatedAt": "2026-07-23T11:39:14+00:00",
  "nodeChanges": [
   {
-   "id": "us10y",
-   "name": "美国10年期国债收益率",
+   "id": "csi500",
+   "name": "中证500",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "ndx",
-   "name": "纳斯达克100",
+   "id": "chinext",
+   "name": "创业板指",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "cn5y",
+   "name": "中国5年期国债收益率",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "usfci",
-   "name": "美国金融条件指数",
+   "id": "dr007",
+   "name": "DR007",
    "from": "ELEVATED",
-   "to": "EXTREME"
+   "to": "NORMAL"
   },
   {
-   "id": "brent",
-   "name": "Brent原油",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "utilities",
-   "name": "美国公用事业指数",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "bidcover",
-   "name": "美国国债投标倍数",
+   "id": "inddemand",
+   "name": "工业品需求(合成指标)",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
    "id": "move",
    "name": "MOVE利率波动率指数",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "us5yreal",
+   "name": "美国5年期实际利率",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "ironore",
+   "name": "铁矿石(大商所主力)",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
    "id": "tlt",
    "name": "美国长期国债指数(TLT)",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "hsi",
+   "name": "恒生指数",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "aluminum",
+   "name": "铝(沪铝主力)",
    "from": "NORMAL",
    "to": "ELEVATED"
   }
  ],
- "pathChanges": [],
+ "pathChanges": [
+  "路径A · 美国政策转鹰: INACTIVE → PARTIAL"
+ ],
  "divAdded": [],
  "divRemoved": []
 }
