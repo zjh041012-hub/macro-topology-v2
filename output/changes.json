@@ -1,76 +1,64 @@
 {
- "since": "2026-07-22T23:38:21+00:00",
- "generatedAt": "2026-07-23T11:39:14+00:00",
+ "since": "2026-07-23T11:39:14+00:00",
+ "generatedAt": "2026-07-23T23:38:25+00:00",
  "nodeChanges": [
   {
-   "id": "csi500",
-   "name": "中证500",
+   "id": "fiscalsupply",
+   "name": "美债财政供给压力",
+   "from": "EXTREME",
+   "to": "NORMAL"
+  },
+  {
+   "id": "csi300",
+   "name": "沪深300",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "chinext",
-   "name": "创业板指",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "cn5y",
-   "name": "中国5年期国债收益率",
+   "id": "sofr",
+   "name": "SOFR",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "dr007",
-   "name": "DR007",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "id": "rrp",
+   "name": "美联储隔夜逆回购(RRP)",
+   "from": "EXTREME",
+   "to": "ELEVATED"
   },
   {
-   "id": "inddemand",
-   "name": "工业品需求(合成指标)",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "move",
-   "name": "MOVE利率波动率指数",
+   "id": "termprem",
+   "name": "美债10Y期限溢价",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "us5yreal",
-   "name": "美国5年期实际利率",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "ironore",
-   "name": "铁矿石(大商所主力)",
+   "id": "reserves",
+   "name": "美国银行准备金",
    "from": "ELEVATED",
    "to": "NORMAL"
+  },
+  {
+   "id": "us5y",
+   "name": "美国5年期国债收益率",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
    "id": "tlt",
    "name": "美国长期国债指数(TLT)",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
    "id": "hsi",
    "name": "恒生指数",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "aluminum",
-   "name": "铝(沪铝主力)",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "NORMAL"
   }
  ],
  "pathChanges": [
-  "路径A · 美国政策转鹰: INACTIVE → PARTIAL"
+  "路径B · 财政供给与期限溢价 (方向不明): INACTIVE → PARTIAL"
  ],
  "divAdded": [],
  "divRemoved": []

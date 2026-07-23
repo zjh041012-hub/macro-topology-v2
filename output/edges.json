@@ -6,7 +6,7 @@
   "relation": "positive",
   "mechanism": "国债净供给放量推升期限溢价",
   "strength": 0.9,
-  "status": "DIVERGENCE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_worry_tp",
@@ -24,7 +24,7 @@
   "relation": "positive",
   "mechanism": "期限溢价走阔直接抬升长端名义利率",
   "strength": 0.9,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_10y_real",
@@ -33,7 +33,7 @@
   "relation": "positive",
   "mechanism": "名义上行+盈亏平衡持稳 → 实际利率上行",
   "strength": 0.85,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_real_ndx",
@@ -42,7 +42,7 @@
   "relation": "negative",
   "mechanism": "实际利率上行压制长久期成长估值",
   "strength": 0.85,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_real_growth",
@@ -60,7 +60,7 @@
   "relation": "positive",
   "mechanism": "利率波动率上行抬升期限溢价补偿",
   "strength": 0.6,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_supply_worry",
@@ -96,7 +96,7 @@
   "relation": "positive",
   "mechanism": "利率上行+曲线陡峭化改善银行息差",
   "strength": 0.6,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_real_gold",
@@ -159,7 +159,7 @@
   "relation": "positive",
   "mechanism": "政策路径预期锚定短端",
   "strength": 0.8,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_2y_10y",
@@ -168,7 +168,7 @@
   "relation": "positive",
   "mechanism": "短端预期沿曲线传导",
   "strength": 0.5,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_be_10y",
@@ -195,7 +195,7 @@
   "relation": "positive",
   "mechanism": "长端联动,超长端对供给更敏感",
   "strength": 0.7,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_10y_curve",
@@ -771,7 +771,7 @@
   "relation": "positive",
   "mechanism": "曲线中段联动",
   "strength": 0.6,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_5y_10y",
@@ -780,7 +780,7 @@
   "relation": "positive",
   "mechanism": "中长端联动",
   "strength": 0.6,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_10y_20y",
@@ -789,7 +789,7 @@
   "relation": "positive",
   "mechanism": "长端联动, 20Y流动性最差弹性最大",
   "strength": 0.5,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_20y_30y",
@@ -807,7 +807,7 @@
   "relation": "positive",
   "mechanism": "名义分解到中段实际利率",
   "strength": 0.4,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_5yreal_10yreal",
@@ -816,7 +816,7 @@
   "relation": "positive",
   "mechanism": "实际利率曲线联动",
   "strength": 0.5,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_cpi_cuts",
@@ -1833,7 +1833,7 @@
   "relation": "negative",
   "mechanism": "收益率上行=长债指数下跌",
   "strength": 0.7,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_real_sox",
@@ -1842,7 +1842,7 @@
   "relation": "negative",
   "mechanism": "半导体是最长久期成长资产",
   "strength": 0.6,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_sox_ndx",
@@ -1851,7 +1851,7 @@
   "relation": "positive",
   "mechanism": "半导体领跌拖累纳指",
   "strength": 0.7,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_sox_chipetf",

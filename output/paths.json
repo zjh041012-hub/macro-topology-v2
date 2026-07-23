@@ -21,6 +21,31 @@
   "note": "实时评估: 3/4 条边动量一致 (ismneworder→oil×, oil→us10ybe✓, us10ybe→us10y✓, us10y→bankidx✓)。"
  },
  {
+  "id": "p_std_b",
+  "name": "路径B · 财政供给与期限溢价 (方向不明)",
+  "title": "路径B · 财政供给与期限溢价 (方向不明)",
+  "nodeIds": [
+   "usdeficit",
+   "netissue",
+   "auctiontail",
+   "termprem",
+   "us10y",
+   "us10yreal",
+   "ndx"
+  ],
+  "edgeIds": [
+   "e_deficit_netissue",
+   "e_netissue_tail",
+   "e_tail_tp",
+   "e_tp_10y",
+   "e_10y_real",
+   "e_real_ndx"
+  ],
+  "status": "PARTIAL",
+  "consistency": 0.5,
+  "note": "实时评估: 3/6 条边动量一致 (usdeficit→netissue×, netissue→auctiontail×, auctiontail→termprem×, termprem→us10y✓, us10y→us10yreal✓, us10yreal→ndx✓)。"
+ },
+ {
   "id": "p_std_d",
   "name": "路径D · 全球流动性改善",
   "title": "路径D · 全球流动性改善",
@@ -65,31 +90,6 @@
   "note": "实时评估: 2/5 条边动量一致 (uscpi→cutsexp×, cutsexp→us2y×, us2y→us10y✓, us10y→us10yreal✓, us10yreal→dxy×)。"
  },
  {
-  "id": "p_std_b",
-  "name": "路径B · 财政供给与期限溢价",
-  "title": "路径B · 财政供给与期限溢价",
-  "nodeIds": [
-   "usdeficit",
-   "netissue",
-   "auctiontail",
-   "termprem",
-   "us10y",
-   "us10yreal",
-   "ndx"
-  ],
-  "edgeIds": [
-   "e_deficit_netissue",
-   "e_netissue_tail",
-   "e_tail_tp",
-   "e_tp_10y",
-   "e_10y_real",
-   "e_real_ndx"
-  ],
-  "status": "INACTIVE",
-  "consistency": 0.33,
-  "note": "实时评估: 2/6 条边动量一致 (usdeficit→netissue×, netissue→auctiontail×, auctiontail→termprem×, termprem→us10y✓, us10y→us10yreal✓, us10yreal→ndx×)。"
- },
- {
   "id": "p_std_c",
   "name": "路径C · 中国信用扩张",
   "title": "路径C · 中国信用扩张",
@@ -107,8 +107,8 @@
    "e_dem_copper"
   ],
   "status": "INACTIVE",
-  "consistency": 0.25,
-  "note": "实时评估: 1/4 条边动量一致 (tsf→creditimpulse×, creditimpulse→cnpminew×, cnpminew→inddemand×, inddemand→copper✓)。"
+  "consistency": 0.0,
+  "note": "实时评估: 0/4 条边动量一致 (tsf→creditimpulse×, creditimpulse→cnpminew×, cnpminew→inddemand×, inddemand→copper×)。"
  },
  {
   "id": "p_std_e",
@@ -169,6 +169,22 @@
  },
  {
   "id": "p_auto_1",
+  "title": "美债10Y期限溢价 → 美国10年期国债收益率 → 美国10年期实际利率 → 纳斯达克100",
+  "nodeIds": [
+   "termprem",
+   "us10y",
+   "us10yreal",
+   "ndx"
+  ],
+  "edgeIds": [
+   "e_tp_10y",
+   "e_10y_real",
+   "e_real_ndx"
+  ],
+  "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
+ },
+ {
+  "id": "p_auto_2",
   "title": "原油(WTI) → Brent原油",
   "nodeIds": [
    "oil",
@@ -180,28 +196,20 @@
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  },
  {
-  "id": "p_auto_2",
-  "title": "美联储资产负债表 → 美国银行准备金 → 美国金融条件指数",
-  "nodeIds": [
-   "fedbs",
-   "reserves",
-   "usfci"
-  ],
-  "edgeIds": [
-   "e_fedbs_reserves",
-   "e_reserves_fci"
-  ],
-  "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
- },
- {
   "id": "p_auto_3",
-  "title": "美国20年期国债收益率 → 美国30年期国债收益率",
+  "title": "美联储政策利率预期(1Y远期) → 美国2年期国债收益率 → 美国5年期国债收益率 → 美国10年期国债收益率 → 美国30年期国债收益率",
   "nodeIds": [
-   "us20y",
+   "fedpath",
+   "us2y",
+   "us5y",
+   "us10y",
    "us30y"
   ],
   "edgeIds": [
-   "e_20y_30y"
+   "e_fed_2y",
+   "e_2y_5y",
+   "e_5y_10y",
+   "e_10y_30y"
   ],
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  }
