@@ -1,45 +1,59 @@
 {
- "since": "2026-07-23T23:38:25+00:00",
- "generatedAt": "2026-07-24T11:27:02+00:00",
+ "since": "2026-07-24T11:27:02+00:00",
+ "generatedAt": "2026-07-24T23:41:29+00:00",
  "nodeChanges": [
   {
-   "id": "csi300",
-   "name": "沪深300",
+   "id": "sox",
+   "name": "美国半导体指数(SOX)",
    "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "hyspread",
+   "name": "美国高收益债信用利差",
+   "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "chinext",
-   "name": "创业板指",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "fedpath",
-   "name": "美联储政策利率预期(1Y远期)",
+   "id": "us2y",
+   "name": "美国2年期国债收益率",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "bankidx",
-   "name": "银行指数",
+   "id": "csi300",
+   "name": "沪深300",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "hsi",
-   "name": "恒生指数",
+   "id": "move",
+   "name": "MOVE利率波动率指数",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "us3m",
+   "name": "美国3个月国库券收益率",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "aluminum",
-   "name": "铝(沪铝主力)",
+   "id": "bankloans",
+   "name": "美国商业银行贷款(同比)",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "cdxhy",
+   "name": "CDX HY",
    "from": "ELEVATED",
    "to": "NORMAL"
   }
  ],
- "pathChanges": [],
+ "pathChanges": [
+  "路径F · 全球再通胀: PARTIAL → INACTIVE"
+ ],
  "divAdded": [],
  "divRemoved": []
 }
