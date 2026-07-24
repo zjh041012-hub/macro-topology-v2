@@ -1,65 +1,45 @@
 {
- "since": "2026-07-23T11:39:14+00:00",
- "generatedAt": "2026-07-23T23:38:25+00:00",
+ "since": "2026-07-23T23:38:25+00:00",
+ "generatedAt": "2026-07-24T11:27:02+00:00",
  "nodeChanges": [
-  {
-   "id": "fiscalsupply",
-   "name": "美债财政供给压力",
-   "from": "EXTREME",
-   "to": "NORMAL"
-  },
   {
    "id": "csi300",
    "name": "沪深300",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "sofr",
-   "name": "SOFR",
    "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "rrp",
-   "name": "美联储隔夜逆回购(RRP)",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "termprem",
-   "name": "美债10Y期限溢价",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "reserves",
-   "name": "美国银行准备金",
-   "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "us5y",
-   "name": "美国5年期国债收益率",
+   "id": "chinext",
+   "name": "创业板指",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "fedpath",
+   "name": "美联储政策利率预期(1Y远期)",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "tlt",
-   "name": "美国长期国债指数(TLT)",
+   "id": "bankidx",
+   "name": "银行指数",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
    "id": "hsi",
    "name": "恒生指数",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "aluminum",
+   "name": "铝(沪铝主力)",
    "from": "ELEVATED",
    "to": "NORMAL"
   }
  ],
- "pathChanges": [
-  "路径B · 财政供给与期限溢价 (方向不明): INACTIVE → PARTIAL"
- ],
+ "pathChanges": [],
  "divAdded": [],
  "divRemoved": []
 }

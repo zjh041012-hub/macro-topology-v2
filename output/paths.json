@@ -21,6 +21,29 @@
   "note": "实时评估: 3/4 条边动量一致 (ismneworder→oil×, oil→us10ybe✓, us10ybe→us10y✓, us10y→bankidx✓)。"
  },
  {
+  "id": "p_std_a",
+  "name": "路径A · 美国政策转鹰",
+  "title": "路径A · 美国政策转鹰",
+  "nodeIds": [
+   "uscpi",
+   "cutsexp",
+   "us2y",
+   "us10y",
+   "us10yreal",
+   "dxy"
+  ],
+  "edgeIds": [
+   "e_cpi_cuts",
+   "e_cuts_2y",
+   "e_2y_10y",
+   "e_10y_real",
+   "e_real_dxy"
+  ],
+  "status": "PARTIAL",
+  "consistency": 0.6,
+  "note": "实时评估: 3/5 条边动量一致 (uscpi→cutsexp×, cutsexp→us2y✓, us2y→us10y✓, us10y→us10yreal✓, us10yreal→dxy×)。"
+ },
+ {
   "id": "p_std_b",
   "name": "路径B · 财政供给与期限溢价 (方向不明)",
   "title": "路径B · 财政供给与期限溢价 (方向不明)",
@@ -65,29 +88,6 @@
   "status": "PARTIAL",
   "consistency": 0.5,
   "note": "实时评估: 2/4 条边动量一致 (fedbs→reserves✓, reserves→usfci✓, usfci→hyspread×, spx→hyspread×)。"
- },
- {
-  "id": "p_std_a",
-  "name": "路径A · 美国政策转鹰",
-  "title": "路径A · 美国政策转鹰",
-  "nodeIds": [
-   "uscpi",
-   "cutsexp",
-   "us2y",
-   "us10y",
-   "us10yreal",
-   "dxy"
-  ],
-  "edgeIds": [
-   "e_cpi_cuts",
-   "e_cuts_2y",
-   "e_2y_10y",
-   "e_10y_real",
-   "e_real_dxy"
-  ],
-  "status": "PARTIAL",
-  "consistency": 0.4,
-  "note": "实时评估: 2/5 条边动量一致 (uscpi→cutsexp×, cutsexp→us2y×, us2y→us10y✓, us10y→us10yreal✓, us10yreal→dxy×)。"
  },
  {
   "id": "p_std_c",
@@ -169,17 +169,17 @@
  },
  {
   "id": "p_auto_1",
-  "title": "美债10Y期限溢价 → 美国10年期国债收益率 → 美国10年期实际利率 → 纳斯达克100",
+  "title": "美债10Y期限溢价 → 美国10年期国债收益率 → 美国10年期实际利率 → 美国半导体指数(SOX)",
   "nodeIds": [
    "termprem",
    "us10y",
    "us10yreal",
-   "ndx"
+   "sox"
   ],
   "edgeIds": [
    "e_tp_10y",
    "e_10y_real",
-   "e_real_ndx"
+   "e_real_sox"
   ],
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  },
