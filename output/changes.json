@@ -1,59 +1,57 @@
 {
- "since": "2026-07-24T11:27:02+00:00",
- "generatedAt": "2026-07-24T23:41:29+00:00",
+ "since": "2026-07-24T23:41:29+00:00",
+ "generatedAt": "2026-07-27T12:53:35+00:00",
  "nodeChanges": [
   {
-   "id": "sox",
-   "name": "美国半导体指数(SOX)",
+   "id": "oil",
+   "name": "原油(WTI)",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "hyspread",
-   "name": "美国高收益债信用利差",
+   "id": "crb",
+   "name": "CRB商品指数",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "csi500",
+   "name": "中证500",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "reflation",
+   "name": "再通胀状态",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "us2y",
-   "name": "美国2年期国债收益率",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "csi300",
-   "name": "沪深300",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "move",
-   "name": "MOVE利率波动率指数",
+   "id": "m2",
+   "name": "中国M2(同比)",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
    "id": "us3m",
    "name": "美国3个月国库券收益率",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "ironore",
+   "name": "铁矿石(大商所主力)",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "bankloans",
-   "name": "美国商业银行贷款(同比)",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "cdxhy",
-   "name": "CDX HY",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "id": "dr001",
+   "name": "DR001",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   }
  ],
- "pathChanges": [
-  "路径F · 全球再通胀: PARTIAL → INACTIVE"
- ],
+ "pathChanges": [],
  "divAdded": [],
  "divRemoved": []
 }

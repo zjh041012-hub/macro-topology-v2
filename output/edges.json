@@ -852,7 +852,7 @@
   "relation": "negative",
   "mechanism": "降息预期回吐推升短端",
   "strength": 0.8,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_cuts_fedpath",
@@ -861,7 +861,7 @@
   "relation": "negative",
   "mechanism": "降息次数与政策路径互为镜像",
   "strength": 0.7,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_ahe_cpi",
