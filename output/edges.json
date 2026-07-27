@@ -960,7 +960,7 @@
   "relation": "negative",
   "mechanism": "投标倍数下降推升期限溢价",
   "strength": 0.7,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_deficit_worry",
@@ -2013,7 +2013,7 @@
   "relation": "positive",
   "mechanism": "再通胀确认需要能源配合",
   "strength": 0.5,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_refl_bankidx",
@@ -2022,7 +2022,7 @@
   "relation": "positive",
   "mechanism": "再通胀利好银行息差",
   "strength": 0.4,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_rec_hy",
