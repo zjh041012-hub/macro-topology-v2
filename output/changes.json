@@ -1,65 +1,55 @@
 {
- "since": "2026-07-27T23:43:21+00:00",
- "generatedAt": "2026-07-28T11:46:10+00:00",
+ "since": "2026-07-28T11:46:10+00:00",
+ "generatedAt": "2026-07-28T23:39:21+00:00",
  "nodeChanges": [
   {
-   "id": "retail",
-   "name": "社会消费品零售总额(同比)",
-   "from": "EXTREME",
-   "to": "NORMAL"
-  },
-  {
-   "id": "bankidx",
-   "name": "银行指数",
+   "id": "ndx",
+   "name": "纳斯达克100",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "uspce",
-   "name": "美国核心PCE(同比)",
+   "id": "dividendetf",
+   "name": "红利ETF",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "rentcpi",
-   "name": "美国租金通胀(同比)",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "csi500",
-   "name": "中证500",
+   "id": "em",
+   "name": "新兴市场股指(MSCI EM)",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "chinext",
-   "name": "创业板指",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "fedpath",
-   "name": "美联储政策利率预期(1Y远期)",
+   "id": "termprem",
+   "name": "美债10Y期限溢价",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
    "id": "us10ybe",
    "name": "美国10年期盈亏平衡通胀",
-   "from": "ELEVATED",
-   "to": "DIVERGENCE"
+   "from": "DIVERGENCE",
+   "to": "ELEVATED"
   },
   {
    "id": "oil",
    "name": "原油(WTI)",
+   "from": "DIVERGENCE",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "us5y",
+   "name": "美国5年期国债收益率",
    "from": "ELEVATED",
-   "to": "DIVERGENCE"
+   "to": "NORMAL"
   }
  ],
- "pathChanges": [],
- "divAdded": [
-  "原油上涨 vs 盈亏平衡通胀不动(未响应型)"
+ "pathChanges": [
+  "路径B · 财政供给与期限溢价: PARTIAL → INACTIVE"
  ],
- "divRemoved": []
+ "divAdded": [],
+ "divRemoved": [
+  "原油上涨 vs 盈亏平衡通胀不动(未响应型)"
+ ]
 }
