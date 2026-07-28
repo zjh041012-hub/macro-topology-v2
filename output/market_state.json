@@ -65,12 +65,12 @@
  },
  "topMover": {
   "nodeId": "sox",
-  "text": "美国半导体指数(SOX) -1.6%/5D · 93分位"
+  "text": "美国半导体指数(SOX) -6.5%/5D · 93分位"
  },
- "dominantPathId": "p_std_a",
- "divergenceCount": 0,
- "highRiskCount": 9,
+ "dominantPathId": "p_std_b",
+ "divergenceCount": 1,
+ "highRiskCount": 12,
  "regime": "EXTREME",
- "regimeNote": "自动识别: 0条背离, 9个高风险节点。",
- "updatedAt": "2026-07-27T23:43:21+00:00"
+ "regimeNote": "自动识别: 1条背离, 12个高风险节点。",
+ "updatedAt": "2026-07-28T11:46:10+00:00"
 }
