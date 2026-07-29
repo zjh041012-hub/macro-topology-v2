@@ -1,67 +1,75 @@
 {
- "since": "2026-07-28T23:39:21+00:00",
- "generatedAt": "2026-07-29T11:51:22+00:00",
+ "since": "2026-07-29T11:51:22+00:00",
+ "generatedAt": "2026-07-29T23:40:08+00:00",
  "nodeChanges": [
   {
-   "id": "ndx",
-   "name": "纳斯达克100",
+   "id": "us10y",
+   "name": "美国10年期国债收益率",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "brent",
-   "name": "Brent原油",
+   "id": "ndx",
+   "name": "纳斯达克100",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "spx",
+   "name": "标普500",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "crb",
+   "name": "CRB商品指数",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "dividendetf",
+   "name": "红利ETF",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
    "id": "em",
    "name": "新兴市场股指(MSCI EM)",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "cn5y",
-   "name": "中国5年期国债收益率",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "us10ybe",
-   "name": "美国10年期盈亏平衡通胀",
-   "from": "ELEVATED",
-   "to": "DIVERGENCE"
-  },
-  {
    "id": "oil",
    "name": "原油(WTI)",
-   "from": "ELEVATED",
-   "to": "DIVERGENCE"
+   "from": "DIVERGENCE",
+   "to": "EXTREME"
   },
   {
-   "id": "r007",
-   "name": "R007",
+   "id": "bidcover",
+   "name": "美国国债投标倍数",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "fedbs",
-   "name": "美联储资产负债表",
+   "id": "us3m",
+   "name": "美国3个月国库券收益率",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "vvix",
+   "name": "VVIX",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "aluminum",
-   "name": "铝(沪铝主力)",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "id": "rrp",
+   "name": "美联储隔夜逆回购(RRP)",
+   "from": "ELEVATED",
+   "to": "NORMAL"
   }
  ],
- "pathChanges": [
-  "路径A · 美国政策转鹰: PARTIAL → INACTIVE"
- ],
- "divAdded": [
-  "原油上涨 vs 盈亏平衡通胀不动(未响应型)"
- ],
+ "pathChanges": [],
+ "divAdded": [],
  "divRemoved": []
 }

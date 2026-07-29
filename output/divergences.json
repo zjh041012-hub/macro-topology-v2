@@ -10,7 +10,7 @@
    "e_oil_be"
   ],
   "expectedRelation": "油价上行通常推升市场通胀补偿(盈亏平衡)。",
-  "observedRelation": "oil 20D动量z=+1.9 处于强趋势, us10ybe 却几乎未响应 (z=-0.3)。",
+  "observedRelation": "oil 20D动量z=+2.1 处于强趋势, us10ybe 却几乎未响应 (z=+0.4)。",
   "window": "20D",
   "strength": "MEDIUM",
   "persistence": "TRANSIENT",
