@@ -1,55 +1,67 @@
 {
- "since": "2026-07-28T11:46:10+00:00",
- "generatedAt": "2026-07-28T23:39:21+00:00",
+ "since": "2026-07-28T23:39:21+00:00",
+ "generatedAt": "2026-07-29T11:51:22+00:00",
  "nodeChanges": [
   {
    "id": "ndx",
    "name": "纳斯达克100",
-   "from": "ELEVATED",
-   "to": "EXTREME"
+   "from": "EXTREME",
+   "to": "ELEVATED"
   },
   {
-   "id": "dividendetf",
-   "name": "红利ETF",
+   "id": "brent",
+   "name": "Brent原油",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
    "id": "em",
    "name": "新兴市场股指(MSCI EM)",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "cn5y",
+   "name": "中国5年期国债收益率",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "termprem",
-   "name": "美债10Y期限溢价",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
    "id": "us10ybe",
    "name": "美国10年期盈亏平衡通胀",
-   "from": "DIVERGENCE",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "DIVERGENCE"
   },
   {
    "id": "oil",
    "name": "原油(WTI)",
-   "from": "DIVERGENCE",
+   "from": "ELEVATED",
+   "to": "DIVERGENCE"
+  },
+  {
+   "id": "r007",
+   "name": "R007",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "fedbs",
+   "name": "美联储资产负债表",
+   "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "us5y",
-   "name": "美国5年期国债收益率",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "id": "aluminum",
+   "name": "铝(沪铝主力)",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   }
  ],
  "pathChanges": [
-  "路径B · 财政供给与期限溢价: PARTIAL → INACTIVE"
+  "路径A · 美国政策转鹰: PARTIAL → INACTIVE"
  ],
- "divAdded": [],
- "divRemoved": [
+ "divAdded": [
   "原油上涨 vs 盈亏平衡通胀不动(未响应型)"
- ]
+ ],
+ "divRemoved": []
 }
