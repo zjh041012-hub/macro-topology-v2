@@ -67,10 +67,10 @@
   "nodeId": "bankidx",
   "text": "银行指数 +4.5%/5D · 80分位"
  },
- "dominantPathId": "p_std_d",
- "divergenceCount": 2,
+ "dominantPathId": "p_std_c",
+ "divergenceCount": 1,
  "highRiskCount": 12,
  "regime": "EXTREME",
- "regimeNote": "自动识别: 2条背离, 12个高风险节点。",
- "updatedAt": "2026-07-30T11:39:36+00:00"
+ "regimeNote": "自动识别: 1条背离, 12个高风险节点。",
+ "updatedAt": "2026-07-30T23:41:55+00:00"
 }

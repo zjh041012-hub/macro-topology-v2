@@ -1,25 +1,5 @@
 [
  {
-  "id": "d4",
-  "title": "原油上涨 vs 盈亏平衡通胀不动(未响应型)",
-  "relatedNodeIds": [
-   "oil",
-   "us10ybe"
-  ],
-  "relatedEdgeIds": [
-   "e_oil_be"
-  ],
-  "expectedRelation": "油价上行通常推升市场通胀补偿(盈亏平衡)。",
-  "observedRelation": "oil 20D动量z=+2.0 处于强趋势, us10ybe 却几乎未响应 (z=+0.4)。",
-  "window": "20D",
-  "strength": "MEDIUM",
-  "persistence": "TRANSIENT",
-  "alternativeExplanations": [
-   "市场认为油价驱动来自供给暂时因素, 不改变通胀趋势"
-  ],
-  "invalidationRisk": "MEDIUM"
- },
- {
   "id": "d6",
   "title": "地缘风险升级 vs 黄金避险买盘缺席(未响应型)",
   "relatedNodeIds": [
@@ -30,7 +10,7 @@
    "e_geo_gold"
   ],
   "expectedRelation": "重大地缘风险升级时, 避险买盘通常推升金价。",
-  "observedRelation": "geopolitics 20D动量z=+1.7 处于强趋势, gold 却几乎未响应 (z=-0.3)。",
+  "observedRelation": "geopolitics 20D动量z=+1.7 处于强趋势, gold 却几乎未响应 (z=-0.2)。",
   "window": "20D",
   "strength": "MEDIUM",
   "persistence": "TRANSIENT",

@@ -1,59 +1,121 @@
 {
- "since": "2026-07-29T23:40:08+00:00",
- "generatedAt": "2026-07-30T11:39:36+00:00",
+ "since": "2026-07-30T11:39:36+00:00",
+ "generatedAt": "2026-07-30T23:41:55+00:00",
  "nodeChanges": [
   {
-   "id": "gold",
-   "name": "黄金",
+   "id": "termprem",
+   "name": "美债10Y期限溢价",
    "from": "NORMAL",
-   "to": "DIVERGENCE"
+   "to": "EXTREME"
   },
   {
-   "id": "ndx",
-   "name": "纳斯达克100",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "geopolitics",
-   "name": "地缘政治风险指数",
+   "id": "gdpnow",
+   "name": "亚特兰大联储GDPNow",
    "from": "NORMAL",
-   "to": "DIVERGENCE"
+   "to": "EXTREME"
   },
   {
-   "id": "em",
-   "name": "新兴市场股指(MSCI EM)",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "rebar",
-   "name": "螺纹钢",
+   "id": "us10y",
+   "name": "美国10年期国债收益率",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
+   "id": "us10ybe",
+   "name": "美国10年期盈亏平衡通胀",
+   "from": "DIVERGENCE",
+   "to": "NORMAL"
+  },
+  {
+   "id": "usdjpy",
+   "name": "美元兑日元",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "spx",
+   "name": "标普500",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "sox",
+   "name": "美国半导体指数(SOX)",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "uspce",
+   "name": "美国核心PCE(同比)",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "crb",
+   "name": "CRB商品指数",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "vix",
+   "name": "VIX指数",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
    "id": "oil",
    "name": "原油(WTI)",
-   "from": "EXTREME",
-   "to": "DIVERGENCE"
+   "from": "DIVERGENCE",
+   "to": "EXTREME"
   },
   {
    "id": "csi300",
    "name": "沪深300",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "tga",
+   "name": "美国财政部TGA账户",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "reserves",
+   "name": "美国银行准备金",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "reflation",
+   "name": "再通胀状态",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "fedbs",
+   "name": "美联储资产负债表",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "dr001",
-   "name": "DR001",
+   "id": "vvix",
+   "name": "VVIX",
    "from": "ELEVATED",
    "to": "NORMAL"
+  },
+  {
+   "id": "rrp",
+   "name": "美联储隔夜逆回购(RRP)",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   }
  ],
- "pathChanges": [],
- "divAdded": [
-  "地缘风险升级 vs 黄金避险买盘缺席(未响应型)"
+ "pathChanges": [
+  "路径D · 全球流动性改善: PARTIAL → INACTIVE"
  ],
- "divRemoved": []
+ "divAdded": [],
+ "divRemoved": [
+  "原油上涨 vs 盈亏平衡通胀不动(未响应型)"
+ ]
 }
