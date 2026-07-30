@@ -717,7 +717,7 @@
   "relation": "positive",
   "mechanism": "地缘冲击供给溢价",
   "strength": 0.5,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_geo_gold",
@@ -726,7 +726,7 @@
   "relation": "positive",
   "mechanism": "避险需求",
   "strength": 0.45,
-  "status": "INACTIVE"
+  "status": "DIVERGENCE"
  },
  {
   "id": "e_ceiling_worry",
@@ -1590,7 +1590,7 @@
   "relation": "positive",
   "mechanism": "CDS与现券利差互证",
   "strength": 0.6,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_vvix_vix",

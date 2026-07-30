@@ -1,75 +1,59 @@
 {
- "since": "2026-07-29T11:51:22+00:00",
- "generatedAt": "2026-07-29T23:40:08+00:00",
+ "since": "2026-07-29T23:40:08+00:00",
+ "generatedAt": "2026-07-30T11:39:36+00:00",
  "nodeChanges": [
   {
-   "id": "us10y",
-   "name": "美国10年期国债收益率",
-   "from": "EXTREME",
-   "to": "ELEVATED"
+   "id": "gold",
+   "name": "黄金",
+   "from": "NORMAL",
+   "to": "DIVERGENCE"
   },
   {
    "id": "ndx",
    "name": "纳斯达克100",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "spx",
-   "name": "标普500",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "crb",
-   "name": "CRB商品指数",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "dividendetf",
-   "name": "红利ETF",
-   "from": "ELEVATED",
-   "to": "EXTREME"
+   "id": "geopolitics",
+   "name": "地缘政治风险指数",
+   "from": "NORMAL",
+   "to": "DIVERGENCE"
   },
   {
    "id": "em",
    "name": "新兴市场股指(MSCI EM)",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "rebar",
+   "name": "螺纹钢",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
    "id": "oil",
    "name": "原油(WTI)",
-   "from": "DIVERGENCE",
-   "to": "EXTREME"
+   "from": "EXTREME",
+   "to": "DIVERGENCE"
   },
   {
-   "id": "bidcover",
-   "name": "美国国债投标倍数",
+   "id": "csi300",
+   "name": "沪深300",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "us3m",
-   "name": "美国3个月国库券收益率",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "vvix",
-   "name": "VVIX",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "rrp",
-   "name": "美联储隔夜逆回购(RRP)",
+   "id": "dr001",
+   "name": "DR001",
    "from": "ELEVATED",
    "to": "NORMAL"
   }
  ],
  "pathChanges": [],
- "divAdded": [],
+ "divAdded": [
+  "地缘风险升级 vs 黄金避险买盘缺席(未响应型)"
+ ],
  "divRemoved": []
 }

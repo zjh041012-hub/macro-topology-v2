@@ -21,31 +21,6 @@
   "note": "实时评估: 2/4 条边动量一致 (fedbs→reserves✓, reserves→usfci✓, usfci→hyspread×, spx→hyspread×)。"
  },
  {
-  "id": "p_std_b",
-  "name": "路径B · 财政供给与期限溢价",
-  "title": "路径B · 财政供给与期限溢价",
-  "nodeIds": [
-   "usdeficit",
-   "netissue",
-   "auctiontail",
-   "termprem",
-   "us10y",
-   "us10yreal",
-   "ndx"
-  ],
-  "edgeIds": [
-   "e_deficit_netissue",
-   "e_netissue_tail",
-   "e_tail_tp",
-   "e_tp_10y",
-   "e_10y_real",
-   "e_real_ndx"
-  ],
-  "status": "INACTIVE",
-  "consistency": 0.17,
-  "note": "实时评估: 1/6 条边动量一致 (usdeficit→netissue×, netissue→auctiontail×, auctiontail→termprem×, termprem→us10y×, us10y→us10yreal×, us10yreal→ndx✓)。"
- },
- {
   "id": "p_std_a",
   "name": "路径A · 美国政策转鹰",
   "title": "路径A · 美国政策转鹰",
@@ -67,6 +42,31 @@
   "status": "INACTIVE",
   "consistency": 0.0,
   "note": "实时评估: 0/5 条边动量一致 (uscpi→cutsexp×, cutsexp→us2y×, us2y→us10y×, us10y→us10yreal×, us10yreal→dxy×)。"
+ },
+ {
+  "id": "p_std_b",
+  "name": "路径B · 财政供给与期限溢价",
+  "title": "路径B · 财政供给与期限溢价",
+  "nodeIds": [
+   "usdeficit",
+   "netissue",
+   "auctiontail",
+   "termprem",
+   "us10y",
+   "us10yreal",
+   "ndx"
+  ],
+  "edgeIds": [
+   "e_deficit_netissue",
+   "e_netissue_tail",
+   "e_tail_tp",
+   "e_tp_10y",
+   "e_10y_real",
+   "e_real_ndx"
+  ],
+  "status": "INACTIVE",
+  "consistency": 0.0,
+  "note": "实时评估: 0/6 条边动量一致 (usdeficit→netissue×, netissue→auctiontail×, auctiontail→termprem×, termprem→us10y×, us10y→us10yreal×, us10yreal→ndx×)。"
  },
  {
   "id": "p_std_c",
