@@ -690,7 +690,7 @@
   "relation": "positive",
   "mechanism": "半导体是纳指核心权重",
   "strength": 0.7,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_gold_miners",
@@ -1590,7 +1590,7 @@
   "relation": "positive",
   "mechanism": "CDS与现券利差互证",
   "strength": 0.6,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_vvix_vix",
@@ -1788,7 +1788,7 @@
   "relation": "negative",
   "mechanism": "负Gamma放大现实波动",
   "strength": 0.5,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_cta_spx",
@@ -1860,7 +1860,7 @@
   "relation": "positive",
   "mechanism": "全球半导体联动",
   "strength": 0.5,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_rut_spx",

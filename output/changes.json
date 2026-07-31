@@ -1,47 +1,33 @@
 {
- "since": "2026-07-30T23:41:55+00:00",
- "generatedAt": "2026-07-31T11:47:36+00:00",
+ "since": "2026-07-31T11:47:36+00:00",
+ "generatedAt": "2026-07-31T23:38:46+00:00",
  "nodeChanges": [
   {
-   "id": "gold",
-   "name": "黄金",
-   "from": "DIVERGENCE",
-   "to": "NORMAL"
-  },
-  {
-   "id": "chinext",
-   "name": "创业板指",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "csi300",
-   "name": "沪深300",
+   "id": "vix",
+   "name": "VIX指数",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "r007",
-   "name": "R007",
+   "id": "csi300",
+   "name": "沪深300",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "geopolitics",
-   "name": "地缘政治风险指数",
-   "from": "DIVERGENCE",
-   "to": "EXTREME"
+   "id": "move",
+   "name": "MOVE利率波动率指数",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
-   "id": "dr001",
-   "name": "DR001",
+   "id": "gbpusd",
+   "name": "英镑兑美元",
    "from": "NORMAL",
    "to": "ELEVATED"
   }
  ],
  "pathChanges": [],
  "divAdded": [],
- "divRemoved": [
-  "地缘风险升级 vs 黄金避险买盘缺席(未响应型)"
- ]
+ "divRemoved": []
 }
