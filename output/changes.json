@@ -1,121 +1,47 @@
 {
- "since": "2026-07-30T11:39:36+00:00",
- "generatedAt": "2026-07-30T23:41:55+00:00",
+ "since": "2026-07-30T23:41:55+00:00",
+ "generatedAt": "2026-07-31T11:47:36+00:00",
  "nodeChanges": [
   {
-   "id": "termprem",
-   "name": "美债10Y期限溢价",
-   "from": "NORMAL",
-   "to": "EXTREME"
-  },
-  {
-   "id": "gdpnow",
-   "name": "亚特兰大联储GDPNow",
-   "from": "NORMAL",
-   "to": "EXTREME"
-  },
-  {
-   "id": "us10y",
-   "name": "美国10年期国债收益率",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "us10ybe",
-   "name": "美国10年期盈亏平衡通胀",
+   "id": "gold",
+   "name": "黄金",
    "from": "DIVERGENCE",
    "to": "NORMAL"
   },
   {
-   "id": "usdjpy",
-   "name": "美元兑日元",
+   "id": "chinext",
+   "name": "创业板指",
    "from": "EXTREME",
    "to": "ELEVATED"
-  },
-  {
-   "id": "spx",
-   "name": "标普500",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "sox",
-   "name": "美国半导体指数(SOX)",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "uspce",
-   "name": "美国核心PCE(同比)",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "crb",
-   "name": "CRB商品指数",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "vix",
-   "name": "VIX指数",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "oil",
-   "name": "原油(WTI)",
-   "from": "DIVERGENCE",
-   "to": "EXTREME"
   },
   {
    "id": "csi300",
    "name": "沪深300",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "tga",
-   "name": "美国财政部TGA账户",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "reserves",
-   "name": "美国银行准备金",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "reflation",
-   "name": "再通胀状态",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "fedbs",
-   "name": "美联储资产负债表",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "vvix",
-   "name": "VVIX",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "id": "r007",
+   "name": "R007",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
-   "id": "rrp",
-   "name": "美联储隔夜逆回购(RRP)",
+   "id": "geopolitics",
+   "name": "地缘政治风险指数",
+   "from": "DIVERGENCE",
+   "to": "EXTREME"
+  },
+  {
+   "id": "dr001",
+   "name": "DR001",
    "from": "NORMAL",
    "to": "ELEVATED"
   }
  ],
- "pathChanges": [
-  "路径D · 全球流动性改善: PARTIAL → INACTIVE"
- ],
+ "pathChanges": [],
  "divAdded": [],
  "divRemoved": [
-  "原油上涨 vs 盈亏平衡通胀不动(未响应型)"
+  "地缘风险升级 vs 黄金避险买盘缺席(未响应型)"
  ]
 }

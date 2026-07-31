@@ -64,13 +64,13 @@
   }
  },
  "topMover": {
-  "nodeId": "bankidx",
-  "text": "银行指数 +4.5%/5D · 80分位"
+  "nodeId": "oil",
+  "text": "原油(WTI) -5.1%/5D · 85分位"
  },
  "dominantPathId": "p_std_c",
- "divergenceCount": 1,
- "highRiskCount": 12,
+ "divergenceCount": 0,
+ "highRiskCount": 10,
  "regime": "EXTREME",
- "regimeNote": "自动识别: 1条背离, 12个高风险节点。",
- "updatedAt": "2026-07-30T23:41:55+00:00"
+ "regimeNote": "自动识别: 0条背离, 10个高风险节点。",
+ "updatedAt": "2026-07-31T11:47:36+00:00"
 }
