@@ -690,7 +690,7 @@
   "relation": "positive",
   "mechanism": "半导体是纳指核心权重",
   "strength": 0.7,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_gold_miners",
@@ -717,7 +717,7 @@
   "relation": "positive",
   "mechanism": "地缘冲击供给溢价",
   "strength": 0.5,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_geo_gold",
@@ -1860,7 +1860,7 @@
   "relation": "positive",
   "mechanism": "全球半导体联动",
   "strength": 0.5,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_rut_spx",
@@ -2013,7 +2013,7 @@
   "relation": "positive",
   "mechanism": "再通胀确认需要能源配合",
   "strength": 0.5,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_refl_bankidx",
@@ -2022,7 +2022,7 @@
   "relation": "positive",
   "mechanism": "再通胀利好银行息差",
   "strength": 0.4,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_rec_hy",

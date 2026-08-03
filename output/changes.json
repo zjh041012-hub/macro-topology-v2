@@ -1,33 +1,77 @@
 {
- "since": "2026-07-31T11:47:36+00:00",
- "generatedAt": "2026-07-31T23:38:46+00:00",
+ "since": "2026-07-31T23:38:46+00:00",
+ "generatedAt": "2026-08-03T12:50:53+00:00",
  "nodeChanges": [
   {
-   "id": "vix",
-   "name": "VIX指数",
+   "id": "geopolitics",
+   "name": "地缘政治风险指数",
+   "from": "EXTREME",
+   "to": "NORMAL"
+  },
+  {
+   "id": "oil",
+   "name": "原油(WTI)",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "bankidx",
+   "name": "银行指数",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "brent",
+   "name": "Brent原油",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "ironore",
+   "name": "铁矿石(大商所主力)",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "bdi",
+   "name": "波罗的海干散货指数",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "reflation",
+   "name": "再通胀状态",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "csi300",
-   "name": "沪深300",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
    "id": "move",
    "name": "MOVE利率波动率指数",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "sofr",
+   "name": "SOFR",
+   "from": "ELEVATED",
+   "to": "NORMAL"
   },
   {
    "id": "gbpusd",
    "name": "英镑兑美元",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "debtceiling",
+   "name": "债务上限博弈风险",
    "from": "NORMAL",
    "to": "ELEVATED"
   }
  ],
- "pathChanges": [],
+ "pathChanges": [
+  "路径B · 财政供给与期限溢价 (方向不明): INACTIVE → PARTIAL"
+ ],
  "divAdded": [],
  "divRemoved": []
 }
