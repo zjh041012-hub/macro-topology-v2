@@ -1,40 +1,58 @@
 {
- "since": "2026-08-03T12:50:53+00:00",
- "generatedAt": "2026-08-03T23:45:52+00:00",
+ "since": "2026-08-03T23:45:52+00:00",
+ "generatedAt": "2026-08-04T11:55:06+00:00",
  "nodeChanges": [
+  {
+   "id": "csi500",
+   "name": "中证500",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "oil",
+   "name": "原油(WTI)",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "csi300",
+   "name": "沪深300",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "bankidx",
+   "name": "银行指数",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
   {
    "id": "infl5y5y",
    "name": "美国5y5y通胀互换",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "NORMAL"
   },
   {
    "id": "move",
    "name": "MOVE利率波动率指数",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "NORMAL"
   },
   {
-   "id": "geopolitics",
-   "name": "地缘政治风险指数",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "us5y",
-   "name": "美国5年期国债收益率",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "sloos",
-   "name": "美国银行贷款标准(收紧净占比)",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "id": "brent",
+   "name": "Brent原油",
+   "from": "ELEVATED",
+   "to": "NORMAL"
   },
   {
    "id": "debtceiling",
    "name": "债务上限博弈风险",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "dr001",
+   "name": "DR001",
    "from": "ELEVATED",
    "to": "NORMAL"
   }

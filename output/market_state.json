@@ -64,13 +64,13 @@
   }
  },
  "topMover": {
-  "nodeId": "bankidx",
-  "text": "银行指数 +3.3%/5D · 79分位"
+  "nodeId": "copper",
+  "text": "铜(LME) +5.3%/5D · 100分位"
  },
  "dominantPathId": "p_std_b",
  "divergenceCount": 0,
  "highRiskCount": 8,
  "regime": "EXTREME",
  "regimeNote": "自动识别: 0条背离, 8个高风险节点。",
- "updatedAt": "2026-08-03T23:45:52+00:00"
+ "updatedAt": "2026-08-04T11:55:06+00:00"
 }

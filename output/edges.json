@@ -24,7 +24,7 @@
   "relation": "positive",
   "mechanism": "期限溢价走阔直接抬升长端名义利率",
   "strength": 0.9,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_10y_real",
@@ -33,7 +33,7 @@
   "relation": "positive",
   "mechanism": "名义上行+盈亏平衡持稳 → 实际利率上行",
   "strength": 0.85,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_real_ndx",
@@ -60,7 +60,7 @@
   "relation": "positive",
   "mechanism": "利率波动率上行抬升期限溢价补偿",
   "strength": 0.6,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_supply_worry",
@@ -96,7 +96,7 @@
   "relation": "positive",
   "mechanism": "利率上行+曲线陡峭化改善银行息差",
   "strength": 0.6,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_real_gold",
@@ -195,7 +195,7 @@
   "relation": "positive",
   "mechanism": "长端联动,超长端对供给更敏感",
   "strength": 0.7,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_10y_curve",
@@ -492,7 +492,7 @@
   "relation": "positive",
   "mechanism": "中国资产联动",
   "strength": 0.5,
-  "status": "DIVERGENCE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_nb_csi",
@@ -717,7 +717,7 @@
   "relation": "positive",
   "mechanism": "地缘冲击供给溢价",
   "strength": 0.5,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_geo_gold",
@@ -780,7 +780,7 @@
   "relation": "positive",
   "mechanism": "中长端联动",
   "strength": 0.6,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_10y_20y",
@@ -789,7 +789,7 @@
   "relation": "positive",
   "mechanism": "长端联动, 20Y流动性最差弹性最大",
   "strength": 0.5,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_20y_30y",
@@ -798,7 +798,7 @@
   "relation": "positive",
   "mechanism": "超长端联动",
   "strength": 0.5,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_5y_5yreal",
@@ -807,7 +807,7 @@
   "relation": "positive",
   "mechanism": "名义分解到中段实际利率",
   "strength": 0.4,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_5yreal_10yreal",
@@ -816,7 +816,7 @@
   "relation": "positive",
   "mechanism": "实际利率曲线联动",
   "strength": 0.5,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_cpi_cuts",
@@ -1455,7 +1455,7 @@
   "relation": "negative",
   "mechanism": "美债上行加深中美倒挂",
   "strength": 0.6,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_cn10y_cnus",
@@ -1824,7 +1824,7 @@
   "relation": "positive",
   "mechanism": "杠杆资金放大A股动量",
   "strength": 0.4,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_10y_tlt",
@@ -1833,7 +1833,7 @@
   "relation": "negative",
   "mechanism": "收益率上行=长债指数下跌",
   "strength": 0.7,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_real_sox",
@@ -1842,7 +1842,7 @@
   "relation": "negative",
   "mechanism": "半导体是最长久期成长资产",
   "strength": 0.6,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_sox_ndx",
@@ -1896,7 +1896,7 @@
   "relation": "positive",
   "mechanism": "A股大小盘联动",
   "strength": 0.4,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_chinext_csi",
@@ -1905,7 +1905,7 @@
   "relation": "positive",
   "mechanism": "成长与大盘联动",
   "strength": 0.4,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_hstech_hsi",
