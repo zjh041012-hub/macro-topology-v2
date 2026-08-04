@@ -1,63 +1,53 @@
 {
- "since": "2026-08-03T23:45:52+00:00",
- "generatedAt": "2026-08-04T11:55:06+00:00",
+ "since": "2026-08-04T11:55:06+00:00",
+ "generatedAt": "2026-08-04T23:41:39+00:00",
  "nodeChanges": [
   {
-   "id": "csi500",
-   "name": "中证500",
-   "from": "EXTREME",
+   "id": "ndx",
+   "name": "纳斯达克100",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "em",
+   "name": "新兴市场股指(MSCI EM)",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "us5y",
+   "name": "美国5年期国债收益率",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "sofr",
+   "name": "SOFR",
+   "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "oil",
-   "name": "原油(WTI)",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "csi300",
-   "name": "沪深300",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "bankidx",
-   "name": "银行指数",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "infl5y5y",
-   "name": "美国5y5y通胀互换",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "move",
-   "name": "MOVE利率波动率指数",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "brent",
-   "name": "Brent原油",
+   "id": "rrp",
+   "name": "美联储隔夜逆回购(RRP)",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
    "id": "debtceiling",
    "name": "债务上限博弈风险",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "NORMAL"
   },
   {
-   "id": "dr001",
-   "name": "DR001",
+   "id": "utilities",
+   "name": "美国公用事业指数",
    "from": "ELEVATED",
    "to": "NORMAL"
   }
  ],
- "pathChanges": [],
+ "pathChanges": [
+  "路径B · 财政供给与期限溢价: PARTIAL → INACTIVE"
+ ],
  "divAdded": [],
  "divRemoved": []
 }

@@ -1,72 +1,5 @@
 [
  {
-  "id": "p_std_b",
-  "name": "路径B · 财政供给与期限溢价 (方向不明)",
-  "title": "路径B · 财政供给与期限溢价 (方向不明)",
-  "nodeIds": [
-   "usdeficit",
-   "netissue",
-   "auctiontail",
-   "termprem",
-   "us10y",
-   "us10yreal",
-   "ndx"
-  ],
-  "edgeIds": [
-   "e_deficit_netissue",
-   "e_netissue_tail",
-   "e_tail_tp",
-   "e_tp_10y",
-   "e_10y_real",
-   "e_real_ndx"
-  ],
-  "status": "PARTIAL",
-  "consistency": 0.5,
-  "note": "实时评估: 3/6 条边动量一致 (usdeficit→netissue×, netissue→auctiontail×, auctiontail→termprem×, termprem→us10y✓, us10y→us10yreal✓, us10yreal→ndx✓)。"
- },
- {
-  "id": "p_std_c",
-  "name": "路径C · 中国信用扩张",
-  "title": "路径C · 中国信用扩张",
-  "nodeIds": [
-   "tsf",
-   "creditimpulse",
-   "cnpminew",
-   "inddemand",
-   "copper"
-  ],
-  "edgeIds": [
-   "e_tsf_impulse",
-   "e_impulse_pminew",
-   "e_neworder_dem",
-   "e_dem_copper"
-  ],
-  "status": "INACTIVE",
-  "consistency": 0.25,
-  "note": "实时评估: 1/4 条边动量一致 (tsf→creditimpulse×, creditimpulse→cnpminew×, cnpminew→inddemand×, inddemand→copper✓)。"
- },
- {
-  "id": "p_std_f",
-  "name": "路径F · 全球再通胀",
-  "title": "路径F · 全球再通胀",
-  "nodeIds": [
-   "ismneworder",
-   "oil",
-   "us10ybe",
-   "us10y",
-   "bankidx"
-  ],
-  "edgeIds": [
-   "e_ismno_oil",
-   "e_oil_be",
-   "e_be_10y",
-   "e_10y_bank"
-  ],
-  "status": "INACTIVE",
-  "consistency": 0.25,
-  "note": "实时评估: 1/4 条边动量一致 (ismneworder→oil×, oil→us10ybe×, us10ybe→us10y×, us10y→bankidx✓)。"
- },
- {
   "id": "p_std_a",
   "name": "路径A · 美国政策转鹰",
   "title": "路径A · 美国政策转鹰",
@@ -86,8 +19,54 @@
    "e_real_dxy"
   ],
   "status": "INACTIVE",
-  "consistency": 0.2,
-  "note": "实时评估: 1/5 条边动量一致 (uscpi→cutsexp×, cutsexp→us2y×, us2y→us10y×, us10y→us10yreal✓, us10yreal→dxy×)。"
+  "consistency": 0.0,
+  "note": "实时评估: 0/5 条边动量一致 (uscpi→cutsexp×, cutsexp→us2y×, us2y→us10y×, us10y→us10yreal×, us10yreal→dxy×)。"
+ },
+ {
+  "id": "p_std_b",
+  "name": "路径B · 财政供给与期限溢价",
+  "title": "路径B · 财政供给与期限溢价",
+  "nodeIds": [
+   "usdeficit",
+   "netissue",
+   "auctiontail",
+   "termprem",
+   "us10y",
+   "us10yreal",
+   "ndx"
+  ],
+  "edgeIds": [
+   "e_deficit_netissue",
+   "e_netissue_tail",
+   "e_tail_tp",
+   "e_tp_10y",
+   "e_10y_real",
+   "e_real_ndx"
+  ],
+  "status": "INACTIVE",
+  "consistency": 0.0,
+  "note": "实时评估: 0/6 条边动量一致 (usdeficit→netissue×, netissue→auctiontail×, auctiontail→termprem×, termprem→us10y×, us10y→us10yreal×, us10yreal→ndx×)。"
+ },
+ {
+  "id": "p_std_c",
+  "name": "路径C · 中国信用扩张",
+  "title": "路径C · 中国信用扩张",
+  "nodeIds": [
+   "tsf",
+   "creditimpulse",
+   "cnpminew",
+   "inddemand",
+   "copper"
+  ],
+  "edgeIds": [
+   "e_tsf_impulse",
+   "e_impulse_pminew",
+   "e_neworder_dem",
+   "e_dem_copper"
+  ],
+  "status": "INACTIVE",
+  "consistency": 0.0,
+  "note": "实时评估: 0/4 条边动量一致 (tsf→creditimpulse×, creditimpulse→cnpminew×, cnpminew→inddemand×, inddemand→copper×)。"
  },
  {
   "id": "p_std_d",
@@ -130,6 +109,27 @@
   "note": "实时评估: 0/3 条边动量一致 (liqcrisis→dxy×, dxy→hyspread×, spx→hyspread×)。"
  },
  {
+  "id": "p_std_f",
+  "name": "路径F · 全球再通胀",
+  "title": "路径F · 全球再通胀",
+  "nodeIds": [
+   "ismneworder",
+   "oil",
+   "us10ybe",
+   "us10y",
+   "bankidx"
+  ],
+  "edgeIds": [
+   "e_ismno_oil",
+   "e_oil_be",
+   "e_be_10y",
+   "e_10y_bank"
+  ],
+  "status": "INACTIVE",
+  "consistency": 0.0,
+  "note": "实时评估: 0/4 条边动量一致 (ismneworder→oil×, oil→us10ybe×, us10ybe→us10y×, us10y→bankidx×)。"
+ },
+ {
   "id": "p_std_g",
   "name": "路径G · 中国地产下行",
   "title": "路径G · 中国地产下行",
@@ -169,25 +169,27 @@
  },
  {
   "id": "p_auto_1",
-  "title": "原油(WTI) → Brent原油",
+  "title": "融资余额(A股) → 沪深300 → 中证500",
   "nodeIds": [
-   "oil",
-   "brent"
+   "margindebt",
+   "csi300",
+   "csi500"
   ],
   "edgeIds": [
-   "e_oil_brent"
+   "e_margin_csi",
+   "e_csi_csi500"
   ],
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  },
  {
   "id": "p_auto_2",
-  "title": "原油(WTI) → 美国汽油零售价",
+  "title": "创业板指 → 沪深300",
   "nodeIds": [
-   "oil",
-   "gasoline"
+   "chinext",
+   "csi300"
   ],
   "edgeIds": [
-   "e_oil_gasoline"
+   "e_chinext_csi"
   ],
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  }

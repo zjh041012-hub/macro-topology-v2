@@ -492,7 +492,7 @@
   "relation": "positive",
   "mechanism": "中国资产联动",
   "strength": 0.5,
-  "status": "INACTIVE"
+  "status": "DIVERGENCE"
  },
  {
   "id": "e_nb_csi",
@@ -1518,7 +1518,7 @@
   "relation": "positive",
   "mechanism": "原油向零售油价传导",
   "strength": 0.7,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_gasoline_cpi",
@@ -1644,7 +1644,7 @@
   "relation": "positive",
   "mechanism": "两油联动",
   "strength": 0.9,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_opec_oil",
@@ -1824,7 +1824,7 @@
   "relation": "positive",
   "mechanism": "杠杆资金放大A股动量",
   "strength": 0.4,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_10y_tlt",
@@ -1896,7 +1896,7 @@
   "relation": "positive",
   "mechanism": "A股大小盘联动",
   "strength": 0.4,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_chinext_csi",
@@ -1905,7 +1905,7 @@
   "relation": "positive",
   "mechanism": "成长与大盘联动",
   "strength": 0.4,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_hstech_hsi",
