@@ -1,53 +1,33 @@
 {
- "since": "2026-08-04T11:55:06+00:00",
- "generatedAt": "2026-08-04T23:41:39+00:00",
+ "since": "2026-08-04T23:41:39+00:00",
+ "generatedAt": "2026-08-05T11:47:07+00:00",
  "nodeChanges": [
   {
-   "id": "ndx",
-   "name": "纳斯达克100",
-   "from": "ELEVATED",
-   "to": "EXTREME"
+   "id": "ironore",
+   "name": "铁矿石(大商所主力)",
+   "from": "EXTREME",
+   "to": "ELEVATED"
   },
   {
-   "id": "em",
-   "name": "新兴市场股指(MSCI EM)",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "us5y",
-   "name": "美国5年期国债收益率",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "sofr",
-   "name": "SOFR",
+   "id": "dr007",
+   "name": "DR007",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "rrp",
-   "name": "美联储隔夜逆回购(RRP)",
+   "id": "csi500",
+   "name": "中证500",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "debtceiling",
-   "name": "债务上限博弈风险",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "utilities",
-   "name": "美国公用事业指数",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "id": "gbpusd",
+   "name": "英镑兑美元",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   }
  ],
- "pathChanges": [
-  "路径B · 财政供给与期限溢价: PARTIAL → INACTIVE"
- ],
+ "pathChanges": [],
  "divAdded": [],
  "divRemoved": []
 }

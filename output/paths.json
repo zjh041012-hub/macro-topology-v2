@@ -166,31 +166,5 @@
   "status": "INACTIVE",
   "consistency": 0.0,
   "note": "实时评估: 0/3 条边动量一致 (nfp→gdpnow×, gdpnow→hyspread×, spx→hyspread×)。"
- },
- {
-  "id": "p_auto_1",
-  "title": "融资余额(A股) → 沪深300 → 中证500",
-  "nodeIds": [
-   "margindebt",
-   "csi300",
-   "csi500"
-  ],
-  "edgeIds": [
-   "e_margin_csi",
-   "e_csi_csi500"
-  ],
-  "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
- },
- {
-  "id": "p_auto_2",
-  "title": "创业板指 → 沪深300",
-  "nodeIds": [
-   "chinext",
-   "csi300"
-  ],
-  "edgeIds": [
-   "e_chinext_csi"
-  ],
-  "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  }
 ]
