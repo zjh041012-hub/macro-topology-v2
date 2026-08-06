@@ -1,7 +1,6 @@
 {
  "data_status": {
   "stale": [
-   "bund10y",
    "chipetf",
    "cn1y",
    "dividendetf",
@@ -10,7 +9,6 @@
    "shibor3m",
    "tsf",
    "usclaims",
-   "usdcnh",
    "usoilinv"
   ],
   "manual": [
@@ -56,11 +54,10 @@
    "cta",
    "gammaproxy"
   ],
-  "liveCount": 133,
+  "liveCount": 135,
   "totalCount": 178,
   "sourceErrors": {
-   "fred": "bund10y → JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-   "yahoo": "usdcnh → ValueError: Neither `start` nor `end` can be NaT",
+   "fred": "usclaims → ValueError: empty series after transform (insufficient history?)",
    "tushare": "tsf → ValueError: tushare: 抱歉，您没有接口(sf_month)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。",
    "akshare:fund_etf_hist_em": "chipetf → ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
    "csv_url": "gscpi → ValueError: Excel file format cannot be determined, you must specify an engine manually."
@@ -68,12 +65,12 @@
  },
  "topMover": {
   "nodeId": "copper",
-  "text": "铜(LME) +7.6%/5D · 100分位"
+  "text": "铜(LME) +5.4%/5D · 100分位"
  },
  "dominantPathId": "p_std_a",
  "divergenceCount": 0,
  "highRiskCount": 6,
  "regime": "ELEVATED",
  "regimeNote": "自动识别: 0条背离, 6个高风险节点。",
- "updatedAt": "2026-08-05T23:39:33+00:00"
+ "updatedAt": "2026-08-06T11:51:19+00:00"
 }
