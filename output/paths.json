@@ -169,6 +169,18 @@
  },
  {
   "id": "p_auto_1",
+  "title": "美国半导体指数(SOX) → 芯片ETF",
+  "nodeIds": [
+   "sox",
+   "chipetf"
+  ],
+  "edgeIds": [
+   "e_sox_chipetf"
+  ],
+  "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
+ },
+ {
+  "id": "p_auto_2",
   "title": "融资余额(A股) → 沪深300 → 中证500",
   "nodeIds": [
    "margindebt",
@@ -182,7 +194,7 @@
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  },
  {
-  "id": "p_auto_2",
+  "id": "p_auto_3",
   "title": "创业板指 → 沪深300",
   "nodeIds": [
    "chinext",

@@ -1860,7 +1860,7 @@
   "relation": "positive",
   "mechanism": "全球半导体联动",
   "strength": 0.5,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_rut_spx",
