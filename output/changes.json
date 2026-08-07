@@ -1,52 +1,22 @@
 {
- "since": "2026-08-06T11:51:19+00:00",
- "generatedAt": "2026-08-07T01:45:21+00:00",
+ "since": "2026-08-07T01:45:21+00:00",
+ "generatedAt": "2026-08-07T10:36:52+00:00",
  "nodeChanges": [
   {
    "id": "brent",
    "name": "Brent原油",
-   "from": "NORMAL",
-   "to": "EXTREME"
-  },
-  {
-   "id": "chipetf",
-   "name": "芯片ETF",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "em",
-   "name": "新兴市场股指(MSCI EM)",
    "from": "EXTREME",
+   "to": "NORMAL"
+  },
+  {
+   "id": "gold",
+   "name": "黄金",
+   "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "hyspread",
-   "name": "美国高收益债信用利差",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "us10ybe",
-   "name": "美国10年期盈亏平衡通胀",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "reserves",
-   "name": "美国银行准备金",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "cdxhy",
-   "name": "CDX HY",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "utilities",
-   "name": "美国公用事业指数",
+   "id": "csi300",
+   "name": "沪深300",
    "from": "NORMAL",
    "to": "ELEVATED"
   }
