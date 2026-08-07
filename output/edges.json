@@ -699,7 +699,7 @@
   "relation": "positive",
   "mechanism": "矿业股放大金价弹性",
   "strength": 0.7,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_com_crb",
@@ -1761,7 +1761,7 @@
   "relation": "positive",
   "mechanism": "ETF流入是金价的资金面确认",
   "strength": 0.8,
-  "status": "INACTIVE"
+  "status": "DIVERGENCE"
  },
  {
   "id": "e_cftcgold_gold",
@@ -1824,7 +1824,7 @@
   "relation": "positive",
   "mechanism": "杠杆资金放大A股动量",
   "strength": 0.4,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_10y_tlt",
@@ -1896,7 +1896,7 @@
   "relation": "positive",
   "mechanism": "A股大小盘联动",
   "strength": 0.4,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_chinext_csi",

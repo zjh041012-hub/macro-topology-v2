@@ -9,7 +9,6 @@
    "shibor3m",
    "tsf",
    "usclaims",
-   "usdeficit",
    "usoilinv"
   ],
   "manual": [
@@ -55,7 +54,7 @@
    "cta",
    "gammaproxy"
   ],
-  "liveCount": 134,
+  "liveCount": 135,
   "totalCount": 178,
   "sourceErrors": {
    "fred": "usclaims → ValueError: empty series after transform (insufficient history?)",
@@ -65,13 +64,13 @@
   }
  },
  "topMover": {
-  "nodeId": "copper",
-  "text": "铜(LME) +3.8%/5D · 100分位"
+  "nodeId": "usdjpy",
+  "text": "美元兑日元 -1.5%/5D · 82分位"
  },
  "dominantPathId": "p_std_a",
  "divergenceCount": 0,
- "highRiskCount": 6,
- "regime": "ELEVATED",
- "regimeNote": "自动识别: 0条背离, 6个高风险节点。",
- "updatedAt": "2026-08-07T10:36:52+00:00"
+ "highRiskCount": 9,
+ "regime": "EXTREME",
+ "regimeNote": "自动识别: 0条背离, 9个高风险节点。",
+ "updatedAt": "2026-08-07T23:15:42+00:00"
 }
