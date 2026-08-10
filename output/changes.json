@@ -1,45 +1,71 @@
 {
- "since": "2026-08-07T23:15:42+00:00",
- "generatedAt": "2026-08-10T10:51:45+00:00",
+ "since": "2026-08-10T10:51:45+00:00",
+ "generatedAt": "2026-08-10T23:16:28+00:00",
  "nodeChanges": [
   {
-   "id": "ironore",
-   "name": "铁矿石(大商所主力)",
-   "from": "ELEVATED",
-   "to": "EXTREME"
+   "id": "us10y",
+   "name": "美国10年期国债收益率",
+   "from": "EXTREME",
+   "to": "ELEVATED"
   },
   {
-   "id": "goldminers",
-   "name": "黄金矿业股",
+   "id": "sox",
+   "name": "美国半导体指数(SOX)",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "em",
+   "name": "新兴市场股指(MSCI EM)",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "gold",
+   "name": "黄金",
    "from": "ELEVATED",
-   "to": "EXTREME"
+   "to": "DIVERGENCE"
   },
   {
    "id": "csi300",
    "name": "沪深300",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "us5y",
-   "name": "美国5年期国债收益率",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "sofr",
-   "name": "SOFR",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "hsi",
-   "name": "恒生指数",
+   "id": "infl5y5y",
+   "name": "美国5y5y通胀互换",
    "from": "NORMAL",
    "to": "ELEVATED"
+  },
+  {
+   "id": "geopolitics",
+   "name": "地缘政治风险指数",
+   "from": "ELEVATED",
+   "to": "DIVERGENCE"
+  },
+  {
+   "id": "us5y",
+   "name": "美国5年期国债收益率",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "sofr",
+   "name": "SOFR",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "hsi",
+   "name": "恒生指数",
+   "from": "ELEVATED",
+   "to": "NORMAL"
   }
  ],
  "pathChanges": [],
- "divAdded": [],
+ "divAdded": [
+  "地缘风险升级 vs 黄金避险买盘缺席(对抗型·弱端确认)"
+ ],
  "divRemoved": []
 }

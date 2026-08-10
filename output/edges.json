@@ -78,7 +78,7 @@
   "relation": "positive",
   "mechanism": "法币信用对冲需求推升黄金",
   "strength": 0.75,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_worry_dxy",
@@ -726,7 +726,7 @@
   "relation": "positive",
   "mechanism": "避险需求",
   "strength": 0.45,
-  "status": "INACTIVE"
+  "status": "DIVERGENCE"
  },
  {
   "id": "e_ceiling_worry",
@@ -1698,7 +1698,7 @@
   "relation": "positive",
   "mechanism": "贵金属联动, 白银弹性更高",
   "strength": 0.7,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_real_silver",
@@ -1752,7 +1752,7 @@
   "relation": "positive",
   "mechanism": "财政担忧驱动配置型买盘",
   "strength": 0.7,
-  "status": "INACTIVE"
+  "status": "DIVERGENCE"
  },
  {
   "id": "e_goldflow_gold",
