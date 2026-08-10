@@ -64,13 +64,13 @@
   }
  },
  "topMover": {
-  "nodeId": "usdjpy",
-  "text": "美元兑日元 -1.5%/5D · 82分位"
+  "nodeId": "gold",
+  "text": "黄金 +9.1%/5D · 85分位"
  },
  "dominantPathId": "p_std_a",
  "divergenceCount": 0,
  "highRiskCount": 9,
  "regime": "EXTREME",
  "regimeNote": "自动识别: 0条背离, 9个高风险节点。",
- "updatedAt": "2026-08-07T23:15:42+00:00"
+ "updatedAt": "2026-08-10T10:51:45+00:00"
 }

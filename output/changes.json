@@ -1,64 +1,40 @@
 {
- "since": "2026-08-07T10:36:52+00:00",
- "generatedAt": "2026-08-07T23:15:42+00:00",
+ "since": "2026-08-07T23:15:42+00:00",
+ "generatedAt": "2026-08-10T10:51:45+00:00",
  "nodeChanges": [
   {
-   "id": "us10y",
-   "name": "美国10年期国债收益率",
+   "id": "ironore",
+   "name": "铁矿石(大商所主力)",
    "from": "ELEVATED",
    "to": "EXTREME"
-  },
-  {
-   "id": "termprem",
-   "name": "美债10Y期限溢价",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "sox",
-   "name": "美国半导体指数(SOX)",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "ahe",
-   "name": "美国平均时薪(同比)",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "em",
-   "name": "新兴市场股指(MSCI EM)",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "hyspread",
-   "name": "美国高收益债信用利差",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "csi300",
-   "name": "沪深300",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "cdxhy",
-   "name": "CDX HY",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "gbpusd",
-   "name": "英镑兑美元",
-   "from": "NORMAL",
-   "to": "ELEVATED"
   },
   {
    "id": "goldminers",
    "name": "黄金矿业股",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "csi300",
+   "name": "沪深300",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "us5y",
+   "name": "美国5年期国债收益率",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "sofr",
+   "name": "SOFR",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "hsi",
+   "name": "恒生指数",
    "from": "NORMAL",
    "to": "ELEVATED"
   }
