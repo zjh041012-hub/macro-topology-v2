@@ -1,49 +1,45 @@
 {
- "since": "2026-08-10T23:16:28+00:00",
- "generatedAt": "2026-08-11T10:34:24+00:00",
+ "since": "2026-08-11T10:34:24+00:00",
+ "generatedAt": "2026-08-11T23:21:30+00:00",
  "nodeChanges": [
   {
-   "id": "ironore",
-   "name": "铁矿石(大商所主力)",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "goldminers",
-   "name": "黄金矿业股",
-   "from": "EXTREME",
-   "to": "ELEVATED"
+   "id": "us10y",
+   "name": "美国10年期国债收益率",
+   "from": "ELEVATED",
+   "to": "EXTREME"
   },
   {
    "id": "oil",
    "name": "原油(WTI)",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "csi300",
-   "name": "沪深300",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "brent",
-   "name": "Brent原油",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "csi500",
-   "name": "中证500",
    "from": "ELEVATED",
    "to": "NORMAL"
+  },
+  {
+   "id": "bidcover",
+   "name": "美国国债投标倍数",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "infl5y5y",
+   "name": "美国5y5y通胀互换",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "us5y",
+   "name": "美国5年期国债收益率",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "hsi",
+   "name": "恒生指数",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   }
  ],
  "pathChanges": [],
- "divAdded": [
-  "地缘风险升级 vs 黄金避险买盘缺席(对抗型)"
- ],
- "divRemoved": [
-  "地缘风险升级 vs 黄金避险买盘缺席(对抗型·弱端确认)"
- ]
+ "divAdded": [],
+ "divRemoved": []
 }

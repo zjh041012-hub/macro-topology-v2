@@ -178,5 +178,17 @@
    "e_gold_miners"
   ],
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
+ },
+ {
+  "id": "p_auto_2",
+  "title": "融资余额(A股) → 沪深300",
+  "nodeIds": [
+   "margindebt",
+   "csi300"
+  ],
+  "edgeIds": [
+   "e_margin_csi"
+  ],
+  "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  }
 ]
