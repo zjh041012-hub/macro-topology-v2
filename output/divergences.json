@@ -1,23 +1,22 @@
 [
  {
-  "id": "d6",
-  "title": "地缘风险升级 vs 黄金避险买盘缺席(对抗型)",
+  "id": "d2",
+  "title": "实际利率上行 vs 黄金上涨(对抗型·弱端确认)",
   "relatedNodeIds": [
-   "geopolitics",
+   "us10yreal",
    "gold"
   ],
   "relatedEdgeIds": [
-   "e_geo_gold"
+   "e_real_gold"
   ],
-  "expectedRelation": "重大地缘风险升级时, 避险买盘通常推升金价。",
-  "observedRelation": "geopolitics 20D动量z=-1.1, gold 20D动量z=+1.3, 方向与预期关系相反。",
+  "expectedRelation": "实际利率是黄金的机会成本, 实际利率快速上行时黄金通常承压下跌。",
+  "observedRelation": "us10yreal z=+0.5 与 gold z=+1.7 方向违背预期关系 (一端强趋势, 另一端初步反向)。",
   "window": "20D",
   "strength": "LOW",
   "persistence": "TRANSIENT",
   "alternativeExplanations": [
-   "加息预期与实际利率主导定价, 机会成本压倒避险需求",
-   "高位多头获利了结与保证金抛售",
-   "美元走强分流避险资金"
+   "财政信用对冲需求压倒利率定价",
+   "央行购金等非价格敏感型买盘"
   ],
   "invalidationRisk": "LOW"
  }
