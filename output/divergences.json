@@ -10,7 +10,7 @@
    "e_real_gold"
   ],
   "expectedRelation": "实际利率是黄金的机会成本, 实际利率快速上行时黄金通常承压下跌。",
-  "observedRelation": "us10yreal z=+0.5 与 gold z=+1.7 方向违背预期关系 (一端强趋势, 另一端初步反向)。",
+  "observedRelation": "us10yreal z=+0.5 与 gold z=+1.6 方向违背预期关系 (一端强趋势, 另一端初步反向)。",
   "window": "20D",
   "strength": "LOW",
   "persistence": "TRANSIENT",

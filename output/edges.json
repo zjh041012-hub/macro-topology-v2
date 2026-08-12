@@ -996,7 +996,7 @@
   "relation": "negative",
   "mechanism": "RRP与准备金的跷跷板",
   "strength": 0.6,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_fedbs_reserves",
