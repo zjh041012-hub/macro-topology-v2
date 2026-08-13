@@ -10,7 +10,7 @@
    "e_geo_gold"
   ],
   "expectedRelation": "重大地缘风险升级时, 避险买盘通常推升金价。",
-  "observedRelation": "geopolitics z=-0.7 与 gold z=+1.9 方向违背预期关系 (一端强趋势, 另一端初步反向)。",
+  "observedRelation": "geopolitics z=-0.7 与 gold z=+1.7 方向违背预期关系 (一端强趋势, 另一端初步反向)。",
   "window": "20D",
   "strength": "LOW",
   "persistence": "TRANSIENT",
@@ -20,5 +20,23 @@
    "美元走强分流避险资金"
   ],
   "invalidationRisk": "LOW"
+ },
+ {
+  "id": "d_auto_1",
+  "title": "美联储资产负债表 与 美国银行准备金 走势背离(边扫描)",
+  "relatedNodeIds": [
+   "fedbs",
+   "reserves"
+  ],
+  "relatedEdgeIds": [
+   "e_fedbs_reserves"
+  ],
+  "expectedRelation": "预期同向: 央行资产端决定准备金总量",
+  "observedRelation": "美联储资产负债表 z=+1.2, 美国银行准备金 z=-1.7, 与预期关系相反。",
+  "window": "20D",
+  "strength": "MEDIUM",
+  "persistence": "TRANSIENT",
+  "alternativePaths": [],
+  "invalidationRisk": "MEDIUM"
  }
 ]

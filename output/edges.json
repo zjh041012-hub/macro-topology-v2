@@ -987,7 +987,7 @@
   "relation": "negative",
   "mechanism": "TGA上升抽走银行准备金",
   "strength": 0.7,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_rrp_reserves",
@@ -996,7 +996,7 @@
   "relation": "negative",
   "mechanism": "RRP与准备金的跷跷板",
   "strength": 0.6,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_fedbs_reserves",
@@ -1005,7 +1005,7 @@
   "relation": "positive",
   "mechanism": "央行资产端决定准备金总量",
   "strength": 0.6,
-  "status": "INACTIVE"
+  "status": "DIVERGENCE"
  },
  {
   "id": "e_reserves_fci",

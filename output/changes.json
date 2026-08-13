@@ -1,61 +1,83 @@
 {
- "since": "2026-08-12T23:20:16+00:00",
- "generatedAt": "2026-08-13T10:54:03+00:00",
+ "since": "2026-08-13T10:54:03+00:00",
+ "generatedAt": "2026-08-13T23:20:28+00:00",
  "nodeChanges": [
   {
-   "id": "move",
-   "name": "MOVE利率波动率指数",
+   "id": "fiscalsupply",
+   "name": "美债财政供给压力",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "tga",
+   "name": "美国财政部TGA账户",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "fedbs",
+   "name": "美联储资产负债表",
+   "from": "NORMAL",
+   "to": "DIVERGENCE"
+  },
+  {
+   "id": "usppi",
+   "name": "美国PPI(同比)",
    "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "rrp",
+   "name": "美联储隔夜逆回购(RRP)",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "bdi",
+   "name": "波罗的海干散货指数",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "netissue",
+   "name": "美国国债季度净发行量",
+   "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
    "id": "csi300",
    "name": "沪深300",
-   "from": "EXTREME",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "NORMAL"
   },
   {
-   "id": "geopolitics",
-   "name": "地缘政治风险指数",
-   "from": "NORMAL",
+   "id": "bidcover",
+   "name": "美国国债投标倍数",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "reserves",
+   "name": "美国银行准备金",
+   "from": "ELEVATED",
    "to": "DIVERGENCE"
   },
   {
-   "id": "margindebt",
-   "name": "融资余额(A股)",
-   "from": "EXTREME",
+   "id": "move",
+   "name": "MOVE利率波动率指数",
+   "from": "NORMAL",
    "to": "ELEVATED"
-  },
-  {
-   "id": "brent",
-   "name": "Brent原油",
-   "from": "ELEVATED",
-   "to": "NORMAL"
   },
   {
    "id": "silver",
    "name": "白银",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "lmecopperinv",
-   "name": "LME铜库存",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "csi500",
-   "name": "中证500",
    "from": "ELEVATED",
    "to": "NORMAL"
   }
  ],
  "pathChanges": [],
  "divAdded": [
-  "地缘风险升级 vs 黄金避险买盘缺席(对抗型·弱端确认)"
+  "美联储资产负债表 与 美国银行准备金 走势背离(边扫描)"
  ],
- "divRemoved": [
-  "实际利率上行 vs 黄金上涨(对抗型·弱端确认)"
- ]
+ "divRemoved": []
 }
