@@ -1,69 +1,61 @@
 {
- "since": "2026-08-12T10:45:56+00:00",
- "generatedAt": "2026-08-12T23:20:16+00:00",
+ "since": "2026-08-12T23:20:16+00:00",
+ "generatedAt": "2026-08-13T10:54:03+00:00",
  "nodeChanges": [
   {
    "id": "move",
    "name": "MOVE利率波动率指数",
-   "from": "NORMAL",
-   "to": "EXTREME"
-  },
-  {
-   "id": "usfci",
-   "name": "美国金融条件指数",
-   "from": "ELEVATED",
-   "to": "EXTREME"
+   "from": "EXTREME",
+   "to": "NORMAL"
   },
   {
    "id": "csi300",
    "name": "沪深300",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "sox",
-   "name": "美国半导体指数(SOX)",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "em",
-   "name": "新兴市场股指(MSCI EM)",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "goldminers",
-   "name": "黄金矿业股",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "uscorecpi",
-   "name": "美国核心CPI(同比)",
-   "from": "NORMAL",
+   "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "infl5y5y",
-   "name": "美国5y5y通胀互换",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "id": "geopolitics",
+   "name": "地缘政治风险指数",
+   "from": "NORMAL",
+   "to": "DIVERGENCE"
   },
   {
-   "id": "us5y",
-   "name": "美国5年期国债收益率",
+   "id": "margindebt",
+   "name": "融资余额(A股)",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "brent",
+   "name": "Brent原油",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
    "id": "silver",
    "name": "白银",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "lmecopperinv",
+   "name": "LME铜库存",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "csi500",
+   "name": "中证500",
    "from": "ELEVATED",
    "to": "NORMAL"
   }
  ],
  "pathChanges": [],
- "divAdded": [],
- "divRemoved": []
+ "divAdded": [
+  "地缘风险升级 vs 黄金避险买盘缺席(对抗型·弱端确认)"
+ ],
+ "divRemoved": [
+  "实际利率上行 vs 黄金上涨(对抗型·弱端确认)"
+ ]
 }

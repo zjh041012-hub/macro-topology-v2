@@ -105,7 +105,7 @@
   "relation": "negative",
   "mechanism": "实际利率与黄金的传统负相关本期失效:同步上行",
   "strength": 0.8,
-  "status": "DIVERGENCE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_10y_dxy",
@@ -726,7 +726,7 @@
   "relation": "positive",
   "mechanism": "避险需求",
   "strength": 0.45,
-  "status": "INACTIVE"
+  "status": "DIVERGENCE"
  },
  {
   "id": "e_ceiling_worry",
@@ -996,7 +996,7 @@
   "relation": "negative",
   "mechanism": "RRP与准备金的跷跷板",
   "strength": 0.6,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_fedbs_reserves",
