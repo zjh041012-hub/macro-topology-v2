@@ -1,43 +1,41 @@
 {
- "since": "2026-08-13T23:20:28+00:00",
- "generatedAt": "2026-08-14T10:42:27+00:00",
+ "since": "2026-08-14T10:42:27+00:00",
+ "generatedAt": "2026-08-14T22:57:37+00:00",
  "nodeChanges": [
   {
    "id": "csi300",
    "name": "沪深300",
-   "from": "NORMAL",
-   "to": "EXTREME"
+   "from": "EXTREME",
+   "to": "NORMAL"
+  },
+  {
+   "id": "us10y",
+   "name": "美国10年期国债收益率",
+   "from": "EXTREME",
+   "to": "ELEVATED"
   },
   {
    "id": "move",
    "name": "MOVE利率波动率指数",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "geopolitics",
-   "name": "地缘政治风险指数",
-   "from": "DIVERGENCE",
-   "to": "NORMAL"
-  },
-  {
-   "id": "cn10y",
-   "name": "中国10年期国债收益率",
-   "from": "NORMAL",
+   "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "csi500",
-   "name": "中证500",
+   "id": "gold",
+   "name": "黄金",
+   "from": "DIVERGENCE",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "brent",
+   "name": "Brent原油",
    "from": "NORMAL",
    "to": "ELEVATED"
   }
  ],
  "pathChanges": [],
- "divAdded": [
-  "实际利率上行 vs 黄金上涨(对抗型·弱端确认)"
- ],
+ "divAdded": [],
  "divRemoved": [
-  "地缘风险升级 vs 黄金避险买盘缺席(对抗型·弱端确认)"
+  "实际利率上行 vs 黄金上涨(对抗型·弱端确认)"
  ]
 }

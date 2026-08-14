@@ -68,9 +68,9 @@
   "text": "美债财政供给压力 -10.0%/5D · 64分位"
  },
  "dominantPathId": "p_std_a",
- "divergenceCount": 2,
- "highRiskCount": 16,
+ "divergenceCount": 1,
+ "highRiskCount": 13,
  "regime": "EXTREME",
- "regimeNote": "自动识别: 2条背离, 16个高风险节点。",
- "updatedAt": "2026-08-14T10:42:27+00:00"
+ "regimeNote": "自动识别: 1条背离, 13个高风险节点。",
+ "updatedAt": "2026-08-14T22:57:37+00:00"
 }
