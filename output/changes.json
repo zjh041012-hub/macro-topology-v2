@@ -1,65 +1,57 @@
 {
- "since": "2026-08-14T22:57:37+00:00",
- "generatedAt": "2026-08-17T10:15:18+00:00",
+ "since": "2026-08-17T10:15:18+00:00",
+ "generatedAt": "2026-08-17T23:00:49+00:00",
  "nodeChanges": [
   {
-   "id": "fai",
-   "name": "固定资产投资(累计同比)",
+   "id": "m2",
+   "name": "中国M2(同比)",
    "from": "EXTREME",
    "to": "NORMAL"
   },
   {
-   "id": "m2",
-   "name": "中国M2(同比)",
-   "from": "NORMAL",
+   "id": "us10y",
+   "name": "美国10年期国债收益率",
+   "from": "ELEVATED",
    "to": "EXTREME"
-  },
-  {
-   "id": "geopolitics",
-   "name": "地缘政治风险指数",
-   "from": "NORMAL",
-   "to": "DIVERGENCE"
   },
   {
    "id": "audusd",
    "name": "澳元兑美元",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "bdi",
+   "name": "波罗的海干散货指数",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "gold",
-   "name": "黄金",
-   "from": "ELEVATED",
-   "to": "DIVERGENCE"
+   "id": "oil",
+   "name": "原油(WTI)",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
    "id": "csi300",
    "name": "沪深300",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "retail",
-   "name": "社会消费品零售总额(同比)",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "move",
-   "name": "MOVE利率波动率指数",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "comidx",
-   "name": "南华商品指数",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "id": "goldetfflow",
+   "name": "黄金ETF持仓变化(SPDR·4周)",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "tlt",
+   "name": "美国长期国债指数(TLT)",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   }
  ],
  "pathChanges": [],
- "divAdded": [
-  "地缘风险升级 vs 黄金避险买盘缺席(对抗型·弱端确认)"
- ],
+ "divAdded": [],
  "divRemoved": []
 }
