@@ -69,7 +69,7 @@
   "relation": "positive",
   "mechanism": "供给压力强化财政可持续性担忧",
   "strength": 0.6,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_worry_gold",
@@ -78,7 +78,7 @@
   "relation": "positive",
   "mechanism": "法币信用对冲需求推升黄金",
   "strength": 0.75,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_worry_dxy",
@@ -726,7 +726,7 @@
   "relation": "positive",
   "mechanism": "避险需求",
   "strength": 0.45,
-  "status": "INACTIVE"
+  "status": "DIVERGENCE"
  },
  {
   "id": "e_ceiling_worry",
@@ -996,7 +996,7 @@
   "relation": "negative",
   "mechanism": "RRP与准备金的跷跷板",
   "strength": 0.6,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_fedbs_reserves",
@@ -1599,7 +1599,7 @@
   "relation": "positive",
   "mechanism": "波动率曲面联动",
   "strength": 0.6,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_hydef_hy",
@@ -1716,7 +1716,7 @@
   "relation": "positive",
   "mechanism": "有色构成商品指数权重",
   "strength": 0.3,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_lmeinv_copper",
@@ -1752,7 +1752,7 @@
   "relation": "positive",
   "mechanism": "财政担忧驱动配置型买盘",
   "strength": 0.7,
-  "status": "INACTIVE"
+  "status": "DIVERGENCE"
  },
  {
   "id": "e_goldflow_gold",
@@ -1788,7 +1788,7 @@
   "relation": "negative",
   "mechanism": "负Gamma放大现实波动",
   "strength": 0.5,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_cta_spx",

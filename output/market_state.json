@@ -1,6 +1,7 @@
 {
  "data_status": {
   "stale": [
+   "bidcover",
    "chipetf",
    "cn1y",
    "dividendetf",
@@ -9,6 +10,7 @@
    "shibor3m",
    "tsf",
    "usclaims",
+   "usdcnh",
    "usoilinv"
   ],
   "manual": [
@@ -54,12 +56,14 @@
    "cta",
    "gammaproxy"
   ],
-  "liveCount": 135,
+  "liveCount": 133,
   "totalCount": 178,
   "sourceErrors": {
+   "yahoo": "usdcnh → ValueError: Neither `start` nor `end` can be NaT",
    "fred": "usclaims → ValueError: empty series after transform (insufficient history?)",
    "tushare": "tsf → ValueError: tushare: 抱歉，您没有接口(sf_month)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。",
    "akshare:fund_etf_hist_em": "chipetf → ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+   "treasury": "bidcover → ReadTimeout: HTTPSConnectionPool(host='api.fiscaldata.treasury.gov', port=443): Read timed out. (read timeout=60)",
    "csv_url": "gscpi → ValueError: Excel file format cannot be determined, you must specify an engine manually."
   }
  },
@@ -68,9 +72,9 @@
   "text": "美债财政供给压力 -10.0%/5D · 64分位"
  },
  "dominantPathId": "p_std_a",
- "divergenceCount": 1,
- "highRiskCount": 13,
+ "divergenceCount": 2,
+ "highRiskCount": 15,
  "regime": "EXTREME",
- "regimeNote": "自动识别: 1条背离, 13个高风险节点。",
- "updatedAt": "2026-08-14T22:57:37+00:00"
+ "regimeNote": "自动识别: 2条背离, 15个高风险节点。",
+ "updatedAt": "2026-08-17T10:15:18+00:00"
 }

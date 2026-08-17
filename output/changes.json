@@ -1,41 +1,65 @@
 {
- "since": "2026-08-14T10:42:27+00:00",
- "generatedAt": "2026-08-14T22:57:37+00:00",
+ "since": "2026-08-14T22:57:37+00:00",
+ "generatedAt": "2026-08-17T10:15:18+00:00",
  "nodeChanges": [
   {
-   "id": "csi300",
-   "name": "沪深300",
+   "id": "fai",
+   "name": "固定资产投资(累计同比)",
    "from": "EXTREME",
    "to": "NORMAL"
   },
   {
-   "id": "us10y",
-   "name": "美国10年期国债收益率",
-   "from": "EXTREME",
+   "id": "m2",
+   "name": "中国M2(同比)",
+   "from": "NORMAL",
+   "to": "EXTREME"
+  },
+  {
+   "id": "geopolitics",
+   "name": "地缘政治风险指数",
+   "from": "NORMAL",
+   "to": "DIVERGENCE"
+  },
+  {
+   "id": "audusd",
+   "name": "澳元兑美元",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "gold",
+   "name": "黄金",
+   "from": "ELEVATED",
+   "to": "DIVERGENCE"
+  },
+  {
+   "id": "csi300",
+   "name": "沪深300",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "retail",
+   "name": "社会消费品零售总额(同比)",
+   "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
    "id": "move",
    "name": "MOVE利率波动率指数",
-   "from": "EXTREME",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "NORMAL"
   },
   {
-   "id": "gold",
-   "name": "黄金",
-   "from": "DIVERGENCE",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "brent",
-   "name": "Brent原油",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "id": "comidx",
+   "name": "南华商品指数",
+   "from": "ELEVATED",
+   "to": "NORMAL"
   }
  ],
  "pathChanges": [],
- "divAdded": [],
- "divRemoved": [
-  "实际利率上行 vs 黄金上涨(对抗型·弱端确认)"
- ]
+ "divAdded": [
+  "地缘风险升级 vs 黄金避险买盘缺席(对抗型·弱端确认)"
+ ],
+ "divRemoved": []
 }
