@@ -1,57 +1,78 @@
 {
- "since": "2026-08-17T10:15:18+00:00",
- "generatedAt": "2026-08-17T23:00:49+00:00",
+ "since": "2026-08-17T23:00:49+00:00",
+ "generatedAt": "2026-08-18T10:09:18+00:00",
  "nodeChanges": [
   {
-   "id": "m2",
-   "name": "中国M2(同比)",
-   "from": "EXTREME",
+   "id": "fedbs",
+   "name": "美联储资产负债表",
+   "from": "DIVERGENCE",
    "to": "NORMAL"
   },
   {
-   "id": "us10y",
-   "name": "美国10年期国债收益率",
-   "from": "ELEVATED",
-   "to": "EXTREME"
+   "id": "geopolitics",
+   "name": "地缘政治风险指数",
+   "from": "DIVERGENCE",
+   "to": "NORMAL"
   },
   {
    "id": "audusd",
    "name": "澳元兑美元",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "bdi",
-   "name": "波罗的海干散货指数",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "oil",
-   "name": "原油(WTI)",
-   "from": "NORMAL",
+   "id": "goldminers",
+   "name": "黄金矿业股",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "rebar",
+   "name": "螺纹钢",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "gold",
+   "name": "黄金",
+   "from": "DIVERGENCE",
    "to": "ELEVATED"
   },
   {
    "id": "csi300",
    "name": "沪深300",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
-   "id": "goldetfflow",
-   "name": "黄金ETF持仓变化(SPDR·4周)",
+   "id": "reserves",
+   "name": "美国银行准备金",
+   "from": "DIVERGENCE",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "dr007",
+   "name": "DR007",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "comidx",
+   "name": "南华商品指数",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
    "id": "tlt",
    "name": "美国长期国债指数(TLT)",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "NORMAL"
   }
  ],
  "pathChanges": [],
  "divAdded": [],
- "divRemoved": []
+ "divRemoved": [
+  "地缘风险升级 vs 黄金避险买盘缺席(对抗型·弱端确认)",
+  "美联储资产负债表 与 美国银行准备金 走势背离(边扫描)"
+ ]
 }
