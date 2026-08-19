@@ -1,1 +1,24 @@
-[]
+[
+ {
+  "id": "d6",
+  "title": "地缘风险升级 vs 黄金避险买盘缺席(对抗型·弱端确认)",
+  "relatedNodeIds": [
+   "geopolitics",
+   "gold"
+  ],
+  "relatedEdgeIds": [
+   "e_geo_gold"
+  ],
+  "expectedRelation": "重大地缘风险升级时, 避险买盘通常推升金价。",
+  "observedRelation": "geopolitics z=-0.7 与 gold z=+1.6 方向违背预期关系 (一端强趋势, 另一端初步反向)。",
+  "window": "20D",
+  "strength": "LOW",
+  "persistence": "TRANSIENT",
+  "alternativeExplanations": [
+   "加息预期与实际利率主导定价, 机会成本压倒避险需求",
+   "高位多头获利了结与保证金抛售",
+   "美元走强分流避险资金"
+  ],
+  "invalidationRisk": "LOW"
+ }
+]

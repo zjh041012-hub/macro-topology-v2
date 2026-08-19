@@ -1,33 +1,83 @@
 {
- "since": "2026-08-18T22:59:27+00:00",
- "generatedAt": "2026-08-19T10:10:03+00:00",
+ "since": "2026-08-19T10:10:03+00:00",
+ "generatedAt": "2026-08-19T23:00:26+00:00",
  "nodeChanges": [
   {
-   "id": "rebar",
-   "name": "螺纹钢",
+   "id": "csi300",
+   "name": "沪深300",
+   "from": "NORMAL",
+   "to": "EXTREME"
+  },
+  {
+   "id": "geopolitics",
+   "name": "地缘政治风险指数",
+   "from": "NORMAL",
+   "to": "DIVERGENCE"
+  },
+  {
+   "id": "gbpusd",
+   "name": "英镑兑美元",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "dr007",
-   "name": "DR007",
+   "id": "audusd",
+   "name": "澳元兑美元",
    "from": "ELEVATED",
-   "to": "NORMAL"
+   "to": "EXTREME"
   },
   {
-   "id": "csi500",
-   "name": "中证500",
+   "id": "em",
+   "name": "新兴市场股指(MSCI EM)",
    "from": "ELEVATED",
-   "to": "NORMAL"
+   "to": "EXTREME"
   },
   {
-   "id": "utilities",
-   "name": "美国公用事业指数",
+   "id": "goldminers",
+   "name": "黄金矿业股",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "dxy",
+   "name": "美元指数",
    "from": "NORMAL",
    "to": "ELEVATED"
+  },
+  {
+   "id": "hyspread",
+   "name": "美国高收益债信用利差",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "gold",
+   "name": "黄金",
+   "from": "ELEVATED",
+   "to": "DIVERGENCE"
+  },
+  {
+   "id": "goldetfflow",
+   "name": "黄金ETF持仓变化(SPDR·4周)",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "eurusd",
+   "name": "欧元兑美元",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "cdxhy",
+   "name": "CDX HY",
+   "from": "ELEVATED",
+   "to": "NORMAL"
   }
  ],
  "pathChanges": [],
- "divAdded": [],
+ "divAdded": [
+  "地缘风险升级 vs 黄金避险买盘缺席(对抗型·弱端确认)"
+ ],
  "divRemoved": []
 }

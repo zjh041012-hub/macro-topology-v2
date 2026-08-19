@@ -8,7 +8,6 @@
    "gscpi",
    "shibor3m",
    "tsf",
-   "us5yreal",
    "usclaims",
    "usoilinv"
   ],
@@ -55,7 +54,7 @@
    "cta",
    "gammaproxy"
   ],
-  "liveCount": 134,
+  "liveCount": 135,
   "totalCount": 178,
   "sourceErrors": {
    "fred": "usclaims → ValueError: empty series after transform (insufficient history?)",
@@ -69,9 +68,9 @@
   "text": "美债财政供给压力 -10.0%/5D · 64分位"
  },
  "dominantPathId": "p_std_a",
- "divergenceCount": 0,
- "highRiskCount": 11,
+ "divergenceCount": 1,
+ "highRiskCount": 14,
  "regime": "EXTREME",
- "regimeNote": "自动识别: 0条背离, 11个高风险节点。",
- "updatedAt": "2026-08-19T10:10:03+00:00"
+ "regimeNote": "自动识别: 1条背离, 14个高风险节点。",
+ "updatedAt": "2026-08-19T23:00:26+00:00"
 }
