@@ -1,54 +1,30 @@
 {
- "since": "2026-08-18T10:09:18+00:00",
- "generatedAt": "2026-08-18T22:59:27+00:00",
+ "since": "2026-08-18T22:59:27+00:00",
+ "generatedAt": "2026-08-19T10:10:03+00:00",
  "nodeChanges": [
   {
-   "id": "sox",
-   "name": "美国半导体指数(SOX)",
-   "from": "EXTREME",
-   "to": "ELEVATED"
+   "id": "rebar",
+   "name": "螺纹钢",
+   "from": "ELEVATED",
+   "to": "EXTREME"
   },
   {
-   "id": "gdpnow",
-   "name": "亚特兰大联储GDPNow",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "audusd",
-   "name": "澳元兑美元",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "em",
-   "name": "新兴市场股指(MSCI EM)",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "bdi",
-   "name": "波罗的海干散货指数",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "csi300",
-   "name": "沪深300",
+   "id": "dr007",
+   "name": "DR007",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "goldetfflow",
-   "name": "黄金ETF持仓变化(SPDR·4周)",
+   "id": "csi500",
+   "name": "中证500",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "sofr",
-   "name": "SOFR",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "id": "utilities",
+   "name": "美国公用事业指数",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   }
  ],
  "pathChanges": [],

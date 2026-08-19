@@ -8,6 +8,7 @@
    "gscpi",
    "shibor3m",
    "tsf",
+   "us5yreal",
    "usclaims",
    "usoilinv"
   ],
@@ -54,7 +55,7 @@
    "cta",
    "gammaproxy"
   ],
-  "liveCount": 135,
+  "liveCount": 134,
   "totalCount": 178,
   "sourceErrors": {
    "fred": "usclaims → ValueError: empty series after transform (insufficient history?)",
@@ -72,5 +73,5 @@
  "highRiskCount": 11,
  "regime": "EXTREME",
  "regimeNote": "自动识别: 0条背离, 11个高风险节点。",
- "updatedAt": "2026-08-18T22:59:27+00:00"
+ "updatedAt": "2026-08-19T10:10:03+00:00"
 }
