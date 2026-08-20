@@ -67,10 +67,10 @@
   "nodeId": "fiscalsupply",
   "text": "美债财政供给压力 -10.0%/5D · 64分位"
  },
- "dominantPathId": "p_std_a",
+ "dominantPathId": "p_std_e",
  "divergenceCount": 1,
- "highRiskCount": 14,
+ "highRiskCount": 13,
  "regime": "EXTREME",
- "regimeNote": "自动识别: 1条背离, 14个高风险节点。",
- "updatedAt": "2026-08-19T23:00:26+00:00"
+ "regimeNote": "自动识别: 1条背离, 13个高风险节点。",
+ "updatedAt": "2026-08-20T10:10:42+00:00"
 }
