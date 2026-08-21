@@ -1,93 +1,37 @@
 {
- "since": "2026-08-20T10:10:42+00:00",
- "generatedAt": "2026-08-20T23:06:01+00:00",
+ "since": "2026-08-20T23:06:01+00:00",
+ "generatedAt": "2026-08-21T10:12:14+00:00",
  "nodeChanges": [
-  {
-   "id": "fiscalsupply",
-   "name": "美债财政供给压力",
-   "from": "EXTREME",
-   "to": "NORMAL"
-  },
-  {
-   "id": "csi300",
-   "name": "沪深300",
-   "from": "NORMAL",
-   "to": "EXTREME"
-  },
-  {
-   "id": "us10y",
-   "name": "美国10年期国债收益率",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "termprem",
-   "name": "美债10Y期限溢价",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "ndx",
-   "name": "纳斯达克100",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "hyspread",
-   "name": "美国高收益债信用利差",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "gold",
-   "name": "黄金",
-   "from": "DIVERGENCE",
-   "to": "EXTREME"
-  },
   {
    "id": "fiscalworry",
    "name": "财政信用担忧指数",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "bidcover",
-   "name": "美国国债投标倍数",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "infl5y5y",
-   "name": "美国5y5y通胀互换",
+   "id": "hsi",
+   "name": "恒生指数",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "us5yreal",
-   "name": "美国5年期实际利率",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "cdxhy",
-   "name": "CDX HY",
+   "id": "dr001",
+   "name": "DR001",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "silver",
-   "name": "白银",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "sofr",
-   "name": "SOFR",
+   "id": "aluminum",
+   "name": "铝(沪铝主力)",
    "from": "NORMAL",
    "to": "ELEVATED"
   }
  ],
  "pathChanges": [],
- "divAdded": [],
- "divRemoved": []
+ "divAdded": [
+  "地缘风险升级 vs 黄金避险买盘缺席(对抗型·弱端确认)"
+ ],
+ "divRemoved": [
+  "地缘风险升级 vs 黄金避险买盘缺席(对抗型)"
+ ]
 }
