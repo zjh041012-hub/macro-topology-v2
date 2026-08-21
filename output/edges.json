@@ -1770,7 +1770,7 @@
   "relation": "positive",
   "mechanism": "投机仓位放大波动",
   "strength": 0.4,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_putcall_vix",
