@@ -1,66 +1,24 @@
 {
- "since": "2026-08-21T10:12:14+00:00",
- "generatedAt": "2026-08-21T23:00:46+00:00",
+ "since": "2026-08-21T23:00:46+00:00",
+ "generatedAt": "2026-08-24T10:21:02+00:00",
  "nodeChanges": [
-  {
-   "id": "us10y",
-   "name": "美国10年期国债收益率",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "termprem",
-   "name": "美债10Y期限溢价",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "goldetfflow",
-   "name": "黄金ETF持仓变化(SPDR·4周)",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
   {
    "id": "crb",
    "name": "CRB商品指数",
-   "from": "ELEVATED",
-   "to": "EXTREME"
+   "from": "EXTREME",
+   "to": "ELEVATED"
   },
   {
    "id": "utilities",
    "name": "美国公用事业指数",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "hyspread",
-   "name": "美国高收益债信用利差",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "us5y",
-   "name": "美国5年期国债收益率",
-   "from": "NORMAL",
+   "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "cdxhy",
-   "name": "CDX HY",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "cftcgold",
-   "name": "CFTC黄金净多头",
+   "id": "us10ybe",
+   "name": "美国10年期盈亏平衡通胀",
    "from": "NORMAL",
    "to": "ELEVATED"
-  },
-  {
-   "id": "hsi",
-   "name": "恒生指数",
-   "from": "ELEVATED",
-   "to": "NORMAL"
   }
  ],
  "pathChanges": [],
