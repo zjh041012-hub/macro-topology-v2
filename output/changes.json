@@ -1,32 +1,7 @@
 {
- "since": "2026-08-24T23:02:16+00:00",
- "generatedAt": "2026-08-25T10:11:27+00:00",
- "nodeChanges": [
-  {
-   "id": "csi300",
-   "name": "沪深300",
-   "from": "NORMAL",
-   "to": "EXTREME"
-  },
-  {
-   "id": "oil",
-   "name": "原油(WTI)",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "brent",
-   "name": "Brent原油",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "hsi",
-   "name": "恒生指数",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  }
- ],
+ "since": "2026-08-25T10:11:27+00:00",
+ "generatedAt": "2026-08-25T23:05:43+00:00",
+ "nodeChanges": [],
  "pathChanges": [],
  "divAdded": [],
  "divRemoved": []
