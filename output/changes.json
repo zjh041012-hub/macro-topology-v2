@@ -1,65 +1,33 @@
 {
- "since": "2026-08-24T10:21:02+00:00",
- "generatedAt": "2026-08-24T23:02:16+00:00",
+ "since": "2026-08-24T23:02:16+00:00",
+ "generatedAt": "2026-08-25T10:11:27+00:00",
  "nodeChanges": [
   {
    "id": "csi300",
    "name": "沪深300",
-   "from": "EXTREME",
-   "to": "NORMAL"
-  },
-  {
-   "id": "geopolitics",
-   "name": "地缘政治风险指数",
-   "from": "DIVERGENCE",
-   "to": "NORMAL"
-  },
-  {
-   "id": "bdi",
-   "name": "波罗的海干散货指数",
-   "from": "ELEVATED",
+   "from": "NORMAL",
    "to": "EXTREME"
   },
   {
-   "id": "hyspread",
-   "name": "美国高收益债信用利差",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "infl5y5y",
-   "name": "美国5y5y通胀互换",
+   "id": "oil",
+   "name": "原油(WTI)",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "us5yreal",
-   "name": "美国5年期实际利率",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "cdxhy",
-   "name": "CDX HY",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "sofr",
-   "name": "SOFR",
+   "id": "brent",
+   "name": "Brent原油",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
    "id": "hsi",
    "name": "恒生指数",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "NORMAL"
   }
  ],
  "pathChanges": [],
  "divAdded": [],
- "divRemoved": [
-  "地缘风险升级 vs 黄金避险买盘缺席(对抗型·弱端确认)"
- ]
+ "divRemoved": []
 }
