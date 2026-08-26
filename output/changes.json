@@ -1,7 +1,50 @@
 {
- "since": "2026-08-25T10:11:27+00:00",
- "generatedAt": "2026-08-25T23:05:43+00:00",
- "nodeChanges": [],
+ "since": "2026-08-25T23:05:43+00:00",
+ "generatedAt": "2026-08-26T10:14:50+00:00",
+ "nodeChanges": [
+  {
+   "id": "dxy",
+   "name": "美元指数",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "us10ybe",
+   "name": "美国10年期盈亏平衡通胀",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "fiscalworry",
+   "name": "财政信用担忧指数",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "vvix",
+   "name": "VVIX",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "cta",
+   "name": "CTA趋势仓位代理",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "rebar",
+   "name": "螺纹钢",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "utilities",
+   "name": "美国公用事业指数",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  }
+ ],
  "pathChanges": [],
  "divAdded": [],
  "divRemoved": []
