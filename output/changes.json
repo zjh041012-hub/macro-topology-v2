@@ -1,107 +1,69 @@
 {
- "since": "2026-08-26T10:14:50+00:00",
- "generatedAt": "2026-08-27T03:37:32+00:00",
+ "since": "2026-08-27T03:37:32+00:00",
+ "generatedAt": "2026-08-27T20:04:59+00:00",
  "nodeChanges": [
   {
-   "id": "us10y",
-   "name": "美国10年期国债收益率",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "us10yreal",
-   "name": "美国10年期实际利率",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "termprem",
-   "name": "美债10Y期限溢价",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "bidcover",
-   "name": "美国国债投标倍数",
+   "id": "ndx",
+   "name": "纳斯达克100",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "goldetfflow",
-   "name": "黄金ETF持仓变化(SPDR·4周)",
+   "id": "cnbond",
+   "name": "中国10年期国债期货",
    "from": "EXTREME",
    "to": "ELEVATED"
-  },
-  {
-   "id": "uspce",
-   "name": "美国核心PCE(同比)",
-   "from": "ELEVATED",
-   "to": "EXTREME"
   },
   {
    "id": "comidx",
    "name": "南华商品指数",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "geopolitics",
-   "name": "地缘政治风险指数",
-   "from": "NORMAL",
-   "to": "DIVERGENCE"
-  },
-  {
-   "id": "gdpnow",
-   "name": "亚特兰大联储GDPNow",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "ahe",
-   "name": "美国平均时薪(同比)",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
    "id": "rrp",
    "name": "美联储隔夜逆回购(RRP)",
-   "from": "EXTREME",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "EXTREME"
   },
   {
-   "id": "eurusd",
-   "name": "欧元兑美元",
+   "id": "cn10y",
+   "name": "中国10年期国债收益率",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "move",
-   "name": "MOVE利率波动率指数",
+   "id": "oil",
+   "name": "原油(WTI)",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "us5y",
-   "name": "美国5年期国债收益率",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "us5yreal",
-   "name": "美国5年期实际利率",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
    "id": "vvix",
    "name": "VVIX",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "brent",
+   "name": "Brent原油",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "sofr",
+   "name": "SOFR",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "dr001",
+   "name": "DR001",
    "from": "ELEVATED",
    "to": "NORMAL"
   }
  ],
  "pathChanges": [],
- "divAdded": [
-  "地缘风险升级 vs 黄金避险买盘缺席(对抗型·弱端确认)"
- ],
+ "divAdded": [],
  "divRemoved": []
 }

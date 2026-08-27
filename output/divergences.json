@@ -10,7 +10,7 @@
    "e_geo_gold"
   ],
   "expectedRelation": "重大地缘风险升级时, 避险买盘通常推升金价。",
-  "observedRelation": "geopolitics z=-0.7 与 gold z=+2.3 方向违背预期关系 (一端强趋势, 另一端初步反向)。",
+  "observedRelation": "geopolitics z=-0.7 与 gold z=+2.2 方向违背预期关系 (一端强趋势, 另一端初步反向)。",
   "window": "20D",
   "strength": "LOW",
   "persistence": "TRANSIENT",
