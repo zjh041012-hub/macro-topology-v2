@@ -1,90 +1,12 @@
 {
- "since": "2026-08-28T06:23:13+00:00",
- "generatedAt": "2026-08-28T21:08:53+00:00",
+ "since": "2026-08-28T21:08:53+00:00",
+ "generatedAt": "2026-08-29T03:58:24+00:00",
  "nodeChanges": [
   {
-   "id": "us10y",
-   "name": "美国10年期国债收益率",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "hyspread",
-   "name": "美国高收益债信用利差",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "gold",
-   "name": "黄金",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "cnbond",
-   "name": "中国10年期国债期货",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "cdxhy",
-   "name": "CDX HY",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "cftcgold",
-   "name": "CFTC黄金净多头",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "gbpusd",
-   "name": "英镑兑美元",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "rrp",
-   "name": "美联储隔夜逆回购(RRP)",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "oil",
-   "name": "原油(WTI)",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "move",
-   "name": "MOVE利率波动率指数",
+   "id": "infl5y5y",
+   "name": "美国5y5y通胀互换",
    "from": "ELEVATED",
    "to": "NORMAL"
-  },
-  {
-   "id": "usconf",
-   "name": "美国消费者信心",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "vvix",
-   "name": "VVIX",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "silver",
-   "name": "白银",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "utilities",
-   "name": "美国公用事业指数",
-   "from": "NORMAL",
-   "to": "ELEVATED"
   }
  ],
  "pathChanges": [],
