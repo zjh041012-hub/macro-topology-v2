@@ -1,12 +1,66 @@
 {
- "since": "2026-08-28T21:08:53+00:00",
- "generatedAt": "2026-08-29T03:58:24+00:00",
+ "since": "2026-08-29T03:58:24+00:00",
+ "generatedAt": "2026-08-31T17:21:45+00:00",
  "nodeChanges": [
   {
-   "id": "infl5y5y",
-   "name": "美国5y5y通胀互换",
+   "id": "rebar",
+   "name": "螺纹钢",
+   "from": "NORMAL",
+   "to": "EXTREME"
+  },
+  {
+   "id": "ndx",
+   "name": "纳斯达克100",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "comidx",
+   "name": "南华商品指数",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "rut",
+   "name": "罗素2000",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "reits",
+   "name": "美国房地产REITs",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "cn10y",
+   "name": "中国10年期国债收益率",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "us5y",
+   "name": "美国5年期国债收益率",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "sofr",
+   "name": "SOFR",
    "from": "ELEVATED",
    "to": "NORMAL"
+  },
+  {
+   "id": "debtceiling",
+   "name": "债务上限博弈风险",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "dr001",
+   "name": "DR001",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   }
  ],
  "pathChanges": [],
