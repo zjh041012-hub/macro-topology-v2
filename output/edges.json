@@ -1644,7 +1644,7 @@
   "relation": "positive",
   "mechanism": "两油联动",
   "strength": 0.9,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_opec_oil",
@@ -1698,7 +1698,7 @@
   "relation": "positive",
   "mechanism": "贵金属联动, 白银弹性更高",
   "strength": 0.7,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_real_silver",

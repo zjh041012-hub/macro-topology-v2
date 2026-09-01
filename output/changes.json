@@ -1,66 +1,48 @@
 {
- "since": "2026-08-29T03:58:24+00:00",
- "generatedAt": "2026-08-31T17:21:45+00:00",
+ "since": "2026-08-31T17:21:45+00:00",
+ "generatedAt": "2026-09-01T01:31:05+00:00",
  "nodeChanges": [
   {
-   "id": "rebar",
-   "name": "螺纹钢",
-   "from": "NORMAL",
+   "id": "rrp",
+   "name": "美联储隔夜逆回购(RRP)",
+   "from": "EXTREME",
+   "to": "NORMAL"
+  },
+  {
+   "id": "us10yreal",
+   "name": "美国10年期实际利率",
+   "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
    "id": "ndx",
    "name": "纳斯达克100",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "comidx",
-   "name": "南华商品指数",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "rut",
-   "name": "罗素2000",
+   "id": "cftcgold",
+   "name": "CFTC黄金净多头",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "reits",
-   "name": "美国房地产REITs",
+   "id": "rebar",
+   "name": "螺纹钢",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "cn10y",
-   "name": "中国10年期国债收益率",
+   "id": "us5yreal",
+   "name": "美国5年期实际利率",
    "from": "NORMAL",
    "to": "ELEVATED"
-  },
-  {
-   "id": "us5y",
-   "name": "美国5年期国债收益率",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "sofr",
-   "name": "SOFR",
-   "from": "ELEVATED",
-   "to": "NORMAL"
   },
   {
    "id": "debtceiling",
    "name": "债务上限博弈风险",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "dr001",
-   "name": "DR001",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "NORMAL"
   }
  ],
  "pathChanges": [],
