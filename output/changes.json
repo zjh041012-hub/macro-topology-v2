@@ -1,46 +1,34 @@
 {
- "since": "2026-08-31T17:21:45+00:00",
- "generatedAt": "2026-09-01T01:31:05+00:00",
+ "since": "2026-09-01T01:31:05+00:00",
+ "generatedAt": "2026-09-01T14:25:38+00:00",
  "nodeChanges": [
   {
-   "id": "rrp",
-   "name": "美联储隔夜逆回购(RRP)",
+   "id": "csi300",
+   "name": "沪深300",
    "from": "EXTREME",
    "to": "NORMAL"
   },
   {
-   "id": "us10yreal",
-   "name": "美国10年期实际利率",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
    "id": "ndx",
    "name": "纳斯达克100",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "crb",
+   "name": "CRB商品指数",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "cftcgold",
-   "name": "CFTC黄金净多头",
-   "from": "EXTREME",
-   "to": "ELEVATED"
+   "id": "gold",
+   "name": "黄金",
+   "from": "ELEVATED",
+   "to": "NORMAL"
   },
   {
-   "id": "rebar",
-   "name": "螺纹钢",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "us5yreal",
-   "name": "美国5年期实际利率",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "debtceiling",
-   "name": "债务上限博弈风险",
+   "id": "dr001",
+   "name": "DR001",
    "from": "ELEVATED",
    "to": "NORMAL"
   }
