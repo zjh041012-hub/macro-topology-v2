@@ -8,8 +8,8 @@
    "gscpi",
    "shibor3m",
    "tsf",
-   "us10yreal",
    "usclaims",
+   "usdcnh",
    "usoilinv"
   ],
   "manual": [
@@ -58,7 +58,8 @@
   "liveCount": 134,
   "totalCount": 178,
   "sourceErrors": {
-   "fred": "us10yreal → JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+   "yahoo": "usdcnh → ValueError: Neither `start` nor `end` can be NaT",
+   "fred": "usclaims → ValueError: empty series after transform (insufficient history?)",
    "tushare": "tsf → ValueError: tushare: 抱歉，您没有接口(sf_month)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。",
    "akshare:fund_etf_hist_em": "chipetf → ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
    "csv_url": "gscpi → ValueError: Excel file format cannot be determined, you must specify an engine manually."
@@ -66,12 +67,12 @@
  },
  "topMover": {
   "nodeId": "oil",
-  "text": "原油(WTI) +6.9%/5D · 91分位"
+  "text": "原油(WTI) +10.6%/5D · 92分位"
  },
  "dominantPathId": "p_std_f",
  "divergenceCount": 0,
- "highRiskCount": 10,
+ "highRiskCount": 11,
  "regime": "EXTREME",
- "regimeNote": "自动识别: 0条背离, 10个高风险节点。",
- "updatedAt": "2026-09-01T14:25:38+00:00"
+ "regimeNote": "自动识别: 0条背离, 11个高风险节点。",
+ "updatedAt": "2026-09-02T00:35:23+00:00"
 }
