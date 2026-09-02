@@ -1,42 +1,18 @@
 {
- "since": "2026-09-01T14:25:38+00:00",
- "generatedAt": "2026-09-02T00:35:23+00:00",
+ "since": "2026-09-02T00:35:23+00:00",
+ "generatedAt": "2026-09-02T13:57:31+00:00",
  "nodeChanges": [
   {
-   "id": "goldetfflow",
-   "name": "黄金ETF持仓变化(SPDR·4周)",
+   "id": "chinext",
+   "name": "创业板指",
    "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "goldminers",
-   "name": "黄金矿业股",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "us10ybe",
-   "name": "美国10年期盈亏平衡通胀",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "infl5y5y",
-   "name": "美国5y5y通胀互换",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "rrp",
-   "name": "美联储隔夜逆回购(RRP)",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "to": "NORMAL"
   },
   {
    "id": "utilities",
    "name": "美国公用事业指数",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "from": "NORMAL",
+   "to": "ELEVATED"
   }
  ],
  "pathChanges": [],
