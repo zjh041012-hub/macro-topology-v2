@@ -1,18 +1,30 @@
 {
- "since": "2026-09-02T00:35:23+00:00",
- "generatedAt": "2026-09-02T13:57:31+00:00",
+ "since": "2026-09-02T13:57:31+00:00",
+ "generatedAt": "2026-09-03T00:40:54+00:00",
  "nodeChanges": [
   {
-   "id": "chinext",
-   "name": "创业板指",
+   "id": "termprem",
+   "name": "美债10Y期限溢价",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "us10ybe",
+   "name": "美国10年期盈亏平衡通胀",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "gbpusd",
+   "name": "英镑兑美元",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
    "id": "utilities",
    "name": "美国公用事业指数",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "NORMAL"
   }
  ],
  "pathChanges": [],
