@@ -1,53 +1,41 @@
 {
- "since": "2026-09-03T13:57:02+00:00",
- "generatedAt": "2026-09-04T00:26:10+00:00",
+ "since": "2026-09-04T00:26:10+00:00",
+ "generatedAt": "2026-09-04T13:52:29+00:00",
  "nodeChanges": [
-  {
-   "id": "termprem",
-   "name": "美债10Y期限溢价",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "hyspread",
-   "name": "美国高收益债信用利差",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "ndx",
-   "name": "纳斯达克100",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "reserves",
-   "name": "美国银行准备金",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "goldetfflow",
-   "name": "黄金ETF持仓变化(SPDR·4周)",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
   {
    "id": "comidx",
    "name": "南华商品指数",
-   "from": "EXTREME",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "EXTREME"
   },
   {
-   "id": "cdxhy",
-   "name": "CDX HY",
+   "id": "rut",
+   "name": "罗素2000",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
    "id": "goldminers",
    "name": "黄金矿业股",
-   "from": "EXTREME",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "bankidx",
+   "name": "银行指数",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "vvix",
+   "name": "VVIX",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "lmecopperinv",
+   "name": "LME铜库存",
+   "from": "NORMAL",
    "to": "ELEVATED"
   }
  ],
