@@ -1,41 +1,53 @@
 {
- "since": "2026-09-03T00:40:54+00:00",
- "generatedAt": "2026-09-03T13:57:02+00:00",
+ "since": "2026-09-03T13:57:02+00:00",
+ "generatedAt": "2026-09-04T00:26:10+00:00",
  "nodeChanges": [
   {
-   "id": "rut",
-   "name": "罗素2000",
+   "id": "termprem",
+   "name": "美债10Y期限溢价",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "hyspread",
+   "name": "美国高收益债信用利差",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "ndx",
+   "name": "纳斯达克100",
    "from": "ELEVATED",
    "to": "EXTREME"
+  },
+  {
+   "id": "reserves",
+   "name": "美国银行准备金",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "goldetfflow",
+   "name": "黄金ETF持仓变化(SPDR·4周)",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "comidx",
+   "name": "南华商品指数",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "cdxhy",
+   "name": "CDX HY",
+   "from": "EXTREME",
+   "to": "ELEVATED"
   },
   {
    "id": "goldminers",
    "name": "黄金矿业股",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "gold",
-   "name": "黄金",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "usdjpy",
-   "name": "美元兑日元",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "dr007",
-   "name": "DR007",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "gbpusd",
-   "name": "英镑兑美元",
-   "from": "NORMAL",
+   "from": "EXTREME",
    "to": "ELEVATED"
   }
  ],
