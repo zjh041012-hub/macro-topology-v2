@@ -1,42 +1,36 @@
 {
- "since": "2026-09-04T00:26:10+00:00",
- "generatedAt": "2026-09-04T13:52:29+00:00",
+ "since": "2026-09-04T13:52:29+00:00",
+ "generatedAt": "2026-09-05T00:26:30+00:00",
  "nodeChanges": [
   {
-   "id": "comidx",
-   "name": "南华商品指数",
+   "id": "hyspread",
+   "name": "美国高收益债信用利差",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "cdxhy",
+   "name": "CDX HY",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
    "id": "rut",
    "name": "罗素2000",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "goldminers",
-   "name": "黄金矿业股",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "bankidx",
-   "name": "银行指数",
+   "id": "bankloans",
+   "name": "美国商业银行贷款(同比)",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
    "id": "vvix",
    "name": "VVIX",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "lmecopperinv",
-   "name": "LME铜库存",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "NORMAL"
   }
  ],
  "pathChanges": [],
