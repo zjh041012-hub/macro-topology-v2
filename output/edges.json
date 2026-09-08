@@ -717,7 +717,7 @@
   "relation": "positive",
   "mechanism": "地缘冲击供给溢价",
   "strength": 0.5,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_geo_gold",

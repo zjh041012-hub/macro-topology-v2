@@ -1,54 +1,36 @@
 {
- "since": "2026-09-05T00:26:30+00:00",
- "generatedAt": "2026-09-07T15:18:50+00:00",
+ "since": "2026-09-07T15:18:50+00:00",
+ "generatedAt": "2026-09-08T00:45:48+00:00",
  "nodeChanges": [
   {
-   "id": "goldminers",
-   "name": "黄金矿业股",
+   "id": "comidx",
+   "name": "南华商品指数",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "bankidx",
-   "name": "银行指数",
+   "id": "termprem",
+   "name": "美债10Y期限溢价",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "dr007",
-   "name": "DR007",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "id": "usdjpy",
+   "name": "美元兑日元",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
    "id": "geopolitics",
    "name": "地缘政治风险指数",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "ironore",
-   "name": "铁矿石(大商所主力)",
    "from": "ELEVATED",
    "to": "NORMAL"
-  },
-  {
-   "id": "cftcgold",
-   "name": "CFTC黄金净多头",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "chinext",
-   "name": "创业板指",
-   "from": "NORMAL",
-   "to": "ELEVATED"
   },
   {
    "id": "margindebt",
    "name": "融资余额(A股)",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "from": "NORMAL",
+   "to": "ELEVATED"
   }
  ],
  "pathChanges": [],

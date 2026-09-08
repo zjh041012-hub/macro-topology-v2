@@ -64,13 +64,13 @@
   }
  },
  "topMover": {
-  "nodeId": "bidcover",
-  "text": "美国国债投标倍数 +0.0%/5D · 100分位"
+  "nodeId": "usdjpy",
+  "text": "美元兑日元 -3.8%/5D · 56分位"
  },
- "dominantPathId": "p_std_a",
+ "dominantPathId": "p_std_f",
  "divergenceCount": 0,
  "highRiskCount": 12,
  "regime": "EXTREME",
  "regimeNote": "自动识别: 0条背离, 12个高风险节点。",
- "updatedAt": "2026-09-07T15:18:50+00:00"
+ "updatedAt": "2026-09-08T00:45:48+00:00"
 }

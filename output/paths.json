@@ -1,5 +1,26 @@
 [
  {
+  "id": "p_std_f",
+  "name": "路径F · 全球再通胀",
+  "title": "路径F · 全球再通胀",
+  "nodeIds": [
+   "ismneworder",
+   "oil",
+   "us10ybe",
+   "us10y",
+   "bankidx"
+  ],
+  "edgeIds": [
+   "e_ismno_oil",
+   "e_oil_be",
+   "e_be_10y",
+   "e_10y_bank"
+  ],
+  "status": "INACTIVE",
+  "consistency": 0.25,
+  "note": "实时评估: 1/4 条边动量一致 (ismneworder→oil×, oil→us10ybe✓, us10ybe→us10y×, us10y→bankidx×)。"
+ },
+ {
   "id": "p_std_a",
   "name": "路径A · 美国政策转鹰",
   "title": "路径A · 美国政策转鹰",
@@ -109,27 +130,6 @@
   "note": "实时评估: 0/3 条边动量一致 (liqcrisis→dxy×, dxy→hyspread×, spx→hyspread×)。"
  },
  {
-  "id": "p_std_f",
-  "name": "路径F · 全球再通胀",
-  "title": "路径F · 全球再通胀",
-  "nodeIds": [
-   "ismneworder",
-   "oil",
-   "us10ybe",
-   "us10y",
-   "bankidx"
-  ],
-  "edgeIds": [
-   "e_ismno_oil",
-   "e_oil_be",
-   "e_be_10y",
-   "e_10y_bank"
-  ],
-  "status": "INACTIVE",
-  "consistency": 0.0,
-  "note": "实时评估: 0/4 条边动量一致 (ismneworder→oil×, oil→us10ybe×, us10ybe→us10y×, us10y→bankidx×)。"
- },
- {
   "id": "p_std_g",
   "name": "路径G · 中国地产下行",
   "title": "路径G · 中国地产下行",
@@ -176,18 +176,6 @@
   ],
   "edgeIds": [
    "e_com_crb"
-  ],
-  "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
- },
- {
-  "id": "p_auto_2",
-  "title": "地缘政治风险指数 → 原油(WTI)",
-  "nodeIds": [
-   "geopolitics",
-   "oil"
-  ],
-  "edgeIds": [
-   "e_geo_oil"
   ],
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  }
