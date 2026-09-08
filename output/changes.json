@@ -1,36 +1,30 @@
 {
- "since": "2026-09-07T15:18:50+00:00",
- "generatedAt": "2026-09-08T00:45:48+00:00",
+ "since": "2026-09-08T00:45:48+00:00",
+ "generatedAt": "2026-09-08T13:56:38+00:00",
  "nodeChanges": [
   {
-   "id": "comidx",
-   "name": "南华商品指数",
+   "id": "lmecopperinv",
+   "name": "LME铜库存",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "rut",
+   "name": "罗素2000",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "termprem",
-   "name": "美债10Y期限溢价",
+   "id": "goldminers",
+   "name": "黄金矿业股",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "gold",
+   "name": "黄金",
    "from": "ELEVATED",
    "to": "NORMAL"
-  },
-  {
-   "id": "usdjpy",
-   "name": "美元兑日元",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "geopolitics",
-   "name": "地缘政治风险指数",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "margindebt",
-   "name": "融资余额(A股)",
-   "from": "NORMAL",
-   "to": "ELEVATED"
   }
  ],
  "pathChanges": [],
