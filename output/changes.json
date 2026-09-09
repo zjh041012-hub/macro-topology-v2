@@ -1,30 +1,42 @@
 {
- "since": "2026-09-08T00:45:48+00:00",
- "generatedAt": "2026-09-08T13:56:38+00:00",
+ "since": "2026-09-08T13:56:38+00:00",
+ "generatedAt": "2026-09-09T00:36:35+00:00",
  "nodeChanges": [
   {
-   "id": "lmecopperinv",
-   "name": "LME铜库存",
+   "id": "geopolitics",
+   "name": "地缘政治风险指数",
+   "from": "NORMAL",
+   "to": "EXTREME"
+  },
+  {
+   "id": "hyspread",
+   "name": "美国高收益债信用利差",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "us5y",
+   "name": "美国5年期国债收益率",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "rut",
-   "name": "罗素2000",
+   "id": "cdxhy",
+   "name": "CDX HY",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
    "id": "goldminers",
    "name": "黄金矿业股",
-   "from": "ELEVATED",
-   "to": "EXTREME"
+   "from": "EXTREME",
+   "to": "ELEVATED"
   },
   {
-   "id": "gold",
-   "name": "黄金",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "id": "us10ybe",
+   "name": "美国10年期盈亏平衡通胀",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   }
  ],
  "pathChanges": [],

@@ -132,7 +132,7 @@
   "relation": "positive",
   "mechanism": "油价上行未带动盈亏平衡通胀,通胀预期未确认",
   "strength": 0.55,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_style",
@@ -717,7 +717,7 @@
   "relation": "positive",
   "mechanism": "地缘冲击供给溢价",
   "strength": 0.5,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_geo_gold",
@@ -1644,7 +1644,7 @@
   "relation": "positive",
   "mechanism": "两油联动",
   "strength": 0.9,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_opec_oil",
