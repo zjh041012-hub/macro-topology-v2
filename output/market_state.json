@@ -64,13 +64,13 @@
   }
  },
  "topMover": {
-  "nodeId": "bidcover",
-  "text": "美国国债投标倍数 +0.9%/5D · 100分位"
+  "nodeId": "oil",
+  "text": "原油(WTI) +5.9%/5D · 97分位"
  },
  "dominantPathId": "p_std_f",
  "divergenceCount": 0,
- "highRiskCount": 12,
+ "highRiskCount": 10,
  "regime": "EXTREME",
- "regimeNote": "自动识别: 0条背离, 12个高风险节点。",
- "updatedAt": "2026-09-09T14:00:28+00:00"
+ "regimeNote": "自动识别: 0条背离, 10个高风险节点。",
+ "updatedAt": "2026-09-10T00:35:11+00:00"
 }

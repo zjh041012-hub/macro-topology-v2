@@ -1,36 +1,78 @@
 {
- "since": "2026-09-09T00:36:35+00:00",
- "generatedAt": "2026-09-09T14:00:28+00:00",
+ "since": "2026-09-09T14:00:28+00:00",
+ "generatedAt": "2026-09-10T00:35:11+00:00",
  "nodeChanges": [
   {
-   "id": "oil",
-   "name": "原油(WTI)",
+   "id": "ndx",
+   "name": "纳斯达克100",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "bidcover",
+   "name": "美国国债投标倍数",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "gasoline",
+   "name": "美国汽油零售价",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "brent",
-   "name": "Brent原油",
+   "id": "rrp",
+   "name": "美联储隔夜逆回购(RRP)",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
    "id": "goldminers",
    "name": "黄金矿业股",
-   "from": "ELEVATED",
-   "to": "EXTREME"
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "fedpath",
+   "name": "美联储政策利率预期(1Y远期)",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "termprem",
+   "name": "美债10Y期限溢价",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
    "id": "gold",
    "name": "黄金",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "us2y",
+   "name": "美国2年期国债收益率",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "sofr",
-   "name": "SOFR",
+   "id": "reflation",
+   "name": "再通胀状态",
    "from": "NORMAL",
    "to": "ELEVATED"
+  },
+  {
+   "id": "sloos",
+   "name": "美国银行贷款标准(收紧净占比)",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "margindebt",
+   "name": "融资余额(A股)",
+   "from": "ELEVATED",
+   "to": "NORMAL"
   }
  ],
  "pathChanges": [],
