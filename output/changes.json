@@ -1,40 +1,70 @@
 {
- "since": "2026-09-10T00:35:11+00:00",
- "generatedAt": "2026-09-10T13:54:15+00:00",
+ "since": "2026-09-10T13:54:15+00:00",
+ "generatedAt": "2026-09-11T00:32:21+00:00",
  "nodeChanges": [
   {
-   "id": "cn5y",
-   "name": "中国5年期国债收益率",
+   "id": "reserves",
+   "name": "美国银行准备金",
+   "from": "EXTREME",
+   "to": "NORMAL"
+  },
+  {
+   "id": "tga",
+   "name": "美国财政部TGA账户",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "bankidx",
-   "name": "银行指数",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "id": "us5yreal",
+   "name": "美国5年期实际利率",
+   "from": "ELEVATED",
+   "to": "EXTREME"
   },
   {
-   "id": "reflation",
-   "name": "再通胀状态",
+   "id": "goldminers",
+   "name": "黄金矿业股",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "termprem",
+   "name": "美债10Y期限溢价",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "ironore",
-   "name": "铁矿石(大商所主力)",
+   "id": "uscorecpi",
+   "name": "美国核心CPI(同比)",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "reflation",
+   "name": "再通胀状态",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "move",
+   "name": "MOVE利率波动率指数",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "us3m",
+   "name": "美国3个月国库券收益率",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
    "id": "tlt",
    "name": "美国长期国债指数(TLT)",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "NORMAL"
   },
   {
-   "id": "dr001",
-   "name": "DR001",
+   "id": "debtceiling",
+   "name": "债务上限博弈风险",
    "from": "NORMAL",
    "to": "ELEVATED"
   }
