@@ -1,51 +1,56 @@
 {
- "since": "2026-09-11T00:32:21+00:00",
- "generatedAt": "2026-09-11T13:53:37+00:00",
+ "since": "2026-09-11T13:53:37+00:00",
+ "generatedAt": "2026-09-12T00:37:15+00:00",
  "nodeChanges": [
   {
-   "id": "goldminers",
-   "name": "黄金矿业股",
-   "from": "EXTREME",
-   "to": "ELEVATED"
+   "id": "t2s10s",
+   "name": "美债2s10s利差",
+   "from": "NORMAL",
+   "to": "DIVERGENCE"
   },
   {
-   "id": "cn10y",
-   "name": "中国10年期国债收益率",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "reflation",
-   "name": "再通胀状态",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "tlt",
-   "name": "美国长期国债指数(TLT)",
+   "id": "termprem",
+   "name": "美债10Y期限溢价",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "chinext",
-   "name": "创业板指",
+   "id": "us10ybe",
+   "name": "美国10年期盈亏平衡通胀",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "rebar",
-   "name": "螺纹钢",
+   "id": "goldetfflow",
+   "name": "黄金ETF持仓变化(SPDR·4周)",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "utilities",
-   "name": "美国公用事业指数",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "id": "infl5y5y",
+   "name": "美国5y5y通胀互换",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "bankloans",
+   "name": "美国商业银行贷款(同比)",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "debtceiling",
+   "name": "债务上限博弈风险",
+   "from": "ELEVATED",
+   "to": "NORMAL"
   }
  ],
- "pathChanges": [],
- "divAdded": [],
+ "pathChanges": [
+  "路径F · 全球再通胀: INACTIVE → PARTIAL",
+  "路径A · 美国政策转鹰: INACTIVE → PARTIAL"
+ ],
+ "divAdded": [
+  "美国10年期国债收益率 与 美债2s10s利差 走势背离(边扫描)"
+ ],
  "divRemoved": []
 }

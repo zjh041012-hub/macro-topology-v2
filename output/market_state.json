@@ -64,13 +64,13 @@
   }
  },
  "topMover": {
-  "nodeId": "oil",
-  "text": "原油(WTI) +8.0%/5D · 97分位"
+  "nodeId": "fedpath",
+  "text": "美联储政策利率预期(1Y远期) +15bp/5D · 67分位"
  },
  "dominantPathId": "p_std_f",
- "divergenceCount": 0,
- "highRiskCount": 8,
+ "divergenceCount": 1,
+ "highRiskCount": 9,
  "regime": "EXTREME",
- "regimeNote": "自动识别: 0条背离, 8个高风险节点。",
- "updatedAt": "2026-09-11T13:53:37+00:00"
+ "regimeNote": "自动识别: 1条背离, 9个高风险节点。",
+ "updatedAt": "2026-09-12T00:37:15+00:00"
 }

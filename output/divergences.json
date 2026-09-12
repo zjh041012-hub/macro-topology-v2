@@ -1,1 +1,20 @@
-[]
+[
+ {
+  "id": "d_auto_1",
+  "title": "美国10年期国债收益率 与 美债2s10s利差 走势背离(边扫描)",
+  "relatedNodeIds": [
+   "us10y",
+   "t2s10s"
+  ],
+  "relatedEdgeIds": [
+   "e_10y_curve"
+  ],
+  "expectedRelation": "预期同向: 长端领涨推动曲线熊陡",
+  "observedRelation": "美国10年期国债收益率 z=+1.3, 美债2s10s利差 z=-1.7, 与预期关系相反。",
+  "window": "20D",
+  "strength": "MEDIUM",
+  "persistence": "TRANSIENT",
+  "alternativePaths": [],
+  "invalidationRisk": "MEDIUM"
+ }
+]

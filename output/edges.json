@@ -96,7 +96,7 @@
   "relation": "positive",
   "mechanism": "利率上行+曲线陡峭化改善银行息差",
   "strength": 0.6,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_real_gold",
@@ -168,7 +168,7 @@
   "relation": "positive",
   "mechanism": "短端预期沿曲线传导",
   "strength": 0.5,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_be_10y",
@@ -177,7 +177,7 @@
   "relation": "positive",
   "mechanism": "通胀补偿构成名义利率",
   "strength": 0.5,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_ff_fedpath",
@@ -204,7 +204,7 @@
   "relation": "positive",
   "mechanism": "长端领涨推动曲线熊陡",
   "strength": 0.6,
-  "status": "INACTIVE"
+  "status": "DIVERGENCE"
  },
  {
   "id": "e_jgb_10y",
@@ -780,7 +780,7 @@
   "relation": "positive",
   "mechanism": "中长端联动",
   "strength": 0.6,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_10y_20y",
@@ -852,7 +852,7 @@
   "relation": "negative",
   "mechanism": "降息预期回吐推升短端",
   "strength": 0.8,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_cuts_fedpath",
@@ -861,7 +861,7 @@
   "relation": "negative",
   "mechanism": "降息次数与政策路径互为镜像",
   "strength": 0.7,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_ahe_cpi",
@@ -1455,7 +1455,7 @@
   "relation": "negative",
   "mechanism": "美债上行加深中美倒挂",
   "strength": 0.6,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_cn10y_cnus",
@@ -1878,7 +1878,7 @@
   "relation": "negative",
   "mechanism": "类债券板块的利率敏感性",
   "strength": 0.4,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_10y_reits",
@@ -1887,7 +1887,7 @@
   "relation": "negative",
   "mechanism": "利率+再融资双重压制REITs",
   "strength": 0.5,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_csi_csi500",
@@ -2013,7 +2013,7 @@
   "relation": "positive",
   "mechanism": "再通胀确认需要能源配合",
   "strength": 0.5,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_refl_bankidx",
@@ -2022,7 +2022,7 @@
   "relation": "positive",
   "mechanism": "再通胀利好银行息差",
   "strength": 0.4,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_rec_hy",
