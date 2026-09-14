@@ -1,56 +1,83 @@
 {
- "since": "2026-09-11T13:53:37+00:00",
- "generatedAt": "2026-09-12T00:37:15+00:00",
+ "since": "2026-09-12T00:37:15+00:00",
+ "generatedAt": "2026-09-14T16:09:52+00:00",
  "nodeChanges": [
+  {
+   "id": "geopolitics",
+   "name": "地缘政治风险指数",
+   "from": "EXTREME",
+   "to": "NORMAL"
+  },
+  {
+   "id": "hyspread",
+   "name": "美国高收益债信用利差",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "copper",
+   "name": "铜(LME)",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "cdxhy",
+   "name": "CDX HY",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "lmecopperinv",
+   "name": "LME铜库存",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "audusd",
+   "name": "澳元兑美元",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "em",
+   "name": "新兴市场股指(MSCI EM)",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
   {
    "id": "t2s10s",
    "name": "美债2s10s利差",
-   "from": "NORMAL",
-   "to": "DIVERGENCE"
+   "from": "DIVERGENCE",
+   "to": "ELEVATED"
   },
   {
-   "id": "termprem",
-   "name": "美债10Y期限溢价",
+   "id": "move",
+   "name": "MOVE利率波动率指数",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "csi500",
+   "name": "中证500",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "us10ybe",
-   "name": "美国10年期盈亏平衡通胀",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "id": "chinext",
+   "name": "创业板指",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
-   "id": "goldetfflow",
-   "name": "黄金ETF持仓变化(SPDR·4周)",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "infl5y5y",
-   "name": "美国5y5y通胀互换",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "bankloans",
-   "name": "美国商业银行贷款(同比)",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "debtceiling",
-   "name": "债务上限博弈风险",
+   "id": "gbpusd",
+   "name": "英镑兑美元",
    "from": "ELEVATED",
    "to": "NORMAL"
   }
  ],
- "pathChanges": [
-  "路径F · 全球再通胀: INACTIVE → PARTIAL",
-  "路径A · 美国政策转鹰: INACTIVE → PARTIAL"
- ],
- "divAdded": [
+ "pathChanges": [],
+ "divAdded": [],
+ "divRemoved": [
   "美国10年期国债收益率 与 美债2s10s利差 走势背离(边扫描)"
- ],
- "divRemoved": []
+ ]
 }
