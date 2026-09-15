@@ -1,83 +1,57 @@
 {
- "since": "2026-09-12T00:37:15+00:00",
- "generatedAt": "2026-09-14T16:09:52+00:00",
+ "since": "2026-09-14T16:09:52+00:00",
+ "generatedAt": "2026-09-15T01:11:30+00:00",
  "nodeChanges": [
   {
-   "id": "geopolitics",
-   "name": "地缘政治风险指数",
-   "from": "EXTREME",
-   "to": "NORMAL"
-  },
-  {
-   "id": "hyspread",
-   "name": "美国高收益债信用利差",
+   "id": "fedpath",
+   "name": "美联储政策利率预期(1Y远期)",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "copper",
-   "name": "铜(LME)",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "cdxhy",
-   "name": "CDX HY",
+   "id": "us2y",
+   "name": "美国2年期国债收益率",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "lmecopperinv",
-   "name": "LME铜库存",
-   "from": "EXTREME",
-   "to": "ELEVATED"
+   "id": "us3m",
+   "name": "美国3个月国库券收益率",
+   "from": "ELEVATED",
+   "to": "EXTREME"
   },
   {
-   "id": "audusd",
-   "name": "澳元兑美元",
+   "id": "rrp",
+   "name": "美联储隔夜逆回购(RRP)",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
    "id": "em",
    "name": "新兴市场股指(MSCI EM)",
-   "from": "EXTREME",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "EXTREME"
   },
   {
-   "id": "t2s10s",
-   "name": "美债2s10s利差",
-   "from": "DIVERGENCE",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "move",
-   "name": "MOVE利率波动率指数",
+   "id": "termprem",
+   "name": "美债10Y期限溢价",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
+   "id": "infl5y5y",
+   "name": "美国5y5y通胀互换",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
    "id": "csi500",
    "name": "中证500",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "chinext",
-   "name": "创业板指",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "gbpusd",
-   "name": "英镑兑美元",
    "from": "ELEVATED",
    "to": "NORMAL"
   }
  ],
  "pathChanges": [],
  "divAdded": [],
- "divRemoved": [
-  "美国10年期国债收益率 与 美债2s10s利差 走势背离(边扫描)"
- ]
+ "divRemoved": []
 }
