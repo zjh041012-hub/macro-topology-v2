@@ -1518,7 +1518,7 @@
   "relation": "positive",
   "mechanism": "原油向零售油价传导",
   "strength": 0.7,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_gasoline_cpi",
@@ -1887,7 +1887,7 @@
   "relation": "negative",
   "mechanism": "利率+再融资双重压制REITs",
   "strength": 0.5,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_csi_csi500",

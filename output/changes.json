@@ -1,54 +1,36 @@
 {
- "since": "2026-09-14T16:09:52+00:00",
- "generatedAt": "2026-09-15T01:11:30+00:00",
+ "since": "2026-09-15T01:11:30+00:00",
+ "generatedAt": "2026-09-15T14:35:22+00:00",
  "nodeChanges": [
   {
-   "id": "fedpath",
-   "name": "美联储政策利率预期(1Y远期)",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "us2y",
-   "name": "美国2年期国债收益率",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "us3m",
-   "name": "美国3个月国库券收益率",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "rrp",
-   "name": "美联储隔夜逆回购(RRP)",
+   "id": "em",
+   "name": "新兴市场股指(MSCI EM)",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "em",
-   "name": "新兴市场股指(MSCI EM)",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "termprem",
-   "name": "美债10Y期限溢价",
+   "id": "usdjpy",
+   "name": "美元兑日元",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "infl5y5y",
-   "name": "美国5y5y通胀互换",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "id": "bankidx",
+   "name": "银行指数",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "lmecopperinv",
+   "name": "LME铜库存",
+   "from": "ELEVATED",
+   "to": "NORMAL"
   },
   {
    "id": "csi500",
    "name": "中证500",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "from": "NORMAL",
+   "to": "ELEVATED"
   }
  ],
  "pathChanges": [],
