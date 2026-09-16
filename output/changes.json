@@ -1,39 +1,73 @@
 {
- "since": "2026-09-15T01:11:30+00:00",
- "generatedAt": "2026-09-15T14:35:22+00:00",
+ "since": "2026-09-15T14:35:22+00:00",
+ "generatedAt": "2026-09-16T00:48:49+00:00",
  "nodeChanges": [
   {
-   "id": "em",
-   "name": "新兴市场股指(MSCI EM)",
+   "id": "csi300",
+   "name": "沪深300",
+   "from": "NORMAL",
+   "to": "EXTREME"
+  },
+  {
+   "id": "hyspread",
+   "name": "美国高收益债信用利差",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "usdjpy",
-   "name": "美元兑日元",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "id": "cdxhy",
+   "name": "CDX HY",
+   "from": "EXTREME",
+   "to": "ELEVATED"
   },
   {
-   "id": "bankidx",
-   "name": "银行指数",
+   "id": "bund10y",
+   "name": "德国10年期国债收益率",
    "from": "ELEVATED",
-   "to": "NORMAL"
+   "to": "EXTREME"
   },
   {
-   "id": "lmecopperinv",
-   "name": "LME铜库存",
+   "id": "gold",
+   "name": "黄金",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "us10ybe",
+   "name": "美国10年期盈亏平衡通胀",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "t2s10s",
+   "name": "美债2s10s利差",
    "from": "ELEVATED",
-   "to": "NORMAL"
+   "to": "DIVERGENCE"
   },
   {
    "id": "csi500",
    "name": "中证500",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "chinext",
+   "name": "创业板指",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "debtceiling",
+   "name": "债务上限博弈风险",
    "from": "NORMAL",
    "to": "ELEVATED"
   }
  ],
- "pathChanges": [],
- "divAdded": [],
+ "pathChanges": [
+  "路径A · 美国政策转鹰: PARTIAL → ACTIVE"
+ ],
+ "divAdded": [
+  "美国10年期国债收益率 与 美债2s10s利差 走势背离(边扫描)"
+ ],
  "divRemoved": []
 }
