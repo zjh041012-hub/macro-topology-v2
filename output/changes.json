@@ -1,47 +1,51 @@
 {
- "since": "2026-09-16T14:28:24+00:00",
- "generatedAt": "2026-09-17T00:56:36+00:00",
+ "since": "2026-09-17T00:56:36+00:00",
+ "generatedAt": "2026-09-17T14:35:04+00:00",
  "nodeChanges": [
   {
-   "id": "rrp",
-   "name": "美联储隔夜逆回购(RRP)",
-   "from": "ELEVATED",
-   "to": "EXTREME"
+   "id": "hyspread",
+   "name": "美国高收益债信用利差",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
-   "id": "us10ybe",
-   "name": "美国10年期盈亏平衡通胀",
+   "id": "gold",
+   "name": "黄金",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "t2s10s",
-   "name": "美债2s10s利差",
-   "from": "DIVERGENCE",
-   "to": "EXTREME"
+   "id": "cn10y",
+   "name": "中国10年期国债收益率",
+   "from": "ELEVATED",
+   "to": "NORMAL"
   },
   {
    "id": "eurusd",
    "name": "欧元兑美元",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "infl5y5y",
-   "name": "美国5y5y通胀互换",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "gbpusd",
-   "name": "英镑兑美元",
+   "id": "housingstarts",
+   "name": "美国住房开工",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "cdxhy",
+   "name": "CDX HY",
    "from": "NORMAL",
    "to": "ELEVATED"
+  },
+  {
+   "id": "tlt",
+   "name": "美国长期国债指数(TLT)",
+   "from": "ELEVATED",
+   "to": "NORMAL"
   }
  ],
- "pathChanges": [
-  "路径F · 全球再通胀: PARTIAL → INACTIVE"
- ],
+ "pathChanges": [],
  "divAdded": [],
  "divRemoved": []
 }
