@@ -1,45 +1,47 @@
 {
- "since": "2026-09-16T00:48:49+00:00",
- "generatedAt": "2026-09-16T14:28:24+00:00",
+ "since": "2026-09-16T14:28:24+00:00",
+ "generatedAt": "2026-09-17T00:56:36+00:00",
  "nodeChanges": [
   {
-   "id": "copper",
-   "name": "铜(LME)",
+   "id": "rrp",
+   "name": "美联储隔夜逆回购(RRP)",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "cn5y",
-   "name": "中国5年期国债收益率",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "dr001",
-   "name": "DR001",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "hyspread",
-   "name": "美国高收益债信用利差",
+   "id": "us10ybe",
+   "name": "美国10年期盈亏平衡通胀",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "cn10y",
-   "name": "中国10年期国债收益率",
+   "id": "t2s10s",
+   "name": "美债2s10s利差",
+   "from": "DIVERGENCE",
+   "to": "EXTREME"
+  },
+  {
+   "id": "eurusd",
+   "name": "欧元兑美元",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "cdxhy",
-   "name": "CDX HY",
+   "id": "infl5y5y",
+   "name": "美国5y5y通胀互换",
    "from": "ELEVATED",
    "to": "NORMAL"
+  },
+  {
+   "id": "gbpusd",
+   "name": "英镑兑美元",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   }
  ],
- "pathChanges": [],
+ "pathChanges": [
+  "路径F · 全球再通胀: PARTIAL → INACTIVE"
+ ],
  "divAdded": [],
  "divRemoved": []
 }

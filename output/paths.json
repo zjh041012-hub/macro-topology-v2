@@ -19,29 +19,8 @@
    "e_real_dxy"
   ],
   "status": "ACTIVE",
-  "consistency": 0.6,
-  "note": "实时评估: 3/5 条边动量一致 (uscpi→cutsexp×, cutsexp→us2y✓, us2y→us10y✓, us10y→us10yreal✓, us10yreal→dxy×)。"
- },
- {
-  "id": "p_std_f",
-  "name": "路径F · 全球再通胀",
-  "title": "路径F · 全球再通胀",
-  "nodeIds": [
-   "ismneworder",
-   "oil",
-   "us10ybe",
-   "us10y",
-   "bankidx"
-  ],
-  "edgeIds": [
-   "e_ismno_oil",
-   "e_oil_be",
-   "e_be_10y",
-   "e_10y_bank"
-  ],
-  "status": "PARTIAL",
-  "consistency": 0.5,
-  "note": "实时评估: 2/4 条边动量一致 (ismneworder→oil×, oil→us10ybe✓, us10ybe→us10y✓, us10y→bankidx×)。"
+  "consistency": 0.8,
+  "note": "实时评估: 4/5 条边动量一致 (uscpi→cutsexp×, cutsexp→us2y✓, us2y→us10y✓, us10y→us10yreal✓, us10yreal→dxy✓)。"
  },
  {
   "id": "p_std_b",
@@ -128,6 +107,27 @@
   "status": "INACTIVE",
   "consistency": 0.0,
   "note": "实时评估: 0/3 条边动量一致 (liqcrisis→dxy×, dxy→hyspread×, spx→hyspread×)。"
+ },
+ {
+  "id": "p_std_f",
+  "name": "路径F · 全球再通胀",
+  "title": "路径F · 全球再通胀",
+  "nodeIds": [
+   "ismneworder",
+   "oil",
+   "us10ybe",
+   "us10y",
+   "bankidx"
+  ],
+  "edgeIds": [
+   "e_ismno_oil",
+   "e_oil_be",
+   "e_be_10y",
+   "e_10y_bank"
+  ],
+  "status": "INACTIVE",
+  "consistency": 0.0,
+  "note": "实时评估: 0/4 条边动量一致 (ismneworder→oil×, oil→us10ybe×, us10ybe→us10y×, us10y→bankidx×)。"
  },
  {
   "id": "p_std_g",
