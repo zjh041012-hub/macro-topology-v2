@@ -78,7 +78,7 @@
   "relation": "positive",
   "mechanism": "法币信用对冲需求推升黄金",
   "strength": 0.75,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_worry_dxy",
@@ -699,7 +699,7 @@
   "relation": "positive",
   "mechanism": "矿业股放大金价弹性",
   "strength": 0.7,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_com_crb",
@@ -735,7 +735,7 @@
   "relation": "positive",
   "mechanism": "债务上限博弈放大财政担忧",
   "strength": 0.4,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_fci_hy2",
@@ -1752,7 +1752,7 @@
   "relation": "positive",
   "mechanism": "财政担忧驱动配置型买盘",
   "strength": 0.7,
-  "status": "INACTIVE"
+  "status": "DIVERGENCE"
  },
  {
   "id": "e_goldflow_gold",
@@ -1932,7 +1932,7 @@
   "relation": "positive",
   "mechanism": "金价驱动ETF净值",
   "strength": 0.5,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_usepu_vix",

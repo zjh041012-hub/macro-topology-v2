@@ -1,48 +1,48 @@
 {
- "since": "2026-09-17T00:56:36+00:00",
- "generatedAt": "2026-09-17T14:35:04+00:00",
+ "since": "2026-09-17T14:35:04+00:00",
+ "generatedAt": "2026-09-18T00:46:38+00:00",
  "nodeChanges": [
   {
-   "id": "hyspread",
-   "name": "美国高收益债信用利差",
+   "id": "gold",
+   "name": "黄金",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "gold",
-   "name": "黄金",
+   "id": "bidcover",
+   "name": "美国国债投标倍数",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "cn10y",
-   "name": "中国10年期国债收益率",
+   "id": "tga",
+   "name": "美国财政部TGA账户",
    "from": "ELEVATED",
    "to": "NORMAL"
+  },
+  {
+   "id": "goldetfflow",
+   "name": "黄金ETF持仓变化(SPDR·4周)",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
    "id": "eurusd",
    "name": "欧元兑美元",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
-   "id": "housingstarts",
-   "name": "美国住房开工",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "cdxhy",
-   "name": "CDX HY",
+   "id": "infl5y5y",
+   "name": "美国5y5y通胀互换",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
    "id": "tlt",
    "name": "美国长期国债指数(TLT)",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "from": "NORMAL",
+   "to": "ELEVATED"
   }
  ],
  "pathChanges": [],
