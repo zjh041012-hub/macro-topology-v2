@@ -1,51 +1,59 @@
 {
- "since": "2026-09-17T14:35:04+00:00",
- "generatedAt": "2026-09-18T00:46:38+00:00",
+ "since": "2026-09-18T00:46:38+00:00",
+ "generatedAt": "2026-09-18T13:55:16+00:00",
  "nodeChanges": [
   {
-   "id": "gold",
-   "name": "黄金",
+   "id": "ndx",
+   "name": "纳斯达克100",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "fedfunds",
+   "name": "美联储政策利率",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "brent",
+   "name": "Brent原油",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "dr001",
+   "name": "DR001",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "cn10y",
+   "name": "中国10年期国债收益率",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "bidcover",
-   "name": "美国国债投标倍数",
+   "id": "fiscalworry",
+   "name": "财政信用担忧指数",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "r007",
+   "name": "R007",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "tga",
-   "name": "美国财政部TGA账户",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "goldetfflow",
-   "name": "黄金ETF持仓变化(SPDR·4周)",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "eurusd",
-   "name": "欧元兑美元",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "infl5y5y",
-   "name": "美国5y5y通胀互换",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "tlt",
-   "name": "美国长期国债指数(TLT)",
+   "id": "chinext",
+   "name": "创业板指",
    "from": "NORMAL",
    "to": "ELEVATED"
   }
  ],
- "pathChanges": [],
+ "pathChanges": [
+  "路径A · 美国政策转鹰: ACTIVE → PARTIAL"
+ ],
  "divAdded": [],
  "divRemoved": []
 }
