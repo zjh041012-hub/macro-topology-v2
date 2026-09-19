@@ -1,59 +1,59 @@
 {
- "since": "2026-09-18T00:46:38+00:00",
- "generatedAt": "2026-09-18T13:55:16+00:00",
+ "since": "2026-09-18T13:55:16+00:00",
+ "generatedAt": "2026-09-19T00:39:28+00:00",
  "nodeChanges": [
   {
-   "id": "ndx",
-   "name": "纳斯达克100",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "fedfunds",
-   "name": "美联储政策利率",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "brent",
-   "name": "Brent原油",
+   "id": "oil",
+   "name": "原油(WTI)",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "dr001",
-   "name": "DR001",
+   "id": "rrp",
+   "name": "美联储隔夜逆回购(RRP)",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "cn10y",
-   "name": "中国10年期国债收益率",
+   "id": "termprem",
+   "name": "美债10Y期限溢价",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "fiscalworry",
-   "name": "财政信用担忧指数",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "r007",
-   "name": "R007",
+   "id": "goldetfflow",
+   "name": "黄金ETF持仓变化(SPDR·4周)",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "chinext",
-   "name": "创业板指",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "id": "eurusd",
+   "name": "欧元兑美元",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "tlt",
+   "name": "美国长期国债指数(TLT)",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "debtceiling",
+   "name": "债务上限博弈风险",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "utilities",
+   "name": "美国公用事业指数",
+   "from": "ELEVATED",
+   "to": "NORMAL"
   }
  ],
- "pathChanges": [
-  "路径A · 美国政策转鹰: ACTIVE → PARTIAL"
- ],
+ "pathChanges": [],
  "divAdded": [],
- "divRemoved": []
+ "divRemoved": [
+  "美国10年期国债收益率 与 美债2s10s利差 走势背离(边扫描)"
+ ]
 }
