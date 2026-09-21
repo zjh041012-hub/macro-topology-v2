@@ -1,59 +1,69 @@
 {
- "since": "2026-09-18T13:55:16+00:00",
- "generatedAt": "2026-09-19T00:39:28+00:00",
+ "since": "2026-09-19T00:39:28+00:00",
+ "generatedAt": "2026-09-21T16:16:55+00:00",
  "nodeChanges": [
   {
-   "id": "oil",
-   "name": "原油(WTI)",
+   "id": "t2s10s",
+   "name": "美债2s10s利差",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "rrp",
-   "name": "美联储隔夜逆回购(RRP)",
-   "from": "EXTREME",
-   "to": "ELEVATED"
+   "id": "em",
+   "name": "新兴市场股指(MSCI EM)",
+   "from": "ELEVATED",
+   "to": "EXTREME"
   },
   {
    "id": "termprem",
    "name": "美债10Y期限溢价",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "igspread",
+   "name": "美国投资级信用利差",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "goldetfflow",
-   "name": "黄金ETF持仓变化(SPDR·4周)",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "id": "r007",
+   "name": "R007",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
    "id": "eurusd",
    "name": "欧元兑美元",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
-   "id": "tlt",
-   "name": "美国长期国债指数(TLT)",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "id": "cdxig",
+   "name": "CDX IG",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
-   "id": "debtceiling",
-   "name": "债务上限博弈风险",
+   "id": "lmecopperinv",
+   "name": "LME铜库存",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "dr001",
+   "name": "DR001",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
    "id": "utilities",
    "name": "美国公用事业指数",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "from": "NORMAL",
+   "to": "ELEVATED"
   }
  ],
  "pathChanges": [],
  "divAdded": [],
- "divRemoved": [
-  "美国10年期国债收益率 与 美债2s10s利差 走势背离(边扫描)"
- ]
+ "divRemoved": []
 }
