@@ -1,69 +1,55 @@
 {
- "since": "2026-09-19T00:39:28+00:00",
- "generatedAt": "2026-09-21T16:16:55+00:00",
+ "since": "2026-09-21T16:16:55+00:00",
+ "generatedAt": "2026-09-22T14:19:39+00:00",
  "nodeChanges": [
   {
-   "id": "t2s10s",
-   "name": "美债2s10s利差",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "em",
-   "name": "新兴市场股指(MSCI EM)",
+   "id": "sox",
+   "name": "美国半导体指数(SOX)",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "termprem",
-   "name": "美债10Y期限溢价",
+   "id": "t2s10s",
+   "name": "美债2s10s利差",
    "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "igspread",
-   "name": "美国投资级信用利差",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "r007",
-   "name": "R007",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "eurusd",
-   "name": "欧元兑美元",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "cdxig",
-   "name": "CDX IG",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "to": "EXTREME"
   },
   {
    "id": "lmecopperinv",
    "name": "LME铜库存",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "EXTREME"
   },
   {
-   "id": "dr001",
-   "name": "DR001",
+   "id": "fiscalworry",
+   "name": "财政信用担忧指数",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "utilities",
-   "name": "美国公用事业指数",
+   "id": "goldetfflow",
+   "name": "黄金ETF持仓变化(SPDR·4周)",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "debtceiling",
+   "name": "债务上限博弈风险",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "margindebt",
+   "name": "融资余额(A股)",
    "from": "NORMAL",
    "to": "ELEVATED"
   }
  ],
- "pathChanges": [],
- "divAdded": [],
+ "pathChanges": [
+  "路径A · 美国政策转鹰: PARTIAL → ACTIVE"
+ ],
+ "divAdded": [
+  "美国10年期国债收益率 与 美债2s10s利差 走势背离(边扫描)"
+ ],
  "divRemoved": []
 }
