@@ -1,55 +1,53 @@
 {
- "since": "2026-09-21T16:16:55+00:00",
- "generatedAt": "2026-09-22T14:19:39+00:00",
+ "since": "2026-09-22T14:19:39+00:00",
+ "generatedAt": "2026-09-23T01:00:43+00:00",
  "nodeChanges": [
   {
-   "id": "sox",
-   "name": "美国半导体指数(SOX)",
+   "id": "sofr",
+   "name": "SOFR",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "t2s10s",
-   "name": "美债2s10s利差",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "lmecopperinv",
-   "name": "LME铜库存",
+   "id": "debtceiling",
+   "name": "债务上限博弈风险",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
    "id": "fiscalworry",
    "name": "财政信用担忧指数",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "bidcover",
+   "name": "美国国债投标倍数",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
    "id": "goldetfflow",
    "name": "黄金ETF持仓变化(SPDR·4周)",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "vvix",
+   "name": "VVIX",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "debtceiling",
-   "name": "债务上限博弈风险",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "margindebt",
-   "name": "融资余额(A股)",
+   "id": "goldetf",
+   "name": "黄金ETF(518880)",
    "from": "NORMAL",
    "to": "ELEVATED"
   }
  ],
  "pathChanges": [
-  "路径A · 美国政策转鹰: PARTIAL → ACTIVE"
+  "路径A · 美国政策转鹰: ACTIVE → PARTIAL"
  ],
- "divAdded": [
-  "美国10年期国债收益率 与 美债2s10s利差 走势背离(边扫描)"
- ],
+ "divAdded": [],
  "divRemoved": []
 }

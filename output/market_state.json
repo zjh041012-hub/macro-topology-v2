@@ -3,8 +3,6 @@
   "stale": [
    "chipetf",
    "cn1y",
-   "dividendetf",
-   "goldetf",
    "gscpi",
    "shibor3m",
    "tsf",
@@ -54,7 +52,7 @@
    "cta",
    "gammaproxy"
   ],
-  "liveCount": 135,
+  "liveCount": 137,
   "totalCount": 178,
   "sourceErrors": {
    "fred": "usclaims → ValueError: empty series after transform (insufficient history?)",
@@ -64,13 +62,13 @@
   }
  },
  "topMover": {
-  "nodeId": "us2y",
-  "text": "美国2年期国债收益率 +9bp/5D · 92分位"
+  "nodeId": "fedpath",
+  "text": "美联储政策利率预期(1Y远期) +0bp/5D · 73分位"
  },
  "dominantPathId": "p_std_a",
  "divergenceCount": 1,
  "highRiskCount": 13,
  "regime": "EXTREME",
  "regimeNote": "自动识别: 1条背离, 13个高风险节点。",
- "updatedAt": "2026-09-22T14:19:39+00:00"
+ "updatedAt": "2026-09-23T01:00:43+00:00"
 }
