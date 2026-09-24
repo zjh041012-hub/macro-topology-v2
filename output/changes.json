@@ -1,53 +1,39 @@
 {
- "since": "2026-09-22T14:19:39+00:00",
- "generatedAt": "2026-09-23T01:00:43+00:00",
+ "since": "2026-09-23T01:00:43+00:00",
+ "generatedAt": "2026-09-24T00:53:03+00:00",
  "nodeChanges": [
   {
-   "id": "sofr",
-   "name": "SOFR",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "debtceiling",
-   "name": "债务上限博弈风险",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "fiscalworry",
-   "name": "财政信用担忧指数",
+   "id": "move",
+   "name": "MOVE利率波动率指数",
    "from": "NORMAL",
-   "to": "ELEVATED"
+   "to": "EXTREME"
   },
   {
    "id": "bidcover",
    "name": "美国国债投标倍数",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "dxy",
+   "name": "美元指数",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "goldetfflow",
-   "name": "黄金ETF持仓变化(SPDR·4周)",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "id": "t2s10s",
+   "name": "美债2s10s利差",
+   "from": "EXTREME",
+   "to": "DIVERGENCE"
   },
   {
    "id": "vvix",
    "name": "VVIX",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "goldetf",
-   "name": "黄金ETF(518880)",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "NORMAL"
   }
  ],
- "pathChanges": [
-  "路径A · 美国政策转鹰: ACTIVE → PARTIAL"
- ],
+ "pathChanges": [],
  "divAdded": [],
  "divRemoved": []
 }

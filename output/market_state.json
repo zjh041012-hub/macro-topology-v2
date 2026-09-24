@@ -3,6 +3,8 @@
   "stale": [
    "chipetf",
    "cn1y",
+   "dividendetf",
+   "goldetf",
    "gscpi",
    "shibor3m",
    "tsf",
@@ -52,7 +54,7 @@
    "cta",
    "gammaproxy"
   ],
-  "liveCount": 137,
+  "liveCount": 135,
   "totalCount": 178,
   "sourceErrors": {
    "fred": "usclaims → ValueError: empty series after transform (insufficient history?)",
@@ -62,13 +64,13 @@
   }
  },
  "topMover": {
-  "nodeId": "fedpath",
-  "text": "美联储政策利率预期(1Y远期) +0bp/5D · 73分位"
+  "nodeId": "fedfunds",
+  "text": "美联储政策利率 +0bp/5D · 30分位"
  },
  "dominantPathId": "p_std_a",
  "divergenceCount": 1,
- "highRiskCount": 13,
+ "highRiskCount": 15,
  "regime": "EXTREME",
- "regimeNote": "自动识别: 1条背离, 13个高风险节点。",
- "updatedAt": "2026-09-23T01:00:43+00:00"
+ "regimeNote": "自动识别: 1条背离, 15个高风险节点。",
+ "updatedAt": "2026-09-24T00:53:03+00:00"
 }
