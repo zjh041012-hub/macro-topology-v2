@@ -1,45 +1,71 @@
 {
- "since": "2026-09-24T00:53:03+00:00",
- "generatedAt": "2026-09-24T14:29:21+00:00",
+ "since": "2026-09-24T14:29:21+00:00",
+ "generatedAt": "2026-09-25T00:50:34+00:00",
  "nodeChanges": [
   {
-   "id": "tlt",
-   "name": "美国长期国债指数(TLT)",
+   "id": "tga",
+   "name": "美国财政部TGA账户",
    "from": "NORMAL",
    "to": "EXTREME"
   },
   {
-   "id": "utilities",
-   "name": "美国公用事业指数",
+   "id": "t2s10s",
+   "name": "美债2s10s利差",
+   "from": "DIVERGENCE",
+   "to": "NORMAL"
+  },
+  {
+   "id": "brent",
+   "name": "Brent原油",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "hyspread",
-   "name": "美国高收益债信用利差",
+   "id": "tlt",
+   "name": "美国长期国债指数(TLT)",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "utilities",
+   "name": "美国公用事业指数",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "dxy",
+   "name": "美元指数",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
    "id": "usdjpy",
    "name": "美元兑日元",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "cdxhy",
-   "name": "CDX HY",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "chinext",
-   "name": "创业板指",
+   "id": "fiscalworry",
+   "name": "财政信用担忧指数",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "reserves",
+   "name": "美国银行准备金",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "margindebt",
+   "name": "融资余额(A股)",
    "from": "ELEVATED",
    "to": "NORMAL"
   }
  ],
  "pathChanges": [],
  "divAdded": [],
- "divRemoved": []
+ "divRemoved": [
+  "美国10年期国债收益率 与 美债2s10s利差 走势背离(边扫描)"
+ ]
 }
