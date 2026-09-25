@@ -9,6 +9,7 @@
    "shibor3m",
    "tsf",
    "usclaims",
+   "usdcnh",
    "usoilinv"
   ],
   "manual": [
@@ -54,9 +55,10 @@
    "cta",
    "gammaproxy"
   ],
-  "liveCount": 135,
+  "liveCount": 134,
   "totalCount": 178,
   "sourceErrors": {
+   "yahoo": "usdcnh → ValueError: Neither `start` nor `end` can be NaT",
    "fred": "usclaims → ValueError: empty series after transform (insufficient history?)",
    "tushare": "tsf → ValueError: tushare: 抱歉，您没有接口(sf_month)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。",
    "akshare:fund_etf_hist_em": "chipetf → ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
@@ -67,10 +69,10 @@
   "nodeId": "fedfunds",
   "text": "美联储政策利率 +0bp/5D · 30分位"
  },
- "dominantPathId": "p_std_a",
+ "dominantPathId": "p_std_e",
  "divergenceCount": 0,
  "highRiskCount": 15,
  "regime": "EXTREME",
  "regimeNote": "自动识别: 0条背离, 15个高风险节点。",
- "updatedAt": "2026-09-25T00:50:34+00:00"
+ "updatedAt": "2026-09-25T14:51:30+00:00"
 }
