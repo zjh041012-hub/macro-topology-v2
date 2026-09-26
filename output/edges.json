@@ -195,7 +195,7 @@
   "relation": "positive",
   "mechanism": "长端联动,超长端对供给更敏感",
   "strength": 0.7,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_10y_curve",
@@ -798,7 +798,7 @@
   "relation": "positive",
   "mechanism": "超长端联动",
   "strength": 0.5,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_5y_5yreal",
@@ -1518,7 +1518,7 @@
   "relation": "positive",
   "mechanism": "原油向零售油价传导",
   "strength": 0.7,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_gasoline_cpi",
