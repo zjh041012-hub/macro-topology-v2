@@ -68,9 +68,9 @@
   "text": "美联储政策利率 +0bp/5D · 30分位"
  },
  "dominantPathId": "p_std_a",
- "divergenceCount": 0,
- "highRiskCount": 15,
+ "divergenceCount": 1,
+ "highRiskCount": 17,
  "regime": "EXTREME",
- "regimeNote": "自动识别: 0条背离, 15个高风险节点。",
- "updatedAt": "2026-09-26T00:55:02+00:00"
+ "regimeNote": "自动识别: 1条背离, 17个高风险节点。",
+ "updatedAt": "2026-09-28T17:55:57+00:00"
 }

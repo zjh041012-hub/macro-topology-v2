@@ -1,17 +1,65 @@
 {
- "since": "2026-09-25T14:51:30+00:00",
- "generatedAt": "2026-09-26T00:55:02+00:00",
+ "since": "2026-09-26T00:55:02+00:00",
+ "generatedAt": "2026-09-28T17:55:57+00:00",
  "nodeChanges": [
   {
-   "id": "termprem",
-   "name": "美债10Y期限溢价",
+   "id": "crb",
+   "name": "CRB商品指数",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "move",
+   "name": "MOVE利率波动率指数",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "geopolitics",
+   "name": "地缘政治风险指数",
+   "from": "NORMAL",
+   "to": "DIVERGENCE"
+  },
+  {
+   "id": "debtceiling",
+   "name": "债务上限博弈风险",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "utilities",
+   "name": "美国公用事业指数",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "hyspread",
+   "name": "美国高收益债信用利差",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "gold",
+   "name": "黄金",
+   "from": "ELEVATED",
+   "to": "DIVERGENCE"
+  },
+  {
+   "id": "liqcrisis",
+   "name": "全球流动性危机状态",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "cdxhy",
+   "name": "CDX HY",
    "from": "NORMAL",
    "to": "ELEVATED"
   }
  ],
- "pathChanges": [
-  "路径A · 美国政策转鹰: PARTIAL → ACTIVE"
+ "pathChanges": [],
+ "divAdded": [
+  "地缘风险升级 vs 黄金避险买盘缺席(对抗型·弱端确认)"
  ],
- "divAdded": [],
  "divRemoved": []
 }
