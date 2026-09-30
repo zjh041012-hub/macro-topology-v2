@@ -1,59 +1,63 @@
 {
- "since": "2026-09-29T16:16:19+00:00",
- "generatedAt": "2026-09-30T01:43:15+00:00",
+ "since": "2026-09-30T01:43:15+00:00",
+ "generatedAt": "2026-09-30T16:14:36+00:00",
  "nodeChanges": [
   {
-   "id": "fedpath",
-   "name": "美联储政策利率预期(1Y远期)",
+   "id": "uspce",
+   "name": "美国核心PCE(同比)",
+   "from": "EXTREME",
+   "to": "NORMAL"
+  },
+  {
+   "id": "usfci",
+   "name": "美国金融条件指数",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "r007",
+   "name": "R007",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "termprem",
-   "name": "美债10Y期限溢价",
-   "from": "ELEVATED",
-   "to": "EXTREME"
+   "id": "gdpnow",
+   "name": "亚特兰大联储GDPNow",
+   "from": "EXTREME",
+   "to": "ELEVATED"
   },
   {
-   "id": "us2y",
-   "name": "美国2年期国债收益率",
-   "from": "ELEVATED",
-   "to": "EXTREME"
+   "id": "em",
+   "name": "新兴市场股指(MSCI EM)",
+   "from": "EXTREME",
+   "to": "ELEVATED"
   },
   {
-   "id": "infl5y5y",
-   "name": "美国5y5y通胀互换",
-   "from": "ELEVATED",
-   "to": "EXTREME"
+   "id": "dr007",
+   "name": "DR007",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
-   "id": "dividendetf",
-   "name": "红利ETF",
+   "id": "comidx",
+   "name": "南华商品指数",
    "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "rrp",
-   "name": "美联储隔夜逆回购(RRP)",
-   "from": "ELEVATED",
-   "to": "EXTREME"
+   "to": "NORMAL"
   },
   {
    "id": "usbankrisk",
    "name": "美国银行体系风险状态",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "NORMAL"
   },
   {
-   "id": "goldminers",
-   "name": "黄金矿业股",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "id": "aluminum",
+   "name": "铝(沪铝主力)",
+   "from": "ELEVATED",
+   "to": "NORMAL"
   }
  ],
- "pathChanges": [
-  "路径A · 美国政策转鹰: PARTIAL → ACTIVE"
- ],
+ "pathChanges": [],
  "divAdded": [],
  "divRemoved": []
 }
