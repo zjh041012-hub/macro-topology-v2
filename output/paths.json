@@ -1,24 +1,5 @@
 [
  {
-  "id": "p_std_e",
-  "name": "路径E · 流动性冲击",
-  "title": "路径E · 流动性冲击",
-  "nodeIds": [
-   "liqcrisis",
-   "dxy",
-   "hyspread",
-   "spx"
-  ],
-  "edgeIds": [
-   "e_liqc_dxy",
-   "e_dxy_hyspread",
-   "e_spx_hy"
-  ],
-  "status": "PARTIAL",
-  "consistency": 0.67,
-  "note": "实时评估: 2/3 条边动量一致 (liqcrisis→dxy✓, dxy→hyspread✓, spx→hyspread×)。"
- },
- {
   "id": "p_std_a",
   "name": "路径A · 美国政策转鹰",
   "title": "路径A · 美国政策转鹰",
@@ -37,9 +18,28 @@
    "e_10y_real",
    "e_real_dxy"
   ],
+  "status": "ACTIVE",
+  "consistency": 0.8,
+  "note": "实时评估: 4/5 条边动量一致 (uscpi→cutsexp×, cutsexp→us2y✓, us2y→us10y✓, us10y→us10yreal✓, us10yreal→dxy✓)。"
+ },
+ {
+  "id": "p_std_e",
+  "name": "路径E · 流动性冲击",
+  "title": "路径E · 流动性冲击",
+  "nodeIds": [
+   "liqcrisis",
+   "dxy",
+   "hyspread",
+   "spx"
+  ],
+  "edgeIds": [
+   "e_liqc_dxy",
+   "e_dxy_hyspread",
+   "e_spx_hy"
+  ],
   "status": "PARTIAL",
-  "consistency": 0.6,
-  "note": "实时评估: 3/5 条边动量一致 (uscpi→cutsexp×, cutsexp→us2y×, us2y→us10y✓, us10y→us10yreal✓, us10yreal→dxy✓)。"
+  "consistency": 0.67,
+  "note": "实时评估: 2/3 条边动量一致 (liqcrisis→dxy✓, dxy→hyspread✓, spx→hyspread×)。"
  },
  {
   "id": "p_std_b",

@@ -1,27 +1,59 @@
 {
- "since": "2026-09-29T02:20:55+00:00",
- "generatedAt": "2026-09-29T16:16:19+00:00",
+ "since": "2026-09-29T16:16:19+00:00",
+ "generatedAt": "2026-09-30T01:43:15+00:00",
  "nodeChanges": [
   {
-   "id": "ironore",
-   "name": "铁矿石(大商所主力)",
+   "id": "fedpath",
+   "name": "美联储政策利率预期(1Y远期)",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "utilities",
-   "name": "美国公用事业指数",
-   "from": "EXTREME",
+   "id": "termprem",
+   "name": "美债10Y期限溢价",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "us2y",
+   "name": "美国2年期国债收益率",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "infl5y5y",
+   "name": "美国5y5y通胀互换",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "dividendetf",
+   "name": "红利ETF",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "rrp",
+   "name": "美联储隔夜逆回购(RRP)",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "usbankrisk",
+   "name": "美国银行体系风险状态",
+   "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "liqcrisis",
-   "name": "全球流动性危机状态",
+   "id": "goldminers",
+   "name": "黄金矿业股",
    "from": "NORMAL",
    "to": "ELEVATED"
   }
  ],
- "pathChanges": [],
+ "pathChanges": [
+  "路径A · 美国政策转鹰: PARTIAL → ACTIVE"
+ ],
  "divAdded": [],
  "divRemoved": []
 }
