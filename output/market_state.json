@@ -65,12 +65,12 @@
  },
  "topMover": {
   "nodeId": "us10yreal",
-  "text": "美国10年期实际利率 +14bp/5D · 100分位"
+  "text": "美国10年期实际利率 +6bp/5D · 100分位"
  },
- "dominantPathId": "p_std_a",
+ "dominantPathId": "p_std_e",
  "divergenceCount": 0,
  "highRiskCount": 15,
  "regime": "EXTREME",
  "regimeNote": "自动识别: 0条背离, 15个高风险节点。",
- "updatedAt": "2026-09-30T16:14:36+00:00"
+ "updatedAt": "2026-10-01T01:33:46+00:00"
 }

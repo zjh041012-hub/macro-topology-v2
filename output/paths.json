@@ -1,5 +1,24 @@
 [
  {
+  "id": "p_std_e",
+  "name": "路径E · 流动性冲击",
+  "title": "路径E · 流动性冲击",
+  "nodeIds": [
+   "liqcrisis",
+   "dxy",
+   "hyspread",
+   "spx"
+  ],
+  "edgeIds": [
+   "e_liqc_dxy",
+   "e_dxy_hyspread",
+   "e_spx_hy"
+  ],
+  "status": "ACTIVE",
+  "consistency": 1.0,
+  "note": "实时评估: 3/3 条边动量一致 (liqcrisis→dxy✓, dxy→hyspread✓, spx→hyspread✓)。"
+ },
+ {
   "id": "p_std_a",
   "name": "路径A · 美国政策转鹰",
   "title": "路径A · 美国政策转鹰",
@@ -23,23 +42,44 @@
   "note": "实时评估: 4/5 条边动量一致 (uscpi→cutsexp×, cutsexp→us2y✓, us2y→us10y✓, us10y→us10yreal✓, us10yreal→dxy✓)。"
  },
  {
-  "id": "p_std_e",
-  "name": "路径E · 流动性冲击",
-  "title": "路径E · 流动性冲击",
+  "id": "p_std_h",
+  "name": "路径H · 风险衰退",
+  "title": "路径H · 风险衰退",
   "nodeIds": [
-   "liqcrisis",
-   "dxy",
+   "nfp",
+   "gdpnow",
    "hyspread",
    "spx"
   ],
   "edgeIds": [
-   "e_liqc_dxy",
-   "e_dxy_hyspread",
+   "e_nfp_gdpnow",
+   "e_gdpnow_hy",
    "e_spx_hy"
   ],
-  "status": "PARTIAL",
-  "consistency": 0.67,
-  "note": "实时评估: 2/3 条边动量一致 (liqcrisis→dxy✓, dxy→hyspread✓, spx→hyspread×)。"
+  "status": "INACTIVE",
+  "consistency": 0.33,
+  "note": "实时评估: 1/3 条边动量一致 (nfp→gdpnow×, gdpnow→hyspread×, spx→hyspread✓)。"
+ },
+ {
+  "id": "p_std_d",
+  "name": "路径D · 全球流动性改善",
+  "title": "路径D · 全球流动性改善",
+  "nodeIds": [
+   "fedbs",
+   "reserves",
+   "usfci",
+   "hyspread",
+   "spx"
+  ],
+  "edgeIds": [
+   "e_fedbs_reserves",
+   "e_reserves_fci",
+   "e_fci_hy2",
+   "e_spx_hy"
+  ],
+  "status": "INACTIVE",
+  "consistency": 0.25,
+  "note": "实时评估: 1/4 条边动量一致 (fedbs→reserves×, reserves→usfci×, usfci→hyspread×, spx→hyspread✓)。"
  },
  {
   "id": "p_std_b",
@@ -88,27 +128,6 @@
   "note": "实时评估: 0/4 条边动量一致 (tsf→creditimpulse×, creditimpulse→cnpminew×, cnpminew→inddemand×, inddemand→copper×)。"
  },
  {
-  "id": "p_std_d",
-  "name": "路径D · 全球流动性改善",
-  "title": "路径D · 全球流动性改善",
-  "nodeIds": [
-   "fedbs",
-   "reserves",
-   "usfci",
-   "hyspread",
-   "spx"
-  ],
-  "edgeIds": [
-   "e_fedbs_reserves",
-   "e_reserves_fci",
-   "e_fci_hy2",
-   "e_spx_hy"
-  ],
-  "status": "INACTIVE",
-  "consistency": 0.0,
-  "note": "实时评估: 0/4 条边动量一致 (fedbs→reserves×, reserves→usfci×, usfci→hyspread×, spx→hyspread×)。"
- },
- {
   "id": "p_std_f",
   "name": "路径F · 全球再通胀",
   "title": "路径F · 全球再通胀",
@@ -147,25 +166,6 @@
   "status": "INACTIVE",
   "consistency": 0.0,
   "note": "实时评估: 0/3 条边动量一致 (propsales→reinvest×, reinvest→ironore×, ironore→cnppi×)。"
- },
- {
-  "id": "p_std_h",
-  "name": "路径H · 风险衰退",
-  "title": "路径H · 风险衰退",
-  "nodeIds": [
-   "nfp",
-   "gdpnow",
-   "hyspread",
-   "spx"
-  ],
-  "edgeIds": [
-   "e_nfp_gdpnow",
-   "e_gdpnow_hy",
-   "e_spx_hy"
-  ],
-  "status": "INACTIVE",
-  "consistency": 0.0,
-  "note": "实时评估: 0/3 条边动量一致 (nfp→gdpnow×, gdpnow→hyspread×, spx→hyspread×)。"
  },
  {
   "id": "p_auto_1",

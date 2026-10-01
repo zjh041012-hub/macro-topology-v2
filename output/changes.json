@@ -1,63 +1,47 @@
 {
- "since": "2026-09-30T01:43:15+00:00",
- "generatedAt": "2026-09-30T16:14:36+00:00",
+ "since": "2026-09-30T16:14:36+00:00",
+ "generatedAt": "2026-10-01T01:33:46+00:00",
  "nodeChanges": [
   {
-   "id": "uspce",
-   "name": "美国核心PCE(同比)",
-   "from": "EXTREME",
-   "to": "NORMAL"
-  },
-  {
-   "id": "usfci",
-   "name": "美国金融条件指数",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "r007",
-   "name": "R007",
+   "id": "em",
+   "name": "新兴市场股指(MSCI EM)",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "gdpnow",
-   "name": "亚特兰大联储GDPNow",
-   "from": "EXTREME",
-   "to": "ELEVATED"
+   "id": "debtceiling",
+   "name": "债务上限博弈风险",
+   "from": "ELEVATED",
+   "to": "EXTREME"
   },
   {
-   "id": "em",
-   "name": "新兴市场股指(MSCI EM)",
-   "from": "EXTREME",
-   "to": "ELEVATED"
+   "id": "utilities",
+   "name": "美国公用事业指数",
+   "from": "ELEVATED",
+   "to": "EXTREME"
   },
   {
-   "id": "dr007",
-   "name": "DR007",
+   "id": "dxy",
+   "name": "美元指数",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "comidx",
-   "name": "南华商品指数",
+   "id": "cn10y",
+   "name": "中国10年期国债收益率",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "usbankrisk",
-   "name": "美国银行体系风险状态",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "aluminum",
-   "name": "铝(沪铝主力)",
+   "id": "gbpusd",
+   "name": "英镑兑美元",
    "from": "ELEVATED",
    "to": "NORMAL"
   }
  ],
- "pathChanges": [],
+ "pathChanges": [
+  "路径E · 流动性冲击: PARTIAL → ACTIVE"
+ ],
  "divAdded": [],
  "divRemoved": []
 }
