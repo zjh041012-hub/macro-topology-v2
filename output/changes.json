@@ -1,47 +1,45 @@
 {
- "since": "2026-09-30T16:14:36+00:00",
- "generatedAt": "2026-10-01T01:33:46+00:00",
+ "since": "2026-10-01T01:33:46+00:00",
+ "generatedAt": "2026-10-01T16:50:54+00:00",
  "nodeChanges": [
+  {
+   "id": "hyspread",
+   "name": "美国高收益债信用利差",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "cdxhy",
+   "name": "CDX HY",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
   {
    "id": "em",
    "name": "新兴市场股指(MSCI EM)",
-   "from": "ELEVATED",
-   "to": "EXTREME"
+   "from": "EXTREME",
+   "to": "ELEVATED"
   },
   {
-   "id": "debtceiling",
-   "name": "债务上限博弈风险",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "utilities",
-   "name": "美国公用事业指数",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "dxy",
-   "name": "美元指数",
+   "id": "recession",
+   "name": "衰退状态",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "cn10y",
-   "name": "中国10年期国债收益率",
+   "id": "geopolitics",
+   "name": "地缘政治风险指数",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
    "id": "gbpusd",
    "name": "英镑兑美元",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "from": "NORMAL",
+   "to": "ELEVATED"
   }
  ],
- "pathChanges": [
-  "路径E · 流动性冲击: PARTIAL → ACTIVE"
- ],
+ "pathChanges": [],
  "divAdded": [],
  "divRemoved": []
 }
