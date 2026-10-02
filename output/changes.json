@@ -1,58 +1,64 @@
 {
- "since": "2026-10-01T16:50:54+00:00",
- "generatedAt": "2026-10-02T01:55:55+00:00",
+ "since": "2026-10-02T01:55:55+00:00",
+ "generatedAt": "2026-10-02T16:08:49+00:00",
  "nodeChanges": [
-  {
-   "id": "debtceiling",
-   "name": "债务上限博弈风险",
-   "from": "EXTREME",
-   "to": "NORMAL"
-  },
   {
    "id": "hyspread",
    "name": "美国高收益债信用利差",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "tga",
-   "name": "美国财政部TGA账户",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "eurusd",
-   "name": "欧元兑美元",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
+   "id": "liqcrisis",
+   "name": "全球流动性危机状态",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "eurusd",
+   "name": "欧元兑美元",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
    "id": "crb",
    "name": "CRB商品指数",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "ahe",
+   "name": "美国平均时薪(同比)",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
    "id": "cdxhy",
    "name": "CDX HY",
-   "from": "EXTREME",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "EXTREME"
   },
   {
    "id": "audusd",
    "name": "澳元兑美元",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "em",
+   "name": "新兴市场股指(MSCI EM)",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
    "id": "recession",
    "name": "衰退状态",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
-   "id": "usbankrisk",
-   "name": "美国银行体系风险状态",
+   "id": "hsi",
+   "name": "恒生指数",
    "from": "NORMAL",
    "to": "ELEVATED"
   }
