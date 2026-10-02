@@ -24,7 +24,7 @@
   "relation": "positive",
   "mechanism": "期限溢价走阔直接抬升长端名义利率",
   "strength": 0.9,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_10y_real",
@@ -60,7 +60,7 @@
   "relation": "positive",
   "mechanism": "利率波动率上行抬升期限溢价补偿",
   "strength": 0.6,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_supply_worry",
@@ -573,7 +573,7 @@
   "relation": "negative",
   "mechanism": "弱美元缓解新兴市场金融条件",
   "strength": 0.6,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_dxy_copper",
@@ -852,7 +852,7 @@
   "relation": "negative",
   "mechanism": "降息预期回吐推升短端",
   "strength": 0.8,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_cuts_fedpath",
@@ -861,7 +861,7 @@
   "relation": "negative",
   "mechanism": "降息次数与政策路径互为镜像",
   "strength": 0.7,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_ahe_cpi",
@@ -960,7 +960,7 @@
   "relation": "negative",
   "mechanism": "投标倍数下降推升期限溢价",
   "strength": 0.7,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_deficit_worry",

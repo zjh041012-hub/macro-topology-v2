@@ -15,8 +15,8 @@
    "e_spx_hy"
   ],
   "status": "ACTIVE",
-  "consistency": 1.0,
-  "note": "实时评估: 3/3 条边动量一致 (liqcrisis→dxy✓, dxy→hyspread✓, spx→hyspread✓)。"
+  "consistency": 0.67,
+  "note": "实时评估: 2/3 条边动量一致 (liqcrisis→dxy✓, dxy→hyspread✓, spx→hyspread×)。"
  },
  {
   "id": "p_std_a",
@@ -38,48 +38,8 @@
    "e_real_dxy"
   ],
   "status": "ACTIVE",
-  "consistency": 0.8,
-  "note": "实时评估: 4/5 条边动量一致 (uscpi→cutsexp×, cutsexp→us2y✓, us2y→us10y✓, us10y→us10yreal✓, us10yreal→dxy✓)。"
- },
- {
-  "id": "p_std_h",
-  "name": "路径H · 风险衰退",
-  "title": "路径H · 风险衰退",
-  "nodeIds": [
-   "nfp",
-   "gdpnow",
-   "hyspread",
-   "spx"
-  ],
-  "edgeIds": [
-   "e_nfp_gdpnow",
-   "e_gdpnow_hy",
-   "e_spx_hy"
-  ],
-  "status": "INACTIVE",
-  "consistency": 0.33,
-  "note": "实时评估: 1/3 条边动量一致 (nfp→gdpnow×, gdpnow→hyspread×, spx→hyspread✓)。"
- },
- {
-  "id": "p_std_d",
-  "name": "路径D · 全球流动性改善",
-  "title": "路径D · 全球流动性改善",
-  "nodeIds": [
-   "fedbs",
-   "reserves",
-   "usfci",
-   "hyspread",
-   "spx"
-  ],
-  "edgeIds": [
-   "e_fedbs_reserves",
-   "e_reserves_fci",
-   "e_fci_hy2",
-   "e_spx_hy"
-  ],
-  "status": "INACTIVE",
-  "consistency": 0.25,
-  "note": "实时评估: 1/4 条边动量一致 (fedbs→reserves×, reserves→usfci×, usfci→hyspread×, spx→hyspread✓)。"
+  "consistency": 0.6,
+  "note": "实时评估: 3/5 条边动量一致 (uscpi→cutsexp×, cutsexp→us2y×, us2y→us10y✓, us10y→us10yreal✓, us10yreal→dxy✓)。"
  },
  {
   "id": "p_std_b",
@@ -103,8 +63,8 @@
    "e_real_ndx"
   ],
   "status": "INACTIVE",
-  "consistency": 0.17,
-  "note": "实时评估: 1/6 条边动量一致 (usdeficit→netissue×, netissue→auctiontail×, auctiontail→termprem×, termprem→us10y×, us10y→us10yreal✓, us10yreal→ndx×)。"
+  "consistency": 0.33,
+  "note": "实时评估: 2/6 条边动量一致 (usdeficit→netissue×, netissue→auctiontail×, auctiontail→termprem×, termprem→us10y✓, us10y→us10yreal✓, us10yreal→ndx×)。"
  },
  {
   "id": "p_std_c",
@@ -126,6 +86,27 @@
   "status": "INACTIVE",
   "consistency": 0.0,
   "note": "实时评估: 0/4 条边动量一致 (tsf→creditimpulse×, creditimpulse→cnpminew×, cnpminew→inddemand×, inddemand→copper×)。"
+ },
+ {
+  "id": "p_std_d",
+  "name": "路径D · 全球流动性改善",
+  "title": "路径D · 全球流动性改善",
+  "nodeIds": [
+   "fedbs",
+   "reserves",
+   "usfci",
+   "hyspread",
+   "spx"
+  ],
+  "edgeIds": [
+   "e_fedbs_reserves",
+   "e_reserves_fci",
+   "e_fci_hy2",
+   "e_spx_hy"
+  ],
+  "status": "INACTIVE",
+  "consistency": 0.0,
+  "note": "实时评估: 0/4 条边动量一致 (fedbs→reserves×, reserves→usfci×, usfci→hyspread×, spx→hyspread×)。"
  },
  {
   "id": "p_std_f",
@@ -168,15 +149,36 @@
   "note": "实时评估: 0/3 条边动量一致 (propsales→reinvest×, reinvest→ironore×, ironore→cnppi×)。"
  },
  {
-  "id": "p_auto_1",
-  "title": "美国10年期国债收益率 → 美国10年期实际利率 → 黄金 → 黄金矿业股",
+  "id": "p_std_h",
+  "name": "路径H · 风险衰退",
+  "title": "路径H · 风险衰退",
   "nodeIds": [
+   "nfp",
+   "gdpnow",
+   "hyspread",
+   "spx"
+  ],
+  "edgeIds": [
+   "e_nfp_gdpnow",
+   "e_gdpnow_hy",
+   "e_spx_hy"
+  ],
+  "status": "INACTIVE",
+  "consistency": 0.0,
+  "note": "实时评估: 0/3 条边动量一致 (nfp→gdpnow×, gdpnow→hyspread×, spx→hyspread×)。"
+ },
+ {
+  "id": "p_auto_1",
+  "title": "美债10Y期限溢价 → 美国10年期国债收益率 → 美国10年期实际利率 → 黄金 → 黄金矿业股",
+  "nodeIds": [
+   "termprem",
    "us10y",
    "us10yreal",
    "gold",
    "goldminers"
   ],
   "edgeIds": [
+   "e_tp_10y",
    "e_10y_real",
    "e_real_gold",
    "e_gold_miners"
