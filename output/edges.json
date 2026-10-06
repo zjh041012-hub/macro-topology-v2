@@ -537,7 +537,7 @@
   "relation": "positive",
   "mechanism": "美日利差与美元定价",
   "strength": 0.6,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_dxy_cnh",
@@ -1698,7 +1698,7 @@
   "relation": "positive",
   "mechanism": "贵金属联动, 白银弹性更高",
   "strength": 0.7,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_real_silver",
@@ -1707,7 +1707,7 @@
   "relation": "negative",
   "mechanism": "实际利率同样定价白银",
   "strength": 0.4,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_alu_comidx",
