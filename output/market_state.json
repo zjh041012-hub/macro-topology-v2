@@ -64,13 +64,13 @@
   }
  },
  "topMover": {
-  "nodeId": "us10yreal",
-  "text": "美国10年期实际利率 -200bp/5D · 100分位"
+  "nodeId": "bidcover",
+  "text": "美国国债投标倍数 +0.0%/5D · 43分位"
  },
  "dominantPathId": "p_std_e",
  "divergenceCount": 0,
- "highRiskCount": 12,
+ "highRiskCount": 13,
  "regime": "EXTREME",
- "regimeNote": "自动识别: 0条背离, 12个高风险节点。",
- "updatedAt": "2026-10-05T18:54:23+00:00"
+ "regimeNote": "自动识别: 0条背离, 13个高风险节点。",
+ "updatedAt": "2026-10-06T02:34:12+00:00"
 }

@@ -24,7 +24,7 @@
   "relation": "positive",
   "mechanism": "期限溢价走阔直接抬升长端名义利率",
   "strength": 0.9,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_10y_real",
@@ -60,7 +60,7 @@
   "relation": "positive",
   "mechanism": "利率波动率上行抬升期限溢价补偿",
   "strength": 0.6,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_supply_worry",
@@ -960,7 +960,7 @@
   "relation": "negative",
   "mechanism": "投标倍数下降推升期限溢价",
   "strength": 0.7,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_deficit_worry",
@@ -1635,7 +1635,7 @@
   "relation": "positive",
   "mechanism": "长端上行扩大银行债券浮亏",
   "strength": 0.5,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_oil_brent",
@@ -1698,7 +1698,7 @@
   "relation": "positive",
   "mechanism": "贵金属联动, 白银弹性更高",
   "strength": 0.7,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_real_silver",
@@ -1707,7 +1707,7 @@
   "relation": "negative",
   "mechanism": "实际利率同样定价白银",
   "strength": 0.4,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_alu_comidx",
@@ -1968,7 +1968,7 @@
   "relation": "positive",
   "mechanism": "银行体系风险外溢至信用",
   "strength": 0.5,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_liqc_dxy",
