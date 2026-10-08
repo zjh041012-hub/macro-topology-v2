@@ -1,53 +1,81 @@
 {
- "since": "2026-10-07T01:56:58+00:00",
- "generatedAt": "2026-10-08T02:20:33+00:00",
+ "since": "2026-10-08T02:20:33+00:00",
+ "generatedAt": "2026-10-08T16:56:21+00:00",
  "nodeChanges": [
   {
-   "id": "rrp",
-   "name": "美联储隔夜逆回购(RRP)",
-   "from": "EXTREME",
-   "to": "NORMAL"
-  },
-  {
-   "id": "us2y",
-   "name": "美国2年期国债收益率",
+   "id": "r007",
+   "name": "R007",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "move",
-   "name": "MOVE利率波动率指数",
+   "id": "crb",
+   "name": "CRB商品指数",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "cnbond",
+   "name": "中国10年期国债期货",
    "from": "EXTREME",
    "to": "ELEVATED"
+  },
+  {
+   "id": "brent",
+   "name": "Brent原油",
+   "from": "ELEVATED",
+   "to": "EXTREME"
   },
   {
    "id": "ironore",
    "name": "铁矿石(大商所主力)",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "lmecopperinv",
+   "name": "LME铜库存",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "em",
+   "name": "新兴市场股指(MSCI EM)",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "fedpath",
-   "name": "美联储政策利率预期(1Y远期)",
+   "id": "bankidx",
+   "name": "银行指数",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "vvix",
+   "name": "VVIX",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "bidcover",
-   "name": "美国国债投标倍数",
+   "id": "rut",
+   "name": "罗素2000",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "dr007",
-   "name": "DR007",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "id": "aluminum",
+   "name": "铝(沪铝主力)",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "rebar",
+   "name": "螺纹钢",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   }
  ],
- "pathChanges": [
-  "路径A · 美国政策转鹰: ACTIVE → PARTIAL"
- ],
+ "pathChanges": [],
  "divAdded": [],
  "divRemoved": []
 }
