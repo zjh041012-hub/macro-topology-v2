@@ -1,45 +1,53 @@
 {
- "since": "2026-10-06T16:24:39+00:00",
- "generatedAt": "2026-10-07T01:56:58+00:00",
+ "since": "2026-10-07T01:56:58+00:00",
+ "generatedAt": "2026-10-08T02:20:33+00:00",
  "nodeChanges": [
+  {
+   "id": "rrp",
+   "name": "美联储隔夜逆回购(RRP)",
+   "from": "EXTREME",
+   "to": "NORMAL"
+  },
   {
    "id": "us2y",
    "name": "美国2年期国债收益率",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "move",
+   "name": "MOVE利率波动率指数",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "ironore",
+   "name": "铁矿石(大商所主力)",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "fedpath",
+   "name": "美联储政策利率预期(1Y远期)",
    "from": "ELEVATED",
-   "to": "EXTREME"
+   "to": "NORMAL"
   },
   {
    "id": "bidcover",
    "name": "美国国债投标倍数",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "eurusd",
-   "name": "欧元兑美元",
    "from": "ELEVATED",
-   "to": "EXTREME"
+   "to": "NORMAL"
   },
   {
-   "id": "infl5y5y",
-   "name": "美国5y5y通胀互换",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "rrp",
-   "name": "美联储隔夜逆回购(RRP)",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "utilities",
-   "name": "美国公用事业指数",
+   "id": "dr007",
+   "name": "DR007",
    "from": "ELEVATED",
    "to": "NORMAL"
   }
  ],
- "pathChanges": [],
+ "pathChanges": [
+  "路径A · 美国政策转鹰: ACTIVE → PARTIAL"
+ ],
  "divAdded": [],
  "divRemoved": []
 }
