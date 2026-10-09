@@ -1,54 +1,108 @@
 {
- "since": "2026-10-08T16:56:21+00:00",
- "generatedAt": "2026-10-09T02:34:30+00:00",
+ "since": "2026-10-09T02:34:30+00:00",
+ "generatedAt": "2026-10-09T16:38:07+00:00",
  "nodeChanges": [
   {
-   "id": "rrp",
-   "name": "美联储隔夜逆回购(RRP)",
-   "from": "NORMAL",
+   "id": "hyspread",
+   "name": "美国高收益债信用利差",
+   "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "us3m",
-   "name": "美国3个月国库券收益率",
+   "id": "sox",
+   "name": "美国半导体指数(SOX)",
    "from": "EXTREME",
    "to": "ELEVATED"
+  },
+  {
+   "id": "liqcrisis",
+   "name": "全球流动性危机状态",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "r007",
+   "name": "R007",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "cnbond",
+   "name": "中国10年期国债期货",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "cdxhy",
+   "name": "CDX HY",
+   "from": "ELEVATED",
+   "to": "EXTREME"
   },
   {
    "id": "brent",
    "name": "Brent原油",
-   "from": "EXTREME",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "EXTREME"
   },
   {
-   "id": "bidcover",
-   "name": "美国国债投标倍数",
+   "id": "cn5y",
+   "name": "中国5年期国债收益率",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "bankidx",
+   "name": "银行指数",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "recession",
+   "name": "衰退状态",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "tga",
-   "name": "美国财政部TGA账户",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "reserves",
-   "name": "美国银行准备金",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "id": "dr007",
+   "name": "DR007",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
    "id": "comidx",
    "name": "南华商品指数",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "goldminers",
+   "name": "黄金矿业股",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "dr001",
+   "name": "DR001",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "rut",
-   "name": "罗素2000",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "id": "aluminum",
+   "name": "铝(沪铝主力)",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "rebar",
+   "name": "螺纹钢",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "reits",
+   "name": "美国房地产REITs",
+   "from": "ELEVATED",
+   "to": "NORMAL"
   }
  ],
  "pathChanges": [],

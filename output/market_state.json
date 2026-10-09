@@ -4,6 +4,7 @@
    "chipetf",
    "cn1y",
    "dividendetf",
+   "goldetf",
    "gscpi",
    "shibor3m",
    "tsf",
@@ -53,7 +54,7 @@
    "cta",
    "gammaproxy"
   ],
-  "liveCount": 136,
+  "liveCount": 135,
   "totalCount": 178,
   "sourceErrors": {
    "fred": "usclaims → ValueError: empty series after transform (insufficient history?)",
@@ -68,8 +69,8 @@
  },
  "dominantPathId": "p_std_e",
  "divergenceCount": 0,
- "highRiskCount": 11,
+ "highRiskCount": 12,
  "regime": "EXTREME",
- "regimeNote": "自动识别: 0条背离, 11个高风险节点。",
- "updatedAt": "2026-10-09T02:34:30+00:00"
+ "regimeNote": "自动识别: 0条背离, 12个高风险节点。",
+ "updatedAt": "2026-10-09T16:38:07+00:00"
 }
