@@ -1,76 +1,52 @@
 {
- "since": "2026-10-08T02:20:33+00:00",
- "generatedAt": "2026-10-08T16:56:21+00:00",
+ "since": "2026-10-08T16:56:21+00:00",
+ "generatedAt": "2026-10-09T02:34:30+00:00",
  "nodeChanges": [
   {
-   "id": "r007",
-   "name": "R007",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "crb",
-   "name": "CRB商品指数",
-   "from": "ELEVATED",
+   "id": "rrp",
+   "name": "美联储隔夜逆回购(RRP)",
+   "from": "NORMAL",
    "to": "EXTREME"
   },
   {
-   "id": "cnbond",
-   "name": "中国10年期国债期货",
+   "id": "us3m",
+   "name": "美国3个月国库券收益率",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
    "id": "brent",
    "name": "Brent原油",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "ironore",
-   "name": "铁矿石(大商所主力)",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "lmecopperinv",
-   "name": "LME铜库存",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "em",
-   "name": "新兴市场股指(MSCI EM)",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "bankidx",
-   "name": "银行指数",
+   "id": "bidcover",
+   "name": "美国国债投标倍数",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "vvix",
-   "name": "VVIX",
+   "id": "tga",
+   "name": "美国财政部TGA账户",
    "from": "ELEVATED",
    "to": "NORMAL"
+  },
+  {
+   "id": "reserves",
+   "name": "美国银行准备金",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "comidx",
+   "name": "南华商品指数",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
    "id": "rut",
    "name": "罗素2000",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "aluminum",
-   "name": "铝(沪铝主力)",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "rebar",
-   "name": "螺纹钢",
    "from": "NORMAL",
    "to": "ELEVATED"
   }

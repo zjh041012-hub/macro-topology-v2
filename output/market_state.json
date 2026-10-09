@@ -4,7 +4,6 @@
    "chipetf",
    "cn1y",
    "dividendetf",
-   "goldetf",
    "gscpi",
    "shibor3m",
    "tsf",
@@ -54,7 +53,7 @@
    "cta",
    "gammaproxy"
   ],
-  "liveCount": 135,
+  "liveCount": 136,
   "totalCount": 178,
   "sourceErrors": {
    "fred": "usclaims → ValueError: empty series after transform (insufficient history?)",
@@ -72,5 +71,5 @@
  "highRiskCount": 11,
  "regime": "EXTREME",
  "regimeNote": "自动识别: 0条背离, 11个高风险节点。",
- "updatedAt": "2026-10-08T16:56:21+00:00"
+ "updatedAt": "2026-10-09T02:34:30+00:00"
 }
