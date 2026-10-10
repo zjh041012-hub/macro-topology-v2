@@ -204,7 +204,7 @@
   "relation": "positive",
   "mechanism": "长端领涨推动曲线熊陡",
   "strength": 0.6,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_jgb_10y",
@@ -780,7 +780,7 @@
   "relation": "positive",
   "mechanism": "中长端联动",
   "strength": 0.6,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_10y_20y",
@@ -807,7 +807,7 @@
   "relation": "positive",
   "mechanism": "名义分解到中段实际利率",
   "strength": 0.4,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_5yreal_10yreal",
@@ -1455,7 +1455,7 @@
   "relation": "negative",
   "mechanism": "美债上行加深中美倒挂",
   "strength": 0.6,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_cn10y_cnus",
