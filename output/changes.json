@@ -1,72 +1,24 @@
 {
- "since": "2026-10-10T02:01:06+00:00",
- "generatedAt": "2026-10-12T19:22:54+00:00",
+ "since": "2026-10-12T19:22:54+00:00",
+ "generatedAt": "2026-10-13T03:15:51+00:00",
  "nodeChanges": [
   {
-   "id": "hyspread",
-   "name": "美国高收益债信用利差",
+   "id": "eurusd",
+   "name": "欧元兑美元",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "liqcrisis",
-   "name": "全球流动性危机状态",
+   "id": "lmecopperinv",
+   "name": "LME铜库存",
    "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "r007",
-   "name": "R007",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "cdxhy",
-   "name": "CDX HY",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "gold",
-   "name": "黄金",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "cn10y",
-   "name": "中国10年期国债收益率",
-   "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
    "id": "usdjpy",
    "name": "美元兑日元",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "bankidx",
-   "name": "银行指数",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "recession",
-   "name": "衰退状态",
    "from": "ELEVATED",
    "to": "NORMAL"
-  },
-  {
-   "id": "move",
-   "name": "MOVE利率波动率指数",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "debtceiling",
-   "name": "债务上限博弈风险",
-   "from": "NORMAL",
-   "to": "ELEVATED"
   }
  ],
  "pathChanges": [],

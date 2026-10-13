@@ -1,10 +1,7 @@
 {
  "data_status": {
   "stale": [
-   "chipetf",
    "cn1y",
-   "dividendetf",
-   "goldetf",
    "gscpi",
    "shibor3m",
    "tsf",
@@ -54,12 +51,11 @@
    "cta",
    "gammaproxy"
   ],
-  "liveCount": 135,
+  "liveCount": 138,
   "totalCount": 178,
   "sourceErrors": {
    "fred": "usclaims → ValueError: empty series after transform (insufficient history?)",
    "tushare": "tsf → ValueError: tushare: 抱歉，您没有接口(sf_month)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。",
-   "akshare:fund_etf_hist_em": "chipetf → ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
    "csv_url": "gscpi → ValueError: Excel file format cannot be determined, you must specify an engine manually."
   }
  },
@@ -72,5 +68,5 @@
  "highRiskCount": 10,
  "regime": "EXTREME",
  "regimeNote": "自动识别: 0条背离, 10个高风险节点。",
- "updatedAt": "2026-10-12T19:22:54+00:00"
+ "updatedAt": "2026-10-13T03:15:51+00:00"
 }
