@@ -105,7 +105,7 @@
   "relation": "negative",
   "mechanism": "实际利率与黄金的传统负相关本期失效:同步上行",
   "strength": 0.8,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_10y_dxy",
@@ -231,7 +231,7 @@
   "relation": "negative",
   "mechanism": "实际利率冲击高久期科技资产",
   "strength": 0.55,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_10y_value",
@@ -510,7 +510,7 @@
   "relation": "negative",
   "mechanism": "美元计价效应",
   "strength": 0.5,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_dxy_cny",
@@ -699,7 +699,7 @@
   "relation": "positive",
   "mechanism": "矿业股放大金价弹性",
   "strength": 0.7,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_com_crb",
@@ -1761,7 +1761,7 @@
   "relation": "positive",
   "mechanism": "ETF流入是金价的资金面确认",
   "strength": 0.8,
-  "status": "INACTIVE"
+  "status": "DIVERGENCE"
  },
  {
   "id": "e_cftcgold_gold",
@@ -2004,7 +2004,7 @@
   "relation": "conditional",
   "mechanism": "冲击初期黄金同跌, 后期避险",
   "strength": 0.5,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_refl_oil",

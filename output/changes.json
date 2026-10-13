@@ -1,22 +1,40 @@
 {
- "since": "2026-10-12T19:22:54+00:00",
- "generatedAt": "2026-10-13T03:15:51+00:00",
+ "since": "2026-10-13T03:15:51+00:00",
+ "generatedAt": "2026-10-13T17:11:06+00:00",
  "nodeChanges": [
   {
-   "id": "eurusd",
-   "name": "欧元兑美元",
-   "from": "EXTREME",
+   "id": "geopolitics",
+   "name": "地缘政治风险指数",
+   "from": "NORMAL",
+   "to": "EXTREME"
+  },
+  {
+   "id": "r007",
+   "name": "R007",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "move",
+   "name": "MOVE利率波动率指数",
+   "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "lmecopperinv",
-   "name": "LME铜库存",
-   "from": "EXTREME",
+   "id": "comidx",
+   "name": "南华商品指数",
+   "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "usdjpy",
-   "name": "美元兑日元",
+   "id": "chipetf",
+   "name": "芯片ETF",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "rut",
+   "name": "罗素2000",
    "from": "ELEVATED",
    "to": "NORMAL"
   }

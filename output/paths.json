@@ -169,6 +169,20 @@
  },
  {
   "id": "p_auto_1",
+  "title": "美国10年期实际利率 → 黄金 → 黄金矿业股",
+  "nodeIds": [
+   "us10yreal",
+   "gold",
+   "goldminers"
+  ],
+  "edgeIds": [
+   "e_real_gold",
+   "e_gold_miners"
+  ],
+  "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
+ },
+ {
+  "id": "p_auto_2",
   "title": "美元指数 → 欧元兑美元",
   "nodeIds": [
    "dxy",
@@ -180,7 +194,7 @@
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  },
  {
-  "id": "p_auto_2",
+  "id": "p_auto_3",
   "title": "美国国债投标倍数 → 美债10Y期限溢价",
   "nodeIds": [
    "bidcover",
@@ -188,20 +202,6 @@
   ],
   "edgeIds": [
    "e_bidcover_tp"
-  ],
-  "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
- },
- {
-  "id": "p_auto_3",
-  "title": "全球流动性危机状态 → 美元指数 → 英镑兑美元",
-  "nodeIds": [
-   "liqcrisis",
-   "dxy",
-   "gbpusd"
-  ],
-  "edgeIds": [
-   "e_liqc_dxy",
-   "e_dxy_gbp"
   ],
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  }
