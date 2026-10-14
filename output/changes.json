@@ -1,83 +1,97 @@
 {
- "since": "2026-10-13T17:11:06+00:00",
- "generatedAt": "2026-10-14T01:29:10+00:00",
+ "since": "2026-10-14T01:29:10+00:00",
+ "generatedAt": "2026-10-14T14:46:54+00:00",
  "nodeChanges": [
   {
-   "id": "r007",
-   "name": "R007",
-   "from": "EXTREME",
-   "to": "ELEVATED"
+   "id": "uscpi",
+   "name": "美国CPI(同比)",
+   "from": "ELEVATED",
+   "to": "EXTREME"
   },
   {
-   "id": "dr001",
-   "name": "DR001",
+   "id": "eurusd",
+   "name": "欧元兑美元",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "rentcpi",
+   "name": "美国租金通胀(同比)",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
    "id": "dxy",
    "name": "美元指数",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
    "id": "gold",
    "name": "黄金",
+   "from": "ELEVATED",
+   "to": "DIVERGENCE"
+  },
+  {
+   "id": "usdjpy",
+   "name": "美元兑日元",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "infl5y5y",
-   "name": "美国5y5y通胀互换",
+   "id": "chipetf",
+   "name": "芯片ETF",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "us3m",
-   "name": "美国3个月国库券收益率",
+   "id": "silver",
+   "name": "白银",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "lmecopperinv",
+   "name": "LME铜库存",
    "from": "ELEVATED",
    "to": "NORMAL"
-  },
-  {
-   "id": "csi500",
-   "name": "中证500",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "chinext",
-   "name": "创业板指",
-   "from": "NORMAL",
-   "to": "ELEVATED"
   },
   {
    "id": "gbpusd",
    "name": "英镑兑美元",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
    "id": "audusd",
    "name": "澳元兑美元",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "goldminers",
+   "name": "黄金矿业股",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "bdi",
+   "name": "波罗的海干散货指数",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "debtceiling",
-   "name": "债务上限博弈风险",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "aluminum",
-   "name": "铝(沪铝主力)",
+   "id": "rebar",
+   "name": "螺纹钢",
    "from": "NORMAL",
    "to": "ELEVATED"
   }
  ],
  "pathChanges": [
-  "路径E · 流动性冲击: ACTIVE → PARTIAL"
+  "路径E · 流动性冲击: PARTIAL → ACTIVE"
  ],
- "divAdded": [],
+ "divAdded": [
+  "地缘风险升级 vs 黄金避险买盘缺席(对抗型·弱端确认)"
+ ],
  "divRemoved": []
 }
