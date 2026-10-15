@@ -1,97 +1,81 @@
 {
- "since": "2026-10-14T01:29:10+00:00",
- "generatedAt": "2026-10-14T14:46:54+00:00",
+ "since": "2026-10-14T14:46:54+00:00",
+ "generatedAt": "2026-10-15T00:53:29+00:00",
  "nodeChanges": [
   {
-   "id": "uscpi",
-   "name": "美国CPI(同比)",
-   "from": "ELEVATED",
-   "to": "EXTREME"
+   "id": "fedfunds",
+   "name": "美联储政策利率",
+   "from": "EXTREME",
+   "to": "NORMAL"
+  },
+  {
+   "id": "sofr",
+   "name": "SOFR",
+   "from": "EXTREME",
+   "to": "NORMAL"
   },
   {
    "id": "eurusd",
    "name": "欧元兑美元",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "rentcpi",
-   "name": "美国租金通胀(同比)",
-   "from": "ELEVATED",
-   "to": "EXTREME"
+   "from": "EXTREME",
+   "to": "ELEVATED"
   },
   {
    "id": "dxy",
    "name": "美元指数",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "gold",
-   "name": "黄金",
    "from": "ELEVATED",
-   "to": "DIVERGENCE"
+   "to": "NORMAL"
   },
   {
    "id": "usdjpy",
    "name": "美元兑日元",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "chipetf",
-   "name": "芯片ETF",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "silver",
-   "name": "白银",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "lmecopperinv",
-   "name": "LME铜库存",
    "from": "ELEVATED",
    "to": "NORMAL"
+  },
+  {
+   "id": "bidcover",
+   "name": "美国国债投标倍数",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "us3m",
+   "name": "美国3个月国库券收益率",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "rut",
+   "name": "罗素2000",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
    "id": "gbpusd",
    "name": "英镑兑美元",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "audusd",
-   "name": "澳元兑美元",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "goldminers",
-   "name": "黄金矿业股",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "bdi",
-   "name": "波罗的海干散货指数",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "rebar",
-   "name": "螺纹钢",
+   "id": "audusd",
+   "name": "澳元兑美元",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "margindebt",
+   "name": "融资余额(A股)",
    "from": "NORMAL",
    "to": "ELEVATED"
   }
  ],
  "pathChanges": [
-  "路径E · 流动性冲击: PARTIAL → ACTIVE"
+  "路径E · 流动性冲击: ACTIVE → PARTIAL"
  ],
  "divAdded": [
-  "地缘风险升级 vs 黄金避险买盘缺席(对抗型·弱端确认)"
+  "地缘风险升级 vs 黄金避险买盘缺席(对抗型)"
  ],
- "divRemoved": []
+ "divRemoved": [
+  "地缘风险升级 vs 黄金避险买盘缺席(对抗型·弱端确认)"
+ ]
 }
