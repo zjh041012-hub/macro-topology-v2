@@ -1,81 +1,57 @@
 {
- "since": "2026-10-14T14:46:54+00:00",
- "generatedAt": "2026-10-15T00:53:29+00:00",
+ "since": "2026-10-15T00:53:29+00:00",
+ "generatedAt": "2026-10-15T14:28:43+00:00",
  "nodeChanges": [
   {
-   "id": "fedfunds",
-   "name": "美联储政策利率",
-   "from": "EXTREME",
-   "to": "NORMAL"
-  },
-  {
-   "id": "sofr",
-   "name": "SOFR",
-   "from": "EXTREME",
-   "to": "NORMAL"
-  },
-  {
-   "id": "eurusd",
-   "name": "欧元兑美元",
+   "id": "ndx",
+   "name": "纳斯达克100",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "dxy",
-   "name": "美元指数",
+   "id": "r007",
+   "name": "R007",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "move",
+   "name": "MOVE利率波动率指数",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "tlt",
+   "name": "美国长期国债指数(TLT)",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "comidx",
+   "name": "南华商品指数",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "usdjpy",
-   "name": "美元兑日元",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "bidcover",
-   "name": "美国国债投标倍数",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "us3m",
-   "name": "美国3个月国库券收益率",
+   "id": "usretail",
+   "name": "美国零售销售(环比)",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
    "id": "rut",
    "name": "罗素2000",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "gbpusd",
-   "name": "英镑兑美元",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
    "id": "audusd",
    "name": "澳元兑美元",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "margindebt",
-   "name": "融资余额(A股)",
    "from": "NORMAL",
    "to": "ELEVATED"
   }
  ],
- "pathChanges": [
-  "路径E · 流动性冲击: ACTIVE → PARTIAL"
- ],
- "divAdded": [
-  "地缘风险升级 vs 黄金避险买盘缺席(对抗型)"
- ],
- "divRemoved": [
-  "地缘风险升级 vs 黄金避险买盘缺席(对抗型·弱端确认)"
- ]
+ "pathChanges": [],
+ "divAdded": [],
+ "divRemoved": []
 }
