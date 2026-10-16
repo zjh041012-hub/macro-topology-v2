@@ -3,6 +3,8 @@
   "stale": [
    "chipetf",
    "cn1y",
+   "dividendetf",
+   "goldetf",
    "gscpi",
    "shibor3m",
    "tsf",
@@ -52,7 +54,7 @@
    "cta",
    "gammaproxy"
   ],
-  "liveCount": 137,
+  "liveCount": 135,
   "totalCount": 178,
   "sourceErrors": {
    "fred": "usclaims → ValueError: empty series after transform (insufficient history?)",
@@ -63,12 +65,12 @@
  },
  "topMover": {
   "nodeId": "hyspread",
-  "text": "美国高收益债信用利差 +14.0%/5D · 80分位"
+  "text": "美国高收益债信用利差 +12.0%/5D · 78分位"
  },
  "dominantPathId": "p_std_e",
  "divergenceCount": 1,
- "highRiskCount": 14,
+ "highRiskCount": 13,
  "regime": "EXTREME",
- "regimeNote": "自动识别: 1条背离, 14个高风险节点。",
- "updatedAt": "2026-10-16T00:44:12+00:00"
+ "regimeNote": "自动识别: 1条背离, 13个高风险节点。",
+ "updatedAt": "2026-10-16T14:17:48+00:00"
 }

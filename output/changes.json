@@ -1,107 +1,57 @@
 {
- "since": "2026-10-15T14:28:43+00:00",
- "generatedAt": "2026-10-16T00:44:12+00:00",
+ "since": "2026-10-16T00:44:12+00:00",
+ "generatedAt": "2026-10-16T14:17:48+00:00",
  "nodeChanges": [
-  {
-   "id": "fiscalsupply",
-   "name": "美债财政供给压力",
-   "from": "NORMAL",
-   "to": "EXTREME"
-  },
-  {
-   "id": "rrp",
-   "name": "美联储隔夜逆回购(RRP)",
-   "from": "EXTREME",
-   "to": "NORMAL"
-  },
-  {
-   "id": "hyspread",
-   "name": "美国高收益债信用利差",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
   {
    "id": "ndx",
    "name": "纳斯达克100",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "us2y",
-   "name": "美国2年期国债收益率",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "move",
-   "name": "MOVE利率波动率指数",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "cdxhy",
-   "name": "CDX HY",
-   "from": "ELEVATED",
-   "to": "EXTREME"
+   "id": "r007",
+   "name": "R007",
+   "from": "EXTREME",
+   "to": "ELEVATED"
   },
   {
    "id": "tlt",
    "name": "美国长期国债指数(TLT)",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "dr001",
-   "name": "DR001",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "usfci",
-   "name": "美国金融条件指数",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
    "id": "riskappetite",
    "name": "全球风险偏好指数",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "igspread",
-   "name": "美国投资级信用利差",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "recession",
-   "name": "衰退状态",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "infl5y5y",
-   "name": "美国5y5y通胀互换",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "cdxig",
-   "name": "CDX IG",
+   "id": "eurusd",
+   "name": "欧元兑美元",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "comidx",
+   "name": "南华商品指数",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "goldetf",
-   "name": "黄金ETF(518880)",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "id": "goldminers",
+   "name": "黄金矿业股",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "rebar",
+   "name": "螺纹钢",
+   "from": "ELEVATED",
+   "to": "NORMAL"
   }
  ],
- "pathChanges": [
-  "路径A · 美国政策转鹰: PARTIAL → INACTIVE"
- ],
+ "pathChanges": [],
  "divAdded": [],
  "divRemoved": []
 }

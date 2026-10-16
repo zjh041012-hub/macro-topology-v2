@@ -169,18 +169,6 @@
  },
  {
   "id": "p_auto_1",
-  "title": "美元指数 → 欧元兑美元",
-  "nodeIds": [
-   "dxy",
-   "eurusd"
-  ],
-  "edgeIds": [
-   "e_dxy_eur"
-  ],
-  "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
- },
- {
-  "id": "p_auto_2",
   "title": "黄金 → 黄金矿业股",
   "nodeIds": [
    "gold",
@@ -192,7 +180,7 @@
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  },
  {
-  "id": "p_auto_3",
+  "id": "p_auto_2",
   "title": "黄金 → 白银",
   "nodeIds": [
    "gold",
@@ -200,6 +188,22 @@
   ],
   "edgeIds": [
    "e_gold_silver"
+  ],
+  "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
+ },
+ {
+  "id": "p_auto_3",
+  "title": "全球流动性危机状态 → 美国高收益债信用利差 → 美国金融条件指数 → 美国高收益债信用利差",
+  "nodeIds": [
+   "liqcrisis",
+   "hyspread",
+   "usfci",
+   "hyspread"
+  ],
+  "edgeIds": [
+   "e_liqc_hy",
+   "e_hy_fci",
+   "e_fci_hy2"
   ],
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  }
