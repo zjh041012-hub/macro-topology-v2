@@ -24,7 +24,7 @@
   "relation": "positive",
   "mechanism": "期限溢价走阔直接抬升长端名义利率",
   "strength": 0.9,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_10y_real",
@@ -33,7 +33,7 @@
   "relation": "positive",
   "mechanism": "名义上行+盈亏平衡持稳 → 实际利率上行",
   "strength": 0.85,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_real_ndx",
@@ -60,7 +60,7 @@
   "relation": "positive",
   "mechanism": "利率波动率上行抬升期限溢价补偿",
   "strength": 0.6,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_supply_worry",
@@ -105,7 +105,7 @@
   "relation": "negative",
   "mechanism": "实际利率与黄金的传统负相关本期失效:同步上行",
   "strength": 0.8,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_10y_dxy",
@@ -114,7 +114,7 @@
   "relation": "positive",
   "mechanism": "利差逻辑被资金流出与财政信用担忧抵消:收益率↑美元↓",
   "strength": 0.8,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_spx_hy",
@@ -195,7 +195,7 @@
   "relation": "positive",
   "mechanism": "长端联动,超长端对供给更敏感",
   "strength": 0.7,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_10y_curve",
@@ -627,7 +627,7 @@
   "relation": "positive",
   "mechanism": "信用利差同向联动",
   "strength": 0.6,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_vix_spx",
@@ -789,7 +789,7 @@
   "relation": "positive",
   "mechanism": "长端联动, 20Y流动性最差弹性最大",
   "strength": 0.5,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_20y_30y",
@@ -798,7 +798,7 @@
   "relation": "positive",
   "mechanism": "超长端联动",
   "strength": 0.5,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_5y_5yreal",
@@ -816,7 +816,7 @@
   "relation": "positive",
   "mechanism": "实际利率曲线联动",
   "strength": 0.5,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_cpi_cuts",
@@ -879,7 +879,7 @@
   "relation": "positive",
   "mechanism": "实际利差吸引资本流入(当前被财政担忧压制)",
   "strength": 0.6,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_fisc_deficit",
@@ -960,7 +960,7 @@
   "relation": "negative",
   "mechanism": "投标倍数下降推升期限溢价",
   "strength": 0.7,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_deficit_worry",
@@ -1455,7 +1455,7 @@
   "relation": "negative",
   "mechanism": "美债上行加深中美倒挂",
   "strength": 0.6,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_cn10y_cnus",
@@ -1590,7 +1590,7 @@
   "relation": "positive",
   "mechanism": "CDS与现券利差互证",
   "strength": 0.6,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_vvix_vix",
@@ -1707,7 +1707,7 @@
   "relation": "negative",
   "mechanism": "实际利率同样定价白银",
   "strength": 0.4,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_alu_comidx",
@@ -1932,7 +1932,7 @@
   "relation": "positive",
   "mechanism": "金价驱动ETF净值",
   "strength": 0.5,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_usepu_vix",

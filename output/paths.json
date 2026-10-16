@@ -19,6 +19,27 @@
   "note": "实时评估: 2/3 条边动量一致 (liqcrisis→dxy✓, dxy→hyspread✓, spx→hyspread×)。"
  },
  {
+  "id": "p_std_d",
+  "name": "路径D · 全球流动性改善",
+  "title": "路径D · 全球流动性改善",
+  "nodeIds": [
+   "fedbs",
+   "reserves",
+   "usfci",
+   "hyspread",
+   "spx"
+  ],
+  "edgeIds": [
+   "e_fedbs_reserves",
+   "e_reserves_fci",
+   "e_fci_hy2",
+   "e_spx_hy"
+  ],
+  "status": "INACTIVE",
+  "consistency": 0.25,
+  "note": "实时评估: 1/4 条边动量一致 (fedbs→reserves×, reserves→usfci×, usfci→hyspread✓, spx→hyspread×)。"
+ },
+ {
   "id": "p_std_a",
   "name": "路径A · 美国政策转鹰",
   "title": "路径A · 美国政策转鹰",
@@ -37,9 +58,9 @@
    "e_10y_real",
    "e_real_dxy"
   ],
-  "status": "PARTIAL",
-  "consistency": 0.4,
-  "note": "实时评估: 2/5 条边动量一致 (uscpi→cutsexp×, cutsexp→us2y×, us2y→us10y×, us10y→us10yreal✓, us10yreal→dxy✓)。"
+  "status": "INACTIVE",
+  "consistency": 0.2,
+  "note": "实时评估: 1/5 条边动量一致 (uscpi→cutsexp×, cutsexp→us2y×, us2y→us10y×, us10y→us10yreal×, us10yreal→dxy✓)。"
  },
  {
   "id": "p_std_b",
@@ -63,29 +84,8 @@
    "e_real_ndx"
   ],
   "status": "INACTIVE",
-  "consistency": 0.33,
-  "note": "实时评估: 2/6 条边动量一致 (usdeficit→netissue×, netissue→auctiontail×, auctiontail→termprem×, termprem→us10y✓, us10y→us10yreal✓, us10yreal→ndx×)。"
- },
- {
-  "id": "p_std_d",
-  "name": "路径D · 全球流动性改善",
-  "title": "路径D · 全球流动性改善",
-  "nodeIds": [
-   "fedbs",
-   "reserves",
-   "usfci",
-   "hyspread",
-   "spx"
-  ],
-  "edgeIds": [
-   "e_fedbs_reserves",
-   "e_reserves_fci",
-   "e_fci_hy2",
-   "e_spx_hy"
-  ],
-  "status": "INACTIVE",
-  "consistency": 0.25,
-  "note": "实时评估: 1/4 条边动量一致 (fedbs→reserves×, reserves→usfci×, usfci→hyspread✓, spx→hyspread×)。"
+  "consistency": 0.0,
+  "note": "实时评估: 0/6 条边动量一致 (usdeficit→netissue×, netissue→auctiontail×, auctiontail→termprem×, termprem→us10y×, us10y→us10yreal×, us10yreal→ndx×)。"
  },
  {
   "id": "p_std_c",
@@ -169,45 +169,37 @@
  },
  {
   "id": "p_auto_1",
-  "title": "美债10Y期限溢价 → 美国10年期国债收益率 → 美国10年期实际利率 → 黄金 → 黄金矿业股",
+  "title": "美元指数 → 欧元兑美元",
   "nodeIds": [
-   "termprem",
-   "us10y",
-   "us10yreal",
-   "gold",
-   "goldminers"
-  ],
-  "edgeIds": [
-   "e_tp_10y",
-   "e_10y_real",
-   "e_real_gold",
-   "e_gold_miners"
-  ],
-  "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
- },
- {
-  "id": "p_auto_2",
-  "title": "美国10年期国债收益率 → 美元指数 → 欧元兑美元",
-  "nodeIds": [
-   "us10y",
    "dxy",
    "eurusd"
   ],
   "edgeIds": [
-   "e_10y_dxy",
    "e_dxy_eur"
   ],
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  },
  {
-  "id": "p_auto_3",
-  "title": "美国10年期国债收益率 → 美国30年期国债收益率",
+  "id": "p_auto_2",
+  "title": "黄金 → 黄金矿业股",
   "nodeIds": [
-   "us10y",
-   "us30y"
+   "gold",
+   "goldminers"
   ],
   "edgeIds": [
-   "e_10y_30y"
+   "e_gold_miners"
+  ],
+  "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
+ },
+ {
+  "id": "p_auto_3",
+  "title": "黄金 → 白银",
+  "nodeIds": [
+   "gold",
+   "silver"
+  ],
+  "edgeIds": [
+   "e_gold_silver"
   ],
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  }
