@@ -1,54 +1,72 @@
 {
- "since": "2026-10-16T00:44:12+00:00",
- "generatedAt": "2026-10-16T14:17:48+00:00",
+ "since": "2026-10-16T14:17:48+00:00",
+ "generatedAt": "2026-10-17T00:49:32+00:00",
  "nodeChanges": [
   {
-   "id": "ndx",
-   "name": "纳斯达克100",
+   "id": "rrp",
+   "name": "美联储隔夜逆回购(RRP)",
+   "from": "NORMAL",
+   "to": "EXTREME"
+  },
+  {
+   "id": "termprem",
+   "name": "美债10Y期限溢价",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "r007",
-   "name": "R007",
+   "id": "us2y",
+   "name": "美国2年期国债收益率",
    "from": "EXTREME",
    "to": "ELEVATED"
+  },
+  {
+   "id": "oil",
+   "name": "原油(WTI)",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "usppi",
+   "name": "美国PPI(同比)",
+   "from": "ELEVATED",
+   "to": "EXTREME"
   },
   {
    "id": "tlt",
    "name": "美国长期国债指数(TLT)",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "riskappetite",
-   "name": "全球风险偏好指数",
    "from": "ELEVATED",
-   "to": "NORMAL"
+   "to": "EXTREME"
   },
   {
    "id": "eurusd",
    "name": "欧元兑美元",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
-   "id": "comidx",
-   "name": "南华商品指数",
+   "id": "infl5y5y",
+   "name": "美国5y5y通胀互换",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "vvix",
+   "name": "VVIX",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "rut",
+   "name": "罗素2000",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
    "id": "goldminers",
    "name": "黄金矿业股",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "rebar",
-   "name": "螺纹钢",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "from": "NORMAL",
+   "to": "ELEVATED"
   }
  ],
  "pathChanges": [],
