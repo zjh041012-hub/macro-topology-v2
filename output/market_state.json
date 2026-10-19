@@ -58,19 +58,19 @@
   "totalCount": 178,
   "sourceErrors": {
    "fred": "usclaims → ValueError: empty series after transform (insufficient history?)",
-   "tushare": "tsf → SSLError: HTTPSConnectionPool(host='api.tushare.pro', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIF",
+   "tushare": "tsf → ValueError: tushare: 抱歉，您没有接口(sf_month)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。",
    "akshare:fund_etf_hist_em": "chipetf → ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
    "csv_url": "gscpi → ValueError: Excel file format cannot be determined, you must specify an engine manually."
   }
  },
  "topMover": {
   "nodeId": "hyspread",
-  "text": "美国高收益债信用利差 +12.0%/5D · 78分位"
+  "text": "美国高收益债信用利差 +20.0%/5D · 84分位"
  },
  "dominantPathId": "p_std_e",
- "divergenceCount": 1,
- "highRiskCount": 12,
+ "divergenceCount": 0,
+ "highRiskCount": 11,
  "regime": "EXTREME",
- "regimeNote": "自动识别: 1条背离, 12个高风险节点。",
- "updatedAt": "2026-10-17T00:49:32+00:00"
+ "regimeNote": "自动识别: 0条背离, 11个高风险节点。",
+ "updatedAt": "2026-10-19T16:45:04+00:00"
 }
