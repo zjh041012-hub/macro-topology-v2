@@ -6,7 +6,7 @@
   "relation": "positive",
   "mechanism": "国债净供给放量推升期限溢价",
   "strength": 0.9,
-  "status": "INACTIVE"
+  "status": "DIVERGENCE"
  },
  {
   "id": "e_worry_tp",
@@ -60,7 +60,7 @@
   "relation": "positive",
   "mechanism": "利率波动率上行抬升期限溢价补偿",
   "strength": 0.6,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_supply_worry",
@@ -663,7 +663,7 @@
   "relation": "positive",
   "mechanism": "风险偏好支撑成长资产",
   "strength": 0.5,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_risk_em",
@@ -960,7 +960,7 @@
   "relation": "negative",
   "mechanism": "投标倍数下降推升期限溢价",
   "strength": 0.7,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_deficit_worry",
@@ -1851,7 +1851,7 @@
   "relation": "positive",
   "mechanism": "半导体领跌拖累纳指",
   "strength": 0.7,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_sox_chipetf",
@@ -2058,7 +2058,7 @@
   "relation": "positive",
   "mechanism": "避险状态推升波动率",
   "strength": 0.6,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_riskoff_risk",
@@ -2067,6 +2067,6 @@
   "relation": "negative",
   "mechanism": "risk-off与风险偏好互为镜像",
   "strength": 0.6,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  }
 ]

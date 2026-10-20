@@ -59,8 +59,8 @@
    "e_real_dxy"
   ],
   "status": "INACTIVE",
-  "consistency": 0.2,
-  "note": "实时评估: 1/5 条边动量一致 (uscpi→cutsexp×, cutsexp→us2y×, us2y→us10y×, us10y→us10yreal×, us10yreal→dxy✓)。"
+  "consistency": 0.0,
+  "note": "实时评估: 0/5 条边动量一致 (uscpi→cutsexp×, cutsexp→us2y×, us2y→us10y×, us10y→us10yreal×, us10yreal→dxy×)。"
  },
  {
   "id": "p_std_b",
@@ -84,8 +84,8 @@
    "e_real_ndx"
   ],
   "status": "INACTIVE",
-  "consistency": 0.17,
-  "note": "实时评估: 1/6 条边动量一致 (usdeficit→netissue×, netissue→auctiontail×, auctiontail→termprem×, termprem→us10y×, us10y→us10yreal×, us10yreal→ndx✓)。"
+  "consistency": 0.0,
+  "note": "实时评估: 0/6 条边动量一致 (usdeficit→netissue×, netissue→auctiontail×, auctiontail→termprem×, termprem→us10y×, us10y→us10yreal×, us10yreal→ndx×)。"
  },
  {
   "id": "p_std_c",
@@ -181,6 +181,18 @@
  },
  {
   "id": "p_auto_2",
+  "title": "美国国债投标倍数 → 美债10Y期限溢价",
+  "nodeIds": [
+   "bidcover",
+   "termprem"
+  ],
+  "edgeIds": [
+   "e_bidcover_tp"
+  ],
+  "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
+ },
+ {
+  "id": "p_auto_3",
   "title": "黄金 → 白银",
   "nodeIds": [
    "gold",
@@ -188,22 +200,6 @@
   ],
   "edgeIds": [
    "e_gold_silver"
-  ],
-  "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
- },
- {
-  "id": "p_auto_3",
-  "title": "全球流动性危机状态 → 美国高收益债信用利差 → 美国金融条件指数 → 美国高收益债信用利差",
-  "nodeIds": [
-   "liqcrisis",
-   "hyspread",
-   "usfci",
-   "hyspread"
-  ],
-  "edgeIds": [
-   "e_liqc_hy",
-   "e_hy_fci",
-   "e_fci_hy2"
   ],
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  }
