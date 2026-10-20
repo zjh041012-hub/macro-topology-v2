@@ -65,12 +65,12 @@
  },
  "topMover": {
   "nodeId": "hyspread",
-  "text": "美国高收益债信用利差 +15.0%/5D · 84分位"
+  "text": "美国高收益债信用利差 +13.0%/5D · 83分位"
  },
- "dominantPathId": "p_std_e",
+ "dominantPathId": "p_std_d",
  "divergenceCount": 0,
  "highRiskCount": 12,
  "regime": "EXTREME",
  "regimeNote": "自动识别: 0条背离, 12个高风险节点。",
- "updatedAt": "2026-10-20T01:18:47+00:00"
+ "updatedAt": "2026-10-20T14:36:03+00:00"
 }

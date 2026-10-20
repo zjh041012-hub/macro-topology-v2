@@ -1,24 +1,5 @@
 [
  {
-  "id": "p_std_e",
-  "name": "路径E · 流动性冲击",
-  "title": "路径E · 流动性冲击",
-  "nodeIds": [
-   "liqcrisis",
-   "dxy",
-   "hyspread",
-   "spx"
-  ],
-  "edgeIds": [
-   "e_liqc_dxy",
-   "e_dxy_hyspread",
-   "e_spx_hy"
-  ],
-  "status": "PARTIAL",
-  "consistency": 0.67,
-  "note": "实时评估: 2/3 条边动量一致 (liqcrisis→dxy✓, dxy→hyspread✓, spx→hyspread×)。"
- },
- {
   "id": "p_std_d",
   "name": "路径D · 全球流动性改善",
   "title": "路径D · 全球流动性改善",
@@ -107,6 +88,25 @@
   "status": "INACTIVE",
   "consistency": 0.0,
   "note": "实时评估: 0/4 条边动量一致 (tsf→creditimpulse×, creditimpulse→cnpminew×, cnpminew→inddemand×, inddemand→copper×)。"
+ },
+ {
+  "id": "p_std_e",
+  "name": "路径E · 流动性冲击",
+  "title": "路径E · 流动性冲击",
+  "nodeIds": [
+   "liqcrisis",
+   "dxy",
+   "hyspread",
+   "spx"
+  ],
+  "edgeIds": [
+   "e_liqc_dxy",
+   "e_dxy_hyspread",
+   "e_spx_hy"
+  ],
+  "status": "INACTIVE",
+  "consistency": 0.0,
+  "note": "实时评估: 0/3 条边动量一致 (liqcrisis→dxy×, dxy→hyspread×, spx→hyspread×)。"
  },
  {
   "id": "p_std_f",

@@ -2058,7 +2058,7 @@
   "relation": "positive",
   "mechanism": "避险状态推升波动率",
   "strength": 0.6,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_riskoff_risk",
@@ -2067,6 +2067,6 @@
   "relation": "negative",
   "mechanism": "risk-off与风险偏好互为镜像",
   "strength": 0.6,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  }
 ]
