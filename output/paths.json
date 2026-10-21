@@ -193,13 +193,17 @@
  },
  {
   "id": "p_auto_3",
-  "title": "美国半导体指数(SOX) → 纳斯达克100",
+  "title": "全球流动性危机状态 → 美国高收益债信用利差 → 美国金融条件指数 → 美国高收益债信用利差",
   "nodeIds": [
-   "sox",
-   "ndx"
+   "liqcrisis",
+   "hyspread",
+   "usfci",
+   "hyspread"
   ],
   "edgeIds": [
-   "e_sox_ndx"
+   "e_liqc_hy",
+   "e_hy_fci",
+   "e_fci_hy2"
   ],
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  }
