@@ -1,8 +1,8 @@
 [
  {
   "id": "p_std_d",
-  "name": "路径D · 全球流动性改善",
-  "title": "路径D · 全球流动性改善",
+  "name": "路径D · 全球流动性改善 (反向: 流动性收紧)",
+  "title": "路径D · 全球流动性改善 (反向: 流动性收紧)",
   "nodeIds": [
    "fedbs",
    "reserves",
@@ -16,9 +16,9 @@
    "e_fci_hy2",
    "e_spx_hy"
   ],
-  "status": "INACTIVE",
-  "consistency": 0.25,
-  "note": "实时评估: 1/4 条边动量一致 (fedbs→reserves×, reserves→usfci×, usfci→hyspread✓, spx→hyspread×)。"
+  "status": "PARTIAL",
+  "consistency": 0.5,
+  "note": "实时评估: 2/4 条边动量一致 (fedbs→reserves✓, reserves→usfci×, usfci→hyspread✓, spx→hyspread×)。"
  },
  {
   "id": "p_std_a",
@@ -181,18 +181,6 @@
  },
  {
   "id": "p_auto_2",
-  "title": "美国国债投标倍数 → 美债10Y期限溢价",
-  "nodeIds": [
-   "bidcover",
-   "termprem"
-  ],
-  "edgeIds": [
-   "e_bidcover_tp"
-  ],
-  "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
- },
- {
-  "id": "p_auto_3",
   "title": "黄金 → 白银",
   "nodeIds": [
    "gold",
@@ -200,6 +188,18 @@
   ],
   "edgeIds": [
    "e_gold_silver"
+  ],
+  "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
+ },
+ {
+  "id": "p_auto_3",
+  "title": "美国半导体指数(SOX) → 纳斯达克100",
+  "nodeIds": [
+   "sox",
+   "ndx"
+  ],
+  "edgeIds": [
+   "e_sox_ndx"
   ],
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  }

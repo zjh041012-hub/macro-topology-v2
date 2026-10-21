@@ -1,64 +1,64 @@
 {
- "since": "2026-10-20T01:18:47+00:00",
- "generatedAt": "2026-10-20T14:36:03+00:00",
+ "since": "2026-10-20T14:36:03+00:00",
+ "generatedAt": "2026-10-21T00:55:08+00:00",
  "nodeChanges": [
   {
-   "id": "cn10y",
-   "name": "中国10年期国债收益率",
+   "id": "termprem",
+   "name": "美债10Y期限溢价",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "riskappetite",
-   "name": "全球风险偏好指数",
+   "id": "gasoline",
+   "name": "美国汽油零售价",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "vix",
-   "name": "VIX指数",
+   "id": "tlt",
+   "name": "美国长期国债指数(TLT)",
    "from": "ELEVATED",
-   "to": "NORMAL"
+   "to": "EXTREME"
   },
   {
-   "id": "eurusd",
-   "name": "欧元兑美元",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "comidx",
-   "name": "南华商品指数",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "housingstarts",
-   "name": "美国住房开工",
-   "from": "NORMAL",
+   "id": "em",
+   "name": "新兴市场股指(MSCI EM)",
+   "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "gammaproxy",
-   "name": "期权做市商Gamma代理",
+   "id": "bidcover",
+   "name": "美国国债投标倍数",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "rut",
-   "name": "罗素2000",
+   "id": "move",
+   "name": "MOVE利率波动率指数",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "dr001",
-   "name": "DR001",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "id": "vvix",
+   "name": "VVIX",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "silver",
+   "name": "白银",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "goldminers",
+   "name": "黄金矿业股",
+   "from": "ELEVATED",
+   "to": "NORMAL"
   }
  ],
  "pathChanges": [
-  "路径E · 流动性冲击: PARTIAL → INACTIVE"
+  "路径D · 全球流动性改善 (反向: 流动性收紧): INACTIVE → PARTIAL"
  ],
  "divAdded": [],
  "divRemoved": []
