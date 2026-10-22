@@ -1,56 +1,16 @@
 {
  "data_status": {
   "stale": [
-   "ahe",
-   "bankloans",
-   "bund10y",
+   "chipetf",
    "cn1y",
    "dividendetf",
-   "fedbs",
-   "fedfunds",
-   "fedpath",
-   "gasoline",
-   "gdpnow",
    "goldetf",
    "gscpi",
-   "housingstarts",
-   "hyspread",
-   "igspread",
-   "infl5y5y",
-   "jgb10y",
-   "jolts",
-   "mmf",
-   "nfp",
-   "rentcpi",
-   "reserves",
-   "rrp",
    "shibor3m",
-   "sloos",
-   "sofr",
-   "t2s10s",
-   "tga",
    "tsf",
-   "unemp",
-   "us10y",
-   "us10ybe",
-   "us10yreal",
-   "us20y",
-   "us2y",
-   "us30y",
-   "us3m",
-   "us5y",
-   "us5yreal",
    "usclaims",
-   "usconf",
-   "uscorecpi",
-   "uscpi",
-   "usdeficit",
-   "usfci",
-   "usoilinv",
-   "uspce",
-   "usppi",
-   "usretail",
-   "vix"
+   "usdcnh",
+   "usoilinv"
   ],
   "manual": [
    "auctiontail",
@@ -95,23 +55,24 @@
    "cta",
    "gammaproxy"
   ],
-  "liveCount": 94,
+  "liveCount": 134,
   "totalCount": 178,
   "sourceErrors": {
-   "fred": "us10y → JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+   "yahoo": "usdcnh → ValueError: Neither `start` nor `end` can be NaT",
+   "fred": "usclaims → ValueError: empty series after transform (insufficient history?)",
    "tushare": "tsf → ValueError: tushare: 抱歉，您没有接口(sf_month)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。",
-   "csv_url": "gscpi → ValueError: Excel file format cannot be determined, you must specify an engine manually.",
-   "akshare:fund_etf_hist_em": "dividendetf → ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+   "akshare:fund_etf_hist_em": "chipetf → ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+   "csv_url": "gscpi → ValueError: Excel file format cannot be determined, you must specify an engine manually."
   }
  },
  "topMover": {
-  "nodeId": "fiscalsupply",
-  "text": "美债财政供给压力 -172.0%/5D · 3分位"
+  "nodeId": "hyspread",
+  "text": "美国高收益债信用利差 +4.0%/5D · 82分位"
  },
- "dominantPathId": "p_std_a",
+ "dominantPathId": "p_std_d",
  "divergenceCount": 0,
- "highRiskCount": 10,
+ "highRiskCount": 9,
  "regime": "EXTREME",
- "regimeNote": "自动识别: 0条背离, 10个高风险节点。",
- "updatedAt": "2026-10-22T00:56:31+00:00"
+ "regimeNote": "自动识别: 0条背离, 9个高风险节点。",
+ "updatedAt": "2026-10-22T14:46:49+00:00"
 }
