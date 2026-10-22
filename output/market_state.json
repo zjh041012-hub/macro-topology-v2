@@ -1,15 +1,56 @@
 {
  "data_status": {
   "stale": [
-   "chipetf",
+   "ahe",
+   "bankloans",
+   "bund10y",
    "cn1y",
    "dividendetf",
+   "fedbs",
+   "fedfunds",
+   "fedpath",
+   "gasoline",
+   "gdpnow",
    "goldetf",
    "gscpi",
+   "housingstarts",
+   "hyspread",
+   "igspread",
+   "infl5y5y",
+   "jgb10y",
+   "jolts",
+   "mmf",
+   "nfp",
+   "rentcpi",
+   "reserves",
+   "rrp",
    "shibor3m",
+   "sloos",
+   "sofr",
+   "t2s10s",
+   "tga",
    "tsf",
+   "unemp",
+   "us10y",
+   "us10ybe",
+   "us10yreal",
+   "us20y",
+   "us2y",
+   "us30y",
+   "us3m",
+   "us5y",
+   "us5yreal",
    "usclaims",
-   "usoilinv"
+   "usconf",
+   "uscorecpi",
+   "uscpi",
+   "usdeficit",
+   "usfci",
+   "usoilinv",
+   "uspce",
+   "usppi",
+   "usretail",
+   "vix"
   ],
   "manual": [
    "auctiontail",
@@ -54,23 +95,23 @@
    "cta",
    "gammaproxy"
   ],
-  "liveCount": 135,
+  "liveCount": 94,
   "totalCount": 178,
   "sourceErrors": {
-   "fred": "usclaims → ValueError: empty series after transform (insufficient history?)",
+   "fred": "us10y → JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
    "tushare": "tsf → ValueError: tushare: 抱歉，您没有接口(sf_month)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。",
-   "akshare:fund_etf_hist_em": "chipetf → ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-   "csv_url": "gscpi → ValueError: Excel file format cannot be determined, you must specify an engine manually."
+   "csv_url": "gscpi → ValueError: Excel file format cannot be determined, you must specify an engine manually.",
+   "akshare:fund_etf_hist_em": "dividendetf → ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
   }
  },
  "topMover": {
-  "nodeId": "hyspread",
-  "text": "美国高收益债信用利差 +8.0%/5D · 85分位"
+  "nodeId": "fiscalsupply",
+  "text": "美债财政供给压力 -172.0%/5D · 3分位"
  },
- "dominantPathId": "p_std_d",
+ "dominantPathId": "p_std_a",
  "divergenceCount": 0,
- "highRiskCount": 13,
+ "highRiskCount": 10,
  "regime": "EXTREME",
- "regimeNote": "自动识别: 0条背离, 13个高风险节点。",
- "updatedAt": "2026-10-21T14:45:03+00:00"
+ "regimeNote": "自动识别: 0条背离, 10个高风险节点。",
+ "updatedAt": "2026-10-22T00:56:31+00:00"
 }
