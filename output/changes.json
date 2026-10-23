@@ -1,113 +1,79 @@
 {
- "since": "2026-10-22T00:56:31+00:00",
- "generatedAt": "2026-10-22T14:46:49+00:00",
+ "since": "2026-10-22T14:46:49+00:00",
+ "generatedAt": "2026-10-23T00:58:18+00:00",
  "nodeChanges": [
   {
-   "id": "cutsexp",
-   "name": "市场隐含未来12个月降息次数",
+   "id": "tga",
+   "name": "美国财政部TGA账户",
    "from": "NORMAL",
    "to": "EXTREME"
   },
   {
-   "id": "cnusspread",
-   "name": "中美国债10年利差",
+   "id": "chipetf",
+   "name": "芯片ETF",
    "from": "NORMAL",
    "to": "EXTREME"
   },
   {
-   "id": "ndx",
-   "name": "纳斯达克100",
+   "id": "cn10y",
+   "name": "中国10年期国债收益率",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "spx",
-   "name": "标普500",
+   "id": "rrp",
+   "name": "美联储隔夜逆回购(RRP)",
    "from": "EXTREME",
    "to": "ELEVATED"
-  },
-  {
-   "id": "chinext",
-   "name": "创业板指",
-   "from": "ELEVATED",
-   "to": "EXTREME"
   },
   {
    "id": "em",
    "name": "新兴市场股指(MSCI EM)",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "gold",
-   "name": "黄金",
-   "from": "NORMAL",
+   "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "usfci",
-   "name": "美国金融条件指数",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "igspread",
-   "name": "美国投资级信用利差",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "infl5y5y",
-   "name": "美国5y5y通胀互换",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "cdxig",
-   "name": "CDX IG",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "silver",
-   "name": "白银",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "hstech",
-   "name": "恒生科技",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "audusd",
-   "name": "澳元兑美元",
+   "id": "termprem",
+   "name": "美债10Y期限溢价",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "hsi",
-   "name": "恒生指数",
+   "id": "gold",
+   "name": "黄金",
+   "from": "ELEVATED",
+   "to": "DIVERGENCE"
+  },
+  {
+   "id": "usfci",
+   "name": "美国金融条件指数",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "vvix",
+   "name": "VVIX",
    "from": "NORMAL",
    "to": "ELEVATED"
+  },
+  {
+   "id": "hsi",
+   "name": "恒生指数",
+   "from": "ELEVATED",
+   "to": "NORMAL"
   },
   {
    "id": "goldminers",
    "name": "黄金矿业股",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "rebar",
-   "name": "螺纹钢",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "NORMAL"
   }
  ],
  "pathChanges": [
-  "路径D · 全球流动性改善 (反向: 流动性收紧): INACTIVE → PARTIAL"
+  "路径D · 全球流动性改善: PARTIAL → INACTIVE"
  ],
- "divAdded": [],
+ "divAdded": [
+  "实际利率上行 vs 黄金上涨(对抗型·弱端确认)"
+ ],
  "divRemoved": []
 }

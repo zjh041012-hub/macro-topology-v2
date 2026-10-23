@@ -105,7 +105,7 @@
   "relation": "negative",
   "mechanism": "实际利率与黄金的传统负相关本期失效:同步上行",
   "strength": 0.8,
-  "status": "INACTIVE"
+  "status": "DIVERGENCE"
  },
  {
   "id": "e_10y_dxy",
@@ -618,7 +618,7 @@
   "relation": "positive",
   "mechanism": "信用利差是金融条件分项",
   "strength": 0.5,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_ig_hy",
@@ -663,7 +663,7 @@
   "relation": "positive",
   "mechanism": "风险偏好支撑成长资产",
   "strength": 0.5,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_risk_em",
@@ -672,7 +672,7 @@
   "relation": "positive",
   "mechanism": "风险偏好驱动新兴市场资金流",
   "strength": 0.45,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_ndx_spx",
@@ -690,7 +690,7 @@
   "relation": "positive",
   "mechanism": "半导体是纳指核心权重",
   "strength": 0.7,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_gold_miners",
@@ -699,7 +699,7 @@
   "relation": "positive",
   "mechanism": "矿业股放大金价弹性",
   "strength": 0.7,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_com_crb",
@@ -744,7 +744,7 @@
   "relation": "positive",
   "mechanism": "条件收紧推升再融资成本",
   "strength": 0.4,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_sofr_fci",
@@ -1860,7 +1860,7 @@
   "relation": "positive",
   "mechanism": "全球半导体联动",
   "strength": 0.5,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_rut_spx",
@@ -1914,7 +1914,7 @@
   "relation": "positive",
   "mechanism": "科技权重驱动恒指",
   "strength": 0.5,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_div_value",
@@ -1995,7 +1995,7 @@
   "relation": "positive",
   "mechanism": "融资压力直接走阔利差",
   "strength": 0.7,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_liqc_gold",
@@ -2004,7 +2004,7 @@
   "relation": "conditional",
   "mechanism": "冲击初期黄金同跌, 后期避险",
   "strength": 0.5,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_refl_oil",
@@ -2031,7 +2031,7 @@
   "relation": "positive",
   "mechanism": "衰退定价首先体现在利差",
   "strength": 0.6,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_rec_spx",
