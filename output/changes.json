@@ -1,79 +1,95 @@
 {
- "since": "2026-10-22T14:46:49+00:00",
- "generatedAt": "2026-10-23T00:58:18+00:00",
+ "since": "2026-10-23T00:58:18+00:00",
+ "generatedAt": "2026-10-23T14:31:01+00:00",
  "nodeChanges": [
-  {
-   "id": "tga",
-   "name": "美国财政部TGA账户",
-   "from": "NORMAL",
-   "to": "EXTREME"
-  },
-  {
-   "id": "chipetf",
-   "name": "芯片ETF",
-   "from": "NORMAL",
-   "to": "EXTREME"
-  },
   {
    "id": "cn10y",
    "name": "中国10年期国债收益率",
-   "from": "EXTREME",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "EXTREME"
   },
   {
-   "id": "rrp",
-   "name": "美联储隔夜逆回购(RRP)",
+   "id": "chinext",
+   "name": "创业板指",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
    "id": "em",
    "name": "新兴市场股指(MSCI EM)",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "termprem",
-   "name": "美债10Y期限溢价",
    "from": "ELEVATED",
-   "to": "NORMAL"
+   "to": "EXTREME"
   },
   {
-   "id": "gold",
-   "name": "黄金",
-   "from": "ELEVATED",
-   "to": "DIVERGENCE"
-  },
-  {
-   "id": "usfci",
-   "name": "美国金融条件指数",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "vvix",
-   "name": "VVIX",
+   "id": "riskappetite",
+   "name": "全球风险偏好指数",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "hsi",
-   "name": "恒生指数",
+   "id": "bankidx",
+   "name": "银行指数",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "goldminers",
-   "name": "黄金矿业股",
+   "id": "comidx",
+   "name": "南华商品指数",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "tlt",
+   "name": "美国长期国债指数(TLT)",
    "from": "ELEVATED",
    "to": "NORMAL"
+  },
+  {
+   "id": "hstech",
+   "name": "恒生科技",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "audusd",
+   "name": "澳元兑美元",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "goldminers",
+   "name": "黄金矿业股",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "dr001",
+   "name": "DR001",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "power",
+   "name": "发电量(同比)",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "bdi",
+   "name": "波罗的海干散货指数",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "reits",
+   "name": "美国房地产REITs",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   }
  ],
  "pathChanges": [
-  "路径D · 全球流动性改善: PARTIAL → INACTIVE"
+  "路径D · 全球流动性改善 (反向: 流动性收紧): INACTIVE → PARTIAL"
  ],
- "divAdded": [
-  "实际利率上行 vs 黄金上涨(对抗型·弱端确认)"
- ],
+ "divAdded": [],
  "divRemoved": []
 }
