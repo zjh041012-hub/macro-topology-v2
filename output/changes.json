@@ -1,95 +1,110 @@
 {
- "since": "2026-10-23T00:58:18+00:00",
- "generatedAt": "2026-10-23T14:31:01+00:00",
+ "since": "2026-10-23T14:31:01+00:00",
+ "generatedAt": "2026-10-26T16:25:16+00:00",
  "nodeChanges": [
   {
-   "id": "cn10y",
-   "name": "中国10年期国债收益率",
+   "id": "spx",
+   "name": "标普500",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "chinext",
-   "name": "创业板指",
+   "id": "r007",
+   "name": "R007",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "em",
-   "name": "新兴市场股指(MSCI EM)",
+   "id": "bankloans",
+   "name": "美国商业银行贷款(同比)",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "rrp",
+   "name": "美联储隔夜逆回购(RRP)",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
    "id": "riskappetite",
    "name": "全球风险偏好指数",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "bankidx",
-   "name": "银行指数",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "comidx",
-   "name": "南华商品指数",
+   "id": "bankidx",
+   "name": "银行指数",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "sox",
+   "name": "美国半导体指数(SOX)",
+   "from": "ELEVATED",
+   "to": "DIVERGENCE"
+  },
+  {
+   "id": "dr007",
+   "name": "DR007",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "usconf",
+   "name": "美国消费者信心",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "vvix",
+   "name": "VVIX",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "rut",
+   "name": "罗素2000",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
    "id": "tlt",
    "name": "美国长期国债指数(TLT)",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "hstech",
-   "name": "恒生科技",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
    "id": "audusd",
    "name": "澳元兑美元",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "NORMAL"
   },
   {
    "id": "goldminers",
    "name": "黄金矿业股",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "dr001",
-   "name": "DR001",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "power",
-   "name": "发电量(同比)",
+   "id": "debtceiling",
+   "name": "债务上限博弈风险",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "bdi",
-   "name": "波罗的海干散货指数",
+   "id": "aluminum",
+   "name": "铝(沪铝主力)",
    "from": "ELEVATED",
    "to": "NORMAL"
-  },
-  {
-   "id": "reits",
-   "name": "美国房地产REITs",
-   "from": "NORMAL",
-   "to": "ELEVATED"
   }
  ],
  "pathChanges": [
-  "路径D · 全球流动性改善 (反向: 流动性收紧): INACTIVE → PARTIAL"
+  "路径A · 美国政策转鹰 (反向: 政策转鸽交易): INACTIVE → PARTIAL",
+  "路径D · 全球流动性改善: PARTIAL → INACTIVE"
  ],
- "divAdded": [],
+ "divAdded": [
+  "美国10年期实际利率 与 美国半导体指数(SOX) 走势背离(边扫描)"
+ ],
  "divRemoved": []
 }
