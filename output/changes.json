@@ -1,110 +1,67 @@
 {
- "since": "2026-10-23T14:31:01+00:00",
- "generatedAt": "2026-10-26T16:25:16+00:00",
+ "since": "2026-10-26T16:25:16+00:00",
+ "generatedAt": "2026-10-27T01:44:02+00:00",
  "nodeChanges": [
   {
-   "id": "spx",
-   "name": "标普500",
+   "id": "copper",
+   "name": "铜(LME)",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "r007",
-   "name": "R007",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "bankloans",
-   "name": "美国商业银行贷款(同比)",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "rrp",
-   "name": "美联储隔夜逆回购(RRP)",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "riskappetite",
-   "name": "全球风险偏好指数",
+   "id": "igspread",
+   "name": "美国投资级信用利差",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "bankidx",
-   "name": "银行指数",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "sox",
-   "name": "美国半导体指数(SOX)",
-   "from": "ELEVATED",
-   "to": "DIVERGENCE"
-  },
-  {
-   "id": "dr007",
-   "name": "DR007",
+   "id": "comidx",
+   "name": "南华商品指数",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "usconf",
-   "name": "美国消费者信心",
+   "id": "chipetf",
+   "name": "芯片ETF",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "vvix",
-   "name": "VVIX",
+   "id": "geopolitics",
+   "name": "地缘政治风险指数",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "cdxig",
+   "name": "CDX IG",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
    "id": "rut",
    "name": "罗素2000",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "tlt",
-   "name": "美国长期国债指数(TLT)",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "NORMAL"
   },
   {
    "id": "audusd",
    "name": "澳元兑美元",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "goldminers",
-   "name": "黄金矿业股",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "debtceiling",
-   "name": "债务上限博弈风险",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "aluminum",
-   "name": "铝(沪铝主力)",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "id": "goldminers",
+   "name": "黄金矿业股",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   }
  ],
- "pathChanges": [
-  "路径A · 美国政策转鹰 (反向: 政策转鸽交易): INACTIVE → PARTIAL",
-  "路径D · 全球流动性改善: PARTIAL → INACTIVE"
- ],
+ "pathChanges": [],
  "divAdded": [
-  "美国10年期实际利率 与 美国半导体指数(SOX) 走势背离(边扫描)"
+  "实际利率上行 vs 黄金上涨(对抗型)"
  ],
- "divRemoved": []
+ "divRemoved": [
+  "实际利率上行 vs 黄金上涨(对抗型·弱端确认)"
+ ]
 }
