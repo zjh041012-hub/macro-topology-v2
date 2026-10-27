@@ -1,67 +1,79 @@
 {
- "since": "2026-10-26T16:25:16+00:00",
- "generatedAt": "2026-10-27T01:44:02+00:00",
+ "since": "2026-10-27T01:44:02+00:00",
+ "generatedAt": "2026-10-27T15:40:36+00:00",
  "nodeChanges": [
   {
-   "id": "copper",
-   "name": "铜(LME)",
+   "id": "r007",
+   "name": "R007",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "igspread",
-   "name": "美国投资级信用利差",
+   "id": "chinext",
+   "name": "创业板指",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "em",
+   "name": "新兴市场股指(MSCI EM)",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "hyspread",
+   "name": "美国高收益债信用利差",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "comidx",
-   "name": "南华商品指数",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "chipetf",
-   "name": "芯片ETF",
+   "id": "dr007",
+   "name": "DR007",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "geopolitics",
-   "name": "地缘政治风险指数",
+   "id": "eurusd",
+   "name": "欧元兑美元",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "cdxhy",
+   "name": "CDX HY",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "cdxig",
-   "name": "CDX IG",
+   "id": "silver",
+   "name": "白银",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
    "id": "rut",
    "name": "罗素2000",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "audusd",
-   "name": "澳元兑美元",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
    "id": "goldminers",
    "name": "黄金矿业股",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "reits",
+   "name": "美国房地产REITs",
+   "from": "ELEVATED",
+   "to": "NORMAL"
   }
  ],
  "pathChanges": [],
  "divAdded": [
-  "实际利率上行 vs 黄金上涨(对抗型)"
+  "实际利率上行 vs 黄金上涨(对抗型·弱端确认)"
  ],
  "divRemoved": [
-  "实际利率上行 vs 黄金上涨(对抗型·弱端确认)"
+  "实际利率上行 vs 黄金上涨(对抗型)"
  ]
 }
