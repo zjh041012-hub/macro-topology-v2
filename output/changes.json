@@ -1,79 +1,75 @@
 {
- "since": "2026-10-27T01:44:02+00:00",
- "generatedAt": "2026-10-27T15:40:36+00:00",
+ "since": "2026-10-27T15:40:36+00:00",
+ "generatedAt": "2026-10-28T01:41:16+00:00",
  "nodeChanges": [
   {
-   "id": "r007",
-   "name": "R007",
-   "from": "ELEVATED",
-   "to": "EXTREME"
+   "id": "retail",
+   "name": "社会消费品零售总额(同比)",
+   "from": "EXTREME",
+   "to": "NORMAL"
   },
   {
-   "id": "chinext",
-   "name": "创业板指",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "em",
-   "name": "新兴市场股指(MSCI EM)",
+   "id": "ahe",
+   "name": "美国平均时薪(同比)",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "hyspread",
-   "name": "美国高收益债信用利差",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "id": "rentcpi",
+   "name": "美国租金通胀(同比)",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "chinext",
+   "name": "创业板指",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "termprem",
+   "name": "美债10Y期限溢价",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "t2s10s",
+   "name": "美债2s10s利差",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
    "id": "dr007",
    "name": "DR007",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "NORMAL"
   },
   {
    "id": "eurusd",
    "name": "欧元兑美元",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "chipetf",
+   "name": "芯片ETF",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "cdxhy",
-   "name": "CDX HY",
+   "id": "gdpnow",
+   "name": "亚特兰大联储GDPNow",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "silver",
-   "name": "白银",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "rut",
-   "name": "罗素2000",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "goldminers",
-   "name": "黄金矿业股",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "reits",
-   "name": "美国房地产REITs",
+   "id": "debtceiling",
+   "name": "债务上限博弈风险",
    "from": "ELEVATED",
    "to": "NORMAL"
   }
  ],
  "pathChanges": [],
- "divAdded": [
-  "实际利率上行 vs 黄金上涨(对抗型·弱端确认)"
- ],
- "divRemoved": [
-  "实际利率上行 vs 黄金上涨(对抗型)"
- ]
+ "divAdded": [],
+ "divRemoved": []
 }
