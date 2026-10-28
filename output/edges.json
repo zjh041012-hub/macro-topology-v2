@@ -60,7 +60,7 @@
   "relation": "positive",
   "mechanism": "利率波动率上行抬升期限溢价补偿",
   "strength": 0.6,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_supply_worry",
@@ -78,7 +78,7 @@
   "relation": "positive",
   "mechanism": "法币信用对冲需求推升黄金",
   "strength": 0.75,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_worry_dxy",
@@ -231,7 +231,7 @@
   "relation": "negative",
   "mechanism": "实际利率冲击高久期科技资产",
   "strength": 0.55,
-  "status": "DIVERGENCE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_10y_value",
@@ -1518,7 +1518,7 @@
   "relation": "positive",
   "mechanism": "原油向零售油价传导",
   "strength": 0.7,
-  "status": "INACTIVE"
+  "status": "DIVERGENCE"
  },
  {
   "id": "e_gasoline_cpi",
@@ -1698,7 +1698,7 @@
   "relation": "positive",
   "mechanism": "贵金属联动, 白银弹性更高",
   "strength": 0.7,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_real_silver",
@@ -1761,7 +1761,7 @@
   "relation": "positive",
   "mechanism": "ETF流入是金价的资金面确认",
   "strength": 0.8,
-  "status": "INACTIVE"
+  "status": "DIVERGENCE"
  },
  {
   "id": "e_cftcgold_gold",
@@ -1860,7 +1860,7 @@
   "relation": "positive",
   "mechanism": "全球半导体联动",
   "strength": 0.5,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_rut_spx",
