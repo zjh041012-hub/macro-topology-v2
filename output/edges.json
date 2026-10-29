@@ -42,7 +42,7 @@
   "relation": "negative",
   "mechanism": "实际利率上行压制长久期成长估值",
   "strength": 0.85,
-  "status": "INACTIVE"
+  "status": "DIVERGENCE"
  },
  {
   "id": "e_real_growth",
@@ -78,7 +78,7 @@
   "relation": "positive",
   "mechanism": "法币信用对冲需求推升黄金",
   "strength": 0.75,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_worry_dxy",
@@ -105,7 +105,7 @@
   "relation": "negative",
   "mechanism": "实际利率与黄金的传统负相关本期失效:同步上行",
   "strength": 0.8,
-  "status": "INACTIVE"
+  "status": "DIVERGENCE"
  },
  {
   "id": "e_10y_dxy",
@@ -231,7 +231,7 @@
   "relation": "negative",
   "mechanism": "实际利率冲击高久期科技资产",
   "strength": 0.55,
-  "status": "DIVERGENCE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_10y_value",
@@ -1698,7 +1698,7 @@
   "relation": "positive",
   "mechanism": "贵金属联动, 白银弹性更高",
   "strength": 0.7,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_real_silver",
@@ -1761,7 +1761,7 @@
   "relation": "positive",
   "mechanism": "ETF流入是金价的资金面确认",
   "strength": 0.8,
-  "status": "INACTIVE"
+  "status": "DIVERGENCE"
  },
  {
   "id": "e_cftcgold_gold",
@@ -1851,7 +1851,7 @@
   "relation": "positive",
   "mechanism": "半导体领跌拖累纳指",
   "strength": 0.7,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_sox_chipetf",
@@ -1860,7 +1860,7 @@
   "relation": "positive",
   "mechanism": "全球半导体联动",
   "strength": 0.5,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_rut_spx",
@@ -1887,7 +1887,7 @@
   "relation": "negative",
   "mechanism": "利率+再融资双重压制REITs",
   "strength": 0.5,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_csi_csi500",
