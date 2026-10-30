@@ -1,9 +1,7 @@
 {
  "data_status": {
   "stale": [
-   "chipetf",
    "cn1y",
-   "dividendetf",
    "goldetf",
    "gscpi",
    "shibor3m",
@@ -54,23 +52,23 @@
    "cta",
    "gammaproxy"
   ],
-  "liveCount": 135,
+  "liveCount": 137,
   "totalCount": 178,
   "sourceErrors": {
    "fred": "usclaims → ValueError: empty series after transform (insufficient history?)",
    "tushare": "tsf → ValueError: tushare: 抱歉，您没有接口(sf_month)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。",
-   "akshare:fund_etf_hist_em": "chipetf → ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-   "csv_url": "gscpi → ValueError: Excel file format cannot be determined, you must specify an engine manually."
+   "csv_url": "gscpi → ValueError: Excel file format cannot be determined, you must specify an engine manually.",
+   "akshare:fund_etf_hist_em": "goldetf → ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
   }
  },
  "topMover": {
-  "nodeId": "termprem",
-  "text": "美债10Y期限溢价 -3bp/5D · 55分位"
+  "nodeId": "fiscalsupply",
+  "text": "美债财政供给压力 +0.0%/5D · 4分位"
  },
  "dominantPathId": "p_std_b",
- "divergenceCount": 2,
- "highRiskCount": 14,
+ "divergenceCount": 3,
+ "highRiskCount": 16,
  "regime": "EXTREME",
- "regimeNote": "自动识别: 2条背离, 14个高风险节点。",
- "updatedAt": "2026-10-29T16:30:15+00:00"
+ "regimeNote": "自动识别: 3条背离, 16个高风险节点。背离集中指向供给/久期因素而非政策预期, 建议人工复核主导逻辑。",
+ "updatedAt": "2026-10-30T02:14:10+00:00"
 }

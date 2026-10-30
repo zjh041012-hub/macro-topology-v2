@@ -10,7 +10,7 @@
    "e_real_gold"
   ],
   "expectedRelation": "实际利率是黄金的机会成本, 实际利率快速上行时黄金通常承压下跌。",
-  "observedRelation": "us10yreal 20D动量z=-1.5, gold 20D动量z=-1.2, 方向与预期关系相反。",
+  "observedRelation": "us10yreal 20D动量z=-1.6, gold 20D动量z=-1.0, 方向与预期关系相反。",
   "window": "20D",
   "strength": "LOW",
   "persistence": "PERSISTENT",
@@ -31,7 +31,25 @@
    "e_real_sox"
   ],
   "expectedRelation": "预期反向: 半导体是最长久期成长资产",
-  "observedRelation": "美国10年期实际利率 z=-1.5, 美国半导体指数(SOX) z=-1.4, 与预期关系相反。",
+  "observedRelation": "美国10年期实际利率 z=-1.6, 美国半导体指数(SOX) z=-1.6, 与预期关系相反。",
+  "window": "20D",
+  "strength": "MEDIUM",
+  "persistence": "TRANSIENT",
+  "alternativePaths": [],
+  "invalidationRisk": "MEDIUM"
+ },
+ {
+  "id": "d_auto_2",
+  "title": "美国10年期实际利率 与 纳斯达克100 走势背离(边扫描)",
+  "relatedNodeIds": [
+   "us10yreal",
+   "ndx"
+  ],
+  "relatedEdgeIds": [
+   "e_real_ndx"
+  ],
+  "expectedRelation": "预期反向: 实际利率上行压制长久期成长估值",
+  "observedRelation": "美国10年期实际利率 z=-1.6, 纳斯达克100 z=-1.3, 与预期关系相反。",
   "window": "20D",
   "strength": "MEDIUM",
   "persistence": "TRANSIENT",
