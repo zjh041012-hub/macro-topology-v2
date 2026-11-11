@@ -1,59 +1,23 @@
 [
  {
-  "id": "d2",
-  "title": "实际利率上行 vs 黄金上涨(对抗型)",
+  "id": "d1",
+  "title": "美债收益率上行 vs 美元走弱(未响应型)",
   "relatedNodeIds": [
-   "us10yreal",
-   "gold"
+   "us10y",
+   "dxy"
   ],
   "relatedEdgeIds": [
-   "e_real_gold"
+   "e_10y_dxy"
   ],
-  "expectedRelation": "实际利率是黄金的机会成本, 实际利率快速上行时黄金通常承压下跌。",
-  "observedRelation": "us10yreal 20D动量z=-1.6, gold 20D动量z=-1.0, 方向与预期关系相反。",
+  "expectedRelation": "利差逻辑下, 美债收益率上行应支撑美元同步走强。",
+  "observedRelation": "us10y 20D动量z=-1.6 处于强趋势, dxy 却几乎未响应 (z=-0.2)。",
   "window": "20D",
-  "strength": "LOW",
+  "strength": "MEDIUM",
   "persistence": "PERSISTENT",
   "alternativeExplanations": [
-   "财政信用对冲需求压倒利率定价",
-   "央行购金等非价格敏感型买盘"
+   "财政供给与期限溢价主导, 而非增长/政策利差",
+   "海外资金对美债的边际需求转弱"
   ],
-  "invalidationRisk": "LOW"
- },
- {
-  "id": "d_auto_1",
-  "title": "美国10年期实际利率 与 美国半导体指数(SOX) 走势背离(边扫描)",
-  "relatedNodeIds": [
-   "us10yreal",
-   "sox"
-  ],
-  "relatedEdgeIds": [
-   "e_real_sox"
-  ],
-  "expectedRelation": "预期反向: 半导体是最长久期成长资产",
-  "observedRelation": "美国10年期实际利率 z=-1.6, 美国半导体指数(SOX) z=-1.6, 与预期关系相反。",
-  "window": "20D",
-  "strength": "MEDIUM",
-  "persistence": "TRANSIENT",
-  "alternativePaths": [],
-  "invalidationRisk": "MEDIUM"
- },
- {
-  "id": "d_auto_2",
-  "title": "美国10年期实际利率 与 纳斯达克100 走势背离(边扫描)",
-  "relatedNodeIds": [
-   "us10yreal",
-   "ndx"
-  ],
-  "relatedEdgeIds": [
-   "e_real_ndx"
-  ],
-  "expectedRelation": "预期反向: 实际利率上行压制长久期成长估值",
-  "observedRelation": "美国10年期实际利率 z=-1.6, 纳斯达克100 z=-1.3, 与预期关系相反。",
-  "window": "20D",
-  "strength": "MEDIUM",
-  "persistence": "TRANSIENT",
-  "alternativePaths": [],
   "invalidationRisk": "MEDIUM"
  }
 ]

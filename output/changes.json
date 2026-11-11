@@ -1,65 +1,198 @@
 {
- "since": "2026-10-29T16:30:15+00:00",
- "generatedAt": "2026-10-30T02:14:10+00:00",
+ "since": "2026-10-30T02:14:10+00:00",
+ "generatedAt": "2026-11-11T02:14:55+00:00",
  "nodeChanges": [
   {
-   "id": "reserves",
-   "name": "美国银行准备金",
-   "from": "NORMAL",
-   "to": "EXTREME"
+   "id": "oil",
+   "name": "原油(WTI)",
+   "from": "EXTREME",
+   "to": "NORMAL"
   },
   {
    "id": "chipetf",
    "name": "芯片ETF",
+   "from": "EXTREME",
+   "to": "NORMAL"
+  },
+  {
+   "id": "lmecopperinv",
+   "name": "LME铜库存",
    "from": "NORMAL",
    "to": "EXTREME"
   },
   {
+   "id": "dxy",
+   "name": "美元指数",
+   "from": "NORMAL",
+   "to": "DIVERGENCE"
+  },
+  {
+   "id": "gold",
+   "name": "黄金",
+   "from": "DIVERGENCE",
+   "to": "NORMAL"
+  },
+  {
+   "id": "copper",
+   "name": "铜(LME)",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "spx",
+   "name": "标普500",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "cutsexp",
+   "name": "市场隐含未来12个月降息次数",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "reserves",
+   "name": "美国银行准备金",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "us30y",
+   "name": "美国30年期国债收益率",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "r007",
+   "name": "R007",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "infl5y5y",
+   "name": "美国5y5y通胀互换",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "crb",
+   "name": "CRB商品指数",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "us5y",
+   "name": "美国5年期国债收益率",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "ahe",
+   "name": "美国平均时薪(同比)",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "rentcpi",
+   "name": "美国租金通胀(同比)",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "bankloans",
+   "name": "美国商业银行贷款(同比)",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "brent",
+   "name": "Brent原油",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "chinext",
+   "name": "创业板指",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
    "id": "rrp",
    "name": "美联储隔夜逆回购(RRP)",
-   "from": "EXTREME",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "reits",
+   "name": "美国房地产REITs",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "termprem",
+   "name": "美债10Y期限溢价",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "hyspread",
+   "name": "美国高收益债信用利差",
+   "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
    "id": "ndx",
    "name": "纳斯达克100",
+   "from": "DIVERGENCE",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "us2y",
+   "name": "美国2年期国债收益率",
    "from": "ELEVATED",
-   "to": "DIVERGENCE"
+   "to": "NORMAL"
   },
   {
    "id": "us10ybe",
    "name": "美国10年期盈亏平衡通胀",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "usfci",
-   "name": "美国金融条件指数",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "fiscalworry",
-   "name": "财政信用担忧指数",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "infl5y5y",
-   "name": "美国5y5y通胀互换",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "hstech",
-   "name": "恒生科技",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "id": "usdjpy",
+   "name": "美元兑日元",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "sox",
+   "name": "美国半导体指数(SOX)",
+   "from": "DIVERGENCE",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "reflation",
+   "name": "再通胀状态",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "t2s10s",
+   "name": "美债2s10s利差",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   }
  ],
- "pathChanges": [],
- "divAdded": [
-  "美国10年期实际利率 与 纳斯达克100 走势背离(边扫描)"
+ "pathChanges": [
+  "路径A · 美国政策转鹰 (反向: 政策转鸽交易): INACTIVE → PARTIAL",
+  "路径F · 全球再通胀 (反向: 通缩交易): INACTIVE → PARTIAL"
  ],
- "divRemoved": []
+ "divAdded": [
+  "美债收益率上行 vs 美元走弱(未响应型)"
+ ],
+ "divRemoved": [
+  "实际利率上行 vs 黄金上涨(对抗型)",
+  "美国10年期实际利率 与 纳斯达克100 走势背离(边扫描)",
+  "美国10年期实际利率 与 美国半导体指数(SOX) 走势背离(边扫描)"
+ ]
 }

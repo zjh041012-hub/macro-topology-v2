@@ -6,7 +6,7 @@
   "relation": "positive",
   "mechanism": "国债净供给放量推升期限溢价",
   "strength": 0.9,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_worry_tp",
@@ -24,7 +24,7 @@
   "relation": "positive",
   "mechanism": "期限溢价走阔直接抬升长端名义利率",
   "strength": 0.9,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_10y_real",
@@ -105,7 +105,7 @@
   "relation": "negative",
   "mechanism": "实际利率与黄金的传统负相关本期失效:同步上行",
   "strength": 0.8,
-  "status": "DIVERGENCE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_10y_dxy",
@@ -114,7 +114,7 @@
   "relation": "positive",
   "mechanism": "利差逻辑被资金流出与财政信用担忧抵消:收益率↑美元↓",
   "strength": 0.8,
-  "status": "INACTIVE"
+  "status": "DIVERGENCE"
  },
  {
   "id": "e_spx_hy",
@@ -168,7 +168,7 @@
   "relation": "positive",
   "mechanism": "短端预期沿曲线传导",
   "strength": 0.5,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_be_10y",
@@ -177,7 +177,7 @@
   "relation": "positive",
   "mechanism": "通胀补偿构成名义利率",
   "strength": 0.5,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_ff_fedpath",
@@ -204,7 +204,7 @@
   "relation": "positive",
   "mechanism": "长端领涨推动曲线熊陡",
   "strength": 0.6,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_jgb_10y",
@@ -231,7 +231,7 @@
   "relation": "negative",
   "mechanism": "实际利率冲击高久期科技资产",
   "strength": 0.55,
-  "status": "DIVERGENCE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_10y_value",
@@ -348,7 +348,7 @@
   "relation": "positive",
   "mechanism": "铜价带动商品指数走强",
   "strength": 0.6,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_fai_dem",
@@ -609,7 +609,7 @@
   "relation": "negative",
   "mechanism": "金融条件收紧压制风险资产",
   "strength": 0.6,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_hy_fci",
@@ -681,7 +681,7 @@
   "relation": "positive",
   "mechanism": "权重股拖累大盘",
   "strength": 0.8,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_chip_ndx",
@@ -690,7 +690,7 @@
   "relation": "positive",
   "mechanism": "半导体是纳指核心权重",
   "strength": 0.7,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_gold_miners",
@@ -699,7 +699,7 @@
   "relation": "positive",
   "mechanism": "矿业股放大金价弹性",
   "strength": 0.7,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_com_crb",
@@ -708,7 +708,7 @@
   "relation": "positive",
   "mechanism": "商品指数联动",
   "strength": 0.5,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_geo_oil",
@@ -771,7 +771,7 @@
   "relation": "positive",
   "mechanism": "曲线中段联动",
   "strength": 0.6,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_5y_10y",
@@ -780,7 +780,7 @@
   "relation": "positive",
   "mechanism": "中长端联动",
   "strength": 0.6,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_10y_20y",
@@ -807,7 +807,7 @@
   "relation": "positive",
   "mechanism": "名义分解到中段实际利率",
   "strength": 0.4,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_5yreal_10yreal",
@@ -1455,7 +1455,7 @@
   "relation": "negative",
   "mechanism": "美债上行加深中美倒挂",
   "strength": 0.6,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_cn10y_cnus",
@@ -1518,7 +1518,7 @@
   "relation": "positive",
   "mechanism": "原油向零售油价传导",
   "strength": 0.7,
-  "status": "DIVERGENCE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_gasoline_cpi",
@@ -1590,7 +1590,7 @@
   "relation": "positive",
   "mechanism": "CDS与现券利差互证",
   "strength": 0.6,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_vvix_vix",
@@ -1698,7 +1698,7 @@
   "relation": "positive",
   "mechanism": "贵金属联动, 白银弹性更高",
   "strength": 0.7,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_real_silver",
@@ -1707,7 +1707,7 @@
   "relation": "negative",
   "mechanism": "实际利率同样定价白银",
   "strength": 0.4,
-  "status": "DIVERGENCE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_alu_comidx",
@@ -1716,7 +1716,7 @@
   "relation": "positive",
   "mechanism": "有色构成商品指数权重",
   "strength": 0.3,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_lmeinv_copper",
@@ -1761,7 +1761,7 @@
   "relation": "positive",
   "mechanism": "ETF流入是金价的资金面确认",
   "strength": 0.8,
-  "status": "DIVERGENCE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_cftcgold_gold",
@@ -1797,7 +1797,7 @@
   "relation": "positive",
   "mechanism": "趋势资金顺势加压",
   "strength": 0.4,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_buyback_spx",
@@ -1833,7 +1833,7 @@
   "relation": "negative",
   "mechanism": "收益率上行=长债指数下跌",
   "strength": 0.7,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_real_sox",
@@ -1860,7 +1860,7 @@
   "relation": "positive",
   "mechanism": "全球半导体联动",
   "strength": 0.5,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_rut_spx",
@@ -1878,7 +1878,7 @@
   "relation": "negative",
   "mechanism": "类债券板块的利率敏感性",
   "strength": 0.4,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_10y_reits",
