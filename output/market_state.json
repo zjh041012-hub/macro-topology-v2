@@ -2,6 +2,8 @@
  "data_status": {
   "stale": [
    "cn1y",
+   "dividendetf",
+   "goldetf",
    "gscpi",
    "shibor3m",
    "tsf",
@@ -51,12 +53,13 @@
    "cta",
    "gammaproxy"
   ],
-  "liveCount": 138,
+  "liveCount": 136,
   "totalCount": 178,
   "sourceErrors": {
    "fred": "usclaims → ValueError: empty series after transform (insufficient history?)",
    "tushare": "tsf → ValueError: tushare: 抱歉，您没有接口(sf_month)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。",
-   "csv_url": "gscpi → ValueError: Excel file format cannot be determined, you must specify an engine manually."
+   "csv_url": "gscpi → ValueError: Excel file format cannot be determined, you must specify an engine manually.",
+   "akshare:fund_etf_hist_em": "dividendetf → Push2RateLimitError: 东方财富 push2 行情服务器断开了连接，通常是短时间内请求过多，当前 IP 被临时限流。首次限流一般约 5 分钟后恢复，反复触发后可能需要 40 分钟以上；等待期间不要重复调用东方财富的行情接口，否则会延长限流。"
   }
  },
  "topMover": {
@@ -68,5 +71,5 @@
  "highRiskCount": 9,
  "regime": "EXTREME",
  "regimeNote": "自动识别: 1条背离, 9个高风险节点。",
- "updatedAt": "2026-11-11T02:14:55+00:00"
+ "updatedAt": "2026-11-11T17:30:31+00:00"
 }

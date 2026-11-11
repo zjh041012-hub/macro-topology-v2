@@ -10,7 +10,7 @@
    "e_10y_dxy"
   ],
   "expectedRelation": "利差逻辑下, 美债收益率上行应支撑美元同步走强。",
-  "observedRelation": "us10y 20D动量z=-1.6 处于强趋势, dxy 却几乎未响应 (z=-0.2)。",
+  "observedRelation": "us10y 20D动量z=-1.6 处于强趋势, dxy 却几乎未响应 (z=+0.2)。",
   "window": "20D",
   "strength": "MEDIUM",
   "persistence": "PERSISTENT",
