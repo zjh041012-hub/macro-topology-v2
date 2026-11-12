@@ -3,6 +3,8 @@
   "stale": [
    "chipetf",
    "cn1y",
+   "dividendetf",
+   "goldetf",
    "gscpi",
    "shibor3m",
    "tsf",
@@ -52,7 +54,7 @@
    "cta",
    "gammaproxy"
   ],
-  "liveCount": 137,
+  "liveCount": 135,
   "totalCount": 178,
   "sourceErrors": {
    "fred": "usclaims → ValueError: empty series after transform (insufficient history?)",
@@ -62,13 +64,13 @@
   }
  },
  "topMover": {
-  "nodeId": "fiscalsupply",
-  "text": "美债财政供给压力 +0.0%/5D · 5分位"
+  "nodeId": "gold",
+  "text": "黄金 -5.7%/5D · 62分位"
  },
  "dominantPathId": "p_std_f",
- "divergenceCount": 0,
- "highRiskCount": 8,
+ "divergenceCount": 1,
+ "highRiskCount": 9,
  "regime": "EXTREME",
- "regimeNote": "自动识别: 0条背离, 8个高风险节点。",
- "updatedAt": "2026-11-12T03:22:36+00:00"
+ "regimeNote": "自动识别: 1条背离, 9个高风险节点。",
+ "updatedAt": "2026-11-12T17:50:51+00:00"
 }
