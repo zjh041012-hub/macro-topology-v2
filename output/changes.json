@@ -1,33 +1,53 @@
 {
- "since": "2026-11-11T02:14:55+00:00",
- "generatedAt": "2026-11-11T17:30:31+00:00",
+ "since": "2026-11-11T17:30:31+00:00",
+ "generatedAt": "2026-11-12T03:22:36+00:00",
  "nodeChanges": [
   {
-   "id": "sox",
-   "name": "美国半导体指数(SOX)",
+   "id": "dxy",
+   "name": "美元指数",
+   "from": "DIVERGENCE",
+   "to": "NORMAL"
+  },
+  {
+   "id": "infl5y5y",
+   "name": "美国5y5y通胀互换",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "dividendetf",
+   "name": "红利ETF",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "oil",
+   "name": "原油(WTI)",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "t2s10s",
+   "name": "美债2s10s利差",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "dr007",
-   "name": "DR007",
+   "id": "power",
+   "name": "发电量(同比)",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "chinext",
-   "name": "创业板指",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "em",
-   "name": "新兴市场股指(MSCI EM)",
+   "id": "aluminum",
+   "name": "铝(沪铝主力)",
    "from": "ELEVATED",
    "to": "NORMAL"
   }
  ],
  "pathChanges": [],
  "divAdded": [],
- "divRemoved": []
+ "divRemoved": [
+  "美债收益率上行 vs 美元走弱(未响应型)"
+ ]
 }
