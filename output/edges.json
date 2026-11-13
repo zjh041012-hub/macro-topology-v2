@@ -1752,7 +1752,7 @@
   "relation": "positive",
   "mechanism": "财政担忧驱动配置型买盘",
   "strength": 0.7,
-  "status": "DIVERGENCE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_goldflow_gold",
@@ -1761,7 +1761,7 @@
   "relation": "positive",
   "mechanism": "ETF流入是金价的资金面确认",
   "strength": 0.8,
-  "status": "DIVERGENCE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_cftcgold_gold",
@@ -1851,7 +1851,7 @@
   "relation": "positive",
   "mechanism": "半导体领跌拖累纳指",
   "strength": 0.7,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_sox_chipetf",
@@ -1932,7 +1932,7 @@
   "relation": "positive",
   "mechanism": "金价驱动ETF净值",
   "strength": 0.5,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_usepu_vix",

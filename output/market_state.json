@@ -1,12 +1,33 @@
 {
  "data_status": {
   "stale": [
+   "cftcgold",
+   "chipetf",
+   "cn10y",
    "cn1y",
+   "cn30y",
+   "cn5y",
+   "cncpi",
+   "cnpmi",
+   "cnppi",
+   "cxpmi",
+   "dividendetf",
+   "exports",
+   "fai",
+   "goldetf",
+   "goldetfflow",
    "gscpi",
+   "indprod",
+   "ismserv",
+   "m1",
+   "m2",
+   "opecprod",
+   "rigcount",
    "shibor3m",
    "tsf",
    "usclaims",
-   "usoilinv"
+   "usoilinv",
+   "uspmi"
   ],
   "manual": [
    "auctiontail",
@@ -51,22 +72,38 @@
    "cta",
    "gammaproxy"
   ],
-  "liveCount": 138,
+  "liveCount": 117,
   "totalCount": 178,
   "sourceErrors": {
+   "akshare:bond_zh_us_rate": "cn10y → AttributeError: module 'akshare' has no attribute 'bond_zh_us_rate'",
+   "akshare:macro_china_cpi_yearly": "cncpi → AttributeError: module 'akshare' has no attribute 'macro_china_cpi_yearly'",
+   "akshare:macro_china_ppi_yearly": "cnppi → AttributeError: module 'akshare' has no attribute 'macro_china_ppi_yearly'",
+   "akshare:macro_usa_ism_pmi": "uspmi → AttributeError: module 'akshare' has no attribute 'macro_usa_ism_pmi'",
+   "akshare:macro_china_pmi_yearly": "cnpmi → AttributeError: module 'akshare' has no attribute 'macro_china_pmi_yearly'",
+   "akshare:macro_china_industrial_production_yoy": "indprod → AttributeError: module 'akshare' has no attribute 'macro_china_industrial_production_yoy'",
+   "akshare:macro_china_gdzctz": "fai → AttributeError: module 'akshare' has no attribute 'macro_china_gdzctz'",
+   "akshare:macro_china_exports_yoy": "exports → AttributeError: module 'akshare' has no attribute 'macro_china_exports_yoy'",
    "fred": "usclaims → ValueError: empty series after transform (insufficient history?)",
+   "akshare:macro_china_money_supply": "m1 → AttributeError: module 'akshare' has no attribute 'macro_china_money_supply'",
    "tushare": "tsf → ValueError: tushare: 抱歉，您没有接口(sf_month)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。",
-   "csv_url": "gscpi → ValueError: Excel file format cannot be determined, you must specify an engine manually."
+   "akshare:fund_etf_hist_em": "chipetf → Push2RateLimitError: 东方财富 push2 行情服务器断开了连接，通常是短时间内请求过多，当前 IP 被临时限流。首次限流一般约 5 分钟后恢复，反复触发后可能需要 40 分钟以上；等待期间不要重复调用东方财富的行情接口，否则会延长限流。",
+   "akshare:macro_usa_ism_non_pmi": "ismserv → AttributeError: module 'akshare' has no attribute 'macro_usa_ism_non_pmi'",
+   "akshare:macro_china_cx_pmi_yearly": "cxpmi → AttributeError: module 'akshare' has no attribute 'macro_china_cx_pmi_yearly'",
+   "csv_url": "gscpi → ValueError: Excel file format cannot be determined, you must specify an engine manually.",
+   "akshare:macro_usa_rig_count": "rigcount → AttributeError: module 'akshare' has no attribute 'macro_usa_rig_count'",
+   "akshare:macro_cons_opec_month": "opecprod → AttributeError: module 'akshare' has no attribute 'macro_cons_opec_month'",
+   "akshare:macro_cons_gold": "goldetfflow → AttributeError: module 'akshare' has no attribute 'macro_cons_gold'",
+   "akshare:macro_usa_cftc_c_holding": "cftcgold → AttributeError: module 'akshare' has no attribute 'macro_usa_cftc_c_holding'"
   }
  },
  "topMover": {
   "nodeId": "gold",
-  "text": "黄金 -3.9%/5D · 62分位"
+  "text": "黄金 -4.6%/5D · 62分位"
  },
  "dominantPathId": "p_std_c",
  "divergenceCount": 0,
- "highRiskCount": 8,
+ "highRiskCount": 9,
  "regime": "EXTREME",
- "regimeNote": "自动识别: 0条背离, 8个高风险节点。",
- "updatedAt": "2026-11-13T02:56:41+00:00"
+ "regimeNote": "自动识别: 0条背离, 9个高风险节点。",
+ "updatedAt": "2026-11-13T17:23:42+00:00"
 }

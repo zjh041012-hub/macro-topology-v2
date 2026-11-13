@@ -1,134 +1,51 @@
 {
- "since": "2026-11-12T17:50:51+00:00",
- "generatedAt": "2026-11-13T02:56:41+00:00",
+ "since": "2026-11-13T02:56:41+00:00",
+ "generatedAt": "2026-11-13T17:23:42+00:00",
  "nodeChanges": [
   {
-   "id": "cutsexp",
-   "name": "市场隐含未来12个月降息次数",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "tga",
-   "name": "美国财政部TGA账户",
+   "id": "cnusspread",
+   "name": "中美国债10年利差",
    "from": "EXTREME",
-   "to": "ELEVATED"
+   "to": "NORMAL"
   },
   {
-   "id": "us30y",
-   "name": "美国30年期国债收益率",
+   "id": "bankidx",
+   "name": "银行指数",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "comidx",
-   "name": "南华商品指数",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "us5y",
-   "name": "美国5年期国债收益率",
+   "id": "tlt",
+   "name": "美国长期国债指数(TLT)",
    "from": "ELEVATED",
    "to": "EXTREME"
-  },
-  {
-   "id": "dividendetf",
-   "name": "红利ETF",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "reits",
-   "name": "美国房地产REITs",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "gold",
-   "name": "黄金",
-   "from": "DIVERGENCE",
-   "to": "ELEVATED"
   },
   {
    "id": "ndx",
    "name": "纳斯达克100",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "us2y",
-   "name": "美国2年期国债收益率",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "oil",
-   "name": "原油(WTI)",
+   "id": "sox",
+   "name": "美国半导体指数(SOX)",
    "from": "NORMAL",
    "to": "ELEVATED"
-  },
-  {
-   "id": "copper",
-   "name": "铜(LME)",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "usdeficit",
-   "name": "美国财政赤字(12M滚动)",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "reserves",
-   "name": "美国银行准备金",
-   "from": "ELEVATED",
-   "to": "NORMAL"
   },
   {
    "id": "cta",
    "name": "CTA趋势仓位代理",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "rut",
-   "name": "罗素2000",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "audusd",
-   "name": "澳元兑美元",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "em",
-   "name": "新兴市场股指(MSCI EM)",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "debtceiling",
-   "name": "债务上限博弈风险",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "goldetf",
-   "name": "黄金ETF(518880)",
+   "id": "chinext",
+   "name": "创业板指",
    "from": "NORMAL",
    "to": "ELEVATED"
   }
  ],
- "pathChanges": [
-  "路径F · 全球再通胀: PARTIAL → INACTIVE",
-  "路径A · 美国政策转鹰: PARTIAL → INACTIVE"
- ],
+ "pathChanges": [],
  "divAdded": [],
- "divRemoved": [
-  "实际利率上行 vs 黄金上涨(对抗型·弱端确认)"
- ]
+ "divRemoved": []
 }
