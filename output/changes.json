@@ -1,71 +1,134 @@
 {
- "since": "2026-11-12T03:22:36+00:00",
- "generatedAt": "2026-11-12T17:50:51+00:00",
+ "since": "2026-11-12T17:50:51+00:00",
+ "generatedAt": "2026-11-13T02:56:41+00:00",
  "nodeChanges": [
   {
-   "id": "gold",
-   "name": "黄金",
-   "from": "NORMAL",
-   "to": "DIVERGENCE"
-  },
-  {
-   "id": "comidx",
-   "name": "南华商品指数",
+   "id": "cutsexp",
+   "name": "市场隐含未来12个月降息次数",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "hyspread",
-   "name": "美国高收益债信用利差",
+   "id": "tga",
+   "name": "美国财政部TGA账户",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "us30y",
+   "name": "美国30年期国债收益率",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "comidx",
+   "name": "南华商品指数",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "us5y",
+   "name": "美国5年期国债收益率",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "dividendetf",
+   "name": "红利ETF",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "reits",
+   "name": "美国房地产REITs",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "gold",
+   "name": "黄金",
+   "from": "DIVERGENCE",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "ndx",
+   "name": "纳斯达克100",
    "from": "ELEVATED",
    "to": "NORMAL"
+  },
+  {
+   "id": "us2y",
+   "name": "美国2年期国债收益率",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
    "id": "oil",
    "name": "原油(WTI)",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
    "id": "copper",
    "name": "铜(LME)",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "cdxhy",
-   "name": "CDX HY",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "silver",
-   "name": "白银",
    "from": "NORMAL",
    "to": "ELEVATED"
+  },
+  {
+   "id": "usdeficit",
+   "name": "美国财政赤字(12M滚动)",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "reserves",
+   "name": "美国银行准备金",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "cta",
+   "name": "CTA趋势仓位代理",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "rut",
+   "name": "罗素2000",
+   "from": "ELEVATED",
+   "to": "NORMAL"
   },
   {
    "id": "audusd",
    "name": "澳元兑美元",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "NORMAL"
   },
   {
    "id": "em",
    "name": "新兴市场股指(MSCI EM)",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "debtceiling",
+   "name": "债务上限博弈风险",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "aluminum",
-   "name": "铝(沪铝主力)",
+   "id": "goldetf",
+   "name": "黄金ETF(518880)",
    "from": "NORMAL",
    "to": "ELEVATED"
   }
  ],
- "pathChanges": [],
- "divAdded": [
-  "实际利率上行 vs 黄金上涨(对抗型·弱端确认)"
+ "pathChanges": [
+  "路径F · 全球再通胀: PARTIAL → INACTIVE",
+  "路径A · 美国政策转鹰: PARTIAL → INACTIVE"
  ],
- "divRemoved": []
+ "divAdded": [],
+ "divRemoved": [
+  "实际利率上行 vs 黄金上涨(对抗型·弱端确认)"
+ ]
 }
