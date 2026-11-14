@@ -1,46 +1,46 @@
 {
- "since": "2026-11-13T02:56:41+00:00",
- "generatedAt": "2026-11-13T17:23:42+00:00",
+ "since": "2026-11-13T17:23:42+00:00",
+ "generatedAt": "2026-11-14T02:40:53+00:00",
  "nodeChanges": [
   {
-   "id": "cnusspread",
-   "name": "中美国债10年利差",
+   "id": "us2y",
+   "name": "美国2年期国债收益率",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "rrp",
+   "name": "美联储隔夜逆回购(RRP)",
    "from": "EXTREME",
-   "to": "NORMAL"
-  },
-  {
-   "id": "bankidx",
-   "name": "银行指数",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "tlt",
-   "name": "美国长期国债指数(TLT)",
-   "from": "ELEVATED",
-   "to": "EXTREME"
+   "to": "ELEVATED"
   },
   {
    "id": "ndx",
    "name": "纳斯达克100",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "NORMAL"
   },
   {
    "id": "sox",
    "name": "美国半导体指数(SOX)",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "NORMAL"
   },
   {
    "id": "cta",
    "name": "CTA趋势仓位代理",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "NORMAL"
   },
   {
-   "id": "chinext",
-   "name": "创业板指",
+   "id": "debtceiling",
+   "name": "债务上限博弈风险",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "utilities",
+   "name": "美国公用事业指数",
    "from": "NORMAL",
    "to": "ELEVATED"
   }
