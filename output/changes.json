@@ -1,46 +1,70 @@
 {
- "since": "2026-11-13T17:23:42+00:00",
- "generatedAt": "2026-11-14T02:40:53+00:00",
+ "since": "2026-11-14T02:40:53+00:00",
+ "generatedAt": "2026-11-16T19:50:15+00:00",
  "nodeChanges": [
   {
-   "id": "us2y",
-   "name": "美国2年期国债收益率",
+   "id": "crb",
+   "name": "CRB商品指数",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "rrp",
-   "name": "美联储隔夜逆回购(RRP)",
+   "id": "lmecopperinv",
+   "name": "LME铜库存",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
+   "id": "rrp",
+   "name": "美联储隔夜逆回购(RRP)",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "rebar",
+   "name": "螺纹钢",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
    "id": "ndx",
    "name": "纳斯达克100",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
    "id": "sox",
    "name": "美国半导体指数(SOX)",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "inddemand",
+   "name": "工业品需求(合成指标)",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "vvix",
+   "name": "VVIX",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
    "id": "cta",
    "name": "CTA趋势仓位代理",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
-   "id": "debtceiling",
-   "name": "债务上限博弈风险",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "id": "audusd",
+   "name": "澳元兑美元",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
-   "id": "utilities",
-   "name": "美国公用事业指数",
+   "id": "em",
+   "name": "新兴市场股指(MSCI EM)",
    "from": "NORMAL",
    "to": "ELEVATED"
   }
