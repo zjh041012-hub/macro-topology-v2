@@ -36,7 +36,6 @@
    "shibor3m",
    "tsf",
    "usclaims",
-   "usdcnh",
    "usepu",
    "usoilinv",
    "uspmi",
@@ -85,13 +84,12 @@
    "cta",
    "gammaproxy"
   ],
-  "liveCount": 104,
+  "liveCount": 105,
   "totalCount": 178,
   "sourceErrors": {
    "akshare:bond_zh_us_rate": "cn10y → AttributeError: bond_zh_us_rate 已在 1.20.41 更名为 bond_zh_us_yield_em，请改用 ak.bond_zh_us_yield_em；参数与返回的列也可能有调整，用 ak.interface_info(\"bond_zh_us_yield_em\") 查看。完整对照见 https://akshare.",
    "akshare:repo_rate_query": "r007 → AttributeError: repo_rate_query 已在 1.20.45 更名为 interest_rate_repo_query_cm，请改用 ak.interest_rate_repo_query_cm；参数与返回的列也可能有调整，用 ak.interface_info(\"interest_rate_repo_query_cm\") 查",
    "akshare:macro_china_lpr": "lpr → AttributeError: macro_china_lpr 已在 1.20.48 更名为 interest_rate_lpr_em，请改用 ak.interest_rate_lpr_em；参数与返回的列也可能有调整，用 ak.interface_info(\"interest_rate_lpr_em\") 查看。完整对照见 https://aksha",
-   "yahoo": "usdcnh → ValueError: Neither `start` nor `end` can be NaT",
    "akshare:macro_china_cpi_yearly": "cncpi → AttributeError: macro_china_cpi_yearly 已在 1.20.42 移除，原因与替代接口见更新日志 https://akshare.akfamily.xyz/changelog.html#v1-20-42",
    "akshare:macro_china_ppi_yearly": "cnppi → AttributeError: macro_china_ppi_yearly 已在 1.20.42 移除，原因与替代接口见更新日志 https://akshare.akfamily.xyz/changelog.html#v1-20-42",
    "akshare:macro_usa_ism_pmi": "uspmi → AttributeError: macro_usa_ism_pmi 已在 1.20.42 移除，原因与替代接口见更新日志 https://akshare.akfamily.xyz/changelog.html#v1-20-42",
@@ -116,13 +114,13 @@
   }
  },
  "topMover": {
-  "nodeId": "copper",
-  "text": "铜(LME) -4.0%/5D · 79分位"
+  "nodeId": "ndx",
+  "text": "纳斯达克100 -3.1%/5D · 81分位"
  },
  "dominantPathId": "p_std_c",
- "divergenceCount": 0,
- "highRiskCount": 10,
+ "divergenceCount": 1,
+ "highRiskCount": 13,
  "regime": "EXTREME",
- "regimeNote": "自动识别: 0条背离, 10个高风险节点。",
- "updatedAt": "2026-11-17T04:44:57+00:00"
+ "regimeNote": "自动识别: 1条背离, 13个高风险节点。",
+ "updatedAt": "2026-11-17T18:45:48+00:00"
 }
