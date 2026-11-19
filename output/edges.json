@@ -1599,7 +1599,7 @@
   "relation": "positive",
   "mechanism": "波动率曲面联动",
   "strength": 0.6,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_hydef_hy",
@@ -1869,7 +1869,7 @@
   "relation": "positive",
   "mechanism": "小盘与大盘β联动",
   "strength": 0.4,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_10y_utilities",

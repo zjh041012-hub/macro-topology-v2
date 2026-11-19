@@ -1,119 +1,63 @@
 {
- "since": "2026-11-18T18:23:52+00:00",
- "generatedAt": "2026-11-19T03:49:35+00:00",
+ "since": "2026-11-19T03:49:35+00:00",
+ "generatedAt": "2026-11-19T18:35:11+00:00",
  "nodeChanges": [
   {
    "id": "gold",
    "name": "黄金",
-   "from": "EXTREME",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "EXTREME"
   },
   {
-   "id": "ndx",
-   "name": "纳斯达克100",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "fiscalsupply",
-   "name": "美债财政供给压力",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "us2y",
-   "name": "美国2年期国债收益率",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "reflation",
-   "name": "再通胀状态",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "infl5y5y",
-   "name": "美国5y5y通胀互换",
+   "id": "vix",
+   "name": "VIX指数",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
    "id": "comidx",
    "name": "南华商品指数",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "brent",
-   "name": "Brent原油",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "silver",
-   "name": "白银",
+   "id": "vvix",
+   "name": "VVIX",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "brent",
+   "name": "Brent原油",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
    "id": "cta",
    "name": "CTA趋势仓位代理",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "em",
-   "name": "新兴市场股指(MSCI EM)",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "dxy",
-   "name": "美元指数",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "hyspread",
-   "name": "美国高收益债信用利差",
    "from": "ELEVATED",
-   "to": "DIVERGENCE"
+   "to": "EXTREME"
   },
   {
-   "id": "riskappetite",
-   "name": "全球风险偏好指数",
+   "id": "termprem",
+   "name": "美债10Y期限溢价",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "spx",
-   "name": "标普500",
+   "id": "gammaproxy",
+   "name": "期权做市商Gamma代理",
    "from": "ELEVATED",
-   "to": "DIVERGENCE"
-  },
-  {
-   "id": "gbpusd",
-   "name": "英镑兑美元",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "to": "NORMAL"
   },
   {
    "id": "goldminers",
    "name": "黄金矿业股",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "debtceiling",
-   "name": "债务上限博弈风险",
    "from": "NORMAL",
    "to": "ELEVATED"
   }
  ],
  "pathChanges": [],
- "divAdded": [
-  "股票下跌 vs 信用利差不扩(未响应型)"
- ],
+ "divAdded": [],
  "divRemoved": []
 }
