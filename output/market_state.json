@@ -119,12 +119,12 @@
  },
  "topMover": {
   "nodeId": "copper",
-  "text": "铜(LME) -9.5%/5D · 71分位"
+  "text": "铜(LME) -8.6%/5D · 71分位"
  },
- "dominantPathId": "p_std_e",
- "divergenceCount": 0,
- "highRiskCount": 15,
+ "dominantPathId": "p_std_c",
+ "divergenceCount": 1,
+ "highRiskCount": 12,
  "regime": "EXTREME",
- "regimeNote": "自动识别: 0条背离, 15个高风险节点。",
- "updatedAt": "2026-11-18T18:23:52+00:00"
+ "regimeNote": "自动识别: 1条背离, 12个高风险节点。",
+ "updatedAt": "2026-11-19T03:49:35+00:00"
 }
