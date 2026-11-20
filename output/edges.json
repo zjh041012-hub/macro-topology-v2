@@ -78,7 +78,7 @@
   "relation": "positive",
   "mechanism": "法币信用对冲需求推升黄金",
   "strength": 0.75,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_worry_dxy",
@@ -87,7 +87,7 @@
   "relation": "negative",
   "mechanism": "财政信用担忧驱动美元贬值压力",
   "strength": 0.7,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_10y_bank",
@@ -636,7 +636,7 @@
   "relation": "negative",
   "mechanism": "波动率与股指反向",
   "strength": 0.7,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_vix_risk",
@@ -735,7 +735,7 @@
   "relation": "positive",
   "mechanism": "债务上限博弈放大财政担忧",
   "strength": 0.4,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_fci_hy2",
@@ -1599,7 +1599,7 @@
   "relation": "positive",
   "mechanism": "波动率曲面联动",
   "strength": 0.6,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_hydef_hy",
@@ -1788,7 +1788,7 @@
   "relation": "negative",
   "mechanism": "负Gamma放大现实波动",
   "strength": 0.5,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_cta_spx",
@@ -1932,7 +1932,7 @@
   "relation": "positive",
   "mechanism": "金价驱动ETF净值",
   "strength": 0.5,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_usepu_vix",
@@ -2058,7 +2058,7 @@
   "relation": "positive",
   "mechanism": "避险状态推升波动率",
   "strength": 0.6,
-  "status": "ACTIVE"
+  "status": "INACTIVE"
  },
  {
   "id": "e_riskoff_risk",

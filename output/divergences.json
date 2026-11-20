@@ -10,7 +10,7 @@
    "e_spx_hy"
   ],
   "expectedRelation": "风险资产普跌时, 高收益利差通常同步走扩定价违约风险。",
-  "observedRelation": "spx 20D动量z=-2.0 处于强趋势, hyspread 却几乎未响应 (z=+0.2)。",
+  "observedRelation": "spx 20D动量z=-2.0 处于强趋势, hyspread 却几乎未响应 (z=+0.3)。",
   "window": "20D",
   "strength": "MEDIUM",
   "persistence": "TRANSIENT",

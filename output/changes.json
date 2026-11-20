@@ -1,58 +1,76 @@
 {
- "since": "2026-11-19T03:49:35+00:00",
- "generatedAt": "2026-11-19T18:35:11+00:00",
+ "since": "2026-11-19T18:35:11+00:00",
+ "generatedAt": "2026-11-20T03:42:24+00:00",
  "nodeChanges": [
   {
-   "id": "gold",
-   "name": "黄金",
+   "id": "goldetf",
+   "name": "黄金ETF(518880)",
+   "from": "NORMAL",
+   "to": "EXTREME"
+  },
+  {
+   "id": "us10ybe",
+   "name": "美国10年期盈亏平衡通胀",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "vix",
-   "name": "VIX指数",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "comidx",
-   "name": "南华商品指数",
+   "id": "reflation",
+   "name": "再通胀状态",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "vvix",
-   "name": "VVIX",
+   "id": "infl5y5y",
+   "name": "美国5y5y通胀互换",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
    "id": "brent",
    "name": "Brent原油",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "cta",
-   "name": "CTA趋势仓位代理",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "termprem",
-   "name": "美债10Y期限溢价",
+   "id": "silver",
+   "name": "白银",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "em",
+   "name": "新兴市场股指(MSCI EM)",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "debtceiling",
+   "name": "债务上限博弈风险",
+   "from": "ELEVATED",
+   "to": "EXTREME"
+  },
+  {
+   "id": "dxy",
+   "name": "美元指数",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "gammaproxy",
-   "name": "期权做市商Gamma代理",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "id": "spx",
+   "name": "标普500",
+   "from": "DIVERGENCE",
+   "to": "EXTREME"
   },
   {
-   "id": "goldminers",
-   "name": "黄金矿业股",
+   "id": "fiscalworry",
+   "name": "财政信用担忧指数",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "us3m",
+   "name": "美国3个月国库券收益率",
    "from": "NORMAL",
    "to": "ELEVATED"
   }
