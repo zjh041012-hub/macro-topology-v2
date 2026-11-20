@@ -1,81 +1,77 @@
 {
- "since": "2026-11-19T18:35:11+00:00",
- "generatedAt": "2026-11-20T03:42:24+00:00",
+ "since": "2026-11-20T03:42:24+00:00",
+ "generatedAt": "2026-11-20T18:00:15+00:00",
  "nodeChanges": [
   {
-   "id": "goldetf",
-   "name": "黄金ETF(518880)",
-   "from": "NORMAL",
-   "to": "EXTREME"
-  },
-  {
-   "id": "us10ybe",
-   "name": "美国10年期盈亏平衡通胀",
+   "id": "ndx",
+   "name": "纳斯达克100",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "reflation",
-   "name": "再通胀状态",
+   "id": "vix",
+   "name": "VIX指数",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "infl5y5y",
-   "name": "美国5y5y通胀互换",
+   "id": "sox",
+   "name": "美国半导体指数(SOX)",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "brent",
-   "name": "Brent原油",
+   "id": "riskoff",
+   "name": "Risk-off状态",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "silver",
-   "name": "白银",
-   "from": "ELEVATED",
-   "to": "EXTREME"
+   "id": "hyspread",
+   "name": "美国高收益债信用利差",
+   "from": "DIVERGENCE",
+   "to": "ELEVATED"
   },
   {
-   "id": "em",
-   "name": "新兴市场股指(MSCI EM)",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "debtceiling",
-   "name": "债务上限博弈风险",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "dxy",
-   "name": "美元指数",
+   "id": "usdjpy",
+   "name": "美元兑日元",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "spx",
-   "name": "标普500",
-   "from": "DIVERGENCE",
-   "to": "EXTREME"
-  },
-  {
-   "id": "fiscalworry",
-   "name": "财政信用担忧指数",
+   "id": "riskappetite",
+   "name": "全球风险偏好指数",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "us3m",
-   "name": "美国3个月国库券收益率",
+   "id": "natgas",
+   "name": "美国天然气",
    "from": "NORMAL",
    "to": "ELEVATED"
+  },
+  {
+   "id": "gammaproxy",
+   "name": "期权做市商Gamma代理",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "rut",
+   "name": "罗素2000",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "tlt",
+   "name": "美国长期国债指数(TLT)",
+   "from": "ELEVATED",
+   "to": "NORMAL"
   }
  ],
  "pathChanges": [],
  "divAdded": [],
- "divRemoved": []
+ "divRemoved": [
+  "股票下跌 vs 信用利差不扩(未响应型)"
+ ]
 }
