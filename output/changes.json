@@ -1,77 +1,39 @@
 {
- "since": "2026-11-20T03:42:24+00:00",
- "generatedAt": "2026-11-20T18:00:15+00:00",
+ "since": "2026-11-20T18:00:15+00:00",
+ "generatedAt": "2026-11-21T03:25:10+00:00",
  "nodeChanges": [
   {
-   "id": "ndx",
-   "name": "纳斯达克100",
-   "from": "ELEVATED",
-   "to": "EXTREME"
+   "id": "debtceiling",
+   "name": "债务上限博弈风险",
+   "from": "EXTREME",
+   "to": "NORMAL"
   },
   {
-   "id": "vix",
-   "name": "VIX指数",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "sox",
-   "name": "美国半导体指数(SOX)",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "riskoff",
-   "name": "Risk-off状态",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "hyspread",
-   "name": "美国高收益债信用利差",
-   "from": "DIVERGENCE",
+   "id": "infl5y5y",
+   "name": "美国5y5y通胀互换",
+   "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
    "id": "usdjpy",
    "name": "美元兑日元",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "fiscalworry",
+   "name": "财政信用担忧指数",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "riskappetite",
-   "name": "全球风险偏好指数",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "natgas",
-   "name": "美国天然气",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "gammaproxy",
-   "name": "期权做市商Gamma代理",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "rut",
-   "name": "罗素2000",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "tlt",
-   "name": "美国长期国债指数(TLT)",
+   "id": "reits",
+   "name": "美国房地产REITs",
    "from": "ELEVATED",
    "to": "NORMAL"
   }
  ],
  "pathChanges": [],
  "divAdded": [],
- "divRemoved": [
-  "股票下跌 vs 信用利差不扩(未响应型)"
- ]
+ "divRemoved": []
 }
