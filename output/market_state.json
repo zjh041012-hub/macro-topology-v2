@@ -118,13 +118,13 @@
   }
  },
  "topMover": {
-  "nodeId": "copper",
-  "text": "铜(LME) -10.1%/5D · 67分位"
+  "nodeId": "vix",
+  "text": "VIX指数 +13.0%/5D · 99分位"
  },
  "dominantPathId": "p_std_e",
  "divergenceCount": 0,
- "highRiskCount": 17,
+ "highRiskCount": 16,
  "regime": "EXTREME",
- "regimeNote": "自动识别: 0条背离, 17个高风险节点。",
- "updatedAt": "2026-11-21T03:25:10+00:00"
+ "regimeNote": "自动识别: 0条背离, 16个高风险节点。",
+ "updatedAt": "2026-11-23T21:41:08+00:00"
 }
