@@ -1,137 +1,51 @@
 {
- "since": "2026-11-21T03:25:10+00:00",
- "generatedAt": "2026-11-23T21:41:08+00:00",
+ "since": "2026-11-23T21:41:08+00:00",
+ "generatedAt": "2026-11-24T06:19:59+00:00",
  "nodeChanges": [
-  {
-   "id": "us10y",
-   "name": "美国10年期国债收益率",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "hyspread",
-   "name": "美国高收益债信用利差",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
   {
    "id": "ndx",
    "name": "纳斯达克100",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "riskappetite",
-   "name": "全球风险偏好指数",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
    "id": "oil",
    "name": "原油(WTI)",
-   "from": "ELEVATED",
-   "to": "EXTREME"
+   "from": "EXTREME",
+   "to": "ELEVATED"
   },
   {
    "id": "spx",
    "name": "标普500",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "sox",
-   "name": "美国半导体指数(SOX)",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "us5y",
-   "name": "美国5年期国债收益率",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "cdxhy",
-   "name": "CDX HY",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "vvix",
-   "name": "VVIX",
-   "from": "EXTREME",
-   "to": "ELEVATED"
+   "id": "infl5y5y",
+   "name": "美国5y5y通胀互换",
+   "from": "ELEVATED",
+   "to": "EXTREME"
   },
   {
    "id": "silver",
    "name": "白银",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "gammaproxy",
-   "name": "期权做市商Gamma代理",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "em",
-   "name": "新兴市场股指(MSCI EM)",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
    "id": "dxy",
    "name": "美元指数",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "us2y",
-   "name": "美国2年期国债收益率",
    "from": "ELEVATED",
    "to": "NORMAL"
-  },
-  {
-   "id": "igspread",
-   "name": "美国投资级信用利差",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "liqcrisis",
-   "name": "全球流动性危机状态",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "us3m",
-   "name": "美国3个月国库券收益率",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "cdxig",
-   "name": "CDX IG",
-   "from": "NORMAL",
-   "to": "ELEVATED"
   },
   {
    "id": "rut",
    "name": "罗素2000",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "reits",
-   "name": "美国房地产REITs",
    "from": "NORMAL",
    "to": "ELEVATED"
   }
  ],
- "pathChanges": [
-  "路径E · 流动性冲击: INACTIVE → ACTIVE"
- ],
+ "pathChanges": [],
  "divAdded": [],
  "divRemoved": []
 }

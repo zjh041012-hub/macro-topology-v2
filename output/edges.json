@@ -1599,7 +1599,7 @@
   "relation": "positive",
   "mechanism": "波动率曲面联动",
   "strength": 0.6,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_hydef_hy",
@@ -2031,7 +2031,7 @@
   "relation": "positive",
   "mechanism": "衰退定价首先体现在利差",
   "strength": 0.6,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_rec_spx",
@@ -2040,7 +2040,7 @@
   "relation": "negative",
   "mechanism": "衰退压制盈利与估值",
   "strength": 0.6,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_stag_gold",
