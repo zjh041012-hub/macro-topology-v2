@@ -1,107 +1,47 @@
 {
- "since": "2026-11-24T20:21:36+00:00",
- "generatedAt": "2026-11-25T05:03:10+00:00",
+ "since": "2026-11-25T05:03:10+00:00",
+ "generatedAt": "2026-11-25T19:36:38+00:00",
  "nodeChanges": [
-  {
-   "id": "goldetf",
-   "name": "黄金ETF(518880)",
-   "from": "NORMAL",
-   "to": "EXTREME"
-  },
-  {
-   "id": "riskappetite",
-   "name": "全球风险偏好指数",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
   {
    "id": "oil",
    "name": "原油(WTI)",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "uspce",
+   "name": "美国核心PCE(同比)",
    "from": "ELEVATED",
    "to": "EXTREME"
-  },
-  {
-   "id": "us30y",
-   "name": "美国30年期国债收益率",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "infl5y5y",
-   "name": "美国5y5y通胀互换",
-   "from": "EXTREME",
-   "to": "ELEVATED"
   },
   {
    "id": "inddemand",
    "name": "工业品需求(合成指标)",
-   "from": "ELEVATED",
-   "to": "EXTREME"
-  },
-  {
-   "id": "geopolitics",
-   "name": "地缘政治风险指数",
-   "from": "NORMAL",
-   "to": "DIVERGENCE"
+   "from": "EXTREME",
+   "to": "ELEVATED"
   },
   {
    "id": "brent",
    "name": "Brent原油",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "gammaproxy",
-   "name": "期权做市商Gamma代理",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "us20y",
-   "name": "美国20年期国债收益率",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "fiscalworry",
-   "name": "财政信用担忧指数",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "liqcrisis",
-   "name": "全球流动性危机状态",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "us3m",
-   "name": "美国3个月国库券收益率",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "bankloans",
-   "name": "美国商业银行贷款(同比)",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
    "id": "natgas",
    "name": "美国天然气",
-   "from": "ELEVATED",
-   "to": "NORMAL"
+   "from": "NORMAL",
+   "to": "ELEVATED"
   },
   {
    "id": "rut",
    "name": "罗素2000",
-   "from": "NORMAL",
-   "to": "ELEVATED"
+   "from": "ELEVATED",
+   "to": "NORMAL"
   }
  ],
- "pathChanges": [],
- "divAdded": [
-  "地缘风险升级 vs 黄金避险买盘缺席(对抗型·弱端确认)"
+ "pathChanges": [
+  "路径D · 全球流动性改善 (反向: 流动性收紧): INACTIVE → PARTIAL"
  ],
+ "divAdded": [],
  "divRemoved": []
 }
