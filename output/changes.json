@@ -1,77 +1,33 @@
 {
- "since": "2026-11-25T19:36:38+00:00",
- "generatedAt": "2026-11-26T04:19:38+00:00",
+ "since": "2026-11-26T04:19:38+00:00",
+ "generatedAt": "2026-11-26T19:17:20+00:00",
  "nodeChanges": [
   {
-   "id": "riskappetite",
-   "name": "全球风险偏好指数",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "infl5y5y",
-   "name": "美国5y5y通胀互换",
+   "id": "lmecopperinv",
+   "name": "LME铜库存",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
-   "id": "geopolitics",
-   "name": "地缘政治风险指数",
-   "from": "DIVERGENCE",
-   "to": "NORMAL"
-  },
-  {
-   "id": "brent",
-   "name": "Brent原油",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "silver",
-   "name": "白银",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "gammaproxy",
-   "name": "期权做市商Gamma代理",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
    "id": "fiscalworry",
    "name": "财政信用担忧指数",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "t2s10s",
-   "name": "美债2s10s利差",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "natgas",
-   "name": "美国天然气",
-   "from": "ELEVATED",
-   "to": "NORMAL"
-  },
-  {
-   "id": "rut",
-   "name": "罗素2000",
+   "id": "power",
+   "name": "发电量(同比)",
    "from": "NORMAL",
    "to": "ELEVATED"
   },
   {
-   "id": "goldminers",
-   "name": "黄金矿业股",
+   "id": "rebar",
+   "name": "螺纹钢",
    "from": "ELEVATED",
    "to": "NORMAL"
   }
  ],
  "pathChanges": [],
  "divAdded": [],
- "divRemoved": [
-  "地缘风险升级 vs 黄金避险买盘缺席(对抗型·弱端确认)"
- ]
+ "divRemoved": []
 }
