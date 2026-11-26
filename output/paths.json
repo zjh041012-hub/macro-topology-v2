@@ -20,8 +20,8 @@
  },
  {
   "id": "p_std_d",
-  "name": "路径D · 全球流动性改善 (反向: 流动性收紧)",
-  "title": "路径D · 全球流动性改善 (反向: 流动性收紧)",
+  "name": "路径D · 全球流动性改善 (方向不明)",
+  "title": "路径D · 全球流动性改善 (方向不明)",
   "nodeIds": [
    "fedbs",
    "reserves",
@@ -120,8 +120,8 @@
    "e_real_dxy"
   ],
   "status": "INACTIVE",
-  "consistency": 0.0,
-  "note": "实时评估: 0/5 条边动量一致 (uscpi→cutsexp×, cutsexp→us2y×, us2y→us10y×, us10y→us10yreal×, us10yreal→dxy×)。"
+  "consistency": 0.2,
+  "note": "实时评估: 1/5 条边动量一致 (uscpi→cutsexp×, cutsexp→us2y×, us2y→us10y×, us10y→us10yreal×, us10yreal→dxy✓)。"
  },
  {
   "id": "p_std_b",
@@ -145,8 +145,8 @@
    "e_real_ndx"
   ],
   "status": "INACTIVE",
-  "consistency": 0.0,
-  "note": "实时评估: 0/6 条边动量一致 (usdeficit→netissue×, netissue→auctiontail×, auctiontail→termprem×, termprem→us10y×, us10y→us10yreal×, us10yreal→ndx×)。"
+  "consistency": 0.17,
+  "note": "实时评估: 1/6 条边动量一致 (usdeficit→netissue×, netissue→auctiontail×, auctiontail→termprem×, termprem→us10y×, us10y→us10yreal×, us10yreal→ndx✓)。"
  },
  {
   "id": "p_std_g",
