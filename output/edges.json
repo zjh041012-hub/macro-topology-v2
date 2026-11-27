@@ -1932,7 +1932,7 @@
   "relation": "positive",
   "mechanism": "金价驱动ETF净值",
   "strength": 0.5,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_usepu_vix",
@@ -1977,7 +1977,7 @@
   "relation": "positive",
   "mechanism": "流动性危机=美元荒",
   "strength": 0.7,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_dxy_hyspread",
@@ -2004,7 +2004,7 @@
   "relation": "conditional",
   "mechanism": "冲击初期黄金同跌, 后期避险",
   "strength": 0.5,
-  "status": "INACTIVE"
+  "status": "ACTIVE"
  },
  {
   "id": "e_refl_oil",

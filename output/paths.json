@@ -14,7 +14,7 @@
    "e_dxy_hyspread",
    "e_spx_hy"
   ],
-  "status": "PARTIAL",
+  "status": "ACTIVE",
   "consistency": 1.0,
   "note": "实时评估: 3/3 条边动量一致 (liqcrisis→dxy✓, dxy→hyspread✓, spx→hyspread✓)。"
  },
