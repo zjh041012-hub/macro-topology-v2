@@ -1,33 +1,102 @@
 {
- "since": "2026-11-26T04:19:38+00:00",
- "generatedAt": "2026-11-26T19:17:20+00:00",
+ "since": "2026-11-26T19:17:20+00:00",
+ "generatedAt": "2026-11-27T04:30:04+00:00",
  "nodeChanges": [
   {
-   "id": "lmecopperinv",
-   "name": "LME铜库存",
+   "id": "gold",
+   "name": "黄金",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "ndx",
+   "name": "纳斯达克100",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "spx",
+   "name": "标普500",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "sox",
+   "name": "美国半导体指数(SOX)",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "riskoff",
+   "name": "Risk-off状态",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "ahe",
+   "name": "美国平均时薪(同比)",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "rentcpi",
+   "name": "美国租金通胀(同比)",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "brent",
+   "name": "Brent原油",
    "from": "ELEVATED",
    "to": "EXTREME"
   },
   {
+   "id": "em",
+   "name": "新兴市场股指(MSCI EM)",
+   "from": "EXTREME",
+   "to": "ELEVATED"
+  },
+  {
+   "id": "fedpath",
+   "name": "美联储政策利率预期(1Y远期)",
+   "from": "NORMAL",
+   "to": "ELEVATED"
+  },
+  {
    "id": "fiscalworry",
    "name": "财政信用担忧指数",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "power",
-   "name": "发电量(同比)",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "rebar",
-   "name": "螺纹钢",
    "from": "ELEVATED",
    "to": "NORMAL"
+  },
+  {
+   "id": "liqcrisis",
+   "name": "全球流动性危机状态",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "silver",
+   "name": "白银",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "rut",
+   "name": "罗素2000",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "gbpusd",
+   "name": "英镑兑美元",
+   "from": "NORMAL",
+   "to": "ELEVATED"
   }
  ],
- "pathChanges": [],
+ "pathChanges": [
+  "路径E · 流动性冲击: ACTIVE → PARTIAL",
+  "路径D · 全球流动性改善: PARTIAL → INACTIVE"
+ ],
  "divAdded": [],
  "divRemoved": []
 }

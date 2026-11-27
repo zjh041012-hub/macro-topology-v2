@@ -14,30 +14,9 @@
    "e_dxy_hyspread",
    "e_spx_hy"
   ],
-  "status": "ACTIVE",
+  "status": "PARTIAL",
   "consistency": 1.0,
   "note": "实时评估: 3/3 条边动量一致 (liqcrisis→dxy✓, dxy→hyspread✓, spx→hyspread✓)。"
- },
- {
-  "id": "p_std_d",
-  "name": "路径D · 全球流动性改善 (方向不明)",
-  "title": "路径D · 全球流动性改善 (方向不明)",
-  "nodeIds": [
-   "fedbs",
-   "reserves",
-   "usfci",
-   "hyspread",
-   "spx"
-  ],
-  "edgeIds": [
-   "e_fedbs_reserves",
-   "e_reserves_fci",
-   "e_fci_hy2",
-   "e_spx_hy"
-  ],
-  "status": "PARTIAL",
-  "consistency": 0.5,
-  "note": "实时评估: 2/4 条边动量一致 (fedbs→reserves×, reserves→usfci×, usfci→hyspread✓, spx→hyspread✓)。"
  },
  {
   "id": "p_std_h",
@@ -78,6 +57,27 @@
   "status": "INACTIVE",
   "consistency": 0.25,
   "note": "实时评估: 1/4 条边动量一致 (tsf→creditimpulse×, creditimpulse→cnpminew×, cnpminew→inddemand×, inddemand→copper✓)。"
+ },
+ {
+  "id": "p_std_d",
+  "name": "路径D · 全球流动性改善",
+  "title": "路径D · 全球流动性改善",
+  "nodeIds": [
+   "fedbs",
+   "reserves",
+   "usfci",
+   "hyspread",
+   "spx"
+  ],
+  "edgeIds": [
+   "e_fedbs_reserves",
+   "e_reserves_fci",
+   "e_fci_hy2",
+   "e_spx_hy"
+  ],
+  "status": "INACTIVE",
+  "consistency": 0.25,
+  "note": "实时评估: 1/4 条边动量一致 (fedbs→reserves×, reserves→usfci×, usfci→hyspread×, spx→hyspread✓)。"
  },
  {
   "id": "p_std_f",
@@ -181,29 +181,29 @@
  },
  {
   "id": "p_auto_2",
-  "title": "纳斯达克100 → 标普500 → 美国高收益债信用利差",
+  "title": "美国10年期实际利率 → 纳斯达克100 → 标普500",
   "nodeIds": [
+   "us10yreal",
    "ndx",
-   "spx",
-   "hyspread"
+   "spx"
   ],
   "edgeIds": [
-   "e_ndx_spx",
-   "e_spx_hy"
+   "e_real_ndx",
+   "e_ndx_spx"
   ],
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  },
  {
   "id": "p_auto_3",
-  "title": "财政信用担忧指数 → 黄金 → 黄金矿业股",
+  "title": "美国10年期实际利率 → 黄金 → 白银",
   "nodeIds": [
-   "fiscalworry",
+   "us10yreal",
    "gold",
-   "goldminers"
+   "silver"
   ],
   "edgeIds": [
-   "e_worry_gold",
-   "e_gold_miners"
+   "e_real_gold",
+   "e_gold_silver"
   ],
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  }
