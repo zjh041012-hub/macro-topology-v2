@@ -1,47 +1,33 @@
 {
- "since": "2026-11-27T04:30:04+00:00",
- "generatedAt": "2026-11-27T19:10:39+00:00",
+ "since": "2026-11-27T19:10:39+00:00",
+ "generatedAt": "2026-11-28T04:08:41+00:00",
  "nodeChanges": [
   {
-   "id": "comidx",
-   "name": "南华商品指数",
+   "id": "infl5y5y",
+   "name": "美国5y5y通胀互换",
    "from": "EXTREME",
    "to": "ELEVATED"
   },
   {
-   "id": "cta",
-   "name": "CTA趋势仓位代理",
-   "from": "EXTREME",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "dxy",
-   "name": "美元指数",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "eurusd",
-   "name": "欧元兑美元",
-   "from": "NORMAL",
-   "to": "ELEVATED"
-  },
-  {
-   "id": "vvix",
-   "name": "VVIX",
+   "id": "tga",
+   "name": "美国财政部TGA账户",
    "from": "ELEVATED",
    "to": "NORMAL"
   },
   {
-   "id": "goldetf",
-   "name": "黄金ETF(518880)",
+   "id": "eurusd",
+   "name": "欧元兑美元",
+   "from": "ELEVATED",
+   "to": "NORMAL"
+  },
+  {
+   "id": "bankloans",
+   "name": "美国商业银行贷款(同比)",
    "from": "NORMAL",
    "to": "ELEVATED"
   }
  ],
- "pathChanges": [
-  "路径E · 流动性冲击: PARTIAL → ACTIVE"
- ],
+ "pathChanges": [],
  "divAdded": [],
  "divRemoved": []
 }

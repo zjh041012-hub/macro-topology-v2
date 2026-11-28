@@ -120,8 +120,8 @@
    "e_real_dxy"
   ],
   "status": "INACTIVE",
-  "consistency": 0.2,
-  "note": "实时评估: 1/5 条边动量一致 (uscpi→cutsexp×, cutsexp→us2y×, us2y→us10y×, us10y→us10yreal×, us10yreal→dxy✓)。"
+  "consistency": 0.0,
+  "note": "实时评估: 0/5 条边动量一致 (uscpi→cutsexp×, cutsexp→us2y×, us2y→us10y×, us10y→us10yreal×, us10yreal→dxy×)。"
  },
  {
   "id": "p_std_b",
@@ -145,8 +145,8 @@
    "e_real_ndx"
   ],
   "status": "INACTIVE",
-  "consistency": 0.17,
-  "note": "实时评估: 1/6 条边动量一致 (usdeficit→netissue×, netissue→auctiontail×, auctiontail→termprem×, termprem→us10y×, us10y→us10yreal×, us10yreal→ndx✓)。"
+  "consistency": 0.0,
+  "note": "实时评估: 0/6 条边动量一致 (usdeficit→netissue×, netissue→auctiontail×, auctiontail→termprem×, termprem→us10y×, us10y→us10yreal×, us10yreal→ndx×)。"
  },
  {
   "id": "p_std_g",
@@ -181,29 +181,25 @@
  },
  {
   "id": "p_auto_2",
-  "title": "美国10年期实际利率 → 纳斯达克100 → 标普500",
+  "title": "美元指数 → 欧元兑美元",
   "nodeIds": [
-   "us10yreal",
-   "ndx",
-   "spx"
+   "dxy",
+   "eurusd"
   ],
   "edgeIds": [
-   "e_real_ndx",
-   "e_ndx_spx"
+   "e_dxy_eur"
   ],
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  },
  {
   "id": "p_auto_3",
-  "title": "美国10年期实际利率 → 黄金 → 白银",
+  "title": "纳斯达克100 → 标普500",
   "nodeIds": [
-   "us10yreal",
-   "gold",
-   "silver"
+   "ndx",
+   "spx"
   ],
   "edgeIds": [
-   "e_real_gold",
-   "e_gold_silver"
+   "e_ndx_spx"
   ],
   "note": "由规则引擎根据20日动量一致性自动识别的激活传导链。"
  }
